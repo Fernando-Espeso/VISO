@@ -1,0 +1,21 @@
+<div class="collections">
+    {% assign shuffled_collections = collections | sort: 'random' %}
+    {% assign count = 0 %}
+    {% for collection in shuffled_collections %}
+      {% if collection.title != "ALL" %}
+        <div class="collection">
+          <div class="section-title big">
+            <div class="section">{{ collection.all_products_count }}</div>{{ collection.title }}
+          </div>
+          <a href="{{ collection.url }}">
+            <img src="{{ collection.image | collection_img_url: 'master' }}" alt="{{ collection.title }}">
+          </a>
+        </div>
+        {% assign count = count | plus: 1 %}
+        {% if count >= 30 %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

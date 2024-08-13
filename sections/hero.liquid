@@ -1,0 +1,65 @@
+<section
+  data-section-id="{{ section.id }}"
+  id="section-{{ section.id }}"
+  class="hero-section"
+  >
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'media' %}
+        <div id="block-{{ block.id }}" class="hero__image">
+          {% unless block.settings.image == blank %}
+            {{ block.settings.image | image_url: width: block.settings.image.width | image_tag:
+              loading: 'lazy',
+              alt: block.settings.image.alt,
+              class: ''
+            }}
+          {% endunless %}
+        </div>
+       {% unless block.settings.heading == blank and block.settings.button_label == blank %}
+        <div class="bar">
+          {% unless block.settings.button_link == blank %}
+            <a class="" href="{{ block.settings.button_link }}" alt="{{ block.settings.button_label }}">
+          {% endunless %}
+              <div class="bar-content">
+                <div>
+                  {% unless block.settings.heading == blank %}
+                    {{ block.settings.heading }}
+                  {% endunless %}
+                </div>
+                <div class="mobile-hidden">
+                  {% unless block.settings.button_label == blank %}
+                    <a class="btn" href="{{ block.settings.button_link }}" alt="{{ block.settings.button_label }}">{{ block.settings.button_label }}</a>
+                  {% endunless %}
+                </div>
+              </div>
+          </div>
+          {% endunless %}
+    {% endcase %}
+  {% endfor %}
+</section>
+{% schema %}
+{
+  "name": "Hero",
+  "blocks": [
+    {
+      "type": "media",
+      "name": "Media",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Used as poster image when video is provided"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}

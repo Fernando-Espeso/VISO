@@ -1,0 +1,399 @@
+
+           <div class="title big">
+            <div>{{ article.title }}</div>
+           </div>
+        <div class="artist-single">
+           
+              <div class="info-project">
+                <div class="details">
+                <div class="type">
+                  {{  article.metafields.custom.type }}
+                </div>
+                {% if article.metafields.custom.contact %}
+                  {{ article.metafields.custom.contact | metafield_tag }}
+                {% endif %}
+              </div>
+                <div class="long">{{  article.metafields.custom.intro }}</div>
+
+                <div class="image-profile">
+                  {% if article.image %}
+                  <a href="{{ article.url }}" class="image"> 
+                   <img class="lazy" src="{{ article.image | product_img_url: 'thumb' }}" data-src="{{ article.image | product_img_url: 'master' }}" alt="{{ article.image.alt | escape }}">
+                   </a> 
+                 {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="big-text" style="display:block">{{  article.metafields.custom.info }}</div>
+          </div>
+          <div class="gallery-article">
+            {% unless article.metafields.custom.gallery == blank %}
+              <div class="gallery_collection">
+                  {% assign gallery = article.metafields.custom.gallery.value %}
+                  {% if gallery %}
+                     {% for gallery in gallery %}
+                          <img class="lazy" src="{{ gallery | image_url: 'thumb' }}"  data-src="{{ gallery | image_url:: 'master' }}">
+                       {% endfor %}
+                  {% endif %}
+              </div>
+            {% endunless %}
+          </div>
+      
+ <div id="products">         
+      {% if article.metafields.custom.product %}
+        {% assign product_id = article.metafields.custom.product %}
+        {% assign project_product = all_products[product_id] %}
+        {% if project_product %}
+          <div class="product">
+            <a class="thumbnail" href="{{ project_product.url }}">
+              {% for media in project_product.media %}
+                {% case media.media_type %}
+                  {% when 'video' %}
+                    <div class="product-video">
+                      {{ media | video_tag: loop: true, autoplay: true, muted: true }}
+                    </div>
+                {% endcase %}
+              {% endfor %}
+              {% if project_product.images.size > 0 %}
+                <img id="none" class="lazy" src="{{ project_product.images[0] | product_img_url: 'thumb' }}" data-src="{{ project_product.images[0] | product_img_url: 'master' }}" alt="{{ project_product.title }}" />
+              {% endif %}
+            </a>
+  
+            <div class="row">
+              <div class="main-information">
+                <div class="arti">{{ project_product.metafields.custom.artists | metafield_tag }}</div>
+                <div class="product-title">{{ project_product.title }}</div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% if article.metafields.custom.product_2 %}
+        {% assign product_id = article.metafields.custom.product_2 %}
+        {% assign project_product = all_products[product_id] %}
+        {% if project_product %}
+          <div class="product">
+            <a class="thumbnail" href="{{ project_product.url }}">
+              {% for media in project_product.media %}
+                {% case media.media_type %}
+                  {% when 'video' %}
+                    <div class="product-video">
+                      {{ media | video_tag: loop: true, autoplay: true, muted: true }}
+                    </div>
+                {% endcase %}
+              {% endfor %}
+              {% if project_product.images.size > 0 %}
+                <img id="none" class="lazy" src="{{ project_product.images[0] | product_img_url: 'thumb' }}" data-src="{{ project_product.images[0] | product_img_url: 'master' }}" alt="{{ project_product.title }}" />
+              {% endif %}
+            </a>
+      
+            <div class="row">
+              <div class="main-information">
+                <div class="arti">{{ project_product.metafields.custom.artists | metafield_tag }}</div>
+                <div class="product-title">{{ project_product.title }}</div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% if article.metafields.custom.product_3 %}
+        {% assign product_id = article.metafields.custom.product_3 %}
+        {% assign project_product = all_products[product_id] %}
+        {% if project_product %}
+          <div class="product">
+            <a class="thumbnail" href="{{ project_product.url }}">
+              {% for media in project_product.media %}
+                {% case media.media_type %}
+                  {% when 'video' %}
+                    <div class="product-video">
+                      {{ media | video_tag: loop: true, autoplay: true, muted: true }}
+                    </div>
+                {% endcase %}
+              {% endfor %}
+              {% if project_product.images.size > 0 %}
+                <img id="none" class="lazy" src="{{ project_product.images[0] | product_img_url: 'thumb' }}" data-src="{{ project_product.images[0] | product_img_url: 'master' }}" alt="{{ project_product.title }}" />
+              {% endif %}
+            </a>
+      
+            <div class="row">
+              <div class="main-information">
+                <div class="arti">{{ project_product.metafields.custom.artists | metafield_tag }}</div>
+                <div class="product-title">{{ project_product.title }}</div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      {% if article.metafields.custom.produdct_4 %}
+        {% assign product_id = article.metafields.custom.produdct_4 %}
+        {% assign project_product = all_products[product_id] %}
+        {% if project_product %}
+          <div class="product">
+            <a class="thumbnail" href="{{ project_product.url }}">
+              {% for media in project_product.media %}
+                {% case media.media_type %}
+                  {% when 'video' %}
+                    <div class="product-video">
+                      {{ media | video_tag: loop: true, autoplay: true, muted: true }}
+                    </div>
+                {% endcase %}
+              {% endfor %}
+              {% if project_product.images.size > 0 %}
+                <img id="none" class="lazy" src="{{ project_product.images[0] | product_img_url: 'thumb' }}" data-src="{{ project_product.images[0] | product_img_url: 'master' }}" alt="{{ project_product.title }}" />
+              {% endif %}
+            </a>
+           
+            <div class="row">
+              <div class="main-information">
+                <div class="arti">{{ project_product.metafields.custom.artists | metafield_tag }}</div>
+                <div class="product-title">{{ project_product.title }}</div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    </div>
+  
+
+
+
+          <div class="sub-info">
+            {% if  article.metafields.custom.press_and_publications != blank %}
+            <div class="publications">
+              <div class="type">PRESS AND PUBLICATIONS</div>
+             {{ article.metafields.custom.press_and_publications| metafield_tag }}
+            </div>
+          {% endif %}
+            {% if  article.metafields.custom.background_education != blank %}
+            <div class="education">
+              <div class="type">BACKGROUND EDUCATION</div>
+              {{ article.metafields.custom.background_education | metafield_tag }}</div>
+          </div>
+        {% endif %}
+
+<style>
+  .sub-info{
+    margin-top:20px;
+    grid-column:4/span 6;
+    grid-template-columns: repeat(2, 1fr);
+    height:fit-content;
+    row-gap:2px;
+    display:grid;
+
+  }
+  .sub-info p{
+    font-size:var(--l);
+  }
+  .sub-info .metafield-rich_text_field {
+    grid-column: span 7;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .artist-in{
+    height:fit-content;
+    margin-top:var(--nav);
+    display: grid;
+    grid-column:4/span 6;
+    row-gap:5px;
+    text-align:center;
+  }.title.big {
+    background-color:var(--red)!important;
+    color:white;
+    grid-template-columns: repeat(1, 1fr);
+    height:fit-content;
+    row-gap:2px;
+    display:grid;
+    grid-column: span 4;
+  }
+
+    .artist-single {
+    margin-top: 2px;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 0px;
+    grid-column: span 6;
+    display: grid;
+    grid-gap: 2px;
+    height: fit-content;
+  }
+  .image-profile{
+    grid-column: span 2;
+    margin: 0 auto;
+    width: 250px;
+    margin-bottom: 20px;
+}
+  .type{
+    grid-column:span 1;
+    height:fit-content;
+  } 
+  .info-project{
+    grid-column: span 8;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 2px;
+  }
+  .details{
+    background:transparent;
+    grid-column: span 2;
+    grid-template-columns: repeat(8, 1fr);
+    display: grid;
+    grid-gap: 2px;
+  }
+  .sub-info .metafield-rich_text_field > p {
+    font-size:var(--medium);
+    line-height:20px;
+  }
+  .sub-info  .type{
+    grid-column:span 1;
+    margin-bottom:5px;
+    height:fit-content;
+  } 
+  .long{
+    background:var(--grey)!important;
+    font-size: var(--big);
+    line-height: calc(var(--big) + 5px);
+    grid-column: span 2;
+    padding: 20px 10px;
+    height: fit-content;
+  }
+  .at-a {
+    padding:5px;
+    grid-column:span 1;   
+     height:fit-content;
+  }
+  .type .under{
+    text-align:left;
+  }
+  .artist-single >div {
+  
+  }
+
+  p > a{
+    display:block!important;
+    width:100%!important;
+  }
+
+  .big span{
+    font-size: var(--main);
+  }
+  .big{
+    padding:5px;
+
+  }
+  
+  .big-text{
+    font-size: var(--big);
+    line-height: calc(var(--big) + 5px);
+  }
+  .title.big{
+    padding: 20px 5px;
+    position:sticky;
+    top:34px;
+    margin-top:2px;
+    text-align:center;
+  }
+  .image{
+    margin:0 auto;
+    width: 200px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  .intro {
+    grid-column: span 12;
+    text-align: left;
+    font-size: 18px;
+    line-height: 23px;
+    text-indent: 50px;
+    display: none;
+}
+  .conten{
+  
+  }
+  @media (max-width: 1200px) {
+    .sub-info{
+
+      grid-template-columns: repeat(2, 1fr);
+      height:fit-content;
+      row-gap:2px;
+      display:grid;
+    }
+  .details{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .sub-info .metafield-rich_text_field {
+    grid-column: span 3;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+  @media (max-width: 900px) {
+    .metafield-rich_text_field {
+      grid-column: span 1;
+      display: grid;
+      grid-gap: 2px;
+      grid-template-columns: repeat(1, 1fr);
+  }
+    .details{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .artist-single {
+      margin-top: 2px;
+      grid-template-columns: repeat(5, 1fr);
+      padding: 0px;
+      grid-column: span 6;
+      display: grid;
+      grid-gap: 2px;
+      height: fit-content;
+  }
+  
+  }
+  @media (max-width: 600px) {
+    .title.big {
+      padding: 20px 5px;
+      position: sticky;
+      top: 63px;
+      margin-top: 2px;
+      text-align: center;
+  }
+  .long {;
+    padding: 20px 5%;
+  }
+    .artist-single {
+      margin-top: 2px;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0px;
+      grid-column: span 6;
+      display: grid;
+      grid-gap: 2px;
+      height: fit-content;
+  }
+  .artist-in {
+    grid-column: span 12;
+  }
+  .gallery_collection {
+    grid-template-columns: repeat(1,1fr);
+}
+.metafield-rich_text_field {
+  grid-column: span 2;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.metafield-rich_text_field p {
+  font-size:var(--medium);
+}
+.sub-info{
+
+  grid-template-columns: repeat(1, 1fr);
+  height:fit-content;
+  row-gap:20px;
+  display:grid;
+}
+  }
+</style>

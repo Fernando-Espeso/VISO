@@ -1,0 +1,10 @@
+{% if search.performed and search.results_count > 0 %}
+      <div class="menu-title found big section-title"> <div class="section">{{ search.results_count }}</div>TOTAL FOUND FOR {{ search.terms | escape }} </div>
+  <div id="products">
+  {% for product in search.results limit:100 %}
+	{% include 'product-body' %}
+  {% endfor %}
+  </div>
+{% else %}
+  <div class="menu-title found big section-title" class="menu-title"><div class="section">0</div>TOTAL FOUND </div>
+{% endif %}

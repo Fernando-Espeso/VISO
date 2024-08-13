@@ -1,0 +1,30 @@
+{%- for block in section.blocks -%}
+    {% case block.type %}
+        {% when 'image' %}
+               <div class="toggle-this">
+                 <div class="thumbnail-randmon">
+                    <img alt="{{ block.settings.image.alt}}" src="{{ block.settings.image | img_url: 'master' }}" />
+                 </div>
+               </div>
+    {% endcase %}
+{% endfor %}
+{% schema %}
+{
+  "name": "im",
+  "tag": "div",
+  "class":"im",
+  "blocks": [
+    {
+      "type": "image",
+      "name": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,50 @@
+<div class="simple-text">
+  <div>NEWS</div>
+  {% for block in section.blocks %}
+  <div id="block-{{ block.id }}" class="simple-text-block big">
+      {% unless block.settings.text == blank %}
+      <div class="content">{{ block.settings.text | newline_to_br }}</div>
+      {% endunless %}
+      {% if block.settings.image != blank %}
+      <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Image">
+      {% endif %}
+      {% if block.settings.link != blank %}
+      <a href="{{ block.settings.link }}" target="_blank">Read more</a>
+      {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+"name": "News",
+"blocks": [
+  {
+    "type": "text",
+    "name": "News Block",
+    "blocks": {
+      "text": {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      "image": {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      "link": {
+        "type": "url",
+        "id": "link",
+        "label": "Link"
+      }
+    }
+  }
+],
+"presets": [
+  {
+    "name": "news"
+  }
+]
+}
+{% endschema %}

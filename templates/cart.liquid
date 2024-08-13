@@ -1,0 +1,118 @@
+<div class="main">
+{% if cart.item_count > 0 %}
+  <form id="cart-wrapper" action="/cart" method="post">
+    <div class="total">
+      <div class="double">
+        <div>SUBTOTAL</div>
+        <div>{{ cart.total_price | money }}</div>
+        <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
+      </div>
+      <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
+    </div>
+    {% for item in cart.items %}
+      <div class="item">
+
+        <div class="thumb">
+          <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
+        </div>
+        <div class="product-title">{{ item.product.title }}</div>
+
+        <div style="background-color:var(--darker);" class="row">
+          <div class="main-information-cart">
+            <div class="at-a">{{ product.metafields.custom.artists | metafield_tag }}</div>
+            <div class="double">
+              <div>Price</div>
+              <div class="product-price">{{ item.price | money }}</div>
+          </div>
+          </div>
+        </div>
+     
+        <div class="item-quantity double">
+          <div> QUANTIY</div>
+          {% comment %} <span data-field="updates" class="quantity-button minus"><span>–</span></span> {% endcomment %}
+          <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+          <span class="quantity-wrap"></span>
+          <span data-field="updates" class="quantity-button plus">
+            {% comment %} <span class="addmore">+</span> {% endcomment %}
+            {% if cart.items.available %}
+            {% else %}
+            {% endif %}
+          </span>
+        </div>
+        <div class="double rem">
+          <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a> <span class="x">X</span></div>
+        </div>
+        {% unless item.product.options contains 'Title' %}
+          <!--Variations-->
+          <div class="double" style="display:none">
+            <div class="siz">SIZE</div>
+            <div class="siz">
+              {%- for option_title in item.product.options -%}
+                {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
+              {%- endfor -%}
+            </div>
+          </div>
+          <div class="double">
+            <div class="siz">SUBTOTAL</div>
+            <div class="siz">{{ item.line_price | money }}</div>
+          </div>
+        {% endunless %}
+
+      </div>
+    {% endfor %}
+
+  </form>
+{% else %}
+  <!--Empty Bag-->
+  <div class="menu-title cartie section-title">
+    <div class="big">YOUR CART IS CURRENTLY EMPTY</div>
+  </div>
+{% endif %}
+</div>
+<style>
+  .payment {
+      margin-top: 20px;
+      grid-column: 9/span 4;
+  }
+  .product-title {
+    grid-column: 1/ span 1;
+    padding: 5px;
+
+  } 
+.section-title{
+background:var(--yellow);
+}
+.thumb{
+margin-top: 2px;
+}
+  .total{
+    row-gap: 2px;
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    position: sticky;
+    top: 34px;
+}
+  }
+  .remove{
+    grid-column:span 2;
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .remove span{
+    text-align:right;
+  }
+
+  .rem:hover{
+    background-color:black;
+    color:white;
+  }
+
+  @media (max-width: 600px) {
+  .total {
+    position: sticky;
+    top: 63px;
+  }
+}
+</style>

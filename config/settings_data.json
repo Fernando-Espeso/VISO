@@ -1,0 +1,189 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "current": {
+    "favicon": "shopify:\/\/shop_images\/Matto_logo_black_775352c8-4f8a-4d94-82f9-10163a309835.png",
+    "sections": {
+      "hero": {
+        "type": "hero",
+        "blocks": {
+          "media_9Chkad": {
+            "type": "media",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/OchoaRocabert_TheBeast_SculpturalFloorLamp3.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "media_9Chkad"
+        ],
+        "settings": {
+        }
+      },
+      "klarna": {
+        "type": "klarna",
+        "blocks": {
+          "58575a22-e1ac-44bc-9c22-b31048ce56c2": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>PAY IN 3<\/p>",
+              "interior": "<p>PAY LATER IN 3 INTEREST-FREE INSTALLATIONS FREQUENTLY ASKED QUESTIONS<\/p><p> <\/p><p>KLARNA IS A SWEDISH PAYMENT SERVICE PROVIDER THAT TAKES END-TO-END RESPONSIBILITY FOR YOUR PAYMENT. KLARNA IS THE PROVIDER OF SMOOTH PAYMENTS TO MORE THAN 200,000 ONLINE STORES. OVER 85 MILLION CONSUMERS WORLDWIDE HAVE TRUSTED KLARNA TO SECURELY HANDLE THEIR PAYMENTS.<\/p><p> <\/p><p>HOW DOES PAY LATER IN 3 INTEREST-FREE INSTALMENTS WORK?<\/p><p> <\/p><p>PAY LATER IN 3 INTEREST-FREE INSTALLATIONS WILL ALLOW YOU TO SPREAD THE COST OF YOUR PURCHASE OVER 3 EQUAL PAYMENTS. THE PAYMENT FOR EACH INSTALLATION WILL AUTOMATICALLY BE COLLECTED FROM THE DEBIT OR CREDIT CARD YOU ENTERED AT CHECKOUT. YOUR FIRST INSTALLATION WILL BE COLLECTED WHEN YOUR ORDER IS CONFIRMED BY [MERCHANT] AND INSTALMENTS 2 AND 3 ARE SCHEDULED 30 AND 60 DAYS LATER, RESPECTIVELY. YOU CAN ALWAYS MONITOR YOUR PAYMENTS ’SCHEDULE IN THE KLARNA APP.<\/p><p> <\/p><p>AM I ELIGIBLE FOR PAY LATER IN 3 INTEREST-FREE INSTALMENTS?<\/p><p> <\/p><p>TO USE PAY LATER IN 3 INTEREST-FREE INSTALMENTS YOU MUST BE AT LEAST 18. WHILST THIS OPTION IS WIDELY PROMOTED, PAY LATER IN 3 INTEREST-FREE INSTALMENTS IS SUBJECT TO YOUR FINANCIAL CIRCUMSTANCES. WHEN CHOOSING PAY LATER IN 3 INTEREST-FREE INSTALMENTS, OUR ASSESSMENT WILL NOT AFFECT YOUR CREDIT RATING.<\/p><p> <\/p><p>HOW CAN I INCREASE MY CHANCES OF BEING ACCEPTED FOR PAY LATER IN 3 INTEREST-FREE INSTALMENTS?<\/p><p> <\/p><p>KLARNA IS UNIQUE AND OFFERS PAY LATER IN 3 INTEREST-FREE INSTALLATIONS BASED ON A NUMBER OF FACTORS SUCH AS THE ORDER VALUE, PREVIOUS ORDER HISTORY AND ITEM AVAILABILITY. IF YOU ARE 18 OR OVER, YOU CAN IMPROVE YOUR CHANCES OF BEING OFFERED PAY LATER IN 3 INTEREST-FREE INSTALMENTS BY ENSURING YOU PROVIDE YOUR FULL NAME AND ACCURATE ADDRESS DETAILS AND SHIPPING TO YOUR REGISTERED BILLING ADDRESS. ALL ORDERS ARE ASSESSED INDIVIDUALLY. JUST BECAUSE YOU HAVE BEEN ACCEPTED FOR A KLARNA PAYMENT METHOD BEFORE DOES NOT MEAN IT WILL BE OFFERED FOR EVERY ORDER AND IN TURN, AS IT IS DENIED DOES NOT MEAN IT WILL BE DENIED FOR ALL FUTURE ORDERS.<\/p><p> <\/p><p>WHAT DO I NEED TO PROVIDE WHEN I MAKE A PURCHASE?<\/p><p> <\/p><p>IF YOU WANT TO MAKE A PURCHASE WITH KLARNA USING PAY LATER IN 3 INTEREST-FREE INSTALMENTS, YOU'LL NEED TO PROVIDE YOUR MOBILE PHONE NUMBER, EMAIL ADDRESS, CURRENT BILLING ADDRESS AND A DEBIT OR CARD CARD. THE MOBILE NUMBER IS REQUIRED IN CASE WE NEED TO REACH YOU. ALL COMMUNICATIONS WILL BE SENT TO YOUR EMAIL ADDRESS. IT'S VERY IMPORTANT THAT YOU GIVE US THE CORRECT DETAILS, AS OTHERWISE YOU WILL NOT RECEIVE YOUR PAYMENT SCHEDULE AND ANY UPDATED ORDER INFORMATION.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "58575a22-e1ac-44bc-9c22-b31048ce56c2"
+        ],
+        "settings": {
+        }
+      },
+      "info": {
+        "type": "info",
+        "blocks": {
+          "summary_xAmpQq": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "",
+              "interior": "<p>Grutta collective is elseapertessum ta fachus w nonsim<\/p><p>Iuroatus convolibusa tris atissa cessis sci coti.<\/p>"
+            }
+          },
+          "text_UhPF78": {
+            "type": "text",
+            "settings": {
+              "title": ""
+            }
+          }
+        },
+        "block_order": [
+          "summary_xAmpQq",
+          "text_UhPF78"
+        ],
+        "settings": {
+        }
+      },
+      "aim": {
+        "type": "aim",
+        "blocks": {
+          "text_8H79DB": {
+            "type": "text",
+            "settings": {
+              "text": "A curated selection of talented designers reshaping the notion of collectible pieces"
+            }
+          }
+        },
+        "block_order": [
+          "text_8H79DB"
+        ],
+        "settings": {
+        }
+      },
+      "about": {
+        "type": "about",
+        "blocks": {
+          "text_rMrhj6": {
+            "type": "text",
+            "settings": {
+              "title": "<p>ANUNCIO DE NUEVO PRODUCTO<\/p>"
+            }
+          },
+          "summary_qYEhVC": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>SUBTITLE NEWS<\/p>",
+              "interior": "<p>INFORMACIÓN DE PRUEBA<\/p>",
+              "image": "shopify:\/\/shop_images\/Screenshot2024-01-28at02.04.47.png"
+            }
+          }
+        },
+        "block_order": [
+          "text_rMrhj6",
+          "summary_qYEhVC"
+        ],
+        "settings": {
+        }
+      },
+      "home-flick": {
+        "type": "home-flick",
+        "blocks": {
+          "image_gEjxaA": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IKB003000103Rana3-casaantillon_feedd08c-d6eb-4d86-9617-3af48057b5b4.jpg"
+            }
+          },
+          "image_BRPk3W": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IKB0030001025-casaantillon_a4030450-1c48-4a20-8197-9130db0e7dd3.jpg"
+            }
+          },
+          "image_aB4dgz": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ANATARA_01-AnaEhlis_de586df4-e2ec-4803-bcc1-1a71123655bf.png"
+            }
+          },
+          "image_FmLVy7": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/03-FranciscoJosePatricioJordanDeLaFuente_0f6ef202-7311-4ea4-b6e2-e3f2b0b3da85.jpg"
+            }
+          },
+          "image_LipwDz": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3P-L-02_-24-PabloBolumar_357f05f8-6439-4e36-ad3a-658c526d3d90.jpg"
+            }
+          },
+          "image_Tq4Bb6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/ANATARA_06-AnaEhlis_95ca80de-6c06-4aa6-ba2a-d8dfe6db5967.png"
+            }
+          },
+          "image_ghPYNp": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Kauani_021-InesInes_2ef60c46-53a5-4bd6-b675-1dac320529b8.jpg"
+            }
+          },
+          "image_CFxWiz": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Kauani_019-InesInes_f0ad6fee-85c4-437b-a60e-47cc768d4db5.jpg"
+            }
+          },
+          "image_QyyNpm": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Kauani_024-InesInes_e3bc553a-65a4-4bd9-88ee-c88e847a5fb6.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "image_gEjxaA",
+          "image_BRPk3W",
+          "image_aB4dgz",
+          "image_FmLVy7",
+          "image_LipwDz",
+          "image_Tq4Bb6",
+          "image_ghPYNp",
+          "image_CFxWiz",
+          "image_QyyNpm"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}

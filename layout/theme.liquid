@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+{% echo shop.name %}
+Design by Fernando Espeso
+Code by Fernando Espeso
+fernandoepeso.info
+{{ 'now' | date: "%Y" }}
+-->
+<html lang="{{ shop.locale }}" style="padding-bottom:0px;">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  {%- if template.name != "index" and template.name != "cart" -%}
+    <title>{{ shop.name }} — {{ page_title }}</title>
+  {%- elsif template.name == "cart" -%}
+    <title>{{ shop.name }} — {% if cart.item_count == 0 %}Empty {% endif %}Cart</title>
+  {%- else -%}
+    <title>{{ shop.name }}</title>
+  {%- endif -%}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <link rel="canonical" href="{{ canonical_url }}" />
+    <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}">
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}" />
+  {%- else -%}
+    <meta name="description" content="{{ shop.description }}" />
+  {%- endif -%}
+  {%- if template contains '404' or template contains 'cart' or template contains 'search' -%}
+    <meta name="robots" content="noindex">
+  {%- endif -%}
+  {{ 'style.css'  | asset_url | stylesheet_tag }}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  {{ 'current-device-browser.min.js' | asset_url | script_tag }}
+  {%- if template == 'product' -%}
+    {{ 'option_selection.js' | shopify_asset_url | script_tag }}
+  {%- endif -%}
+  {{ 'global.js' | asset_url | script_tag }}
+  {%- if template == "cart" and cart.item_count > 0 -%}
+    {{ 'global-cart.js' | asset_url | script_tag }}
+  {%- endif -%}
+  {%- if template == 'product' -%}
+    {{ '//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js' | script_tag }}
+    <link rel="preload" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  {%- endif -%}
+  {{ content_for_header }}
+</head>
+<body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
+             {%- if template.suffix.size > 0 -%}
+             template-{{ template.suffix }}(&nbsp;
+             {% endif %}
+             {%- if template == 'cart' and cart.item_count == 0 -%}
+             template-cart-empty
+             {%- endif -%}">
+    <!-- Header -->
+    {% comment %} {% if template contains 'collection' or template contains 'index' or template contains 'product' %} {% endcomment %}
+      <a href="/index" class="logo-home">
+      <svg id="uuid-495caa12-81b2-4d12-88a1-bb1de5f8f528" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="286.2" height="421.9" viewBox="0 0 286.2 421.9">
+      <defs>
+        <style>
+          .uuid-5c925622-630f-440b-9a45-6a34ecfaa8f7 {
+            stroke-width: 0px;
+          }
+        </style>
+      </defs>
+      <path class="uuid-5c925622-630f-440b-9a45-6a34ecfaa8f7" d="M173.2,278.6c0,19-15.4,34.4-34.4,34.4s-34.4-15.4-34.4-34.4H0c-.1,77.6,61.7,140.7,138.7,143.1,1.5,0,2.9.2,4.4.2,79.1,0,143.2-64.2,143.1-143.3h-113Z"/>
+      <path class="uuid-5c925622-630f-440b-9a45-6a34ecfaa8f7" d="M143.1,274.3h.2c74.3,0,134.7-59.2,136.9-133,0-1.4.2-2.8.2-4.2C280.4,61.4,219,0,143.3,0h-.2C67.5.1,6.2,61.5,6.2,137.1c0,1.4.2,2.8.2,4.2,2.2,73.7,62.5,132.8,136.7,133ZM143.1,102.9c17.3,0,31.3,14,31.3,31.3s-14,31.3-31.3,31.3-31.3-14-31.3-31.3,14-31.3,31.3-31.3Z"/>
+    </svg>
+  </a>
+  <span class="naming">GRUTTA</span>
+  {% comment %} {% endif %} {% endcomment %}
+    <header id="header">
+   
+      <div id="nav">
+        <div class="menu-open"><a>MENU</a></div>          
+        <div class="catalogue {% if template contains 'collection' %} active {% endif %}"><a href="/collections/all">CATALOGUE</a></div>
+        <div class="artist{% if request.path == '/blogs/artists' %} active{% endif %}"><a href="/blogs/artists">ARTISTS</a></div>
+        <div class="information{% if request.path == '/pages/information' %} active{% endif %}"><a href="/pages/information">INFORMATION</a></div>
+        <div class="cart-part {% if template == 'cart' %} active {% endif %}">
+          <li>
+            <a id="cart" href="/cart">
+              SHOPPING BAG <span class="cart-total">
+                {%- if cart.item_count == 0 -%}
+                  0
+                {%- else -%}
+                  {{- cart.item_count -}}
+                {%- endif -%}
+              </span>
+            </a>
+          </li>
+        </div>
+
+     
+        {% if template contains 'collection' %}
+          <div class="search">
+            <a>
+              <form autocomplete="off" action="{{ routes.search_url }}" style="display:flex;">
+               <input type="hidden" name="type" value="product">
+               <input type="text" placeholder="SEARCH PRODUCTS" name="q" value="{{ search.terms | escape }}">
+             </form>
+            </a>
+          </div>
+        <div class="categories">CATEGORIES <span>-<span></div>
+        <div class="list-cat">
+          {% for link in linklists.main-menu.links %}
+            <div id="cat" class="cat {% if link.active %} active {% endif %}" ><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></div>
+            {% endfor %} 
+        
+        </div>
+        
+        {% endif %}
+      </div>
+
+    </header>
+    {{ content_for_layout }}
+  <footer>
+    <div class="cred">
+© GRUTTA {{ 'now' | date: "%Y" }}</div>
+  </footer>
+  {%- if template contains 'product' -%}
+    {{ 'global-product.js' | asset_url | script_tag }}
+  {%- endif -%}
+  {%- if template == 'product' -%}
+	   {% render 'ajaxify-cart' %}
+     {%- endif -%}{% render 'mws_apo_init' %}
+</body>
+</html>

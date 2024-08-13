@@ -1,0 +1,25 @@
+<div class="section-title big">
+  {% if collection.all_products_count >= 10 %}
+  <div class="section">
+    {{ collection.all_products_count }}
+  </div>
+{% endif %}
+  {{ collection.title }}
+</div>
+
+
+<div id="products">
+  {% paginate collection.products by 10000 %}
+  {% for product in collection.products  %}
+		{% include 'product-body' %}
+  {% endfor %}
+{% endpaginate %}
+</div>
+
+
+<style>
+  form#product-actions {
+    height: 0px;
+    display: none;
+}
+</style>

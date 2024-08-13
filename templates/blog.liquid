@@ -1,0 +1,205 @@
+<div class="section-title big"><div class="section">{{ blog.articles.size }}</div>ARTISTS</div>
+<div class="artists">
+  <div class="block">
+    {% assign sorted_articles = blog.articles | sort: 'title' %}
+
+    {% for article in sorted_articles %}
+      <div class="artist-single">
+        <div class="title big">
+          <a href="{{ article.url }}">
+            {{ article.title }}      
+          </a>
+          <a class="thumbnail" href="{{ project_product.url }}">
+            {% for media in project_product.media %}
+              {% case media.media_type %}
+                {% when 'video' %}
+                  <div class="product-video">
+                    {{ media | video_tag: loop: true, autoplay: true, muted: true }}
+                  </div>
+              {% endcase %}
+            {% endfor %}
+            {% if project_product.images.size > 0 %}
+              <img id="none" class="lazy" src="{{ project_product.images[0] | product_img_url: 'thumb' }}" data-src="{{ project_product.images[0] | product_img_url: 'master' }}" alt="{{ project_product.title }}" />
+            {% endif %}
+          </a>
+          
+        </div>
+        
+        <div class="thumb" style="display:none">
+                <div style="background-color:transparent!important">
+                  {% if article.image %}
+                  <a href="{{ article.url }}" class="image"> 
+                    <img class="lazy" src="{{ article.image | product_img_url: 'thumb' }}" data-src="{{ article.image | product_img_url: 'master' }}" alt="{{ article.image.alt | escape }}">
+                  </a> 
+                  {% endif %}
+                </div> 
+          {% comment %} {% if article.metafields.custom.product %}
+              {% assign product_id = article.metafields.custom.product %}
+              {% assign project_product = all_products[product_id] %}
+              {% if project_product %}
+                <div class="product">
+           
+                  <div class="details">
+                    <div class="type">
+                      {{  article.metafields.custom.type }}
+                    </div>
+                    {% if article.metafields.custom.contact %}
+                      {{ article.metafields.custom.contact | metafield_tag }}
+                    {% endif %}
+                  </div>
+                  <div class="title">{{ project_product.title }}</div>
+                </div>
+              {% endif %}
+          {% endif %} {% endcomment %}
+        </div>
+      </div> 
+    {% endfor %}
+  </div> 
+</div>
+<style>
+  .artists{
+    position:relative;
+    margin-top:0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:2px;
+    row-gap:2px!important;
+    height: fit-content;
+  }
+  .thumb{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:20%;
+    pointer-events:none;
+    z-index;-1;
+  }
+  .artist-single:hover .thumb{
+    display:none!important;
+  }
+
+  .artists .block{
+    display: grid;
+    grid-gap:2px;
+    grid-column:2/span 1;
+    row-gap:2px!important;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .type{
+    background:transparent;
+  }
+  .product{
+    grid-column:span 1!important;  
+  }
+  .product .title{
+  padding:5px;
+  }
+  .details{
+    height: fit-content;
+    background: transparent !important;
+    grid-column: span 2;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 2px;
+  }
+  .metafield-rich_text_field > p {
+    background:var(--grey)!important;
+    padding:5px;
+  }
+  .metafield-rich_text_field > p:hover {
+    background: var(--red) !important;
+    color:white;
+}
+  .metafield-rich_text_field {
+    grid-column: span 1;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(1, 1fr);
+}
+  .artist-single {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
+    display: grid;
+    grid-gap: 2px;
+    height: fit-content;
+  }
+  .type{
+    padding:5px;
+    height:fit-content;
+  } 
+  .type .under{
+    text-align:left;
+  }
+  .artist-single >div {
+    background:var(--grey);
+    height:fit-content;
+  }
+  .big span{
+    font-size: var(--main);
+  }
+  .artists .big {
+    text-align:center;
+    padding: 20px 5px;
+    grid-column:span 2;
+    
+}
+.artists .big a{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.title.big:hover {
+  background-color: var(--red)!important;
+  color:white!important;
+}
+  .image {
+    padding-top:15px;
+    width:50%;
+    margin: 0 auto;
+  }
+  
+  .section-title{
+    color: white;
+    background-color: var(--red);
+    grid-column: span 12;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 2px;
+    text-transform:uppercase;
+    margin-bottom: 2px;
+  }
+
+  @media (max-width: 1200px) {
+
+    .artists {
+      grid-template-columns: repeat(6, 1fr);
+
+  }
+  .artists .block {
+    grid-column: 3 / span 2;
+}
+
+}
+@media (max-width: 900px) {
+  .artists .block {
+    grid-column: 2 / span 4;
+}
+}
+@media (max-width: 600px) {
+
+      .artists {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .artists .block {
+      display: grid;
+      grid-gap: 2px;
+      grid-column: span 1;
+      row-gap: 2px !important;
+      grid-template-columns: repeat(1, 1fr);
+  }
+.artist-in {
+    grid-column: span 12;
+}
+}
+
+</style>
