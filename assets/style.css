@@ -459,12 +459,12 @@ section#stocklist {
 }
 section#stocklist .section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap:5px;
 }
 section#stocklist .sec {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap:5px;
   font-size: var(--main);
 }
