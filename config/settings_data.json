@@ -68,7 +68,8 @@
             "settings": {
               "subtitle": "<p><a href=\"\/products\/one-product\" title=\"Quilt Blanket VTS 0101\">The Art of Quilting<\/a><\/p>",
               "interior": "<p>We collaborated with the award-wining Thompson Street Studio to create an exclusive limited edition collection of hand-stitched quilts. Thompson Street Studio X Visø presents a modern take on an ancient craft of patchwork quilting. Each quilt is made out of pieced organic 100% linen and cotton remnant fabric.<\/p>",
-              "image": "shopify:\/\/shop_images\/Emura_VisoFeb2024_Final-1024x1024.jpg"
+              "image": "shopify:\/\/shop_images\/Emura_VisoFeb2024_Final-1024x1024.jpg",
+              "title": ""
             }
           },
           "summary_cdKMwT": {
@@ -76,7 +77,8 @@
             "settings": {
               "subtitle": "<p>Our Tapestry Capsule<\/p>",
               "interior": "<p>The technique used to create our throws is part of a family heritage of devoted artists, carried through generations keeping the European wall tapestry style in place. The outcome of this collaboration is an exceptional textile with high definition artwork that has history woven into every inch.<\/p>",
-              "image": "shopify:\/\/shop_images\/hamaca-01-1024x1024.jpg"
+              "image": "shopify:\/\/shop_images\/hamaca-01-1024x1024.jpg",
+              "title": "Chair"
             }
           },
           "summary_axXepz": {
@@ -84,7 +86,8 @@
             "settings": {
               "subtitle": "<p>Our Porcelan<\/p>",
               "interior": "<p>Our porcelain series place the emphasis on expert craftsmanship and high quality. Eclectic and distinct artifacts crafted by artisans in Europe in the most fine porcelain. Bold hues adorn the pieces, which are consciously produced in limited units, for the ultimate in exclusive luxury. Juxtaposition of textures or patterns create bold statement pieces, making it the perfect accent for home, office or an ideal gift.<\/p>",
-              "image": "shopify:\/\/shop_images\/Viso_Project_V171_Tuerca_Cup_Set_1.gif"
+              "image": "shopify:\/\/shop_images\/Viso_Project_V171_Tuerca_Cup_Set_1.gif",
+              "title": ""
             }
           }
         },
