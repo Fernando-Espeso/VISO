@@ -200,18 +200,25 @@
               "Location": "<p>Denmark<\/p>"
             }
           },
-          "summary_n3n9rk": {
+          "summary_tMhpUP": {
             "type": "summary",
             "settings": {
-              "Name": "",
+              "Name": "<p>A.Plus Store<\/p>",
               "Location": ""
             }
           },
           "summary_yy8gxa": {
             "type": "summary",
             "settings": {
-              "Name": "",
+              "Name": "<p>Rootine Life<\/p>",
               "Location": ""
+            }
+          },
+          "summary_qbDGYP": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Voo Store Berlin<\/p>",
+              "Location": "<p>Germany<\/p>"
             }
           }
         },
@@ -222,8 +229,9 @@
           "summary_FPdUA4",
           "summary_QNxjJP",
           "summary_PgwGTh",
-          "summary_n3n9rk",
-          "summary_yy8gxa"
+          "summary_tMhpUP",
+          "summary_yy8gxa",
+          "summary_qbDGYP"
         ],
         "settings": {
         }
