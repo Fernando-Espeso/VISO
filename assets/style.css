@@ -287,6 +287,7 @@ select:disabled {
   }
 
   .categories{
+    column-count: 2;
     flex-basis: 100%;
     color: grey;
     line-height:var(--lh);
