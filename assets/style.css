@@ -462,6 +462,12 @@ section#stocklist .section {
   grid-template-columns: repeat(2, 1fr);
   grid-gap:5px;
 }
+section#stocklist .sec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:5px;
+  font-size: var(--main);
+}
 
 .stocklist {
   line-height: 32px;
