@@ -7,6 +7,8 @@
           <div class="section-title big">
             <div class="section">{{ collection.all_products_count }}</div>{{ collection.title }}
           </div>
+          <p class="info-collection">{{ collection.description }}</p>
+
           <a href="{{ collection.url }}">
             <img src="{{ collection.image | collection_img_url: 'master' }}" alt="{{ collection.title }}">
           </a>
