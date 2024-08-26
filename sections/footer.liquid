@@ -1,0 +1,17 @@
+{% schema %}
+{
+  "name": "Global Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "global_text_content",
+      "label": "Global Text",
+      "default": "Add your custom text here"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="global-text-section">
+  <p>{{ section.settings.global_text_content }}</p>
+</div>
