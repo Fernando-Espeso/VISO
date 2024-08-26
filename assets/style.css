@@ -448,8 +448,14 @@ footer {
   margin-top: auto;
 }
 
-
-section#stocklist > div {}
+section#stocklist {
+  grid-column: span 4;
+}
+section#stocklist .section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:5px;
+}
 
 
 
