@@ -7,7 +7,7 @@
     {% case block.type %}
         {% when 'summary' %}
         {% unless block.settings.subtitle and block.settings.interior  == blank %}
-          <div>
+          <div class="section">
             <div class="name">{{ block.settings.Name }}</div>
             <div class="location">{{ block.settings.Location }}</div>
           </div>

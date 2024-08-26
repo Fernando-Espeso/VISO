@@ -448,6 +448,11 @@ footer {
   margin-top: auto;
 }
 
+
+section#stocklist > div {}
+
+
+
 /* About styles */
 @media (max-width: 1200px) {
 }
