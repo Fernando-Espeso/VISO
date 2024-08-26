@@ -293,6 +293,12 @@
         "type": "main-product",
         "settings": {
         }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "global_text_content": "FOOTER DE PRUEBA"
+        }
       }
     },
     "content_for_index": [
