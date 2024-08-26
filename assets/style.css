@@ -226,15 +226,12 @@ select:disabled {
   }
   #nav{
     text-transform: uppercase;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
     grid-gap: 2px;
     
   }
   #nav > div{
     padding: 5px;
-    background-color: black;
-    color: white;
     grid-column: span 3;
   }
   .intro {
