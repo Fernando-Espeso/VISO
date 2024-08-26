@@ -227,6 +227,27 @@
               "Name": "<p>Voo Store Berlin<\/p>",
               "Location": "<p>Germany<\/p>"
             }
+          },
+          "summary_AJnNyd": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Corso Como Milan<\/p>",
+              "Location": ""
+            }
+          },
+          "summary_d8RGNV": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>La Rinascente<\/p>",
+              "Location": ""
+            }
+          },
+          "summary_ymyQY8": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Luisa Via Roma<\/p>",
+              "Location": "<p>Italy<\/p>"
+            }
           }
         },
         "block_order": [
@@ -239,7 +260,10 @@
           "summary_PgwGTh",
           "summary_tMhpUP",
           "summary_yy8gxa",
-          "summary_qbDGYP"
+          "summary_qbDGYP",
+          "summary_AJnNyd",
+          "summary_d8RGNV",
+          "summary_ymyQY8"
         ],
         "settings": {
         }
