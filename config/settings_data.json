@@ -50,7 +50,7 @@
           "text_8H79DB": {
             "type": "text",
             "settings": {
-              "text": "A curated selection of talented designers reshaping the notion of collectible pieces"
+              "text": ""
             }
           }
         },
@@ -286,6 +286,11 @@
           "summary_ymyQY8",
           "summary_Cz6MiG"
         ],
+        "settings": {
+        }
+      },
+      "main-product": {
+        "type": "main-product",
         "settings": {
         }
       }
