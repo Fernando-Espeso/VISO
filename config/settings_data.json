@@ -50,7 +50,7 @@
           "text_8H79DB": {
             "type": "text",
             "settings": {
-              "text": "A curated selection of talented designers reshaping the notion of collectible pieces"
+              "text": ""
             }
           }
         },
@@ -63,12 +63,6 @@
       "about": {
         "type": "about",
         "blocks": {
-          "text_emzcUt": {
-            "type": "text",
-            "settings": {
-              "title": "<p>Quilt Pillow VTS 0101<\/p>"
-            }
-          },
           "summary_mQx6KV": {
             "type": "summary",
             "settings": {
@@ -77,17 +71,27 @@
               "image": "shopify:\/\/shop_images\/Emura_VisoFeb2024_Final-1024x1024.jpg"
             }
           },
-          "text_aKYJwx": {
-            "type": "text",
+          "summary_cdKMwT": {
+            "type": "summary",
             "settings": {
-              "title": ""
+              "subtitle": "<p>Our Tapestry Capsule<\/p>",
+              "interior": "<p>The technique used to create our throws is part of a family heritage of devoted artists, carried through generations keeping the European wall tapestry style in place. The outcome of this collaboration is an exceptional textile with high definition artwork that has history woven into every inch.<\/p>",
+              "image": "shopify:\/\/shop_images\/hamaca-01-1024x1024.jpg"
+            }
+          },
+          "summary_axXepz": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>Our Porcelan<\/p>",
+              "interior": "<p>Our porcelain series place the emphasis on expert craftsmanship and high quality. Eclectic and distinct artifacts crafted by artisans in Europe in the most fine porcelain. Bold hues adorn the pieces, which are consciously produced in limited units, for the ultimate in exclusive luxury. Juxtaposition of textures or patterns create bold statement pieces, making it the perfect accent for home, office or an ideal gift.<\/p>",
+              "image": "shopify:\/\/shop_images\/Viso_Project_V171_Tuerca_Cup_Set_1.gif"
             }
           }
         },
         "block_order": [
-          "text_emzcUt",
           "summary_mQx6KV",
-          "text_aKYJwx"
+          "summary_cdKMwT",
+          "summary_axXepz"
         ],
         "settings": {
         }
@@ -282,6 +286,11 @@
           "summary_ymyQY8",
           "summary_Cz6MiG"
         ],
+        "settings": {
+        }
+      },
+      "main-product": {
+        "type": "main-product",
         "settings": {
         }
       }
