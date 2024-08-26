@@ -471,7 +471,7 @@ section#stocklist .sec {
 
 .stocklist {
   line-height:var(--lh);
-  font-size:  var(--big)!important;
+  font-size: clamp(var(--big), 1.2vw, 1.4rem);
   grid-column: span 19;
 }
 
