@@ -309,6 +309,8 @@ select:disabled {
   }
 
   .search{
+    line-height:var(--lh);
+    font-size: clamp(var(--big), 1.5vw, 2rem); 
     height: fit-content;
     order: 2;
     background-color: var(--grey) !important;
