@@ -455,12 +455,12 @@ section#stocklist {
 }
 section#stocklist .section {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap:5px;
 }
 
 .stocklist {
-  line-height: 28px;
+  line-height: 32px;
   font-size: 28px !important;
   grid-column: span 19;
 }
