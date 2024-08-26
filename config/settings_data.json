@@ -177,15 +177,22 @@
           "summary_YE9K9i": {
             "type": "summary",
             "settings": {
-              "Name": "",
-              "Location": ""
+              "Name": "<p>Goodee<\/p>",
+              "Location": "<p>Canada<\/p>"
             }
           },
           "summary_FPdUA4": {
             "type": "summary",
             "settings": {
-              "Name": "",
+              "Name": "<p>Ssense<\/p>",
               "Location": ""
+            }
+          },
+          "summary_XQXgqF": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Simons<\/p>",
+              "Location": "<p>Canada<\/p>"
             }
           },
           "summary_eHY3we": {
@@ -222,6 +229,7 @@
           "summary_eaYyyz",
           "summary_YE9K9i",
           "summary_FPdUA4",
+          "summary_XQXgqF",
           "summary_eHY3we",
           "summary_PgwGTh",
           "summary_n3n9rk",
