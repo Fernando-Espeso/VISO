@@ -7,10 +7,10 @@
     {% case block.type %}
         {% when 'summary' %}
         {% unless block.settings.subtitle and block.settings.interior  == blank %}
-          <details>
-            <summary>{{ block.settings.subtitle }}</summary>
-            <div class="interior">{{ block.settings.interior }}</div>
-          </details>
+          <div>
+            <div class="name">{{ block.settings.subtitle }}</div>
+            <div class="location">{{ block.settings.interior }}</div>
+          </div>
         {% endunless %}
     {% endcase %}
   {% endfor %}
@@ -26,12 +26,12 @@
         {
           "type": "richtext",
           "id": "Name",
-          "label": "Subtitle"
+          "label": "Name"
         },
         {
           "type": "richtext",
           "id": "Location",
-          "label": "Interior"
+          "label": "Location"
         }
       ]
     }
