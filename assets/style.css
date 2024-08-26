@@ -277,7 +277,9 @@ select:disabled {
     transition: height 2s ease;
   }
 
-  
+  .categories{
+    display: none;;
+  }
 
   .cart-part{
     display: flex;
