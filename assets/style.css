@@ -482,6 +482,7 @@ section#stocklist .sec {
   font-size: clamp(var(--big), 1.5vw, 2rem); 
 }
 p.info-collection{
+  color: grey;
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem); 
 }
