@@ -466,7 +466,7 @@ section#stocklist .sec {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap:5px;
-  font-size: var(--main);
+  font-size: clamp(var(--main), 0.75vw, 1rem);
 }
 
 
