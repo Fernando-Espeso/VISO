@@ -6,7 +6,7 @@
 {% endif %}
   {{ collection.title }}
 </div>
-<p class="info-collection">{{ collection.description }}</p>
+<p class="info-collection">{{ collection.description | strip_html }}</p>
 
 <div id="products">
   {% paginate collection.products by 10000 %}
