@@ -217,8 +217,10 @@ select:disabled {
 /* header */
   #header{
     position: sticky;
-    top: 5px;
+    top: 0px;
+    background-color: white;
     z-index: 10;
+    padding: 10px 0px;
   }
   .menu-open{
     display: none;
