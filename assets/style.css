@@ -174,6 +174,7 @@ select {
   grid-gap: 2px;
 }
 .news-content img{
+  margin-top: 20px;
   grid-column: 2/span 1;
 }
 .news-content .view{
