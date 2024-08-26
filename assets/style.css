@@ -229,6 +229,7 @@ select:disabled {
   .menu-open{
     display: none;
   }
+
   #nav{
     align-items: center;
     text-transform: uppercase;
@@ -473,9 +474,13 @@ section#stocklist .sec {
 .stocklist {
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem);
-  grid-column: span 19;
+  grid-column: span 12;
 }
+.section-title.big {
+  line-height:var(--lh);
+  font-size: clamp(var(--big), 1.5vw, 2rem); 
 
+}
 /* About styles */
 @media (max-width: 1200px) {
 }
