@@ -115,7 +115,7 @@ td {
 svg{
   width: 215px;
   align-self: flex-end;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 
 input,
@@ -226,11 +226,10 @@ select:disabled {
   #nav{
     text-transform: uppercase;
     display: flex;
-    grid-gap: 2px;
+    grid-gap: 15px;
     
   }
   #nav > div{
-    padding: 5px;
     grid-column: span 3;
   }
   .intro {
