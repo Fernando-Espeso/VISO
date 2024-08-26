@@ -427,7 +427,6 @@ a {
 }
 
 #products {
-  margin-top: 100px;
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -478,6 +477,7 @@ section#stocklist .sec {
   grid-column: span 12;
 }
 .section-title.big {
+  margin-top: 100px;
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem); 
 
