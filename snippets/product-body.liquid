@@ -87,7 +87,22 @@
       <div class="product-title">
         <a href="{{ product.url }}">{{ product.title }}</a>
       </div>
-  
+      <div class="product-price">
+        {% if product.available %}
+        {% if product.price_varies %}
+        <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
+        {% else %}
+        {% if product.compare_at_price > product.price %}
+        <s>{{ product.compare_at_price | money }}</s>
+        <span class="red">{{ product.price | money }}</span>
+        {% else %}
+        <span>{{ product.price | money }}</span>
+        {% endif %}
+        {% endif %}
+        {% else %}
+        <span>{{ product.price | money }}</span>
+        {% endif %}
+      </div>
 
       <form id="product-actions"
       action="/cart/add"
