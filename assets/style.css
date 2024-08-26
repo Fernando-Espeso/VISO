@@ -173,15 +173,16 @@ select {
   display: grid;
   grid-gap: 2px;
 }
+.news-content img{
+  grid-column: 2/span 1;
+}
 .news-content .view{
   grid-column: span 3;
 }
 .view{
   text-align: center;
-  background-color: var(--grey);
   height: fit-content;
   grid-column: span 12;
-  padding: 5px;
 }
 .view:hover{
   background-color: black;
@@ -195,7 +196,7 @@ select {
   font-size: clamp(var(--big), 1.5vw, 2rem);
   text-align: center;
   line-height: 120%;
-  padding: 30px;
+  padding: 0px 30px;
 
 }
 .news-content .view{
