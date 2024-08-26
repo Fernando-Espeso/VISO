@@ -17,7 +17,6 @@
           "media_9Chkad": {
             "type": "media",
             "settings": {
-              "image": "shopify:\/\/shop_images\/OchoaRocabert_TheBeast_SculpturalFloorLamp3.jpg"
             }
           }
         },
@@ -73,8 +72,7 @@
             "type": "summary",
             "settings": {
               "subtitle": "<p>SUBTITLE NEWS<\/p>",
-              "interior": "<p>INFORMACIÓN DE PRUEBA<\/p>",
-              "image": "shopify:\/\/shop_images\/Screenshot2024-01-28at02.04.47.png"
+              "interior": "<p>INFORMACIÓN DE PRUEBA<\/p>"
             }
           }
         },
@@ -188,20 +186,6 @@
               "Location": ""
             }
           },
-          "summary_XQXgqF": {
-            "type": "summary",
-            "settings": {
-              "Name": "<p>Simons<\/p>",
-              "Location": "<p>Canada<\/p>"
-            }
-          },
-          "summary_eHY3we": {
-            "type": "summary",
-            "settings": {
-              "Name": "",
-              "Location": ""
-            }
-          },
           "summary_QNxjJP": {
             "type": "summary",
             "settings": {
@@ -212,8 +196,8 @@
           "summary_PgwGTh": {
             "type": "summary",
             "settings": {
-              "Name": "",
-              "Location": ""
+              "Name": "<p>Paustian<\/p>",
+              "Location": "<p>Denmark<\/p>"
             }
           },
           "summary_n3n9rk": {
@@ -236,8 +220,6 @@
           "summary_eaYyyz",
           "summary_YE9K9i",
           "summary_FPdUA4",
-          "summary_XQXgqF",
-          "summary_eHY3we",
           "summary_QNxjJP",
           "summary_PgwGTh",
           "summary_n3n9rk",
