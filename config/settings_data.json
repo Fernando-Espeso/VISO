@@ -63,12 +63,6 @@
       "about": {
         "type": "about",
         "blocks": {
-          "text_emzcUt": {
-            "type": "text",
-            "settings": {
-              "title": "<p>Quilt Pillow VTS 0101<\/p>"
-            }
-          },
           "summary_mQx6KV": {
             "type": "summary",
             "settings": {
@@ -80,12 +74,11 @@
           "text_aKYJwx": {
             "type": "text",
             "settings": {
-              "title": ""
+              "title": "<p>heloos<\/p>"
             }
           }
         },
         "block_order": [
-          "text_emzcUt",
           "summary_mQx6KV",
           "text_aKYJwx"
         ],
