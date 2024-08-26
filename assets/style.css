@@ -285,7 +285,12 @@ select:disabled {
     display: none; 
     transition: height 2s ease;
   }
-
+  a.logo-home {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
   .categories{
     column-count: 3;
     flex-basis: 100%;
