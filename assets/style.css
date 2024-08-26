@@ -180,6 +180,7 @@ select {
 
 .news-content .title-seccion.big{
   grid-column: span 2;
+  font-size: clamp(var(--big), 1.5vw, 2rem); 
   text-align: center;
 
 }
