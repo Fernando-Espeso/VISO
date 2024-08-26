@@ -1,7 +1,7 @@
 <section
-  data-section-id="desplegable"
-  id="desplegable"
-  class="desplegable"
+  data-section-id="stocklist"
+  id="stocklist"
+  class="stocklist"
 >
   {% for block in section.blocks %}
     {% case block.type %}
@@ -23,7 +23,7 @@
 </section>
 {% schema %}
 {
-  "name": "INFO-BLOCK",
+  "name": "Stockist",
   "blocks": [
     {
       "type": "text",
@@ -38,7 +38,7 @@
     },
     {
       "type": "summary",
-      "name": "Section",
+      "name": "Location",
       "settings": [
         {
           "type": "richtext",
@@ -55,7 +55,7 @@
   ],
   "presets": [
   {
-    "name": "INFO-BLOCK"
+    "name": "Stockist"
   }
 ]
 }
