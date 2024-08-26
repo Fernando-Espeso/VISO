@@ -176,6 +176,7 @@ select {
 .news-content img{
   margin-top: 20px;
   grid-column: 2/span 1;
+  
 }
 .news-content .view{
   grid-column: span 3;
