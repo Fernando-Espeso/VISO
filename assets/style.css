@@ -179,10 +179,11 @@ select {
 }
 
 .news-content .title-seccion.big{
-  grid-column: span 2;
-  font-size: clamp(var(--big), 1.5vw, 2rem); 
+  grid-column: span 3;
+  font-size: clamp(var(--big), 1.5vw, 2rem);
   text-align: center;
-  line-height: var(--lh);
+  line-height: 120%;
+  padding: 30px;
 
 }
 div#shopify-section-hero img {
