@@ -309,6 +309,7 @@ select:disabled {
   }
 
   .search-input{
+    font-weight: 300;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem)!important;; 
     height: fit-content;
