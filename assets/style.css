@@ -481,8 +481,7 @@ section#stocklist .sec {
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem); 
 }
-.info-collection{
-  margin-top: 100px;
+p.info-collection{
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem); 
 }
