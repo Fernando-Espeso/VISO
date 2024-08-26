@@ -263,9 +263,6 @@ select:disabled {
     background-color: #000;
     color: #fff;
   }
-  #nav > div{
-    background-color: black;
-  }
   .image-container {
     padding-top: 10px;
     height: auto;
