@@ -44,30 +44,6 @@
         "settings": {
         }
       },
-      "info": {
-        "type": "info",
-        "blocks": {
-          "summary_xAmpQq": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "",
-              "interior": "<p>Grutta collective is elseapertessum ta fachus w nonsim<\/p><p>Iuroatus convolibusa tris atissa cessis sci coti.<\/p>"
-            }
-          },
-          "text_UhPF78": {
-            "type": "text",
-            "settings": {
-              "title": ""
-            }
-          }
-        },
-        "block_order": [
-          "summary_xAmpQq",
-          "text_UhPF78"
-        ],
-        "settings": {
-        }
-      },
       "aim": {
         "type": "aim",
         "blocks": {
@@ -177,6 +153,79 @@
           "image_ghPYNp",
           "image_CFxWiz",
           "image_QyyNpm"
+        ],
+        "settings": {
+        }
+      },
+      "stocklist": {
+        "type": "stocklist",
+        "blocks": {
+          "summary_h6fe97": {
+            "type": "summary",
+            "settings": {
+              "Name": "",
+              "Location": ""
+            }
+          },
+          "summary_eaYyyz": {
+            "type": "summary",
+            "settings": {
+              "Name": "",
+              "Location": ""
+            }
+          },
+          "summary_YE9K9i": {
+            "type": "summary",
+            "settings": {
+              "Name": "",
+              "Location": ""
+            }
+          },
+          "summary_FPdUA4": {
+            "type": "summary",
+            "settings": {
+              "Name": "",
+              "Location": ""
+            }
+          },
+          "summary_eHY3we": {
+            "type": "summary",
+            "settings": {
+              "Name": "",
+              "Location": ""
+            }
+          },
+          "summary_PgwGTh": {
+            "type": "summary",
+            "settings": {
+              "Name": "",
+              "Location": ""
+            }
+          },
+          "summary_n3n9rk": {
+            "type": "summary",
+            "settings": {
+              "Name": "",
+              "Location": ""
+            }
+          },
+          "summary_yy8gxa": {
+            "type": "summary",
+            "settings": {
+              "Name": "",
+              "Location": ""
+            }
+          }
+        },
+        "block_order": [
+          "summary_h6fe97",
+          "summary_eaYyyz",
+          "summary_YE9K9i",
+          "summary_FPdUA4",
+          "summary_eHY3we",
+          "summary_PgwGTh",
+          "summary_n3n9rk",
+          "summary_yy8gxa"
         ],
         "settings": {
         }
