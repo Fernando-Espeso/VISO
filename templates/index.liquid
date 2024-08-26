@@ -14,30 +14,7 @@
   
  
   {% section 'about' %}
-  <div class="collections">
-    {% assign filtered_collections = collections | where_exp: "collection", "collection.title != 'SPECIAL' and collection.title != 'ALL'" %}
-    {% assign sorted_collections = filtered_collections | sort: 'title' %}
-    
-    {% assign count = 0 %}
-    
-    {% for collection in sorted_collections %}
-      {% if count < 3 %}
-        {% unless collection.title == 'ALL' or collection.title == 'SPECIAL' %}
-          <div class="collection">
-            <div class="section-title big" style="margin-bottom:2px">
-              <div class="section">{{ collection.all_products_count }}</div>{{ collection.title }}
-            </div>
-            <a href="{{ collection.url }}">
-              <img src="{{ collection.image | collection_img_url: 'master' }}" alt="{{ collection.title }}">
-            </a>
-          </div>
-          {% assign count = count | plus: 1 %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
-    
-    
-  </div>
+
 </div>
 <style>
 .loader{
@@ -89,6 +66,7 @@
 display: none!important;}
 .view{
   text-align: center;
+  background-color: var(--grey);
   height: fit-content;
   grid-column: span 12;
   padding: 5px;
