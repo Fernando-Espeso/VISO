@@ -451,6 +451,12 @@ footer {
 section#stocklist {
   grid-column: span 4;
 }
+.stocklist {
+  grid-column: span 6;
+}
+.location {
+  color: grey;
+}
 section#stocklist .section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
