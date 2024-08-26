@@ -63,23 +63,10 @@
       "about": {
         "type": "about",
         "blocks": {
-          "text_rMrhj6": {
-            "type": "text",
-            "settings": {
-              "title": "<p>ANUNCIO DE NUEVO PRODUCTO<\/p>"
-            }
-          },
-          "summary_qYEhVC": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "<p>SUBTITLE NEWS<\/p>",
-              "interior": "<p>INFORMACIÓN DE PRUEBA<\/p>"
-            }
-          },
           "text_emzcUt": {
             "type": "text",
             "settings": {
-              "title": ""
+              "title": "<p>Quilt Pillow VTS 0101<\/p>"
             }
           },
           "summary_mQx6KV": {
@@ -92,8 +79,6 @@
           }
         },
         "block_order": [
-          "text_rMrhj6",
-          "summary_qYEhVC",
           "text_emzcUt",
           "summary_mQx6KV"
         ],
