@@ -469,6 +469,7 @@ section#stocklist .sec {
   font-size: var(--main);
 }
 
+
 .stocklist {
   line-height:var(--lh);
   font-size: clamp(var(--big), 2vw, 1.8rem);
