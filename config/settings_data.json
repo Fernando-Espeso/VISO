@@ -186,10 +186,17 @@
               "Location": ""
             }
           },
+          "summary_NYyPtJ": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Just Luxe<\/p>",
+              "Location": ""
+            }
+          },
           "summary_QNxjJP": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Just Luxe, The Beast<\/p>",
+              "Name": "<p>The Beast<\/p>",
               "Location": "<p>China<\/p>"
             }
           },
@@ -227,6 +234,7 @@
           "summary_eaYyyz",
           "summary_YE9K9i",
           "summary_FPdUA4",
+          "summary_NYyPtJ",
           "summary_QNxjJP",
           "summary_PgwGTh",
           "summary_tMhpUP",
