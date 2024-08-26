@@ -5,35 +5,12 @@
   --big: 24px;
   --medium: 18px;
   --gap: 10px;
-  --blue:#3b5cf3;
-  --red: #ff1620;
-  --red-light: #fd584f;
-  --yellow: #eadb52;
   --grey: #f1f2f2;
-  --body: 'CircularXXWeb-Regular';
-  --headers: 'Kamerik105-Book'; 
+  --body: 'helvetica';
 }
 ::selection{
   color:var(--blue);
   background-color: black;
-}
-
-.ui-admin-bar__content {
-  display: none!important;
-}
-.product-title a{
-  display:block;
-  width:100%;
-}
-
-.product-title:hover{
-  background-color:black!important;
-  color:white;
-}
-
-p > a{
-  display:block!important;
-  width:100%!important;
 }
 .ui-admin-bar--is-collapsed .ui-admin-bar__content {
   padding: 0;
@@ -42,12 +19,13 @@ p > a{
 }
 /* Fonts */
 @font-face {
-  font-family: 'CircularXXWeb-Regular';
-  src: url('../assets/CircularXXWeb-Regular.woff2') format('woff2'),
-       url('../assets/CircularXXWeb-Regular.woff') format('woff');
+  font-family: 'helvetica';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+.product {
+  grid-column: span 3;
 }
 
 @font-face {
@@ -168,12 +146,6 @@ select {
   font-size:var(--main)!important;
 }
 
-
-div#shopify-section-hero {
-  grid-column: span 12;
-}
-
-
 .hero{
   position: relative;
   width: 100%;
@@ -182,6 +154,7 @@ div#shopify-section-hero {
 .hero{
   grid-column: span 12;
   }
+
 .hero .simple-text{
   margin-top: 2px;
   margin-bottom: 2px;
@@ -433,11 +406,7 @@ a {
   width: 100%;
   display: block;
 }
-.item {
-  display: grid;
-  row-gap: 2px;
-  grid-template-columns: repeat(1, 1fr);
-}
+
 
 
 
@@ -462,15 +431,6 @@ a {
   grid-template-columns: repeat(12, 1fr);
   grid-gap:2px;
 }
-.collections{
-  grid-column: span 12;
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap:2px;
-}
-
-
 
 .sold-out {
   padding: 5px;
@@ -486,14 +446,6 @@ footer {
   align-items: end;
   padding: 5px;
   margin-top: auto;
-}
-.menu-title.cartie {
-  height: fit-content;
-}
-.onsale {
-  color: white;
-  padding: 5px;
-  background-color: var(--blue);
 }
 
 /* About styles */
