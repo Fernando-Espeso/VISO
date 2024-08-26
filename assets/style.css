@@ -288,6 +288,9 @@ select:disabled {
 
   .categories{
     flex-basis: 100%;
+    color: grey;
+    line-height:var(--lh);
+    font-size: clamp(var(--big), 1.5vw, 2rem); 
   }
 
   .cart-part{
