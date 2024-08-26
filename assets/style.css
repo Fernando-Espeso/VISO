@@ -287,13 +287,14 @@ select:disabled {
   }
 
   .categories{
-    column-count: 2;
+    column-count: 3;
     flex-basis: 100%;
-    color: grey;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem); 
   }
-
+  .categories a.active{
+    color: grey;
+  }
   .cart-part{
     display: flex;
     justify-content: space-between;
