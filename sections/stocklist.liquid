@@ -3,6 +3,11 @@
   id="stocklist"
   class="stocklist"
 >
+  <div class="sec">
+    <div class="name">Place</div>
+    <div class="location">Location</div>
+  </div>
+
   {% for block in section.blocks %}
     {% case block.type %}
         {% when 'summary' %}
