@@ -248,6 +248,13 @@
               "Name": "<p>Luisa Via Roma<\/p>",
               "Location": "<p>Italy<\/p>"
             }
+          },
+          "summary_Cz6MiG": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Journal Standard Furniture<\/p>",
+              "Location": "<p>Japan<\/p>"
+            }
           }
         },
         "block_order": [
@@ -263,7 +270,8 @@
           "summary_qbDGYP",
           "summary_AJnNyd",
           "summary_d8RGNV",
-          "summary_ymyQY8"
+          "summary_ymyQY8",
+          "summary_Cz6MiG"
         ],
         "settings": {
         }
