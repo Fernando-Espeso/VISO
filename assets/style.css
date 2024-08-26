@@ -402,7 +402,6 @@ a {
     grid-column: span 12;
 }
 #header a{
-  width: 100%;
   display: block;
 }
 
