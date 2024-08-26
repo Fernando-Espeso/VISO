@@ -317,6 +317,7 @@ select:disabled {
   }
 
   input{
+    font-weight: 300;
     width: 100%;
     overflow: visible;
     background-color: var(--grey!);
