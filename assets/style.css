@@ -147,12 +147,12 @@ select {
 
 .hero{
   position: relative;
-  width: 100%;
+  width: 500px;
+  margin: 0 auto;
   height: 100%;
-}
-.hero{
   grid-column: span 12;
-  }
+
+}
 
 .hero .simple-text{
   margin-top: 2px;
