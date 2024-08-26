@@ -17,6 +17,7 @@
           "media_9Chkad": {
             "type": "media",
             "settings": {
+              "image": "shopify:\/\/shop_images\/VWB0101_Viso_Project_New_York_Wool_Blanket_White_Arles_1-1024x1024.jpg"
             }
           }
         },
@@ -62,23 +63,24 @@
       "about": {
         "type": "about",
         "blocks": {
-          "text_rMrhj6": {
+          "text_emzcUt": {
             "type": "text",
             "settings": {
-              "title": "<p>ANUNCIO DE NUEVO PRODUCTO<\/p>"
+              "title": "<p>Quilt Pillow VTS 0101<\/p>"
             }
           },
-          "summary_qYEhVC": {
+          "summary_mQx6KV": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>SUBTITLE NEWS<\/p>",
-              "interior": "<p>INFORMACIÓN DE PRUEBA<\/p>"
+              "subtitle": "<p><a href=\"\/products\/one-product\" title=\"Quilt Blanket VTS 0101\">THE ART ØF QUILTING<\/a><\/p>",
+              "interior": "<p>We collaborated with the award-wining Thompson Street Studio to create an exclusive limited edition collection of hand-stitched quilts. Thompson Street Studio X Visø presents a modern take on an ancient craft of patchwork quilting. Each quilt is made out of pieced organic 100% linen and cotton remnant fabric.<\/p>",
+              "image": "shopify:\/\/shop_images\/Emura_VisoFeb2024_Final-1024x1024.jpg"
             }
           }
         },
         "block_order": [
-          "text_rMrhj6",
-          "summary_qYEhVC"
+          "text_emzcUt",
+          "summary_mQx6KV"
         ],
         "settings": {
         }
