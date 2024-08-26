@@ -339,7 +339,7 @@ select:disabled {
 
 body {
   padding: 5px;
-  font-size: var(--main);
+  font-size: clamp(var(--main), 1rem, 1.4vw);
   line-height:var(--lh);
   display: flex;
   flex-direction: column;
