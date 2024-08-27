@@ -19,7 +19,6 @@
       sold
       {% endif %}
     ">
-    <div class="info-pro">PRRODUCT INFORMATION<span>-<span></div>
     <div class="double">
       <div class="product-price">
         {% if product.available %}
@@ -38,51 +37,7 @@
         {% endif %}
       </div>
     </div>  
-    <div class="in">
-      {% if product.metafields.custom.height != blank %}
-        <div class="double">
-        <div>Height</div>
-        <div class="cat">{{ product.metafields.custom.height }}</div>
-      </div>
-    {% endif %}
-    {% if product.metafields.custom.lenght != blank %}
-      <div class="double">
-        <div>Lenght</div>
-        <div class="cat">{{ product.metafields.custom.lenght }}</div>
-      </div>
-    {% endif %}
-    {% if product.metafields.custom.with  != blank %}
-      <div class="double">
-        <div>Width</div>
-        <div class="cat">{{ product.metafields.custom.with }}</div>
-      </div>
-    {% endif %}
-    {% if product.metafields.custom.weight  != blank %}
-      <div class="double">
-        <div>Weight</div>
-        <div class="cat">{{ product.metafields.custom.weight }}</div>
-      </div>
-    {% endif %}
-    {% if product.metafields.custom.color  != blank %}
-      <div class="double">
-        <div>Color</div>
-        <div class="cat">{{ product.metafields.custom.color }}</div>
-      </div>
-    {% endif %}
-    {% if product.metafields.custom.price_limitation  != blank %}
-      <div class="double">
-        <div>Piece Limitation</div>
-        <div class="cat">{{ product.metafields.custom.price_limitation }}</div>
-      </div>
-    {% endif %}
-    {% if product.metafields.metafields.custom.material  != blank %}
-      <div class="double">
-        <div>Material</div>
-        <div class="cat">{{ product.metafields.custom.material }}</div>
-      </div>
-    {% endif %}
-
-    </div>  
+    
       <div class="variations">
         <!-- Button Add To Bag -->
         {% liquid
