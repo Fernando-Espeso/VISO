@@ -280,13 +280,14 @@ select:disabled {
     display: none;
 }
   button#add-to-bag {
+    border-radius: 5px;
     font-size: var(--main)!important;
     height: 100%;
     width: 100%;
     text-align: center;
     padding: 15px;
     padding-bottom: 12px!important;
-    background-color: #000;
+    background-color: #0000004d;
     color: #fff;
     
   }
