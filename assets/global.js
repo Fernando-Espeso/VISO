@@ -68,8 +68,8 @@ $(document).ready(function() {
 
 
   let ishide = false;
-  $('.shop').hover(function() {
-      $(".shop").toggleClass("active");
+  $('.shop, .categories').hover(function() {
+      $(".shop, .categories").toggleClass("active");
       ishide = !ishide;
 
       if (ishide) {

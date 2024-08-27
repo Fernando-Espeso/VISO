@@ -324,6 +324,7 @@ select:disabled {
     line-height:0px;
     opacity: 0;
     font-size: 0px; 
+    transition: 0.5s ease;
   }
   .categories.hid{
     padding-top: 10px;
@@ -331,11 +332,11 @@ select:disabled {
     flex-basis: 100%;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem); 
-    transition: 0.5s;
+	transition: 0.5s ease;
   }
   .categories.show{
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.5s ease;
   }
   .cat.active {
     color: grey;
