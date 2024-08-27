@@ -78,7 +78,7 @@
               "subtitle": "<p>Our Tapestry Capsule<\/p>",
               "interior": "<p>The technique used to create our throws is part of a family heritage of devoted artists, carried through generations keeping the European wall tapestry style in place. The outcome of this collaboration is an exceptional textile with high definition artwork that has history woven into every inch.<\/p>",
               "image": "shopify:\/\/shop_images\/hamaca-01-1024x1024.jpg",
-              "title": "Chair"
+              "title": "<p>Chair<\/p>"
             }
           },
           "summary_axXepz": {
@@ -299,8 +299,36 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "text_iCYpfc": {
+            "type": "text",
+            "settings": {
+              "title": "<p>heyyyy<\/p>"
+            }
+          },
+          "summary_LFzPQW": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p><strong>VISO PROJECT EUROPESHOWROOM MADRID<\/strong>Calle Santa Maria 17, Local Derecha<br\/>28014 Madrid, Spain<\/p>",
+              "interior": "",
+              "title": ""
+            }
+          },
+          "summary_RNapjc": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p><strong>VISO PROJECT EUROPESHOWROOM MADRID<\/strong>Calle Santa Maria 17, Local Derecha<br\/>28014 Madrid, Spain<\/p>",
+              "interior": "",
+              "title": "<p><strong>VISO PROJECT EUROPESHOWROOM MADRID<\/strong>Calle Santa Maria 17, Local Derecha<br\/>28014 Madrid, Spain<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "text_iCYpfc",
+          "summary_LFzPQW",
+          "summary_RNapjc"
+        ],
         "settings": {
-          "global_text_content": "VISO PROJECT EUROPE SHOWROOM MADRID Calle Santa Maria 17, Local Derecha 28014 Madrid, Spain"
         }
       }
     },
