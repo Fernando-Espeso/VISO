@@ -305,10 +305,19 @@
             "settings": {
               "title": "<p>heyyyy<\/p>"
             }
+          },
+          "summary_LFzPQW": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p><strong>VISO PROJECT EUROPESHOWROOM MADRID<\/strong>Calle Santa Maria 17, Local Derecha<br\/>28014 Madrid, Spain<\/p>",
+              "interior": "",
+              "title": ""
+            }
           }
         },
         "block_order": [
-          "text_iCYpfc"
+          "text_iCYpfc",
+          "summary_LFzPQW"
         ],
         "settings": {
         }
