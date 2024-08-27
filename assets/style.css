@@ -12,6 +12,12 @@
   color:var(--blue);
   background-color: black;
 }
+.active a{
+  color: grey;
+}
+a:hover{
+  color:grey;
+}
 .ui-admin-bar--is-collapsed .ui-admin-bar__content {
   padding: 0;
   background: transparent;
