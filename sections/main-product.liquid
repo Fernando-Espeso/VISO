@@ -79,17 +79,10 @@
         {% endfor %}
         <div class="at-a">{{ product.metafields.custom.artists | metafield_tag }}</div>
       </div>
-
-      <div class="long">
-        {{ product.metafields.custom.info }}
-      </div>
-      {% if product.metafields.custom.extra_info != blank %}
-        <div class="view show">SHOW MORE INFO</div>
-  
       <div class="intro">
         {{ product.metafields.custom.extra_info }}
       </div>
-    {% endif %}
+
     </div>
     <div class="product_gallery">
       {% for media in product.media %}
@@ -200,7 +193,6 @@ padding-left:5px;
   text-align:left;
   padding:5px;
   grid-column: span 2!important;
-  background-color: var(--grey)!important;
 }
 .categorie-e:hover {
   color:white;
