@@ -12,9 +12,7 @@
   color:var(--blue);
   background-color: black;
 }
-.active a{
-  color: grey;
-}
+
 a:hover{
   color:grey;
 }
