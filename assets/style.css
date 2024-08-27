@@ -186,13 +186,7 @@ select {
   height: fit-content;
   grid-column: span 12;
 }
-.view:hover{
-  background-color: black;
-  color:white;
-}
-.view:hover a{
-  color:white;
-}
+
 .news-content .title-seccion.big{
   grid-column: span 3;
   font-size: clamp(var(--big), 1.5vw, 2rem);
