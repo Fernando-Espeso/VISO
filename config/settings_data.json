@@ -17,7 +17,7 @@
           "media_9Chkad": {
             "type": "media",
             "settings": {
-              "image": "shopify:\/\/shop_images\/VWB0101_Viso_Project_New_York_Wool_Blanket_White_Arles_1-1024x1024.jpg"
+              "image": "shopify:\/\/shop_images\/Viso_Project_V171_Tuerca_Cup_Set_1.gif"
             }
           }
         },
@@ -69,7 +69,7 @@
               "subtitle": "<p><a href=\"\/products\/one-product\" title=\"Quilt Blanket VTS 0101\">The Art of Quilting<\/a><\/p>",
               "interior": "<p>We collaborated with the award-wining Thompson Street Studio to create an exclusive limited edition collection of hand-stitched quilts. Thompson Street Studio X Visø presents a modern take on an ancient craft of patchwork quilting. Each quilt is made out of pieced organic 100% linen and cotton remnant fabric.<\/p>",
               "image": "shopify:\/\/shop_images\/Emura_VisoFeb2024_Final-1024x1024.jpg",
-              "title": ""
+              "title": "<p>Wool Blanket 0101<\/p>"
             }
           },
           "summary_cdKMwT": {
@@ -78,7 +78,7 @@
               "subtitle": "<p>Our Tapestry Capsule<\/p>",
               "interior": "<p>The technique used to create our throws is part of a family heritage of devoted artists, carried through generations keeping the European wall tapestry style in place. The outcome of this collaboration is an exceptional textile with high definition artwork that has history woven into every inch.<\/p>",
               "image": "shopify:\/\/shop_images\/hamaca-01-1024x1024.jpg",
-              "title": "<p>Chair<\/p>"
+              "title": "<p>Resort Chair 0102<\/p>"
             }
           },
           "summary_axXepz": {
@@ -87,6 +87,23 @@
               "subtitle": "<p>Our Porcelan<\/p>",
               "interior": "<p>Our porcelain series place the emphasis on expert craftsmanship and high quality. Eclectic and distinct artifacts crafted by artisans in Europe in the most fine porcelain. Bold hues adorn the pieces, which are consciously produced in limited units, for the ultimate in exclusive luxury. Juxtaposition of textures or patterns create bold statement pieces, making it the perfect accent for home, office or an ideal gift.<\/p>",
               "image": "shopify:\/\/shop_images\/Viso_Project_V171_Tuerca_Cup_Set_1.gif",
+              "title": "<p>Tuercas Porcelain Vase 0401<\/p>"
+            }
+          },
+          "summary_3YVYgd": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>Our Pillows<\/p>",
+              "interior": "Merging functionality and fine art, our series of pillows are hand-finished by meticulous craftsman who observe the heritage of weaving, either in pure cotton or fine wool eclectic patterns and color combinations makes each of them a dynamic addition to your sofa or armchair.",
+              "image": "shopify:\/\/shop_images\/viso_project_merino_pillow_v106_min_1-960x960.jpg",
+              "title": ""
+            }
+          },
+          "summary_VhtBUL": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "",
+              "interior": "",
               "title": ""
             }
           }
@@ -94,7 +111,9 @@
         "block_order": [
           "summary_mQx6KV",
           "summary_cdKMwT",
-          "summary_axXepz"
+          "summary_axXepz",
+          "summary_3YVYgd",
+          "summary_VhtBUL"
         ],
         "settings": {
         }
@@ -294,40 +313,6 @@
       },
       "main-product": {
         "type": "main-product",
-        "settings": {
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "blocks": {
-          "text_iCYpfc": {
-            "type": "text",
-            "settings": {
-              "title": "<p>heyyyy<\/p>"
-            }
-          },
-          "summary_LFzPQW": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "<p><strong>VISO PROJECT EUROPESHOWROOM MADRID<\/strong>Calle Santa Maria 17, Local Derecha<br\/>28014 Madrid, Spain<\/p>",
-              "interior": "",
-              "title": ""
-            }
-          },
-          "summary_RNapjc": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "<p><strong>VISO PROJECT EUROPESHOWROOM MADRID<\/strong>Calle Santa Maria 17, Local Derecha<br\/>28014 Madrid, Spain<\/p>",
-              "interior": "",
-              "title": "<p><strong>VISO PROJECT EUROPESHOWROOM MADRID<\/strong>Calle Santa Maria 17, Local Derecha<br\/>28014 Madrid, Spain<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "text_iCYpfc",
-          "summary_LFzPQW",
-          "summary_RNapjc"
-        ],
         "settings": {
         }
       }
