@@ -155,7 +155,9 @@ fernandoepeso.info
     </header>
     {{ content_for_layout }}
   <footer>
-
+    {% for link in linklists.footer.links %}
+      <div class="{% if link.active %} active {% endif %}" ><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></div>
+      {% endfor %} 
     <div class="cred">
 © VISO PROJECT {{ 'now' | date: "%Y" }}</div>
   </footer>
