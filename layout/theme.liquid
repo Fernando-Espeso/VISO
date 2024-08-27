@@ -154,11 +154,15 @@ fernandoepeso.info
     </header>
     {{ content_for_layout }}
   <footer>
+    <div class="footer-menu">
     {% for link in linklists.footer.links %}
-      <div class="{% if link.active %} active {% endif %}" ><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></div>
+      <div class="footer{% if link.active %} active {% endif %}" ><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></div>
       {% endfor %} 
+    </div>
     <div class="cred">
-© VISO PROJECT {{ 'now' | date: "%Y" }}</div>
+      © VISO PROJECT {{ 'now' | date: "%Y" }}
+      Development Fernando Espeso
+    </div>
   </footer>
   {%- if template contains 'product' -%}
     {{ 'global-product.js' | asset_url | script_tag }}
