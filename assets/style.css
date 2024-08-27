@@ -198,6 +198,7 @@ select {
   font-size: clamp(var(--big), 1.5vw, 2rem);
   text-align: center;
   line-height: 120%;
+  color: grey;
   padding: 0px 30px;
 
 }
@@ -367,7 +368,10 @@ select:disabled {
     order: 2;
     color: #000;
   }
-
+  .title-seccion.big {
+    text-align: center;
+    grid-column: span 4;
+}
   input{
     font-weight: 300;
     width: 100%;
