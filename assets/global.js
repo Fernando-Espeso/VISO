@@ -66,6 +66,30 @@ function invertirTextoYContenido($elemento, mostrarTexto, ocultarTexto) {
 
 $(document).ready(function() {
 
+
+  let ishide = false;
+  $('.shop').hover(function() {
+      $(".shop").toggleClass("active");
+      ishide = !ishide;
+
+      if (ishide) {
+          setTimeout(function() {
+              $('.categories').addClass("hid");
+          }, 100);
+          setTimeout(function() {
+              $('.categories').addClass("show");
+          }, 500);
+      } else {
+          setTimeout(function() {
+              $('.categories').removeClass("hid");
+          }, 500);
+          setTimeout(function() {
+              $('.categories').removeClass("show");
+          }, 100);
+      }
+  });
+
+
   $("#add-to-bag").click(function(){
     $(".cart-part").addClass("active");
   });

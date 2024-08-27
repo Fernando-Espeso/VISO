@@ -321,8 +321,21 @@ select:disabled {
     padding-top: 10px;
     column-count: 4;
     flex-basis: 100%;
+    line-height:0px;
+    opacity: 0;
+    font-size: 0px; 
+  }
+  .categories.hid{
+    padding-top: 10px;
+    column-count: 4;
+    flex-basis: 100%;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem); 
+    transition: 0.5s;
+  }
+  .categories.show{
+    opacity: 1;
+    transition: 0.5s;
   }
   .cat.active {
     color: grey;
