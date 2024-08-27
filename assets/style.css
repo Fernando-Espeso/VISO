@@ -507,13 +507,12 @@ a {
 }
 /* Footer styles */
 footer {
- justify-content: space-between;
-  padding-top: 200px!important;
-  display: flex;
-  text-align: right;
-  align-items: end;
-  padding: 5px;
-  margin-top: auto;
+    padding-top: 200px !important;
+    display: block;
+    align-items: end;
+    padding: 5px;
+    padding-bottom: 10px !important;
+    margin-top: auto;
 }
 
 section#stocklist {
