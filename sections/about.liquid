@@ -1,0 +1,70 @@
+<section data-section-id="desplegable" id="desplegable" class="desplegable">
+  {% for block in section.blocks %}
+    {% case block.type %}
+ 
+        {% when 'summary' %}
+        {% unless block.settings.subtitle and block.settings.interior == blank %}
+          <div class="news-content">
+            <div class="view">{{ block.settings.subtitle }}</div>
+            <div class="title-seccion big">{{ block.settings.interior }}</div>
+            {% if block.settings.image != blank %}
+              <img src="{{ block.settings.image | img_url: 'master' }}" alt="Image">
+            {% endif %}
+          </div>
+          <div class="title-seccion big">{{ block.settings.title }}</div>
+
+        {% endunless %}
+  
+
+    {% endcase %}
+  {% endfor %}
+</section>
+{% schema %}
+{
+  "name": "Sections",
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Title",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "Section"
+        },
+        {
+          "type": "text",
+          "id": "interior",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Product Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "INFO-BLOCK"
+    }
+  ]
+}
+{% endschema %}
