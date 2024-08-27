@@ -46,17 +46,6 @@
       },
       "aim": {
         "type": "aim",
-        "blocks": {
-          "text_8H79DB": {
-            "type": "text",
-            "settings": {
-              "text": "kjkjhjkhkjh"
-            }
-          }
-        },
-        "block_order": [
-          "text_8H79DB"
-        ],
         "settings": {
         }
       },
