@@ -262,7 +262,7 @@ select:disabled {
     display: flex;
     flex-wrap: wrap; 
     grid-gap: 15px;
-    
+    row-gap: 0px;
   }
   #nav > div{
     grid-column: span 3;
@@ -318,6 +318,7 @@ select:disabled {
     transform: translate(-50%, 0%);
 }
   .categories{
+    padding-top: 10px;
     column-count: 4;
     flex-basis: 100%;
     line-height:var(--lh);
