@@ -318,7 +318,7 @@ select:disabled {
     transform: translate(-50%, 0%);
 }
   .categories{
-    column-count: 3;
+    column-count: 4;
     flex-basis: 100%;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem); 
