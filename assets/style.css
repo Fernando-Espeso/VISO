@@ -489,14 +489,14 @@ section#desplegable {
   min-height: 100%;
   flex-grow: 1;
   display: grid;
-  row-gap: 10px;
+  row-gap: 100px;
   grid-template-columns: repeat(12, 1fr);
 }
 .related {
   margin-top: 100px;
   flex-grow: 1;
   display: grid;
-  row-gap: 10px;
+  row-gap: 100px;
   grid-template-columns: repeat(12, 1fr);
 }
 
@@ -504,7 +504,7 @@ section#desplegable {
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  row-gap: 10px;
+  row-gap: 100px;
 }
 
 .sold-out {
