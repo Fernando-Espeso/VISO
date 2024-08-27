@@ -66,35 +66,6 @@ function invertirTextoYContenido($elemento, mostrarTexto, ocultarTexto) {
 
 $(document).ready(function() {
 
-  var colors = ["--black", "--black", "--black", "--black"];
-  var index = 0;
-  
-  function changeColor() {
-      $(".st0").css("fill", "var(" + colors[index] + ")");
-      index = (index + 1) % colors.length;
-  }
-  
-  setInterval(changeColor, 500); // Change color every second
-
-
-setTimeout(function() {
-  $(".loader svg").addClass("up");
-  $(".image-container").addClass("up");
-}, 4000);
-
-
-
-setTimeout(function() {
-  $(".loader").fadeOut(600);
-}, 5000);
-
-  $(".show").click(function(){
-    $(".intro").toggle();
-    $(this).text(function(i, text){
-        return text === "SHOW MORE INFO" ? "SHOW LESS INFO" : "SHOW MORE INFO";
-    });
-    
-  });
   $("#add-to-bag").click(function(){
     $(".cart-part").addClass("active");
   });
@@ -105,9 +76,6 @@ setTimeout(function() {
   $(".categories").click(function(){
     var $activeCat = $(".cat.active");
     $(".cat").not($activeCat).toggle();
-    $(".categories span").text(function(i, text){
-      return text === "-" ? "+" : "-";
-    });
   });
 
   $(".info-pro").click(function(){
@@ -116,29 +84,13 @@ setTimeout(function() {
       return text === "-" ? "+" : "-";
     });
   }); 
-
-  // Verificar si es un dispositivo móvil y aplicar el comportamiento correspondiente
-  if (esDispositivoMovil()) {
-      // Inicializar el estado de los botones para dispositivos móviles
-      $(".categories span").text("+");
-      $(".info-pro span").text("+");
-  }
-  else {
-      // Restablecer el estado de los botones para pantallas más grandes
-      $(".categories span").text("-");
-      $(".info-pro span").text("-");
-  }
 }
-   gestionarBotones();
-
-   $(window).resize(function() {
-       gestionarBotones();
-   });
+  
 
   $("body").addClass("active");
 
- 
 });
+
 $(document).ready(function() {
   let images = $('.image-container img');
   let imageCount = images.length;
