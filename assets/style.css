@@ -313,7 +313,6 @@ select:disabled {
     transform: translate(-50%, 0%);
 }
   .categories{
-    padding-top: 10px;
     column-count: 4;
     flex-basis: 100%;
     line-height:0px;
@@ -329,7 +328,7 @@ select:disabled {
     font-size: clamp(var(--big), 1.5vw, 2rem); 
 	transition: 0.5s ease;
   }
-  .categories.hid .search-input{
+  .categories.show .search-input{
     font-weight: 300;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem)!important; 
