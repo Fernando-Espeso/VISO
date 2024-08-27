@@ -68,9 +68,7 @@
   </div>
   <div class="full-scroll">
     <div class="big section-title">{{ product.title }}</div>
-    <div class="product-description">
-      {{ product.description }}
-    </div>
+
     <div class="product_information">
       <div class="categories-e">
         {% for collection in product.collections %}
@@ -85,6 +83,9 @@
         {{ product.metafields.custom.extra_info }}
       </div>
 
+    </div>
+    <div class="product-description">
+      {{ product.description }}
     </div>
     <div class="product_gallery">
       {% for media in product.media %}
