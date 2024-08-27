@@ -551,6 +551,7 @@ section#stocklist .sec {
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem);
   grid-column: span 12;
+  margin-bottom: 10px;
 }
 .footer-menu a{
   line-height:var(--lh);
