@@ -3,8 +3,6 @@
     <!--PRODUCT INFO-->
     {%- assign productFormId = 'product-form-' | append: section.id -%}
     {%- form "product", product, id: productFormId, class: '' -%}
-    <input type="hidden" name="product-id" value="{{- product.id -}}">
-    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
     {%- if product.has_only_default_variant -%}
     {%- elsif variants > 1 -%}
     class="product-variants"
@@ -37,29 +35,38 @@
         {% endif %}
       </div>
     </div>  
-    
-      <div class="variations">
-        <!-- Button Add To Bag -->
-        {% liquid
-        assign selectedVariant = product.selected_or_first_available_variant
-        if selectedVariant.available
-        assign addToCartText = 'ADD TO BAG'
-        else
-        assign addToCartText = 'SOLD OUT'
-        endif
-        %}
-        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add" data-add-to-cart>
-          <span class="" data-add-to-cart-text>
-            {{ addToCartText }}
-          </span>
-        </button>
-        {% assign product_qty = 0 %}
-        {% for variant in product.variants %}
-        {% if variant.inventory_quantity > 0 %}
-        {% assign product_qty = product_qty | plus: variant.inventory_quantity %}
-        {% endif %}
-        {% endfor %}
+      {%- if product.has_only_default_variant -%}
+      class="product-simple"
+      {%- elsif variants > 1 -%}
+      class="product-variants"
+      {%- endif -%} >
+      <div id="bag">
+        <div class="product-title">
+          <a>{{ product.title }}</a>
+          <div class="product-price" id="product-price"></div>
+        </div>
+      
+                  {% if product.compare_at_price > product.price %}
+                      <span class="sale">On Sale</span>
+                  {% else %}
+                  {% endif %}
+          {% if product.available %}
+                    {% else %}
+        <div class="sold-out">Sold Out</div>
+                    {% endif %}
+        <div class="variations double">
+                    <select id="product-select" name="id">
+                      {% for variant in product.variants %}
+                      <option value="{{ variant.id }}"></option>
+                      {% endfor %}
+                    </select>
+                    {% if product.available %}
+                        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add">Add to cart</button>
+                    {% else %}
+                    {% endif %}
+          </div>          
       </div>
+  
       <!-- Variations Dropdown -->
 
 
