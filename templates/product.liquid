@@ -5,9 +5,7 @@
               <div class="product-title">
                 {{ product.title}}
               </div>
-              <div class="product-description">
-                {{ product.content}}
-              </div>
+          
               <div id="product-price"></div>
                      {% if product.compare_at_price > product.price %}
                      {% else %}
@@ -27,6 +25,7 @@
                 {% endif %}
              </div> 
         </div>
+        
         <div class="add_item">
           <!--Product Info-->
           <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
@@ -60,7 +59,10 @@
         </div> 
     </div>
   </div>
-  <div class="grid-product-content">
+  <div class="product-description">
+    {{ product.content}}
+  </div>
+  <div class="gallery-product">
   {% for media in product.media %}
       <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
   {% endfor %}
