@@ -36,9 +36,7 @@
 
                                 <div id="bag-total" >
                                     <!--Variations Dropdown-->
-                                
-
-                                  {% if product.variants.size > 0 %}
+                                  {%if product.variants.size > 1 or product.variants.first.title != 'Default Title' %}
                                     <select id="product-select" name="id">
                                     {% for variant in product.variants %}
                                       {% unless variant.title == "Default Title" %}
