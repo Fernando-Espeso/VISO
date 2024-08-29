@@ -1,6 +1,7 @@
 <div class="main-product" data-section-id="{{ section.id }}" data-product-section>
   <!--GALLERY-->
   <div class="buy-block">
+    
     <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
       {%- if product.has_only_default_variant -%}
       class="product-simple"
