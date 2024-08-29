@@ -1,74 +1,76 @@
 <div class="main">
-
-  <div class="full-scroll">
-    <div class="buy-block">
-      <!--PRODUCT INFO-->
-      {%- assign productFormId = 'product-form-' | append: section.id -%}
-      {%- form "product", product, id: productFormId, class: '' -%}
-      <input type="hidden" name="product-id" value="{{- product.id -}}">
-      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-      {%- if product.has_only_default_variant -%}
-      {%- elsif variants > 1 -%}
-      class="product-variants"
-      {%- endif -%}
-      <div id="bag" class="bag
-        {% if product.compare_at_price > product.price %}
-        sale
-        {% else %}
-        {% endif %}
+  <div class="buy-block">
+    <!--PRODUCT INFO-->
+    {%- assign productFormId = 'product-form-' | append: section.id -%}
+    {%- form "product", product, id: productFormId, class: '' -%}
+    <input type="hidden" name="product-id" value="{{- product.id -}}">
+    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+    {%- if product.has_only_default_variant -%}
+    {%- elsif variants > 1 -%}
+    class="product-variants"
+    {%- endif -%}
+    <div id="bag" class="bag
+      {% if product.compare_at_price > product.price %}
+      sale
+      {% else %}
+      {% endif %}
+      {% if product.available %}
+      {% else %}
+      sold
+      {% endif %}
+    ">
+    <div class="double">
+      <div class="product-price">
         {% if product.available %}
+        {% if product.price_varies %}
+        <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
         {% else %}
-        sold
+        {% if product.compare_at_price > product.price %}
+        <s>{{ product.compare_at_price | money }}</s>
+        <span class="red">{{ product.price | money }}</span>
+        {% else %}
+        <span>{{ product.price | money }}</span>
         {% endif %}
-      ">
-      <div class="double">
-        <div class="product-price">
-          {% if product.available %}
-          {% if product.price_varies %}
-          <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
-          {% else %}
-          {% if product.compare_at_price > product.price %}
-          <s>{{ product.compare_at_price | money }}</s>
-          <span class="red">{{ product.price | money }}</span>
-          {% else %}
-          <span>{{ product.price | money }}</span>
-          {% endif %}
-          {% endif %}
-          {% else %}
-          <span>{{ product.price | money }}</span>
-          {% endif %}
-        </div>
-      </div>  
-      
-        <div class="variations">
-          <!-- Button Add To Bag -->
-          {% liquid
-          assign selectedVariant = product.selected_or_first_available_variant
-          if selectedVariant.available
-          assign addToCartText = 'ADD TO BAG'
-          else
-          assign addToCartText = 'SOLD OUT'
-          endif
-          %}
-          <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add" data-add-to-cart>
-            <span class="" data-add-to-cart-text>
-              {{ addToCartText }}
-            </span>
-          </button>
-          {% assign product_qty = 0 %}
-          {% for variant in product.variants %}
-          {% if variant.inventory_quantity > 0 %}
-          {% assign product_qty = product_qty | plus: variant.inventory_quantity %}
-          {% endif %}
-          {% endfor %}
-        </div>
-        <!-- Variations Dropdown -->
-        {% render 'product-variants', product: product, formID: productFormId %}
-  
+        {% endif %}
+        {% else %}
+        <span>{{ product.price | money }}</span>
+        {% endif %}
       </div>
-      {% endform %}
+    </div>  
+    
+      <div class="variations">
+        <!-- Button Add To Bag -->
+        {% liquid
+        assign selectedVariant = product.selected_or_first_available_variant
+        if selectedVariant.available
+        assign addToCartText = 'ADD TO BAG'
+        else
+        assign addToCartText = 'SOLD OUT'
+        endif
+        %}
+        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add" data-add-to-cart>
+          <span class="" data-add-to-cart-text>
+            {{ addToCartText }}
+          </span>
+        </button>
+        {% assign product_qty = 0 %}
+        {% for variant in product.variants %}
+        {% if variant.inventory_quantity > 0 %}
+        {% assign product_qty = product_qty | plus: variant.inventory_quantity %}
+        {% endif %}
+        {% endfor %}
+      </div>
+      <!-- Variations Dropdown -->
+      {% render 'product-variants', product: product, formID: productFormId %}
+
     </div>
+    {% endform %}
+  </div>
+  <div class="full-scroll">
     <div class="big section-title">{{ product.title }}</div>
+    <div class="product-description">
+      {{ product.description }}
+    </div>
     <div class="product_information">
       <div class="categories-e">
         {% for collection in product.collections %}
@@ -83,9 +85,6 @@
         {{ product.metafields.custom.extra_info }}
       </div>
 
-    </div>
-    <div class="product-description">
-      {{ product.description }}
     </div>
     <div class="product_gallery">
       {% for media in product.media %}
@@ -117,7 +116,9 @@
   grid-column: span 2;
   height:fit-content;
 } 
-
+product-variants {
+    display: none!important;
+}
 div#related {
   margin-top: 2px;
 }
