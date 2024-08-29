@@ -519,6 +519,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-column: span 12;
 }
+
 #header a{
   display: block;
 }
