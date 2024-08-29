@@ -17,53 +17,36 @@
     <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
       {%- if product.has_only_default_variant -%}
       class="product-simple"
-      {%- else -%}
+      {%- elsif variants > 1 -%}
       class="product-variants"
-      {%- endif -%}>
-  
+      {%- endif -%} >
       <div id="bag">
-          <div class="product-title">
-              <!-- Product Title -->
-              <a href="{{ product.url }}">{{ product.title }}</a>
-  
-              <!-- Product Price -->
-              <div class="product-price" id="product-price">
+        <div class="product-title">
+          <div class="product-price" id="product-price"></div>
+          <a href="{{ product.url }}">{{ product.title }}</a>
+        </div>
+
                   {% if product.compare_at_price > product.price %}
-                      <span class="sale-price">{{ product.price | money }}</span>
-                      <span class="compare-at-price">{{ product.compare_at_price | money }}</span>
+                      <span class="sale">On Sale</span>
                   {% else %}
-                      <span class="regular-price">{{ product.price | money }}</span>
                   {% endif %}
-              </div>
-  
-              <!-- Sale/Availability Message -->
-              {% if product.available %}
-              {% else %}
-                  <div class="sold-out">Sold Out</div>
-              {% endif %}
-          </div>
-  
-          <div class="variations">
-              <!-- Variant Selector -->
-              <select id="product-select" name="id">
-                  {% for variant in product.variants %}
-                      <option value="{{ variant.id }}">
-                          {{ variant.title }}
-                      </option>
-                  {% endfor %}
-              </select>
-  
-              <!-- Add to Cart Button -->
-              {% if product.available %}
-                  <button id="add-to-cart" type="submit" name="add">ADD TO CART</button>
-              {% else %}
-                  <button id="add-to-cart" type="submit" disabled>OUT OF STOCK</button>
-              {% endif %}
+          {% if product.available %}
+                    {% else %}
+        <div class="sold-out">Sold Out</div>
+                    {% endif %}
+        <div class="variations double">
+                    <select id="product-select" name="id">
+                      {% for variant in product.variants %}
+                      <option value="{{ variant.id }}"></option>
+                      {% endfor %}
+                    </select>
+                    {% if product.available %}
+                        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
+                    {% else %}
+                    {% endif %}
           </div>
       </div>
-  </form>
-  
-  
+    </form>
       <div class="information">
         <a href="mailto:">Contact us</a> if your size is sold out or you have any questions.
         Many of our products will be made to order, please allow up to two weeks.
