@@ -69,9 +69,21 @@
   </div>
   {%- if product.metafields.custom.materiales != blank -%}
     <div class="show-description description">
-      {{ product.metafields.custom.materiales | richtext }}
+      {%- assign richtext_content = product.metafields.custom.materiales -%}
+      {%- for paragraph in richtext_content.children -%}
+        <p>
+          {%- for child in paragraph.children -%}
+            {%- if child.bold == true -%}
+              <strong>{{ child.value }}</strong>
+            {%- else -%}
+              {{ child.value }}
+            {%- endif -%}
+          {%- endfor -%}
+        </p>
+      {%- endfor -%}
     </div>
   {%- endif -%}
+  
 </div>
 {{ 'option_selection.js' | shopify_asset_url | script_tag }}
 {% assign variants = 0 %}        
