@@ -17,31 +17,30 @@
         </div>
         <div class="product-title">{{ item.product.title }}</div>
 
-        <div style="background-color:var(--darker);" class="row">
+        <div class="row">
           <div class="main-information-cart">
             <div class="at-a">{{ product.metafields.custom.artists | metafield_tag }}</div>
             <div class="double">
-              <div>Price</div>
               <div class="product-price">{{ item.price | money }}</div>
+          </div>
+          <div class="item-quantity double">
+            {% comment %} <span data-field="updates" class="quantity-button minus"><span>–</span></span> {% endcomment %}
+            <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+            <span class="quantity-wrap"></span>
+            <span data-field="updates" class="quantity-button plus">
+              {% comment %} <span class="addmore">+</span> {% endcomment %}
+              {% if cart.items.available %}
+              {% else %}
+              {% endif %}
+            </span>
+          </div>
+          <div class="double rem">
+            <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a> <span class="x">X</span></div>
           </div>
           </div>
         </div>
      
-        <div class="item-quantity double">
-          <div> QUANTIY</div>
-          {% comment %} <span data-field="updates" class="quantity-button minus"><span>–</span></span> {% endcomment %}
-          <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
-          <span class="quantity-wrap"></span>
-          <span data-field="updates" class="quantity-button plus">
-            {% comment %} <span class="addmore">+</span> {% endcomment %}
-            {% if cart.items.available %}
-            {% else %}
-            {% endif %}
-          </span>
-        </div>
-        <div class="double rem">
-          <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a> <span class="x">X</span></div>
-        </div>
+      
         {% unless item.product.options contains 'Title' %}
           <!--Variations-->
           <div class="double" style="display:none">
