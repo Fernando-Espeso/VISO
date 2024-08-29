@@ -1,62 +1,66 @@
 <div id="content">
   <div class="ab">
     <div class="add_row">
-        <div class="row">
+      <div class="row">
               <div class="product-title">
                 {{ product.title}}
               </div>
-          
               <div id="product-price"></div>
                      {% if product.compare_at_price > product.price %}
                      {% else %}
                      {% endif %}       
-              <div class="product-price-wrap"> 
-                {% if product.available %}
+                <div class="product-price-wrap"> 
+                  {% if product.available %}
                   {% if product.price_varies %}
                   {% else %}
                     {% if product.compare_at_price > product.price %}
                     <span class="red">ON SALE</span>
                     {% else %}
-                 <span>-</span>
+                  <span>-</span>
                     {% endif %}
                   {% endif %}
-                {% else %}
-                <span class="sold-out">SOLD OUT</span>
-                {% endif %}
-             </div> 
-        </div>
+                  {% else %}
+                  <span class="sold-out">SOLD OUT</span>
+                  {% endif %}
+                </div> 
+              </div>
         
-        <div class="add_item">
-          <!--Product Info-->
-          <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-          {%- if product.has_only_default_variant -%}
-          class="product-simple"
-          {%- elsif variants > 0 -%}
-          class="product-variants"
-          {%- endif -%}>
+                <div class="add_item">
+                      <!--Product Info-->
+                      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+                                {%- if product.has_only_default_variant -%}
+                                class="product-simple"
+                                {%- elsif variants > 0 -%}
+                                class="product-variants"
+                                {%- endif -%}>
 
-          <div id="bag-total" >
-              <!--Variations Dropdown-->
-            <select id="product-select" name="id">
-              {% for variant in product.variants %}
-              <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
-              {% endfor %}
-            </select>  
-            <!--Actions-->
-            {% if product.available %}
-            <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
-              ADD TO BAG
-            </button> 
-            {% else %}
-            <button  id="add-to-cart" {% unless product.selected_variant.available %}disabled{% endunless %}>
-          SOLD OUT
-            </button> 
-            {% endif %}
-         </div>
-       </div>
-    </form>
+                                <div id="bag-total" >
+                                    <!--Variations Dropdown-->
+                                    {% if product.variants.size > 1 %}
+                                      <select class="product-select">
+                                      {% for variant in product.variants %}
+                                        {% unless variant.title == "Default Title" %}
+                                          <option value="{{ variant.id }}">{{ variant.title }}</option>
+                                        {% endunless %}
+                                      {% endfor %}
+                                      </select>
+                                    {% endif %}
+                                  <!--Actions-->
+                                  {% if product.available %}
+                                  <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
+                                    ADD TO BAG
+                                  </button> 
+                                  {% else %}
+                                    <button  id="add-to-cart" {% unless product.selected_variant.available %}disabled{% endunless %}>
+                                  SOLD OUT
+                                  </button> 
+                                  {% endif %}
+                                  </div>
+                
+                      </form>
 
-        </div> 
+                </div> 
+       </div>         
     </div>
   </div>
   <div class="product-description">
