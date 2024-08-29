@@ -126,7 +126,6 @@ input,
 button,
 select {
   font-size: clamp(var(--big), 1.5vw, 2rem)!important;
-  padding-bottom: 0px!important;
   padding: 0;
   margin: 0;
   display: inline-block;
