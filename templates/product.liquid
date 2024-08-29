@@ -6,29 +6,25 @@
                 {{ product.title}}
               </div>
               <div id="product-price"></div>
-
-<div class="product-price-wrap">
-    {% if product.available %}
-        {% if product.price_varies %}
-            <!-- Logic for variable price products -->
-            <span class="price">{{ product.price_min | money }} - {{ product.price_max | money }}</span>
-        {% else %}
-            <!-- Single price product -->
-            {% if product.compare_at_price > product.price %}
-                <!-- Product is on sale -->
-                <span class="red">ON SALE</span>
-                <span class="price">{{ product.price | money }}</span>
-                <span class="compare-price">{{ product.compare_at_price | money }}</span>
-            {% else %}
-                <!-- Regular priced product -->
-                <span class="price">{{ product.price | money }}</span>
-            {% endif %}
-        {% endif %}
-    {% else %}
-        <!-- Product is not available -->
-        <span class="sold-out">SOLD OUT</span>
-    {% endif %}
-</div>
+                     {% if product.compare_at_price > product.price %}
+                     {% else %}
+                     {% endif %}       
+                <div class="product-price-wrap"> 
+                  {% if product.available %}
+                  {% if product.price_varies %}
+                  {% else %}
+                    {% if product.compare_at_price > product.price %}
+                    <span class="red">ON SALE</span>
+                    {% else %}
+                  <span>-</span>
+                    {% endif %}
+                  {% endif %}
+                  {% else %}
+                  <span class="sold-out">SOLD OUT</span>
+                  {% endif %}
+                </div> 
+              </div>
+        
                 <div class="add_item">
                       <!--Product Info-->
                       <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
@@ -40,15 +36,22 @@
 
                                 <div id="bag-total" >
                                     <!--Variations Dropdown-->
-                                    {% if product.variants.size > 1 %}
-                                      <select class="product-variant-selector">
-                                      {% for variant in product.variants %}
-                                        {% unless variant.title == "Default Title" %}
-                                          <option value="{{ variant.id }}">{{ variant.title }}</option>
-                                        {% endunless %}
-                                      {% endfor %}
-                                      </select>
-                                    {% endif %}
+                                  <select id="product-select" name="id">
+                                    {% for variant in product.variants %}
+                                    <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                                    {% endfor %}
+                                  </select>  
+
+                                  {% if product.variants.size > 1 %}
+                                    <select id="product-select" name="id">
+                                    {% for variant in product.variants %}
+                                      {% unless variant.title == "Default Title" %}
+                                    <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                                      {% endunless %}
+                                    {% endfor %}
+                                    </select>
+                                  {% endif %}
+
 
                                   <!--Actions-->
                                   {% if product.available %}
