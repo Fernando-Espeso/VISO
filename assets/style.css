@@ -209,9 +209,12 @@ label {
 
 }
 .selector-wrapper {
+  width: 200px;
+  text-align: center;
+  height: fit-content;
   font-size: clamp(var(--big), 1.5vw, 2rem);
   border-radius: 4px;
-  background: lightgray;
+  background: #d3d3d3;
   padding: 5px;
 }
 .product-description{
