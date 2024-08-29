@@ -51,8 +51,6 @@
     SOLD OUT
        </button> 
       {% endif %}
-    {% if product.available %}<div id="added" class="hider" >PRODUCT ADDED TO BAG</div>{% endif %}
-    {% unless product.available %}{% endunless %}
        </div>
     
     </form>
@@ -109,19 +107,7 @@ var selectCallback = function(variant, selector){
   }
 };
 
-jQuery(function($) {
-  new Shopify.OptionSelectors('product-select', {
-    product: {{ product | json }},
-    onVariantSelected: selectCallback
-  });
-  {% assign count = -1 %}
-  {% for option in product.options %}
-  {% if product.options.first != 'Title' %}
-    {% assign count = count | plus: 1 %}
-    $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
-  {% endif %}
-  {% endfor %}
-});
+
 
 function ShowSecond() {
   var added = document.getElementById("added");
