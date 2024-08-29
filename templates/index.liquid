@@ -3,6 +3,7 @@
     {% section 'aim' %}
     {% section 'hero' %}
   </div>
+
   {% assign product_limit = 4 %}
   {% for product in collections.all.products limit:product_limit %}
       {% include 'product-body' %}
@@ -67,7 +68,20 @@ display: none!important;}
   grid-column: span 12;
   padding: 5px;
 }
-
+.view:hover{
+  background-color: black;
+  color:white;
+}
+.view:hover a{
+  color:white;
+}
+div#block-text_rMrhj6 {
+  margin-bottom:2px;
+  text-align: center;
+  grid-column: span 4;
+  padding: 20px 0px;
+  background-color: var(--yellow);
+}
 section#desplegable {
   grid-column: span 12;
   display: grid;
@@ -76,6 +90,46 @@ section#desplegable {
 div#shopify-section-about {
   grid-column: span 12;
 }
+.blokie{
+  z-index:2000;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display:flex;
+}
+
+.loader svg{
+  position:relative;
+  z-index: 10;
+  width: auto;
+  height: 157px;
+  color: white;
+  align-self: center;
+  padding-bottom: 5px;
+}
+
+.loader div#block-media_9Chkad {
+  width: 100%;
+  height: auto;
+}
+.element-change {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.color {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+}
+.color.image{
+height: auto;}
+
+
 
   .collection a{
     margin-top:2px;
