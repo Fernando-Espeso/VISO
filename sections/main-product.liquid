@@ -17,37 +17,76 @@
     <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
       {%- if product.has_only_default_variant -%}
       class="product-simple"
-      {%- elsif variants > 1 -%}
+      {%- elsif product.variants.size > 1 -%}
       class="product-variants"
-      {%- endif -%} >
-      <div id="bag">
-        
-        <div class="product-title">
-          <div class="product-price" id="product-price"></div>
-          <a href="{{ product.url }}">{{ product.title }}</a>
-        </div>
-
-                  {% if product.compare_at_price > product.price %}
-                      <span class="sale">On Sale</span>
-                  {% else %}
-                  {% endif %}
-          {% if product.available %}
-                    {% else %}
-        <div class="sold-out">Sold Out</div>
-                    {% endif %}
-        <div class="variations double">
-                    <select id="product-select" name="id">
-                      {% for variant in product.variants %}
-                      <option value="{{ variant.id }}"></option>
-                      {% endfor %}
-                    </select>
-                    {% if product.available %}
-                        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
-                    {% else %}
-                    {% endif %}
+      {%- endif -%}>
+  
+      <div id="bag-total">
+        <div class="title">
+          <!-- Product Title -->
+          <div>{{ product.title }}</div>
+          
+          <!-- Product Price -->
+          <div id="product-price">
+            {% if product.compare_at_price > product.price %}
+              <span class="sale-price">{{ product.price | money }}</span>
+              <span class="compare-at-price">{{ product.compare_at_price | money }}</span>
+            {% else %}
+              <span class="regular-price">{{ product.price | money }}</span>
+            {% endif %}
           </div>
+  
+          <!-- Sale/Availability Message -->
+          {% if product.available %}
+          {% else %}
+            <div class="sale">SOLD OUT</div>
+          {% endif %}
+        </div>
+  
+        <div class="variations">
+          <!-- Dynamic Variant Selectors -->
+          {% for option_index in (0..product.options.size) %}
+            <div class="option-selector">
+              <label for="option-{{ option_index }}">{{ product.options[option_index] }}:</label>
+              <select id="option-{{ option_index }}" name="option{{ option_index }}">
+                {% assign option_values = '' %}
+                {% for variant in product.variants %}
+                  {% assign option_value = variant.options[option_index] %}
+                  <!-- Ensure no duplicates in dropdown -->
+                  {% unless option_values contains option_value %}
+                    <option value="{{ option_value }}">{{ option_value }}</option>
+                    {% assign option_values = option_values | append: option_value | append: ',' %}
+                  {% endunless %}
+                {% endfor %}
+              </select>
+            </div>
+          {% endfor %}
+          
+          <!-- Actions -->
+          {% if product.available %}
+            <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button>
+          {% else %}
+            <div class="unavailable">Currently Unavailable</div>
+          {% endif %}
+        </div>
+        
+        <div class="in">
+          <!-- Show/Hide Information Section -->
+          <div class="show_info">
+            <a class="button_mas">
+              <span class="fir">SHOW INFORMATION</span>
+              <span class="sec">HIDE INFORMATION</span>
+            </a>
+          </div>
+          
+          <!-- Product Information -->
+          <div class="project_info">
+            <span>{{ product.content }}</span>
+          </div> 
+        </div>
       </div>
-    </form>
+  </form>
+  
       <div class="information">
         <a href="mailto:">Contact us</a> if your size is sold out or you have any questions.
         Many of our products will be made to order, please allow up to two weeks.
