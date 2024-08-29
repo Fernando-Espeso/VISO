@@ -148,7 +148,7 @@ select {
   font-family: var(--body);
   font-size:var(--main)!important;
 }
-.product-simple {
+.product-simple #product-select{
   display: none;
 }
 .hero{
@@ -158,6 +158,9 @@ select {
   height: 100%;
   grid-column: span 12;
 
+}
+label[for="product-select"] {
+  display: none;
 }
 
 .hero .simple-text{
