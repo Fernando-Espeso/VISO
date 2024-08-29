@@ -117,9 +117,7 @@ td {
   -webkit-border-vertical-spacing: 0;
 }
 svg{
-  width: 170px;
-  align-self: flex-end;
-  padding-bottom: 0px;
+
 }
 div#product-price , .product-price-wrap, .product-price{
   letter-spacing: 1px;
