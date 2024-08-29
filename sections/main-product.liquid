@@ -14,43 +14,43 @@
   </div>
   <!--INFO-BUY-->
   <div class="buy-block">
-    <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-      {%- if product.has_only_default_variant -%}
-      class="product-simple"
-      {%- elsif product.variants.size > 1 -%}
-      class="product-variants"
-      {%- endif -%}>
-      
-      <div id="bag">
-          <div class="product-title">
-              <div class="product-price" id="product-price"></div>
-              <a href="{{ product.url }}">{{ product.title }}</a>
-          </div>
-  
-          <!-- Mostrar mensaje de oferta si el precio comparado es mayor al precio -->
-          {% if product.compare_at_price > product.price %}
-          <span class="sale">On Sale</span>
-          {% endif %}
-  
-          <!-- Mostrar si el producto está agotado -->
-          {% unless product.available %}
-          <div class="sold-out">Sold Out</div>
-          {% endunless %}
-  
-          <!-- Variantes del producto, generadas automáticamente -->
-          <div class="variations double">
-              {{ product_form }}
-  
-              <!--Acciones del formulario-->
-              {% if product.available %}
-              <button id="add-to-bag" type="submit" name="add">ADD TO BAG</button>
-              {% endif %}
-  
-              <div id="added" class="hider">PRODUCT ADDED TO BAG</div>
-          </div>
-      </div>
-  </form>
-  
+<form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+    {%- if product.has_only_default_variant -%}
+    class="product-simple"
+    {%- elsif product.variants.size > 1 -%}
+    class="product-variants"
+    {%- endif -%}>
+    
+    <div id="bag">
+        <div class="product-title">
+            <div class="product-price" id="product-price"></div>
+            <a href="{{ product.url }}">{{ product.title }}</a>
+        </div>
+
+        <!-- Mostrar mensaje de oferta si el precio comparado es mayor al precio -->
+        {% if product.compare_at_price > product.price %}
+        <span class="sale">On Sale</span>
+        {% endif %}
+
+        <!-- Mostrar si el producto está agotado -->
+        {% unless product.available %}
+        <div class="sold-out">Sold Out</div>
+        {% endunless %}
+
+        <!-- Variantes del producto, generadas automáticamente -->
+        <div class="variations double">
+            {{ product_form }}
+
+            <!--Acciones del formulario-->
+            {% if product.available %}
+            <button id="add-to-bag" type="submit" name="add">ADD TO BAG</button>
+            {% endif %}
+
+            <div id="added" class="hider">PRODUCT ADDED TO BAG</div>
+        </div>
+    </div>
+</form>
+
       <div class="information">
         <a href="mailto:">Contact us</a> if your size is sold out or you have any questions. 
         Many of our products will be made to order, please allow up to two weeks.
