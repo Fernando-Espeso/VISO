@@ -121,7 +121,7 @@ svg{
   align-self: flex-end;
   padding-bottom: 0px;
 }
-div#product-price , .product-price-wrap{
+div#product-price , .product-price-wrap, .product-price{
   letter-spacing: 1px;
   /* font-size: 14px; */
 }
