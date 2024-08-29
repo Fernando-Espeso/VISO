@@ -226,6 +226,7 @@ label {
 
 }
 div#content {
+  margin-top: 100px;
   background-color: #fffc;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
