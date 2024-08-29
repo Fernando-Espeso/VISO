@@ -98,5 +98,6 @@
     {% endfor %}
   </div>
 
+  {%- if product.metafields.custom.material != blank -%}<div class="show-description description">{{ product.metafields.custom.material }}</div>{%- endif -%}
 
 </div>
