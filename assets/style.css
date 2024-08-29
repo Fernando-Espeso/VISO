@@ -170,6 +170,7 @@ select {
 }
 
 
+
 .news-content {
   align-items: center;
   grid-template-columns: repeat(3, 11fr);
