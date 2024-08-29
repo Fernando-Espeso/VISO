@@ -82,9 +82,13 @@
     </form>
        <!-- Actions -->
        {% if product.available %}
-        <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button>
-      {% else %}
-        <div class="unavailable">Currently Unavailable</div>
+        <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
+        	ADD TO BAG
+         </button> 
+        {% else %}
+        <button  id="add-to-cart" {% unless product.selected_variant.available %}disabled{% endunless %}>
+      SOLD OUT
+         </button> 
       {% endif %}
  </div>
   <div class="info-product-piece">
