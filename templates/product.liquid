@@ -31,22 +31,27 @@
 
       <div class="variations">
         <!-- Dynamic Variant Selectors -->
-        {% for option_index in (0..product.options.size) %}
-          <div class="option-selector">
-            <label for="option-{{ option_index }}">{{ product.options[option_index] }}</label>
-            <select id="option-{{ option_index }}" name="option{{ option_index }}">
-              {% assign option_values = '' %}
-              {% for variant in product.variants %}
-                {% assign option_value = variant.options[option_index] %}
-                <!-- Ensure no duplicates in dropdown -->
-                {% unless option_values contains option_value %}
-                  <option value="{{ option_value }}">{{ option_value }}</option>
-                  {% assign option_values = option_values | append: option_value | append: ',' %}
-                {% endunless %}
-              {% endfor %}
-            </select>
-          </div>
-        {% endfor %}
+        {% if product.variants.size > 1 %}
+          {% for option_index in (0..product.options.size) %}
+            <div class="option-selector">
+              <label for="option-{{ option_index }}">{{ product.options[option_index] }}:</label>
+              <select id="option-{{ option_index }}" name="option{{ option_index }}">
+                {% assign option_values = '' %}
+                {% for variant in product.variants %}
+                  {% assign option_value = variant.options[option_index] %}
+                  <!-- Ensure no duplicates in dropdown -->
+                  {% unless option_values contains option_value %}
+                    <option value="{{ option_value }}">{{ option_value }}</option>
+                    {% assign option_values = option_values | append: option_value | append: ',' %}
+                  {% endunless %}
+                {% endfor %}
+              </select>
+            </div>
+          {% endfor %}
+        {% else %}
+          <!-- If only one variant, hide variant selection -->
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+        {% endif %}
         
         <!-- Actions -->
         {% if product.available %}
@@ -72,6 +77,7 @@
       </div>
     </div>
 </form>
+
 
 
 </div>
