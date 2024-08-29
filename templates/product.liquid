@@ -6,16 +6,23 @@
     {%- elsif product.variants.size > 1 -%}
     class="product-variants"
     {%- endif -%}>
-    
+
     <div id="bag-total">
       <div class="title">
+        <!-- Product Title -->
         <div>{{ product.title }}</div>
-        <div class="product-price" id="product-price"></div>
+        
+        <!-- Product Price -->
+        <div id="product-price">
+          {% if product.compare_at_price > product.price %}
+            <span class="sale-price">{{ product.price | money }}</span>
+            <span class="compare-at-price">{{ product.compare_at_price | money }}</span>
+          {% else %}
+            <span class="regular-price">{{ product.price | money }}</span>
+          {% endif %}
+        </div>
 
-        {% if product.compare_at_price > product.price %}
-          <span class="sale">ON SALE</span>
-        {% endif %}
-
+        <!-- Sale/Availability Message -->
         {% if product.available %}
         {% else %}
           <div class="sale">SOLD OUT</div>
@@ -28,22 +35,29 @@
           <div class="option-selector">
             <label for="option-{{ option_index }}">{{ product.options[option_index] }}:</label>
             <select id="option-{{ option_index }}" name="option{{ option_index }}">
+              {% assign option_values = '' %}
               {% for variant in product.variants %}
-                <option value="{{ variant.id }}">{{ variant.options[option_index] }}</option>
+                {% assign option_value = variant.options[option_index] %}
+                <!-- Ensure no duplicates in dropdown -->
+                {% unless option_values contains option_value %}
+                  <option value="{{ option_value }}">{{ option_value }}</option>
+                  {% assign option_values = option_values | append: option_value | append: ',' %}
+                {% endunless %}
               {% endfor %}
             </select>
           </div>
         {% endfor %}
-
+        
         <!-- Actions -->
         {% if product.available %}
-          <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button> 
+          <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button>
         {% else %}
           <div class="unavailable">Currently Unavailable</div>
         {% endif %}
       </div>
       
       <div class="in">
+        <!-- Show/Hide Information Section -->
         <div class="show_info">
           <a class="button_mas">
             <span class="fir">SHOW INFORMATION</span>
@@ -51,12 +65,14 @@
           </a>
         </div>
         
+        <!-- Product Information -->
         <div class="project_info">
           <span>{{ product.content }}</span>
         </div> 
       </div>
     </div>
 </form>
+
 
 </div>
 <div class="full-scroll">
