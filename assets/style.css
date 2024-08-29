@@ -358,7 +358,8 @@ select:disabled {
     transition: height 2s ease;
   }
   a.logo-home {
-  }
+    line-height: 0px;
+}
   .categories{
     column-count: 4;
     flex-basis: 100%;
