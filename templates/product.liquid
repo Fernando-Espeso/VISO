@@ -36,16 +36,15 @@
 
                                 <div id="bag-total" >
                                     <!--Variations Dropdown-->
-                                  {%if product.variants.size > 1 or product.variants.first.title != 'Default Title' %}
-                                    <select >
-                                    {% for variant in product.variants %}
-                                      {% unless variant.title == "Default Title" %}
-                                        <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
-                                      {% endunless %}
-                                    {% endfor %}
-                                    </select>
-                                  {% endif %}
-
+                                    {% if product.variants.size > 1 %}
+                                      <select class="product-variant-selector">
+                                      {% for variant in product.variants %}
+                                        {% unless variant.title == "Default Title" %}
+                                          <option value="{{ variant.id }}">{{ variant.title }}</option>
+                                        {% endunless %}
+                                      {% endfor %}
+                                      </select>
+                                    {% endif %}
 
                                   <!--Actions-->
                                   {% if product.available %}
