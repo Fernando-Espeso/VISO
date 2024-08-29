@@ -395,7 +395,6 @@ select:disabled {
     font-weight: 300;
     width: 100%;
     overflow: visible;
-    background-color: var(--grey!);
     color:black;
     font-family:var(--body);
     font-size:var(--main)!important;
@@ -408,7 +407,6 @@ select:disabled {
     display: grid;
     padding: 5px;
     column-gap: 2px;
-    background-color: var(--grey);
     grid-column: span 2;
   }
   .product-title{
