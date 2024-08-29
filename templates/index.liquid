@@ -3,8 +3,6 @@
     {% section 'aim' %}
     {% section 'hero' %}
   </div>
-  <div class="section-title big"><div class="section">4</div>OUR LAST PRODUCTS</div>
-  <div class="view"><a href="collections/all">VIEW ALL</a></div>
   {% assign product_limit = 4 %}
   {% for product in collections.all.products limit:product_limit %}
       {% include 'product-body' %}
