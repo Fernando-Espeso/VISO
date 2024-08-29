@@ -1,314 +1,59 @@
-<div class="main">
+<div class="main-product" data-section-id="{{ section.id }}" data-product-section>
+  <!--GALLERY-->
+
+  <!--INFO-BUY-->
   <div class="buy-block">
-    <!--PRODUCT INFO-->
-    {%- assign productFormId = 'product-form-' | append: section.id -%}
-    {%- form "product", product, id: productFormId, class: '' -%}
-    <input type="hidden" name="product-id" value="{{- product.id -}}">
-    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-    {%- if product.has_only_default_variant -%}
-    {%- elsif variants > 1 -%}
-    class="product-variants"
-    {%- endif -%}
-    <div id="bag" class="bag
-      {% if product.compare_at_price > product.price %}
-      sale
-      {% else %}
-      {% endif %}
-      {% if product.available %}
-      {% else %}
-      sold
-      {% endif %}
-    ">
-    <div class="double">
-      <div class="product-price">
-        {% if product.available %}
-        {% if product.price_varies %}
-        <span>{{ product.price_min | money }}</span> – <span>{{ product.price_max | money }}</span>
-        {% else %}
-        {% if product.compare_at_price > product.price %}
-        <s>{{ product.compare_at_price | money }}</s>
-        <span class="red">{{ product.price | money }}</span>
-        {% else %}
-        <span>{{ product.price | money }}</span>
-        {% endif %}
-        {% endif %}
-        {% else %}
-        <span>{{ product.price | money }}</span>
-        {% endif %}
+    <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+      {%- if product.has_only_default_variant -%}
+      class="product-simple"
+      {%- elsif variants > 1 -%}
+      class="product-variants"
+      {%- endif -%} >
+      <div id="bag">
+        <div class="product-title">
+          <a>{{ product.title }}</a>
+          <div class="product-price" id="product-price"></div>
+        </div>
+      
+                  {% if product.compare_at_price > product.price %}
+                      <span class="sale">On Sale</span>
+                  {% else %}
+                  {% endif %}
+          {% if product.available %}
+                    {% else %}
+        <div class="sold-out">Sold Out</div>
+                    {% endif %}
+        <div class="variations double">
+                    <select id="product-select" name="id">
+                      {% for variant in product.variants %}
+                      <option value="{{ variant.id }}"></option>
+                      {% endfor %}
+                    </select>
+                    {% if product.available %}
+                        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add">Add to cart</button>
+                    {% else %}
+                    {% endif %}
+          </div>          
       </div>
-    </div>  
-    
-      <div class="variations">
-        <!-- Button Add To Bag -->
-        {% liquid
-        assign selectedVariant = product.selected_or_first_available_variant
-        if selectedVariant.available
-        assign addToCartText = 'ADD TO BAG'
-        else
-        assign addToCartText = 'SOLD OUT'
-        endif
-        %}
-        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add" data-add-to-cart>
-          <span class="" data-add-to-cart-text>
-            {{ addToCartText }}
-          </span>
-        </button>
-        {% assign product_qty = 0 %}
-        {% for variant in product.variants %}
-        {% if variant.inventory_quantity > 0 %}
-        {% assign product_qty = product_qty | plus: variant.inventory_quantity %}
-        {% endif %}
-        {% endfor %}
+    </form>
+      <div class="information">
+        <a href="mailto:">Contact us</a> if your size is sold out or you have any questions. 
+        Many of our products will be made to order, please allow up to two weeks.
       </div>
-      <!-- Variations Dropdown -->
-
-
-    </div>
-    {% endform %}
-  </div>
-  <div class="full-scroll">
-    <div class="big section-title">{{ product.title }}</div>
-
-    <div class="product_information">
-      <div class="categories-e">
-        {% for collection in product.collections %}
-          {% unless collection.handle == 'all' or collection.handle == 'special' %}
-            <a class="categorie-e" href="{{ collection.url }}">{{ collection.title }}</a>{% unless forloop.last %}{% endunless %}
-          {% endunless %}
-
-        {% endfor %}
-        <div class="at-a">{{ product.metafields.custom.artists | metafield_tag }}</div>
-      </div>
-
-
-    </div>
-    <div class="product-description">
-      {{ product.description }}
-    </div>
-    <div class="product_gallery">
-      {% for media in product.media %}
-      {% case media.media_type %}
-      {% when 'video' %}
-      {{ media | video_tag:loop: true, autoplay: true, muted:true}}
-      {% endcase %}
-      {% case media.media_type %}
-      {% when 'image' %}
-      <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
-      {% endcase %}
-      {% endfor %}
-    </div>
+ </div>
+  <div class="info-product-piece">
+    <p>{{ product.description }}</p>
   </div>
 </div>
-<style>
-.full-scroll{
-  margin-top: 0px;
-  grid-column: span 12;
-  display:grid;
-  row-gap:2px;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.product_information {  
-  grid-template-columns: repeat(2, 1fr);
-  display:grid;
-  row-gap:2px;
-  grid-column: span 2;
-  height:fit-content;
-} 
-div#related {
-  margin-top: 2px;
-}
-.section-title{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  top: 34px;
-  position: sticky;
-  grid-column: span 2;
-}
-.intro{
-  margin-top:20px;
-  margin-bottom:20px;
-grid-column:span 2;}
-.aim {
-  padding: 20px 200px;
-  grid-column: span 2!important;
-  font-size: var(--big);
-  line-height: calc(var(--big) + 5px);
-}
-
-
-.categories-e {
-  grid-column: span 2;
-  display: flex;
-  grid-gap: 10px;
-  cursor: pointer;
-}
-.categories-e > div{
-  text-decoration:none;
-  color:white;
-}
-div#bag {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap:2px;
-}
-.view:hover{
-  background-color: black;
-  color:white;
-}
-.view{
-  cursor:pointer;
-  text-align: center;
-  background-color: var(--grey);
-  height: fit-content;
-  grid-column: span 2;
-  padding: 5px;
-}
-.bag .product-price {
-padding-left:5px;
-}
-.cat{
-  padding-left:5px;
-}
-.buy-block{
-  z-index: 1999;
-  top: 34px;
-  position: sticky;
-  height: fit-content;
-  grid-column: span 3;
-}
-
-.product_gallery {
-  grid-column: span 2;
-  margin-top: 0px;
-  width: 100%;
-  grid-gap: 2px;
-  grid-template-columns: repeat(2,1fr);
-  display: grid;
-}
-.categorie-e{
-  text-align:left;
-  padding:0px;
-}
-.at-a {
-  grid-column: span 2;
-  padding: 5px;
-  color:black!important;
-}
-.at-a:hover{
-  background-color: var(--red);
-  color:white!important;;
-}
-.long{
-  font-size: var(--big);
-  line-height: calc(var(--big) + 5px);
-  grid-column: span 2;
-  padding: 20px 10%;
-  text-align: center;
-  height: fit-content;
-  background-color:var(--grey);
-}
-.main{
-margin-top:2px;
-}
-.search{
-display:none
-}
-li{
-width:100%!important;
-}
-a#cart {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-
-/* About styles */
-@media (max-width: 1200px) {
-  .buy-block {
-    grid-column: span 4;
-}
-.categories-e {
-  grid-template-columns: repeat(4,1fr);
-}
-.full-scroll {
-  grid-column: 5/span 8;
-}
-.aim {
-  padding: 20px 30px;
-}
-.product_gallery {
-  grid-template-columns: repeat(1,1fr);
-}
-}
-@media (max-width: 800px) {
-  .full-scroll {
-    grid-column:span 12;
-  }
-  .categories-e {
-    grid-template-columns: repeat(4,1fr);
-}
-  .buy-block {
-    top: calc(var(--nav) + 7px);
-    position: sticky;
-    height: fit-content;
-    grid-column: span 12;
-}
-.section-title{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  top: 0px;
-  z-index:0;
-  position: relative;
-  grid-column: span 2;
-}
-.in{
-display:none;}
-  .product_information {
-    grid-column: span 12;
-    display: grid;
-  }
-  .categories {
-    grid-template-columns: repeat(4,1fr);
-}
-  .product_gallery {
-    grid-column:span 12;
-  }
-}
-@media (max-width: 600px) {
-  .full-scroll {
-    grid-column:span 12;
-  }
-
-  .buy-block {
-    top: calc(var(--nav) + 7px);
-    position: sticky;
-    height: fit-content;
-    grid-column: span 12;
-}
-.section-title{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  top: 0px;
-  z-index:0;
-  position: relative;
-  grid-column: span 2;
-}
-.in{
-display:none;}
-  .product_information {
-    grid-column: span 12;
-    display: grid;
-  }
-  .long {;
-    padding: 20px 5%;
-  }
-  .categories {
-    grid-template-columns: repeat(4,1fr);
-}
-  .product_gallery {
-    grid-column:span 12;
-  }
-}
-</style>
+<div class="product_gallery">
+  {% for media in product.media %}
+  {% case media.media_type %}
+  {% when 'video' %}
+  {{ media | video_tag:loop: true, autoplay: true, muted:true}}
+  {% endcase %}
+  {% case media.media_type %}
+  {% when 'image' %}
+  <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
+  {% endcase %}
+  {% endfor %}
+</div>
