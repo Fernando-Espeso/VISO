@@ -153,6 +153,9 @@ select {
 .product-simple #product-select{
   display: none;
 }
+.product-simple .selector-wrapper{
+  display: none;
+}
 .hero{
   position: relative;
   width: 500px;
