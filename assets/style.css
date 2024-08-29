@@ -244,10 +244,13 @@ div#shopify-section-hero img {
 input[type="checkbox"],
 button,
 select {
+  width: 100%;
   display: block;
   cursor: pointer;
 }
-
+select {
+  width: 100%;
+}
 * {
   font-family: var(--body);
   box-sizing: border-box;
@@ -298,6 +301,7 @@ select:disabled {
 }div#bag-total{
   display: flex;
   gap:10px;
+  margin-top: 20px;
 }
   button#add-to-cart{;
     font-size: var(--main)!important;
