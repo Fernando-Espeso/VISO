@@ -1,6 +1,6 @@
 {% section 'main-product' %}
 
-{% comment %} {% include "related" %} {% endcomment %}
+{% include "related" %}
 {% assign variants = 0 %}
 {% for option in product.options %}
 {% if product.options.first != 'Title' %}
