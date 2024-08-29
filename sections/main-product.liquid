@@ -1,18 +1,5 @@
 <div class="main-product" data-section-id="{{ section.id }}" data-product-section>
   <!--GALLERY-->
-  <div class="product_gallery">
-    {% for media in product.media %}
-    {% case media.media_type %}
-    {% when 'video' %}
-    {{ media | video_tag:loop: true, autoplay: true, muted:true}}
-    {% endcase %}
-    {% case media.media_type %}
-    {% when 'image' %}
-    <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
-    {% endcase %}
-    {% endfor %}
-  </div>
-  <!--INFO-BUY-->
   <div class="buy-block">
     <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
       {%- if product.has_only_default_variant -%}
@@ -91,6 +78,20 @@
          </button> 
       {% endif %}
  </div>
+  <div class="product_gallery">
+    {% for media in product.media %}
+    {% case media.media_type %}
+    {% when 'video' %}
+    {{ media | video_tag:loop: true, autoplay: true, muted:true}}
+    {% endcase %}
+    {% case media.media_type %}
+    {% when 'image' %}
+    <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
+    {% endcase %}
+    {% endfor %}
+  </div>
+  <!--INFO-BUY-->
+
   <div class="info-product-piece">
     <p>{{ product.description }}</p>
   </div>
