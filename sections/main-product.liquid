@@ -22,8 +22,8 @@
       {%- endif -%} >
       <div id="bag">
         <div class="product-title">
+          <a>{{ product.title }}</a>
           <div class="product-price" id="product-price"></div>
-          <a href="{{ product.url }}">{{ product.title }}</a>
         </div>
       
                   {% if product.compare_at_price > product.price %}
@@ -41,7 +41,7 @@
                       {% endfor %}
                     </select>
                     {% if product.available %}
-                        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
+                        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add">Add to cart</button>
                     {% else %}
                     {% endif %}
           </div>          
@@ -51,7 +51,6 @@
         <a href="mailto:">Contact us</a> if your size is sold out or you have any questions. 
         Many of our products will be made to order, please allow up to two weeks.
       </div>
-      <a class="size-guide" href="../pages/size-guide">Size guide</a>
  </div>
   <div class="info-product-piece">
     <p>{{ product.description }}</p>
