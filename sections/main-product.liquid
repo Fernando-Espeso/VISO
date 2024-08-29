@@ -17,7 +17,7 @@
     <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
       {%- if product.has_only_default_variant -%}
       class="product-simple"
-      {%- elsif product.variants.size > 1 -%}
+      {%- else -%}
       class="product-variants"
       {%- endif -%}>
   
@@ -29,14 +29,14 @@
               <!-- Product Price -->
               <div class="product-price" id="product-price">
                   {% if product.compare_at_price > product.price %}
-                      <span class="sale">{{ product.price | money }}</span>
+                      <span class="sale-price">{{ product.price | money }}</span>
                       <span class="compare-at-price">{{ product.compare_at_price | money }}</span>
                   {% else %}
                       <span class="regular-price">{{ product.price | money }}</span>
                   {% endif %}
               </div>
   
-              <!-- Availability/Sale Message -->
+              <!-- Sale/Availability Message -->
               {% if product.available %}
               {% else %}
                   <div class="sold-out">Sold Out</div>
@@ -44,28 +44,25 @@
           </div>
   
           <div class="variations">
-              {% if product.variants.size > 1 %}
-                  <!-- Dropdown for Multiple Variants -->
-                  <select id="product-select" name="id">
-                      {% for variant in product.variants %}
-                          <option value="{{ variant.id }}">{{ variant.title }}</option>
-                      {% endfor %}
-                  </select>
-              {% else %}
-                  <!-- Hidden input for Single Variant -->
-                  <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-              {% endif %}
+              <!-- Variant Selector -->
+              <select id="product-select" name="id">
+                  {% for variant in product.variants %}
+                      <option value="{{ variant.id }}">
+                          {{ variant.title }}
+                      </option>
+                  {% endfor %}
+              </select>
   
               <!-- Add to Cart Button -->
               {% if product.available %}
                   <button id="add-to-cart" type="submit" name="add">ADD TO CART</button>
               {% else %}
-                  <!-- Optionally include an unavailable button or message -->
                   <button id="add-to-cart" type="submit" disabled>OUT OF STOCK</button>
               {% endif %}
           </div>
       </div>
   </form>
+  
   
       <div class="information">
         <a href="mailto:">Contact us</a> if your size is sold out or you have any questions.
