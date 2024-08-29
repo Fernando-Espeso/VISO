@@ -306,7 +306,7 @@ select:disabled {
   button#add-to-cart{;
     font-size: var(--main)!important;
     height: 100%;
-    width: 100%;
+    width: 200px;
     text-align: center;
     padding: 8px;
     background-color: #0000004d;
