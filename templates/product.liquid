@@ -6,25 +6,29 @@
                 {{ product.title}}
               </div>
               <div id="product-price"></div>
-                     {% if product.compare_at_price > product.price %}
-                     {% else %}
-                     {% endif %}       
-                <div class="product-price-wrap"> 
-                  {% if product.available %}
-                  {% if product.price_varies %}
-                  {% else %}
-                    {% if product.compare_at_price > product.price %}
-                    <span class="red">ON SALE</span>
-                    {% else %}
-                  <span>-</span>
-                    {% endif %}
-                  {% endif %}
-                  {% else %}
-                  <span class="sold-out">SOLD OUT</span>
-                  {% endif %}
-                </div> 
-              </div>
-        
+
+<div class="product-price-wrap">
+    {% if product.available %}
+        {% if product.price_varies %}
+            <!-- Logic for variable price products -->
+            <span class="price">{{ product.price_min | money }} - {{ product.price_max | money }}</span>
+        {% else %}
+            <!-- Single price product -->
+            {% if product.compare_at_price > product.price %}
+                <!-- Product is on sale -->
+                <span class="red">ON SALE</span>
+                <span class="price">{{ product.price | money }}</span>
+                <span class="compare-price">{{ product.compare_at_price | money }}</span>
+            {% else %}
+                <!-- Regular priced product -->
+                <span class="price">{{ product.price | money }}</span>
+            {% endif %}
+        {% endif %}
+    {% else %}
+        <!-- Product is not available -->
+        <span class="sold-out">SOLD OUT</span>
+    {% endif %}
+</div>
                 <div class="add_item">
                       <!--Product Info-->
                       <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
