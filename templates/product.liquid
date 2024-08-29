@@ -33,7 +33,7 @@
         <!-- Dynamic Variant Selectors -->
         {% for option_index in (0..product.options.size) %}
           <div class="option-selector">
-            <label for="option-{{ option_index }}">{{ product.options[option_index] }}:</label>
+            <label for="option-{{ option_index }}">{{ product.options[option_index] }}</label>
             <select id="option-{{ option_index }}" name="option{{ option_index }}">
               {% assign option_values = '' %}
               {% for variant in product.variants %}
