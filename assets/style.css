@@ -308,8 +308,7 @@ select:disabled {
     height: 100%;
     width: 100%;
     text-align: center;
-    padding: 5px;
-    font-size: clamp(var(--big), 1.5vw, 2rem)!important;
+    padding: 8px;
     background-color: #0000004d;
     color: #fff;
     
