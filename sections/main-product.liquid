@@ -68,9 +68,7 @@
   </div>
   <div class="full-scroll">
     <div class="big section-title">{{ product.title }}</div>
-    <div class="product-description">
-      {{ product.description }}
-    </div>
+
     <div class="product_information">
       <div class="categories-e">
         {% for collection in product.collections %}
@@ -81,10 +79,11 @@
         {% endfor %}
         <div class="at-a">{{ product.metafields.custom.artists | metafield_tag }}</div>
       </div>
-      <div class="intro">
-        {{ product.metafields.custom.extra_info }}
-      </div>
 
+
+    </div>
+    <div class="product-description">
+      {{ product.description }}
     </div>
     <div class="product_gallery">
       {% for media in product.media %}
@@ -116,9 +115,6 @@
   grid-column: span 2;
   height:fit-content;
 } 
-product-variants {
-    display: none!important;
-}
 div#related {
   margin-top: 2px;
 }
