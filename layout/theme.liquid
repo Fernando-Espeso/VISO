@@ -33,9 +33,6 @@ fernandoepeso.info
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   {{ 'current-device-browser.min.js' | asset_url | script_tag }}
-  {%- if template == 'product' -%}
-    {{ 'option_selection.js' | shopify_asset_url | script_tag }}
-  {%- endif -%}
   {{ 'global.js' | asset_url | script_tag }}
   {%- if template == "cart" and cart.item_count > 0 -%}
     {{ 'global-cart.js' | asset_url | script_tag }}
@@ -116,7 +113,7 @@ fernandoepeso.info
         </a>
         
 
-        
+
         <div class="shop {% if template contains 'collection' %} active {% endif %}"><a>SHOP</a></div>
         <div class="artist{% if request.path == '/pages/stockist' %} active{% endif %}"><a href="/pages/stockist">STOCKLIST</a></div>
         <div class="information{% if request.path == '/pages/information' %} active{% endif %}"><a href="/pages/information">ABOUT</a></div>
