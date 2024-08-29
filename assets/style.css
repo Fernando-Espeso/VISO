@@ -208,6 +208,12 @@ label {
   padding: 0 100px;
 
 }
+.selector-wrapper {
+  font-size: clamp(var(--big), 1.5vw, 2rem);
+  border-radius: 4px;
+  background: lightgray;
+  padding: 5px;
+}
 .product-description{
   font-size: clamp(var(--big), 1.5vw, 2rem);
   line-height: 120%;
@@ -287,13 +293,14 @@ select:disabled {
     text-align: left;
     display: none;
 }
-  button#add-to-bag {
+  button#add-to-cart{
     border-radius: 5px;
     font-size: var(--main)!important;
     height: 100%;
     width: 100%;
     text-align: center;
     padding: 15px;
+    font-size: clamp(var(--big), 1.5vw, 2rem);
     padding-bottom: 12px!important;
     background-color: #0000004d;
     color: #fff;
