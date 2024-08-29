@@ -3,54 +3,61 @@
   <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
     {%- if product.has_only_default_variant -%}
     class="product-simple"
-    {%- elsif variants > 1 -%}
+    {%- elsif product.variants.size > 1 -%}
     class="product-variants"
     {%- endif -%}>
-    <div id="bag-total" >
+    
+    <div id="bag-total">
       <div class="title">
         <div>{{ product.title }}</div>
-              <div id="product-price"></div>
-                 {% if product.compare_at_price > product.price %}
-                    <span class="sale">ON SALE</span>
-                 {% else %}
-                 {% endif %}
-         {% if product.available %}
-                  {% else %}
-       <div class="sale">SOLD OUT</div>        
-                  {% endif %}
-       </div>
-     <div class="variations"> 
-                  <!--Variations Dropdown-->
-                  <select id="product-select" name="id">
+        <div id="product-price"></div>
 
-                    {% for variant in product.variants %}
+        {% if product.compare_at_price > product.price %}
+          <span class="sale">ON SALE</span>
+        {% endif %}
 
-                    <option value="{{ variant.id }}">CHOOSE SIZE:
+        {% if product.available %}
+        {% else %}
+          <div class="sale">SOLD OUT</div>
+        {% endif %}
+      </div>
 
-                    </option>
-
-                    {% endfor %}
-                  </select>  
-         
-                  <!--Actions-->
-                  {% if product.available %}
-                      <button id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO BAG</button> 
-                  {% else %}
-                       
-                  {% endif %}
-       </div> 
-  
-      <div class="in">
-         <div class="show_info"><a class="button_mas"><span class="fir">SHOW INFORMATION</span><span class="sec">HIDE INFORMATION</span></a>
-                 
+      <div class="variations">
+        <!-- Dynamic Variant Selectors -->
+        {% for option_index in (0..product.options.size) %}
+          <div class="option-selector">
+            <label for="option-{{ option_index }}">{{ product.options[option_index] }}:</label>
+            <select id="option-{{ option_index }}" name="option{{ option_index }}">
+              {% for variant in product.variants %}
+                <option value="{{ variant.id }}">{{ variant.options[option_index] }}</option>
+              {% endfor %}
+            </select>
           </div>
-<div class="project_info">
-                   <span> {{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}</span>
-              </div> </div> 
+        {% endfor %}
 
-    
+        <!-- Actions -->
+        {% if product.available %}
+          <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button> 
+        {% else %}
+          <div class="unavailable">Currently Unavailable</div>
+        {% endif %}
+      </div>
+      
+      <div class="in">
+        <div class="show_info">
+          <a class="button_mas">
+            <span class="fir">SHOW INFORMATION</span>
+            <span class="sec">HIDE INFORMATION</span>
+          </a>
+        </div>
+        
+        <div class="project_info">
+          <span>{{ product.content }}</span>
+        </div> 
+      </div>
     </div>
 </form>
+
 </div>
 <div class="full-scroll">
   <div class="big section-title">{{ product.title }}</div>
