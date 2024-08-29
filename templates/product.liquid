@@ -79,13 +79,14 @@
           </div> 
         </div>
       </div>
+          <!-- Actions -->
+          {% if product.available %}
+            <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button>
+          {% else %}
+            <div class="unavailable">Currently Unavailable</div>
+          {% endif %}
     </form>
-       <!-- Actions -->
-       {% if product.available %}
-        <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button>
-      {% else %}
-        <div class="unavailable">Currently Unavailable</div>
-      {% endif %}
+   
  </div>
   <div class="info-product-piece">
     <p>{{ product.description }}</p>
