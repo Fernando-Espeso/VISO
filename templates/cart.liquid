@@ -64,6 +64,28 @@
 {% else %}
   <!--Empty Bag-->
     <div class="empty-cart">Your cart is currentlt empty </div>
+
+    <script>
+      $(".shop").toggleClass("active");
+      ishide = !ishide;
+
+      if (ishide) {
+          setTimeout(function() {
+              $('.categories').addClass("hid");
+          }, 100);
+          setTimeout(function() {
+              $('.categories').addClass("show");
+          }, 500);
+      } else {
+          setTimeout(function() {
+              $('.categories').removeClass("hid");
+          }, 500);
+          setTimeout(function() {
+              $('.categories').removeClass("show");
+          }, 100);
+      }
+    
+    </script>
 {% endif %}
 </div>
 
