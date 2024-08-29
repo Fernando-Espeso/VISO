@@ -173,7 +173,9 @@ label[for="product-select"] {
   color: white;
   background-color: var(--blue);
 }
-
+label {
+  display: none;
+}
 
 
 .news-content {
