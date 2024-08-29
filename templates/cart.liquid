@@ -65,29 +65,7 @@
   <!--Empty Bag-->
     <div class="empty-cart">Your cart is currentlt empty </div>
 
-    <script>
-      setTimeout(function() {
-      let ishide = false;
-      $(".shop").toggleClass("active");
-      ishide = !ishide;
-
-      if (ishide) {
-          setTimeout(function() {
-              $('.categories').addClass("hid");
-          }, 100);
-          setTimeout(function() {
-              $('.categories').addClass("show");
-          }, 500);
-      } else {
-          setTimeout(function() {
-              $('.categories').removeClass("hid");
-          }, 500);
-          setTimeout(function() {
-              $('.categories').removeClass("show");
-          }, 100);
-      }
-    }, 1000);
-    </script>
+   
 {% endif %}
 </div>
 
