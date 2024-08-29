@@ -7,7 +7,6 @@
 {% assign variants = variants | plus: 1 %}
 {% endif %}
 {% endfor %}
-
 <script>
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
@@ -47,6 +46,14 @@
     {% endif %}
     {% endfor %}
   });
+
+  function ShowSecond() {
+    var added = document.getElementById("added");
+    added.className = "showe";
+    setTimeout(function () {
+        added.className = 'hider';
+    }, 2000);
+}
 </script>
 <style>
   .product-variants {
