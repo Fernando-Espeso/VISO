@@ -31,7 +31,7 @@
           <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
           {%- if product.has_only_default_variant -%}
           class="product-simple"
-          {%- elsif variants > 1 -%}
+          {%- elsif variants > 0 -%}
           class="product-variants"
           {%- endif -%}>
 
