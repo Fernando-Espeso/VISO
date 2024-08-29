@@ -191,13 +191,19 @@ select {
   grid-column: span 12;
 }
 
-.news-content .title-seccion.big, .{
+.news-content .title-seccion.big{
   grid-column: span 3;
   font-size: clamp(var(--big), 1.5vw, 2rem);
   text-align: center;
   line-height: 120%;
   color: grey;
   padding: 0 100px;
+
+}
+.product-description{
+  font-size: clamp(var(--big), 1.5vw, 2rem);
+  line-height: 120%;
+  color: grey;
 
 }
 
@@ -274,17 +280,22 @@ select:disabled {
     display: none;
 }
   button#add-to-bag {
+    border-radius: 5px;
     font-size: var(--main)!important;
     height: 100%;
     width: 100%;
     text-align: center;
     padding: 15px;
     padding-bottom: 12px!important;
-    background-color: #000;
+    background-color: #0000004d;
     color: #fff;
     
   }
+  .product-description {
+    font-size: clamp(var(--big), 1.5vw, 2rem)!important; 
 
+
+  }
   button#checkout {
     font-family: var(--body);
     font-size: var(--main)!important;
