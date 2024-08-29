@@ -1,43 +1,26 @@
 <div class="main">
-  {%- assign productFormId = 'product-form-' | append: section.id -%}
-  {%- form "product", product, id: productFormId, class: '' -%}
-  <div class="buy-block">
-    <!--PRODUCT INFO-->
 
-    <input type="hidden" name="product-id" value="{{- product.id -}}">
-    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-    {%- if product.has_only_default_variant -%}
-    {%- elsif variants > 1 -%}
-    class="product-variants"
-    {%- endif -%}
-    <div id="bag" class="bag
-      {% if product.compare_at_price > product.price %}
-      sale
-      {% else %}
-      {% endif %}
-      {% if product.available %}
-      {% else %}
-      sold
-      {% endif %}
-    ">
-   
-
-
-
-
-  </div>
   <div class="full-scroll">
-    <div class="big section-title">{{ product.title }}</div>
-    <div class="product_information">
-      <div class="categories-e">
-        {% for collection in product.collections %}
-          {% unless collection.handle == 'all' or collection.handle == 'special' %}
-            <a class="categorie-e" href="{{ collection.url }}">{{ collection.title }}</a>{% unless forloop.last %}{% endunless %}
-          {% endunless %}
-
-        {% endfor %}
-        <div class="at-a">{{ product.metafields.custom.artists | metafield_tag }}</div>
-      </div>
+    <div class="buy-block">
+      <!--PRODUCT INFO-->
+      {%- assign productFormId = 'product-form-' | append: section.id -%}
+      {%- form "product", product, id: productFormId, class: '' -%}
+      <input type="hidden" name="product-id" value="{{- product.id -}}">
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      {%- if product.has_only_default_variant -%}
+      {%- elsif variants > 1 -%}
+      class="product-variants"
+      {%- endif -%}
+      <div id="bag" class="bag
+        {% if product.compare_at_price > product.price %}
+        sale
+        {% else %}
+        {% endif %}
+        {% if product.available %}
+        {% else %}
+        sold
+        {% endif %}
+      ">
       <div class="double">
         <div class="product-price">
           {% if product.available %}
@@ -83,6 +66,22 @@
         {% render 'product-variants', product: product, formID: productFormId %}
   
       </div>
+      {% endform %}
+    </div>
+    <div class="big section-title">{{ product.title }}</div>
+    <div class="product_information">
+      <div class="categories-e">
+        {% for collection in product.collections %}
+          {% unless collection.handle == 'all' or collection.handle == 'special' %}
+            <a class="categorie-e" href="{{ collection.url }}">{{ collection.title }}</a>{% unless forloop.last %}{% endunless %}
+          {% endunless %}
+
+        {% endfor %}
+        <div class="at-a">{{ product.metafields.custom.artists | metafield_tag }}</div>
+      </div>
+      <div class="intro">
+        {{ product.metafields.custom.extra_info }}
+      </div>
 
     </div>
     <div class="product-description">
@@ -101,7 +100,6 @@
       {% endfor %}
     </div>
   </div>
-{% endform %}
 </div>
 <style>
 .full-scroll{
