@@ -66,6 +66,7 @@
     <div class="empty-cart">Your cart is currentlt empty </div>
 
     <script>
+      setTimeout(function() {
       let ishide = true;
       $(".shop").toggleClass("active");
       ishide = !ishide;
@@ -85,7 +86,7 @@
               $('.categories').removeClass("show");
           }, 100);
       }
-    
+    }, 1000);
     </script>
 {% endif %}
 </div>
