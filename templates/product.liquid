@@ -41,18 +41,6 @@
                                     <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
                                     {% endfor %}
                                   </select>  
-
-                                  {% if product.variants.size > 1 %}
-                                    <select id="product-select" name="id">
-                                    {% for variant in product.variants %}
-                                      {% unless variant.title == "Default Title" %}
-                                        <option value="{{ variant.id }}">{{ variant.title }}</option>
-                                      {% endunless %}
-                                    {% endfor %}
-                                    </select>
-                                  {% endif %}
-
-
                                   <!--Actions-->
                                   {% if product.available %}
                                   <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
@@ -68,7 +56,7 @@
                       </form>
 
                 </div> 
-       </div>         
+      </div>         
     </div>
   </div>
   <div class="product-description">
