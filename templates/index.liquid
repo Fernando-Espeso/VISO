@@ -3,8 +3,6 @@
     {% section 'aim' %}
     {% section 'hero' %}
   </div>
-  <div class="section-title big"><div class="section">4</div>OUR LAST PRODUCTS</div>
-  <div class="view"><a href="collections/all">VIEW ALL</a></div>
   {% assign product_limit = 4 %}
   {% for product in collections.all.products limit:product_limit %}
       {% include 'product-body' %}
@@ -62,27 +60,15 @@
 }
 .product-price-wrap{
 display: none!important;}
+
 .view{
   text-align: center;
-  background-color: var(--grey);
   height: fit-content;
   grid-column: span 12;
   padding: 5px;
 }
-.view:hover{
-  background-color: black;
-  color:white;
-}
-.view:hover a{
-  color:white;
-}
-div#block-text_rMrhj6 {
-  margin-bottom:2px;
-  text-align: center;
-  grid-column: span 4;
-  padding: 20px 0px;
-  background-color: var(--yellow);
-}
+
+
 section#desplegable {
   grid-column: span 12;
   display: grid;
