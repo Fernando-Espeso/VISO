@@ -1,352 +1,59 @@
-<div class="main">
-  <div class="full-scroll">
-    <div class="add_row">
-        <div class="row">
-              <div class="product-title">
-                {{ product.title}}
-              </div>
-              <div id="product-price"></div>
-                     {% if product.compare_at_price > product.price %}
-                     {% else %}
-                     {% endif %}       
-              <div class="product-price-wrap"> 
-                {% if product.available %}
-                  {% if product.price_varies %}
-                    <span class="red">–</span>
-                  {% else %}
-                    {% if product.compare_at_price > product.price %}
-                    <span class="red">ON SALE</span>
-                    {% else %}
-                 <span>-</span>
-                    {% endif %}
-                  {% endif %}
-                {% else %}
-                <span class="sold-out">SOLD OUT</span>
-                {% endif %}
-             </div> 
-        </div>
-        <div class="add_item">
-          <!--Product Info-->
-          <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-            {%- if product.has_only_default_variant -%}
-            class="product-simple"
-            {%- elsif product.variants.size > 1 -%}
-            class="product-variants"
-            {%- endif -%}>
-            
-            <div id="bag-total">
-                <!--Variations Dropdown-->
-                {%- if product.variants.size > 1 -%}
-                <select id="product-select" name="id">
-                    {% for variant in product.variants %}
-                    <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
-                    {% endfor %}
-                </select>
-                {%- else -%}
-                <!-- Mostrar el título de la única variante disponible -->
-                <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-                {%- endif -%}
-                
-                <!--Actions-->
-                {% if product.available %}
-                <button id="add-to-cart" onclick="ShowSecond()" type="submit" name="add">
-                    ADD TO BAG
-                </button>
-                <div id="added" class="hider">PRODUCT ADDED TO BAG</div>
-                {% else %}
-                <button id="add-to-cart" disabled>
-                    SOLD OUT
-                </button>
-                {% endif %}
-            </div>
-        </form>
-          </div> 
-    </div>
+<div class="main-product" data-section-id="{{ section.id }}" data-product-section>
+  <!--GALLERY-->
+  <div class="product_gallery">
+    {% for media in product.media %}
+    {% case media.media_type %}
+    {% when 'video' %}
+    {{ media | video_tag:loop: true, autoplay: true, muted:true}}
+    {% endcase %}
+    {% case media.media_type %}
+    {% when 'image' %}
+    <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
+    {% endcase %}
+    {% endfor %}
   </div>
-  <div class="full-scroll">
-    <div class="big section-title">{{ product.title }}</div>
-
-    <div class="product_information">
-      <div class="categories-e">
-        {% for collection in product.collections %}
-          {% unless collection.handle == 'all' or collection.handle == 'special' %}
-            <a class="categorie-e" href="{{ collection.url }}">{{ collection.title }}</a>{% unless forloop.last %}{% endunless %}
-          {% endunless %}
-
-        {% endfor %}
-        <div class="at-a">{{ product.metafields.custom.artists | metafield_tag }}</div>
+  <!--INFO-BUY-->
+  <div class="buy-block">
+    <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+      {%- if product.has_only_default_variant -%}
+      class="product-simple"
+      {%- elsif variants > 1 -%}
+      class="product-variants"
+      {%- endif -%} >
+      <div id="bag">
+        <div class="product-title">
+          <div class="product-price" id="product-price"></div>
+          <a href="{{ product.url }}">{{ product.title }}</a>
+        </div>
+      
+                  {% if product.compare_at_price > product.price %}
+                      <span class="sale">On Sale</span>
+                  {% else %}
+                  {% endif %}
+          {% if product.available %}
+                    {% else %}
+        <div class="sold-out">Sold Out</div>
+                    {% endif %}
+        <div class="variations double">
+                    <select id="product-select" name="id">
+                      {% for variant in product.variants %}
+                      <option value="{{ variant.id }}"></option>
+                      {% endfor %}
+                    </select>
+                    {% if product.available %}
+                        <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
+                    {% else %}
+                    {% endif %}
+          </div>          
       </div>
-
-
-    </div>
-    <div class="product-description">
-      {{ product.description }}
-    </div>
-    <div class="product_gallery">
-      {% for media in product.media %}
-      {% case media.media_type %}
-      {% when 'video' %}
-      {{ media | video_tag:loop: true, autoplay: true, muted:true}}
-      {% endcase %}
-      {% case media.media_type %}
-      {% when 'image' %}
-      <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
-      {% endcase %}
-      {% endfor %}
-    </div>
+    </form>
+      <div class="information">
+        <a href="mailto:">Contact us</a> if your size is sold out or you have any questions. 
+        Many of our products will be made to order, please allow up to two weeks.
+      </div>
+      <a class="size-guide" href="../pages/size-guide">Size guide</a>
+ </div>
+  <div class="info-product-piece">
+    <p>{{ product.description }}</p>
   </div>
 </div>
-<style>
-.full-scroll{
-  margin-top: 0px;
-  grid-column: span 12;
-  display:grid;
-  row-gap:2px;
-  grid-template-columns: repeat(1, 1fr);
-}
-
-.product_information {  
-  grid-template-columns: repeat(2, 1fr);
-  display:grid;
-  row-gap:2px;
-  grid-column: span 2;
-  height:fit-content;
-} 
-div#related {
-  margin-top: 2px;
-}
-.section-title{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  top: 34px;
-  position: sticky;
-  grid-column: span 2;
-}
-.intro{
-  margin-top:20px;
-  margin-bottom:20px;
-grid-column:span 2;}
-.aim {
-  padding: 20px 200px;
-  grid-column: span 2!important;
-  font-size: var(--big);
-  line-height: calc(var(--big) + 5px);
-}
-
-
-.categories-e {
-  grid-column: span 2;
-  display: flex;
-  grid-gap: 10px;
-  cursor: pointer;
-}
-.categories-e > div{
-  text-decoration:none;
-  color:white;
-}
-div#bag {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap:2px;
-}
-.view:hover{
-  background-color: black;
-  color:white;
-}
-.view{
-  cursor:pointer;
-  text-align: center;
-  background-color: var(--grey);
-  height: fit-content;
-  grid-column: span 2;
-  padding: 5px;
-}
-.bag .product-price {
-padding-left:5px;
-}
-.cat{
-  padding-left:5px;
-}
-.buy-block{
-  z-index: 1999;
-  top: 34px;
-  position: sticky;
-  height: fit-content;
-  grid-column: span 3;
-}
-
-.product_gallery {
-  grid-column: span 2;
-  margin-top: 0px;
-  width: 100%;
-  grid-gap: 2px;
-  grid-template-columns: repeat(2,1fr);
-  display: grid;
-}
-.categorie-e{
-  text-align:left;
-  padding:0px;
-}
-.at-a {
-  grid-column: span 2;
-  padding: 5px;
-  color:black!important;
-}
-.at-a:hover{
-  background-color: var(--red);
-  color:white!important;;
-}
-.long{
-  font-size: var(--big);
-  line-height: calc(var(--big) + 5px);
-  grid-column: span 2;
-  padding: 20px 10%;
-  text-align: center;
-  height: fit-content;
-  background-color:var(--grey);
-}
-.main{
-margin-top:2px;
-}
-.search{
-display:none
-}
-li{
-width:100%!important;
-}
-a#cart {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-
-/* About styles */
-@media (max-width: 1200px) {
-  .buy-block {
-    grid-column: span 4;
-}
-.categories-e {
-  grid-template-columns: repeat(4,1fr);
-}
-.full-scroll {
-  grid-column: 5/span 8;
-}
-.aim {
-  padding: 20px 30px;
-}
-.product_gallery {
-  grid-template-columns: repeat(1,1fr);
-}
-}
-@media (max-width: 800px) {
-  .full-scroll {
-    grid-column:span 12;
-  }
-  .categories-e {
-    grid-template-columns: repeat(4,1fr);
-}
-  .buy-block {
-    top: calc(var(--nav) + 7px);
-    position: sticky;
-    height: fit-content;
-    grid-column: span 12;
-}
-.section-title{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  top: 0px;
-  z-index:0;
-  position: relative;
-  grid-column: span 2;
-}
-.in{
-display:none;}
-  .product_information {
-    grid-column: span 12;
-    display: grid;
-  }
-  .categories {
-    grid-template-columns: repeat(4,1fr);
-}
-  .product_gallery {
-    grid-column:span 12;
-  }
-}
-@media (max-width: 600px) {
-  .full-scroll {
-    grid-column:span 12;
-  }
-
-  .buy-block {
-    top: calc(var(--nav) + 7px);
-    position: sticky;
-    height: fit-content;
-    grid-column: span 12;
-}
-.section-title{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  top: 0px;
-  z-index:0;
-  position: relative;
-  grid-column: span 2;
-}
-.in{
-display:none;}
-  .product_information {
-    grid-column: span 12;
-    display: grid;
-  }
-  .long {;
-    padding: 20px 5%;
-  }
-  .categories {
-    grid-template-columns: repeat(4,1fr);
-}
-  .product_gallery {
-    grid-column:span 12;
-  }
-}
-</style>
-<script>
-  //PRODUCT FUNCTIONS
-  var selectCallback = function(variant, selector){
-    if(variant){
-      if(variant.available){
-        jQuery('#add-to-cart').prop('disabled', false).text('ADD TO BAG');
-      }else{
-        jQuery('#add-to-cart').prop('disabled', true).text('SOLD OUT');
-      }
-      if( variant.compare_at_price > variant.price ) {
-        {% if variant.price < variant.compare_at_price %} {{ variant.compare_at_price | money }}{% endif %}
-        jQuery('#product-price').html(Shopify.formatMoney(variant.price, "<span>{{ shop.money_format }}</span>") + " <s>" + Shopify.formatMoney(variant.compare_at_price, "{{ shop.money_format }}") + "</s>");
-      }else{
-        jQuery('#product-price').html(Shopify.formatMoney(variant.price, "{{ shop.money_format }}"));
-      }
-    }else{
-      jQuery('#product-price').empty();
-      jQuery('#add-to-cart').prop('disabled', true).text('ADD TO BAG');
-      {% if product.price_varies %}
-        jQuery('#product-price').html('{{ product.price_min | money }} – {{ product.price_max | money }}' );
-      {% else %}
-        jQuery('#product-price').html('{{ product.price | money }}');
-      {% endif %}
-    }
-  };
-
-  jQuery(function($) {
-    new Shopify.OptionSelectors('product-select', {
-      product: {{ product | json }},
-      onVariantSelected: selectCallback
-    });
-    {% assign count = -1 %}
-    {% for option in product.options %}
-    {% if product.options.first != 'Title' %}
-      {% assign count = count | plus: 1 %}
-      $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
-    {% endif %}
-    {% endfor %}
-  });
-
-</script>
