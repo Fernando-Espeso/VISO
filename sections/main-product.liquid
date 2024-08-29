@@ -14,8 +14,6 @@
   </div>
   <!--INFO-BUY-->
   <div class="buy-block">
-
-    
     <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
       {%- if product.has_only_default_variant -%}
       class="product-simple"
@@ -74,12 +72,6 @@
         
         <div class="in">
           <!-- Show/Hide Information Section -->
-          <div class="show_info">
-            <a class="button_mas">
-              <span class="fir">SHOW INFORMATION</span>
-              <span class="sec">HIDE INFORMATION</span>
-            </a>
-          </div>
           
           <!-- Product Information -->
           <div class="project_info">
@@ -87,17 +79,13 @@
           </div> 
         </div>
       </div>
-  </form>
+    </form>
        <!-- Actions -->
        {% if product.available %}
         <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button>
       {% else %}
         <div class="unavailable">Currently Unavailable</div>
       {% endif %}
-      <div class="information">
-        <a href="mailto:">Contact us</a> if your size is sold out or you have any questions.
-        Many of our products will be made to order, please allow up to two weeks.
-      </div>
  </div>
   <div class="info-product-piece">
     <p>{{ product.description }}</p>
