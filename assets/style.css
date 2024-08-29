@@ -121,7 +121,10 @@ svg{
   align-self: flex-end;
   padding-bottom: 0px;
 }
-
+div#product-price {
+  letter-spacing: 1px;
+  /* font-size: 14px; */
+}
 input,
 button,
 select {
