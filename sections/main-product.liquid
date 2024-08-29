@@ -69,12 +69,7 @@
             <input type="hidden" name="id" value="{{ product.variants.first.id }}">
           {% endif %}
           
-          <!-- Actions -->
-          {% if product.available %}
-            <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button>
-          {% else %}
-            <div class="unavailable">Currently Unavailable</div>
-          {% endif %}
+     
         </div>
         
         <div class="in">
@@ -93,7 +88,12 @@
         </div>
       </div>
   </form>
-  
+       <!-- Actions -->
+       {% if product.available %}
+        <button id="add-to-cart" type="submit" name="add">ADD TO BAG</button>
+      {% else %}
+        <div class="unavailable">Currently Unavailable</div>
+      {% endif %}
       <div class="information">
         <a href="mailto:">Contact us</a> if your size is sold out or you have any questions.
         Many of our products will be made to order, please allow up to two weeks.
