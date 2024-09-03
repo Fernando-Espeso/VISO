@@ -449,6 +449,12 @@ select:disabled {
     column-gap: 2px;
     grid-column: span 2;
   }
+  .total{
+    grid-template-columns: repeat(2 ,1fr);
+    display: grid;
+    column-gap: 2px;
+    grid-column: span 2;
+  }
   .product-title{
     line-height: var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem);
