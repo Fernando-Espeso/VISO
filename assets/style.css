@@ -446,7 +446,6 @@ select:disabled {
   .double {
     grid-template-columns: repeat(2 ,1fr);
     display: grid;
-    padding: 5px;
     column-gap: 2px;
     grid-column: span 2;
   }
