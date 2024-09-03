@@ -626,6 +626,11 @@ section#stocklist .sec {
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem); 
 }
+select:focus {
+  outline: none;
+  box-shadow: none; /* Esto también elimina cualquier sombra de foco */
+  border: 1px solid #ccc; /* Esto es opcional para agregar un borde personalizado */
+}
 p.info-collection{
   color: grey;
   line-height:var(--lh);
