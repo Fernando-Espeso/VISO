@@ -33,28 +33,25 @@
                   </span>
             </div>
           </div>
-         <div class="
-    {% if item.has_only_default_variant %}
-        product-simple
-    {% elsif item.variants.size > 1 %}
-        product-variants
-    {% endif %}
-">
-
-  <!-- Product Size Title -->
-  <div class="siz">SIZE</div>
-
-  <!-- Loop through product options -->
-  <div class="siz">
-    {% for option in item.product.options %}
-      {{ item.selected_or_first_available_variant.options[forloop.index0] }}
-      {% unless forloop.last %}
-        <br>
-      {% endunless %}
-    {% endfor %}
-  </div>
-</div>
-
+          <div class="{% if item.has_only_default_variant %}
+                      product-simple
+                    {% elsif item.variants.size > 1 %}
+                      product-variants
+                    {% endif %}">
+            
+            <!-- Product Size Title -->
+            <div class="siz">SIZE</div>
+        
+            <!-- Loop through product options -->
+            <div class="siz">
+                {% for option_title in item.product.options %}
+                    {{ item.variant.options[forloop.index0] }}
+                    {% unless forloop.last %}
+                        <br>
+                    {% endunless %}
+                {% endfor %}
+            </div>
+          </div>
           <div class="double">
             <div class="siz">SUBTOTAL</div>
             <div class="siz">{{ item.line_price | money }}</div>
