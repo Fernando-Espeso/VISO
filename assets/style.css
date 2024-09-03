@@ -631,6 +631,10 @@ p.info-collection{
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem); 
 }
+.cart-products{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 /* About styles */
 @media (max-width: 1200px) {
 }

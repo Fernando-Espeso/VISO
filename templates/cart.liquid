@@ -10,59 +10,61 @@
       <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
       <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
     </div>
-    {% for item in cart.items %}
-      <div class="item">
-        <div class="thumb">
-          <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
-        </div>
-        <div style="background-color:var(--darker);" class="row">
-          <div class="main-information">
-            <div class="product-title">{{ item.product.title }}</div>
-            <div class="product-price">{{ item.price | money }}</div>
+    <div class="cart-products">
+      {% for item in cart.items %}
+        <div class="item">
+          <div class="thumb">
+            <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
           </div>
-        </div>
-          <div class="double">
-                <div class="item-quantity">
-                  <span data-field="updates" class="quantity-button minus"><span>–</span></span>
-                  <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
-                  <span class="quantity-wrap"></span>
-                  <span data-field="updates" class="quantity-button plus">
-                    <span class="addmore">+</span>
-                    {% if cart.items.available %}
-                    {% else %}
-                    {% endif %}
-                  </span>
-                </div>
-                <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
-          </div>
-          <div 
-            class="double {% if item.has_only_default_variant %}
-                      product-simple
-                    {% elsif item.variants.size > 1 %}
-                      product-variants
-                    {% endif %}"
-                  >
-            
-            <!-- Product Size Title -->
-            <div class="siz">OPTIONS</div>
-        
-            <!-- Loop through product options -->
-            <div class="siz">
-                {% for option_title in item.product.options %}
-                    {{ item.variant.options[forloop.index0] }}
-                    {% unless forloop.last %}
-                        <br>
-                    {% endunless %}
-                {% endfor %}
+          <div style="background-color:var(--darker);" class="row">
+            <div class="main-information">
+              <div class="product-title">{{ item.product.title }}</div>
+              <div class="product-price">{{ item.price | money }}</div>
             </div>
-        </div>
-          <div class="double">
-            <div class="siz">SUBTOTAL</div>
-            <div class="siz">{{ item.line_price | money }}</div>
-          </div>    
+          </div>
+            <div class="double">
+                  <div class="item-quantity">
+                    <span data-field="updates" class="quantity-button minus"><span>–</span></span>
+                    <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+                    <span class="quantity-wrap"></span>
+                    <span data-field="updates" class="quantity-button plus">
+                      <span class="addmore">+</span>
+                      {% if cart.items.available %}
+                      {% else %}
+                      {% endif %}
+                    </span>
+                  </div>
+                  <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
+            </div>
+            <div 
+              class="double {% if item.has_only_default_variant %}
+                        product-simple
+                      {% elsif item.variants.size > 1 %}
+                        product-variants
+                      {% endif %}"
+                    >
+              
+              <!-- Product Size Title -->
+              <div class="siz">OPTIONS</div>
+          
+              <!-- Loop through product options -->
+              <div class="siz">
+                  {% for option_title in item.product.options %}
+                      {{ item.variant.options[forloop.index0] }}
+                      {% unless forloop.last %}
+                          <br>
+                      {% endunless %}
+                  {% endfor %}
+              </div>
+          </div>
+            <div class="double">
+              <div class="siz">SUBTOTAL</div>
+              <div class="siz">{{ item.line_price | money }}</div>
+            </div>    
 
-      </div>
-    {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
   </form>
 {% else %}
   <!--Empty Bag-->
