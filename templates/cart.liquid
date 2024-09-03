@@ -19,39 +19,40 @@
             <div class="product-price">{{ item.price | money }}</div>
           </div>
         </div>
-        <div class="double">
-          <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
-          <div class="item-quantity">
-            <span data-field="updates" class="quantity-button minus"><span>–</span></span>
-            <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
-            <span class="quantity-wrap"></span>
-            <span data-field="updates" class="quantity-button plus">
-              <span class="addmore">+</span>
-              {% if cart.items.available %}
-              {% else %}
-              {% endif %}
-            </span>
+          <div class="double">
+                <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
+                <div class="item-quantity">
+                  <span data-field="updates" class="quantity-button minus"><span>–</span></span>
+                  <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+                  <span class="quantity-wrap"></span>
+                  <span data-field="updates" class="quantity-button plus">
+                    <span class="addmore">+</span>
+                    {% if cart.items.available %}
+                    {% else %}
+                    {% endif %}
+                  </span>
+            </div>
           </div>
-        </div>
-
-          <!--Variations-->
           <div
-            {%- if product.has_only_default_variant -%}
-              class="vairantes"
-              {%- elsif variants > 0 -%}
-              class="variantes-sec"
-              {%- endif -%}>
+             {%- if product.has_only_default_variant -%}
+                                class="product-simple"
+                                {%- elsif variants > 0 -%}
+                                class="product-variants"
+                                {%- endif -%}
+          
+              >
             <div class="siz">SIZE</div>
             <div class="siz">
               {%- for option_title in item.product.options -%}
                 {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
               {%- endfor -%}
             </div>
+            <div class="double">
+              <div class="siz">SUBTOTAL</div>
+              <div class="siz">{{ item.line_price | money }}</div>
+            </div>          
           </div>
-          <div class="double">
-            <div class="siz">SUBTOTAL</div>
-            <div class="siz">{{ item.line_price | money }}</div>
-          </div>
+          
 
       </div>
     {% endfor %}
