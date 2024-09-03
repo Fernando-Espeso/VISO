@@ -35,7 +35,12 @@
         </div>
 
           <!--Variations-->
-          <div class="double">
+          <div
+            {%- if product.has_only_default_variant -%}
+              class="vairantes"
+              {%- elsif variants > 0 -%}
+              class="variantes-sec"
+              {%- endif -%}>
             <div class="siz">SIZE</div>
             <div class="siz">
               {%- for option_title in item.product.options -%}

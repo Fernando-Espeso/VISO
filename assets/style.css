@@ -18,6 +18,9 @@
   line-height: 120%;
 
 }
+.variantes-sec{
+  display: none;
+}
 a:hover{
   color:grey;
 }
