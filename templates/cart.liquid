@@ -34,7 +34,7 @@
             </div>
           </div>
           <div
-             {%- if product.has_only_default_variant -%}
+             {%- if item.has_only_default_variant -%}
                                 class="product-simple"
                                 {%- elsif variants > 0 -%}
                                 class="product-variants"
@@ -47,12 +47,12 @@
                 {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
               {%- endfor -%}
             </div>
-            <div class="double">
-              <div class="siz">SUBTOTAL</div>
-              <div class="siz">{{ item.line_price | money }}</div>
-            </div>          
+                 
           </div>
-          
+          <div class="double">
+            <div class="siz">SUBTOTAL</div>
+            <div class="siz">{{ item.line_price | money }}</div>
+          </div>    
 
       </div>
     {% endfor %}
