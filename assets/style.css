@@ -2,6 +2,7 @@
 /* CSS Variables */
 :root {
   --main: 14px;
+  --med: 18px;
   --big: 28px;
   --lh:120%;
   --gap: 10px;
@@ -12,7 +13,11 @@
   color:var(--blue);
   background-color: black;
 }
+.show-description.description{
+  font-size: var(--med);
+  line-height: 120%;
 
+}
 a:hover{
   color:grey;
 }
