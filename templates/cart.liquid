@@ -33,7 +33,8 @@
                   </span>
             </div>
           </div>
-          <div class="{% if item.has_only_default_variant %}
+          <div
+            class="{% if item.has_only_default_variant %}
                       product-simple
                     {% elsif item.variants.size > 1 %}
                       product-variants
@@ -51,7 +52,7 @@
                     {% endunless %}
                 {% endfor %}
             </div>
-          </div>
+        </div>
           <div class="double">
             <div class="siz">SUBTOTAL</div>
             <div class="siz">{{ item.line_price | money }}</div>
