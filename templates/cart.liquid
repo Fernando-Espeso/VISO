@@ -1,15 +1,19 @@
-<div class="content" id="content">
-{% if cart.item_count > 0 %}
-  <div class="empty">Your Cart</div>
-  <form id="cart-wrapper" action="/cart" method="post">
-    <div class="total">
-      <div>SUBTOTAL</div>
-      <div>{{ cart.total_price | money }}</div>
-      <div>SHIPPING</div>
-      <div>CALCULATED AT CHECKOUT</div>
-      <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
-      <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
-    </div>
+
+  {% if cart.item_count > 0 %}
+
+
+    <form id="cart-wrapper" action="/cart" method="post">
+      <div class="content" id="content">
+        <div class="empty">Your Cart</div>
+      <div class="total">
+        <div>SUBTOTAL</div>
+        <div>{{ cart.total_price | money }}</div>
+        <div>SHIPPING</div>
+        <div>CALCULATED AT CHECKOUT</div>
+        <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
+        <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
+      </div>
+  </div>
     <div class="cart-products">
       {% for item in cart.items %}
         <div class="item">
@@ -70,7 +74,7 @@
   <!--Empty Bag-->
   <div class="empty">YOUR CART IS CURRENTLY EMPTY</div>
 {% endif %}
-</div>
+
 <style>
 /* @media (max-width: 600px) {
   .search{
