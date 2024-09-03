@@ -33,22 +33,22 @@
                 {% endif %}
               </span>
             </div>
-          </div>
-          {% unless item.product.options contains 'Title' %}
-            <!--Variations-->
-            <div class="double">
-              <div class="siz">SIZE</div>
-              <div class="siz">
-                {%- for option_title in item.product.options -%}
-                  {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
-                {%- endfor -%}
+            {% unless item.product.options contains 'Title' %}
+              <!--Variations-->
+              <div class="double">
+                <div class="siz">SIZE</div>
+                <div class="siz">
+                  {%- for option_title in item.product.options -%}
+                    {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
+                  {%- endfor -%}
+                </div>
               </div>
-            </div>
-            <div class="double">
-              <div class="siz">SUBTOTAL</div>
-              <div class="siz">{{ item.line_price | money }}</div>
-            </div>
-          {% endunless %}
+              <div class="double">
+                <div class="siz">SUBTOTAL</div>
+                <div class="siz">{{ item.line_price | money }}</div>
+              </div>
+            {% endunless %}
+          </div>
         </div>
       {% endfor %}
     </form>
