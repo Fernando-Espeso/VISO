@@ -1,73 +1,74 @@
 <div class="main">
-{% if cart.item_count > 0 %}
-  <form id="cart-wrapper" action="/cart" method="post">
-    <div class="total">
-      <div class="double">
+  {% if cart.item_count > 0 %}
+    <form id="cart-wrapper" action="/cart" method="post">
+      <div class="total">
         <div>SUBTOTAL</div>
         <div>{{ cart.total_price | money }}</div>
+        <div>SHIPPING</div>
+        <div>CALCULATED AT CHECKOUT</div>
         <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
+        <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
       </div>
-      <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
-    </div>
-    {% for item in cart.items %}
-      <div class="item">
-
-        <div class="thumb">
-          <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
-        </div>
-        <div class="product-title">{{ item.product.title }}</div>
-
-        <div class="row">
-          <div class="main-information-cart">
-            <div class="at-a">{{ product.metafields.custom.artists | metafield_tag }}</div>
-            <div class="double">
+      {% for item in cart.items %}
+        <div class="item">
+          <div class="thumb">
+            <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
+          </div>
+          <div style="background-color:var(--darker);" class="row">
+            <div class="main-information">
+              <div class="product-title">{{ item.product.title }}</div><br>
               <div class="product-price">{{ item.price | money }}</div>
-          </div>
-          <div class="item-quantity double">
-            {% comment %} <span data-field="updates" class="quantity-button minus"><span>–</span></span> {% endcomment %}
-            <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
-            <span class="quantity-wrap"></span>
-            <span data-field="updates" class="quantity-button plus">
-              {% comment %} <span class="addmore">+</span> {% endcomment %}
-              {% if cart.items.available %}
-              {% else %}
-              {% endif %}
-            </span>
-          </div>
-          <div class="double rem">
-            <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a> <span class="x">X</span></div>
-          </div>
-          </div>
-        </div>
-     
-        <p>{{ item.variant.title }}</p>
-
-        {% unless item.product.options contains 'Title' %}
-          <!--Variations-->
-          <div class="double" style="display:none">
-            <div class="siz">SIZE</div>
-            <div class="siz">
-              {%- for option_title in item.product.options -%}
-                {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
-              {%- endfor -%}
             </div>
           </div>
           <div class="double">
-            <div class="siz">SUBTOTAL</div>
-            <div class="siz">{{ item.line_price | money }}</div>
+            <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
+            <div class="item-quantity">
+              <span data-field="updates" class="quantity-button minus"><span>–</span></span>
+              <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+              <span class="quantity-wrap"></span>
+              <span data-field="updates" class="quantity-button plus">
+                <span class="addmore">+</span>
+                {% if cart.items.available %}
+                {% else %}
+                {% endif %}
+              </span>
+            </div>
           </div>
-        {% endunless %}
-
-      </div>
-    {% endfor %}
-
-  </form>
-{% else %}
-  <!--Empty Bag-->
-    <div class="empty-cart">Your cart is currentlt empty </div>
-
-   
-{% endif %}
+          {% unless item.product.options contains 'Title' %}
+            <!--Variations-->
+            <div class="double">
+              <div class="siz">SIZE</div>
+              <div class="siz">
+                {%- for option_title in item.product.options -%}
+                  {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
+                {%- endfor -%}
+              </div>
+            </div>
+            <div class="double">
+              <div class="siz">SUBTOTAL</div>
+              <div class="siz">{{ item.line_price | money }}</div>
+            </div>
+          {% endunless %}
+        </div>
+      {% endfor %}
+    </form>
+  {% else %}
+    <!--Empty Bag-->
+    <div class="menu-title cartie">YOUR CART IS CURRENTLY EMPTY</div>
+  {% endif %}
+  
+  <style>
+  /* @media (max-width: 600px) {
+    .search{
+      display: none;
+    }
+  } */
+  .payment {
+      margin-top: 20px;
+      grid-column: 9/span 4;
+  }
+  </style>
+  
 </div>
 
 <style>
