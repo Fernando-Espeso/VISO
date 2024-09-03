@@ -20,7 +20,6 @@
           </div>
         </div>
           <div class="double">
-                <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
                 <div class="item-quantity">
                   <span data-field="updates" class="quantity-button minus"><span>–</span></span>
                   <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
@@ -31,7 +30,8 @@
                     {% else %}
                     {% endif %}
                   </span>
-            </div>
+                </div>
+                <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
           </div>
           <div 
             class="double {% if item.has_only_default_variant %}
