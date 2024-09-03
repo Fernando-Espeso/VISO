@@ -343,7 +343,7 @@ select:disabled {
     font-family: var(--body);
     font-size: var(--main)!important;
     height: 100%;
-    width: 100%;
+    width: fit-content;
     text-align: left;
     padding: 5px;
     padding-bottom: 5px!important;
