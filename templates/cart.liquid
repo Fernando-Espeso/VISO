@@ -33,7 +33,7 @@
             </span>
           </div>
         </div>
-        {% unless item.product.options contains 'Title' %}
+
           <!--Variations-->
           <div class="double">
             <div class="siz">SIZE</div>
@@ -47,7 +47,6 @@
             <div class="siz">SUBTOTAL</div>
             <div class="siz">{{ item.line_price | money }}</div>
           </div>
-        {% endunless %}
 
       </div>
       <div class="payment">
@@ -59,7 +58,6 @@
       <li><span></span> APPLE PAY</li>
       </div>
     {% endfor %}
-
   </form>
 {% else %}
   <!--Empty Bag-->
