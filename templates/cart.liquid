@@ -33,22 +33,28 @@
                   </span>
             </div>
           </div>
-          <div
-             {%- if item.has_only_default_variant -%}
-                                class="product-simple"
-                                {%- elsif variants > 0 -%}
-                                class="product-variants"
-                                {%- endif -%}
-          
-              >
-            <div class="siz">SIZE</div>
-            <div class="siz">
-              {%- for option_title in item.product.options -%}
-                {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
-              {%- endfor -%}
-            </div>
-                 
-          </div>
+          {% assign product_class = '' %}
+
+<!-- Assign the appropriate class based on conditions -->
+{% if item.has_only_default_variant %}
+  {% assign product_class = 'product-simple' %}
+{% elsif item.variants.size > 1 %}
+  {% assign product_class = 'product-variants' %}
+{% endif %}
+<div class="{{ product_class }}">
+  <!-- Product Size Title -->
+  <div class="siz">SIZE</div>
+
+  <!-- Loop through product options -->
+  <div class="siz">
+      {% for option_title in item.product.options %}
+          {{ item.variant.options[forloop.index0] }}
+          {% unless forloop.last %}
+              <br>
+          {% endunless %}
+      {% endfor %}
+  </div>
+</div>
           <div class="double">
             <div class="siz">SUBTOTAL</div>
             <div class="siz">{{ item.line_price | money }}</div>
