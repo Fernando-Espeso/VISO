@@ -720,6 +720,10 @@ p.info-collection{
     --grey: #f1f2f2;
     --body: 'helvetica';
   }
+  .cart-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
   
 }
 /* Small mobile styles */
@@ -759,4 +763,8 @@ p.info-collection{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .cart-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 }
