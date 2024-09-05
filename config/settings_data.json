@@ -365,6 +365,23 @@
         ],
         "settings": {
         }
+      },
+      "terms": {
+        "type": "terms",
+        "blocks": {
+          "summary_7iaE6i": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>sdds<\/p>",
+              "Location": "<p>ssdsdsdsdss<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "summary_7iaE6i"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
