@@ -277,6 +277,7 @@ div#shopify-section-hero img {
 input[type="checkbox"],
 button,
 select {
+  border: 0px!important;
   width: 100%;
   display: block;
   cursor: pointer;
