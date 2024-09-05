@@ -660,10 +660,10 @@ p.info-collection{
 @media (max-width: 1200px) {
   .product {
     grid-column: span 6;
-}
-  .categories.hid {
-    column-count: 3;
   }
+  .categories.hid.show {
+    column-count: 2;
+}
 }
 /* Mobile styles */
 @media (max-width: 600px) {
