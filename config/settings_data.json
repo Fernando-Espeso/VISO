@@ -46,6 +46,17 @@
       },
       "aim": {
         "type": "aim",
+        "blocks": {
+          "text_QfKWFq": {
+            "type": "text",
+            "settings": {
+              "text": "VISO project\ncomes to life through deep roots inspired by the worlds of art and design, creating distinct objects and apparel crafted by expert artisans and manufacturers around the world."
+            }
+          }
+        },
+        "block_order": [
+          "text_QfKWFq"
+        ],
         "settings": {
         }
       },
