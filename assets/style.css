@@ -675,16 +675,16 @@ p.info-collection{
 @media (max-width: 600px) {
   .product {
     grid-column: span 12;
-}
-.categories {
-  column-count: 1;
-}
-.categories.hid {
-  column-count: 1;
-}
-.categories.hid.show {
-  column-count: 1;
-}
+   }
+  .categories {
+    column-count: 1;
+  }
+  .categories.hid {
+    column-count: 1;
+  }
+  .categories.hid.show {
+    column-count: 1;
+  }
 }
 /* Small mobile styles */
 @media (max-width: 320px) {
