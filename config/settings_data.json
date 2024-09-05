@@ -298,11 +298,19 @@
               "Name": "<p>VISO PROJECT  US <\/p><p><\/p>",
               "Location": "<p>SHOWROOM\/STORE NEW YORK<\/p><p>46 Pearl Street<\/p><p>Brooklyn, NY, 11201, USA<\/p>"
             }
+          },
+          "summary_Mh8LQU": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>If you have any questions or wholesale enquiries please write to: <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com<\/a><\/p>",
+              "Location": ""
+            }
           }
         },
         "block_order": [
           "summary_KjBQwy",
-          "summary_QrRJdx"
+          "summary_QrRJdx",
+          "summary_Mh8LQU"
         ],
         "settings": {
         }
