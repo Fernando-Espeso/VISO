@@ -237,6 +237,31 @@
         "type": "main-product",
         "settings": {
         }
+      },
+      "info": {
+        "type": "info",
+        "blocks": {
+          "summary_BQhLxG": {
+            "type": "summary",
+            "settings": {
+              "Name": "<h5>ORDERING<\/h5>",
+              "Location": "<ul><li>Select your favorite products and click on the “Add to Cart” link on each product page. They will be added to your cart, shown in the top right corner of your screen (ex: “3 ITEMS”).<\/li><li>After you have chosen your products, click on the cart link, on the top right corner and validate all the products, unit prices, quantities and sub-totals (you can add or subtract quantities directly from the cart).<\/li><li>If you have a coupon, please enter it on the left box.<\/li><li>Click “Proceed to Checkout” where you will be asked to input your billing and shipping information for us to calculate shipping costs (remember that orders above 300€ have free shipping! Only in EU, USA and UK. OUTLET no included).<\/li><li>Choose your preferred payment method. We accept Paypal and Credit Card (VISA, AMEX, MasterCard).<\/li><li>If you choose Paypal you will be redirected to their site to finish payment; if you choose Credit Card, just enter the details on the form.<\/li><li>Click “Place Order” and we will take care of the rest!<\/li><\/ul><p>Also, our site is fully secured by “Let’s Encrypt Authority X3” and you can access additional information by clicking on the locker on the URL bar of your browser and\/or here: <a href=\"https:\/\/letsencrypt.org\/documents\/isrg-cps-v3.0\/\">https:\/\/letsencrypt.org\/documents\/isrg-cps-v3.0\/<\/a><\/p><h5>VISO SHIPPING<\/h5><p>You can get free shipping on purchases over 300 in countries of the European Union, UK, and USA. Products with a discount of 50% or more are not included.<br\/>We use UPS\/MRW\/FEDEX for all orders. You should get your order in 2-7 days within Europe.<br\/>Viso reserves the right to ship any order with maximum 2 day delay, especially during sales period or big launches, the volume of orders being very big at those times.<br\/>Please note that the days stated during checkout are Working days, week-ends and bank holidays do not count.<\/p>"
+            }
+          },
+          "summary_aTgyKK": {
+            "type": "summary",
+            "settings": {
+              "Name": "<h5>VISO SHIPPING<\/h5>",
+              "Location": "<h5>VISO SHIPPING<\/h5>"
+            }
+          }
+        },
+        "block_order": [
+          "summary_BQhLxG",
+          "summary_aTgyKK"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
