@@ -546,7 +546,9 @@ a {
 #header a{
   display: block;
 }
-
+strong{
+  color: black!important;
+}
 
 section#desplegable {
   row-gap: 20px;
