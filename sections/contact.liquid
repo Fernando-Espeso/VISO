@@ -1,20 +1,20 @@
 <section
-    data-section-id="stocklist"
-    id="stocklist"
-    class="stocklist"
-  >
-    {% for block in section.blocks %}
-      {% case block.type %}
-          {% when 'summary' %}
-          {% unless block.settings.subtitle and block.settings.interior  == blank %}
-            <div class="section">
-              <div class="location">{{ block.settings.Location }}</div>
-              <div class="name">{{ block.settings.Name }}</div>
-            </div>
-          {% endunless %}
-      {% endcase %}
-    {% endfor %}
-  </section>
+  data-section-id="info-page"
+  class="info-page"
+>
+  {% for block in section.blocks %}
+    {% case block.type %}
+        {% when 'summary' %}
+        {% unless block.settings.subtitle and block.settings.interior  == blank %}
+          <div class="section">
+           <div class="title-infos">{{ block.settings.Name }}</div>
+            <div class="content-infos">{{ block.settings.Location }}</div>
+          </div>
+        {% endunless %}
+    {% endcase %}
+  {% endfor %}
+</section>
+
   {% schema %}
   {
     "name": "Contact",

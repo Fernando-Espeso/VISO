@@ -1,18 +1,20 @@
-<section data-section-id="desplegable" id="desplegable" class="desplegable">
+<section
+    data-section-id="info-page"
+    class="info-page"
+  >
     {% for block in section.blocks %}
       {% case block.type %}
-   
           {% when 'summary' %}
-            <div class="about-content">
-              <div class="title-about">{{ block.settings.subtitle }}</div>
-              <div class="content-inside">{{ block.settings.title }}</div>
-              {% if block.settings.image != blank %}
-                <img src="{{ block.settings.image | img_url: 'master' }}" alt="Image">
-              {% endif %}
-            </div>  
+          {% unless block.settings.subtitle and block.settings.interior  == blank %}
+            <div class="section">
+             <div class="title-infos">{{ block.settings.Name }}</div>
+              <div class="content-infos">{{ block.settings.Location }}</div>
+            </div>
+          {% endunless %}
       {% endcase %}
     {% endfor %}
   </section>
+
   {% schema %}
   {
     "name": "About",
