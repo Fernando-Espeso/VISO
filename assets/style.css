@@ -676,7 +676,15 @@ p.info-collection{
   .product {
     grid-column: span 12;
 }
-
+.categories {
+  column-count: 1;
+}
+.categories.hid {
+  column-count: 1;
+}
+.categories.hid.show {
+  column-count: 1;
+}
 }
 /* Small mobile styles */
 @media (max-width: 320px) {
