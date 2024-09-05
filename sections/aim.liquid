@@ -1,6 +1,6 @@
-<div class="simple-text">
+<div class="title-aim">
     {% for block in section.blocks %}
-      <div id="block-{{ block.id }}" class="simple-text-block big">
+      <div id="block-{{ block.id }}">
         {% unless block.settings.text == blank %}
           <div class="content">{{ block.settings.text | newline_to_br }}</div>
         {% endunless %}
@@ -10,16 +10,16 @@
   
   {% schema %}
   {
-    "name": "Text",
+    "name": "Intro",
     "blocks": [
       {
         "type": "text",
-        "name": "Text Block",
+        "name": "Intro",
         "settings": [
           {
             "type": "textarea",
             "id": "text",
-            "label": "Text",
+            "label": "Content",
             "default": "Enter your text here..."
           }
         ]
