@@ -549,7 +549,7 @@ a {
 
 
 section#desplegable {
-  row-gap: 100px;
+  row-gap: 20px;
   grid-column: span 12;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -743,7 +743,7 @@ p.info-collection{
   }
   section#desplegable {
     margin-top:100px;
-    row-gap: 100px;
+    row-gap: 20px;
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
