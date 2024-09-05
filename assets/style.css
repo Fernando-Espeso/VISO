@@ -571,7 +571,9 @@ section#desplegable {
   row-gap: 100px;
   grid-template-columns: repeat(12, 1fr);
 }
-
+.name {
+  grid-column: span 3;
+}
 #products {
   flex-grow: 1;
   display: grid;
@@ -698,6 +700,7 @@ p.info-collection{
   section#stocklist .sec {
     display: none;
   }
+  
   .gallery_collection {
     grid-gap: 2px;
     display: grid;
