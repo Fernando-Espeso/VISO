@@ -2,7 +2,7 @@
 /* CSS Variables */
 :root {
   --main: 14px;
-  --med: 20px;
+  --med: 18px;
   --big: 28px;
   --lh:120%;
   --gap: 10px;
@@ -543,10 +543,7 @@ video {
   font-size: var(--main);
   color: black;
 }
-.content-infos {
-  font-size: var(--med);
-    color: grey;
-}
+
 /* Link styles */
 a {
   color: inherit;
