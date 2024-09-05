@@ -689,9 +689,17 @@ p.info-collection{
   .categories.hid.show {
     column-count: 2;
 }
+.cart-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 }
 /* Mobile styles */
 @media (max-width: 600px) {
+  .cart-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
   .news-content img {
     margin-top: 20px;
     grid-column: span 1;
