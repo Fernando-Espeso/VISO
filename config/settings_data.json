@@ -332,6 +332,23 @@
         ],
         "settings": {
         }
+      },
+      "returns": {
+        "type": "returns",
+        "blocks": {
+          "summary_4aUTTR": {
+            "type": "summary",
+            "settings": {
+              "Name": "<h5><strong>VISO RETURNS POLICY<\/strong><\/h5>",
+              "Location": "<p>All of the products on this site are produced by VISO NYC LLC and we can ensure you that all orders are checked before they are dispatched to ensure they are to the highest standard.<br\/>However, if you are unhappy with your goods we will happily issue a replacement or refund assuming they are returned within 14 days of receipt of your order, unworn, complete with all original tags, and in original and resalable condition.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "summary_4aUTTR"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
