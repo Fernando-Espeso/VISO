@@ -360,17 +360,16 @@
       "ab": {
         "type": "ab",
         "blocks": {
-          "summary_QDizP6": {
+          "summary_fDBXYj": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>yessss<\/p>",
-              "image": "shopify:\/\/shop_images\/Viso_Project_Merino_Blanket_V45_Merino_Pillow_Camel_V106_Lifestyle_Cadaques_1.jpg",
-              "title": "<p>DESCIOTION<\/p>"
+              "subtitle": "<p>comes to life through deep roots inspired by the worlds of art and design, creating distinct objects and apparel crafted by expert artisans and manufacturers around the world.<\/p><p>Every single item created by VISO is developed with the upmost attention to detail. Craftsmanship becomes the sole purpose in creating a sustainable and limited production of long-lasting quality goods for generations to come.<\/p>",
+              "title": ""
             }
           }
         },
         "block_order": [
-          "summary_QDizP6"
+          "summary_fDBXYj"
         ],
         "settings": {
         }
