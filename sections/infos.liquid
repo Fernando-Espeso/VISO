@@ -3,19 +3,13 @@
       {% case block.type %}
    
           {% when 'summary' %}
-          {% unless block.settings.subtitle and block.settings.interior == blank %}
             <div class="news-content">
-              <div class="view">{{ block.settings.subtitle }}</div>
-              <div class="title-seccion big">{{ block.settings.interior }}</div>
+              <div class="title">{{ block.settings.subtitle }}</div>
+              <div class="title-seccion big">{{ block.settings.title }}</div>
               {% if block.settings.image != blank %}
                 <img src="{{ block.settings.image | img_url: 'master' }}" alt="Image">
               {% endif %}
-              <div class="title-seccion big">{{ block.settings.title }}</div>
-            </div>
-  
-          {% endunless %}
-    
-  
+            </div>  
       {% endcase %}
     {% endfor %}
   </section>
@@ -30,12 +24,7 @@
           {
             "type": "richtext",
             "id": "subtitle",
-            "label": "Section"
-          },
-          {
-            "type": "text",
-            "id": "interior",
-            "label": "Description"
+            "label": "Title"
           },
           {
             "type": "image_picker",
@@ -45,7 +34,7 @@
           {
             "type": "richtext",
             "id": "title",
-            "label": "Product Title"
+            "label": "Description"
           }
         ]
         }
