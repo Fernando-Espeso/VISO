@@ -342,10 +342,18 @@
               "Name": "<h5><strong>VISO RETURNS POLICY<\/strong><\/h5>",
               "Location": "<p>All of the products on this site are produced by VISO NYC LLC and we can ensure you that all orders are checked before they are dispatched to ensure they are to the highest standard.<br\/>However, if you are unhappy with your goods we will happily issue a replacement or refund assuming they are returned within 14 days of receipt of your order, unworn, complete with all original tags, and in original and resalable condition.<\/p>"
             }
+          },
+          "summary_7EFDnx": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Steps to return your order:<\/p>",
+              "Location": "<ul><li>Contact us at <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com<\/a> with your order number and explaining if you wish for a return and refund, and the reason.<\/li><li>You’ll receive an email to ship the products to our warehouse location.<\/li><li>Ensure your return is well packaged, and meets all the conditions outlined at the bottom of this page.<\/li><li>Return’s cost are at the customer’s charge<\/li><\/ul>"
+            }
           }
         },
         "block_order": [
-          "summary_4aUTTR"
+          "summary_4aUTTR",
+          "summary_7EFDnx"
         ],
         "settings": {
         }
