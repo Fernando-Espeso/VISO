@@ -698,7 +698,7 @@ p.info-collection{
   }
   .product-description {
     margin-top: 10px;
-    padding-right: 20%;
+    padding-right: 0%;
     font-size: clamp(var(--med), 1.5vw, 2rem) !important;
   }
 
