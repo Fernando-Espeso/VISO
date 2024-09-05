@@ -4,8 +4,8 @@
    
           {% when 'summary' %}
             <div class="about-content">
-              <div class="title">{{ block.settings.subtitle }}</div>
-              <div class="title-seccion big">{{ block.settings.title }}</div>
+              <div class="title-about">{{ block.settings.subtitle }}</div>
+              <div class="content-inside">{{ block.settings.title }}</div>
               {% if block.settings.image != blank %}
                 <img src="{{ block.settings.image | img_url: 'master' }}" alt="Image">
               {% endif %}

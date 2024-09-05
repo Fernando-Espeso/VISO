@@ -199,7 +199,6 @@ label {
 .news-content img{
   margin-top: 20px;
   grid-column: 2/span 1;
-
 }
 .news-content .view{
   grid-column: span 3;
@@ -209,7 +208,15 @@ label {
   height: fit-content;
   grid-column: span 12;
 }
-
+.about-about{
+  grid-template-columns: repeat(3, 11fr);
+  grid-column: span 8;
+  display: grid;
+  grid-gap: 2px;
+}
+.title-about{
+  
+}
 .news-content .title-seccion.big{
   grid-column: span 3;
   font-size: clamp(var(--big), 1.5vw, 2rem);
@@ -300,7 +307,7 @@ select:disabled {
   .menu-open{
     display: none;
   }
-
+ 
   #nav{
     align-items: center;
     text-transform: uppercase;
