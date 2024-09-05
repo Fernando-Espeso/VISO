@@ -675,9 +675,16 @@ p.info-collection{
 }
 /* Mobile styles */
 @media (max-width: 600px) {
+  .news-content img {
+    margin-top: 20px;
+    grid-column: span 1;
+}
   .product {
     grid-column: span 12;
    }
+   .news-content {
+    grid-template-columns: repeat(1, 1fr);
+}
   .categories {
     column-count: 1;
   }
