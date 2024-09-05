@@ -658,6 +658,9 @@ p.info-collection{
 }
 /* Mobile landscape styles */
 @media (max-width: 1200px) {
+  .product {
+    grid-column: span 6;
+}
 }
 /* Mobile styles */
 @media (max-width: 600px) {
