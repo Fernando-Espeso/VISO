@@ -798,4 +798,9 @@ p.info-collection{
 button#checkout {
   grid-column: span 2;
 }
+
+
+.news-content .title-seccion.big {
+  padding: 0;
+}
 }
