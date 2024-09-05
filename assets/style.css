@@ -661,6 +661,12 @@ p.info-collection{
   .product {
     grid-column: span 6;
   }
+  .categories {
+    column-count: 2;
+}
+  .categories.hid {
+    column-count: 2;
+}
   .categories.hid.show {
     column-count: 2;
 }
