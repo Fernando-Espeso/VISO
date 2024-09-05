@@ -543,9 +543,7 @@ video {
   font-size: var(--main);
   color: black;
 }
-.content-infos {
-    color: grey;
-}
+
 /* Link styles */
 a {
   color: inherit;
