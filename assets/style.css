@@ -661,13 +661,16 @@ p.info-collection{
   .product {
     grid-column: span 6;
 }
-
+  .categories.hid {
+    column-count: 3;
+  }
 }
 /* Mobile styles */
 @media (max-width: 600px) {
   .product {
     grid-column: span 12;
 }
+
 }
 /* Small mobile styles */
 @media (max-width: 320px) {
