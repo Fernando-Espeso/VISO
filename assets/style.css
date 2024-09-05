@@ -470,7 +470,10 @@ select:disabled {
   .product-title a{
     color: grey;;
   }
-
+  .content-infos {
+    font-size: var(--med);
+    line-height: 120%;
+}
 
 
 /* Scrollbar */
@@ -522,6 +525,9 @@ video {
 .title-infos {
   font-size: var(--main);
   color: black;
+}
+.content-infos {
+    color: grey;
 }
 /* Link styles */
 a {
