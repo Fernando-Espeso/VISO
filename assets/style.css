@@ -687,10 +687,10 @@ p.info-collection{
   }
 }
 /* Small mobile styles */
-@media (max-width: 320px) {
+@media (max-width: 420px) {
 
   :root {
-    --main: 13px;
+    --main: 12px;
     --med: 18px;
     --big: 24px;
     --lh:120%;
