@@ -665,6 +665,9 @@ p.info-collection{
 }
 /* Mobile styles */
 @media (max-width: 600px) {
+  .product {
+    grid-column: span 12;
+}
 }
 /* Small mobile styles */
 @media (max-width: 320px) {
