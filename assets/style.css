@@ -695,7 +695,9 @@ p.info-collection{
 }
 /* Small mobile styles */
 @media (max-width: 420px) {
-
+  section#stocklist .sec {
+    display: none;
+  }
   .gallery_collection {
     grid-gap: 2px;
     display: grid;
@@ -707,7 +709,10 @@ p.info-collection{
     padding-right: 0%;
     font-size: clamp(var(--med), 1.5vw, 2rem) !important;
   }
-
+  section#stocklist .section {
+    display: block;
+    grid-gap: 5px;
+}
   :root {
     --main: 12px;
     --med: 18px;
