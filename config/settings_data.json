@@ -307,6 +307,31 @@
         ],
         "settings": {
         }
+      },
+      "contact": {
+        "type": "contact",
+        "blocks": {
+          "summary_KjBQwy": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>VISO PROJECT  EUROPE <\/p><p>SHOWROOM MADRID Calle Santa<\/p><p> Maria 17, Local Derecha <\/p><p>28014 Madrid, Spain<\/p>",
+              "Location": ""
+            }
+          },
+          "summary_QrRJdx": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>VISO PROJECT  EUROPE <\/p><p>SHOWROOM MADRID Calle Santa<\/p><p> Maria 17, Local Derecha <\/p><p>28014 Madrid, Spain<\/p>",
+              "Location": ""
+            }
+          }
+        },
+        "block_order": [
+          "summary_KjBQwy",
+          "summary_QrRJdx"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
