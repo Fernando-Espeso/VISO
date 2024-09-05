@@ -288,21 +288,29 @@
           "summary_KjBQwy": {
             "type": "summary",
             "settings": {
-              "Name": "<p>VISO PROJECT  EUROPE <\/p><p>SHOWROOM MADRID Calle Santa<\/p><p> Maria 17, Local Derecha <\/p><p>28014 Madrid, Spain<\/p>",
-              "Location": ""
+              "Name": "<p>VISO PROJECT  EUROPE <\/p><p><\/p>",
+              "Location": "<p>SHOWROOM MADRID Calle Santa<\/p><p> Maria 17, Local Derecha <\/p><p>28014 Madrid, Spain<\/p>"
             }
           },
           "summary_QrRJdx": {
             "type": "summary",
             "settings": {
-              "Name": "<p>VISO PROJECT  US <\/p><p>SHOWROOM\/STORE NEW YORK<\/p><p>46 Pearl Street<\/p><p>Brooklyn, NY, 11201, USA<\/p>",
-              "Location": "<p>If you have any questions or wholesale enquiries please write to: <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com<\/a><\/p>"
+              "Name": "<p>VISO PROJECT  US <\/p><p><\/p>",
+              "Location": "<p>SHOWROOM\/STORE NEW YORK<\/p><p>46 Pearl Street<\/p><p>Brooklyn, NY, 11201, USA<\/p>"
+            }
+          },
+          "summary_Mh8LQU": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>If you have any questions or wholesale enquiries please write to: <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com<\/a><\/p>",
+              "Location": ""
             }
           }
         },
         "block_order": [
           "summary_KjBQwy",
-          "summary_QrRJdx"
+          "summary_QrRJdx",
+          "summary_Mh8LQU"
         ],
         "settings": {
         }
