@@ -210,7 +210,7 @@ label {
 }
 .about-content{
   grid-template-columns: repeat(3, 1fr);
-  grid-column: span 4;
+  grid-column: span 2;
 }
 .title-about{
   line-height: 120%;
