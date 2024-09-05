@@ -488,7 +488,7 @@ select:disabled {
     color: grey;;
   }
   .content-infos {
-    font-sizevar(--med);
+    font-size:var(--med);
     line-height: 120%;
 }
 
