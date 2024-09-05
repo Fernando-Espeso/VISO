@@ -440,7 +440,10 @@ select:disabled {
     color: black!important;
     background-color: var(--yellow)!important;
   }
-
+  section.info-page {
+    display: grid;
+    row-gap: 20px;
+}
 
   .title-seccion.big {
     text-align: center;
@@ -477,7 +480,7 @@ select:disabled {
     color: grey;;
   }
   .content-infos {
-    font-size: var(--med);
+    font-size: clamp(var(--big), 1.5vw, 2rem);
     line-height: 120%;
 }
 
