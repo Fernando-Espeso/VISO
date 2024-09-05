@@ -5,12 +5,10 @@
     {% for block in section.blocks %}
       {% case block.type %}
           {% when 'summary' %}
-          {% unless block.settings.subtitle and block.settings.interior  == blank %}
             <div class="section">
              <div class="title-infos">{{ block.settings.Name }}</div>
               <div class="content-infos">{{ block.settings.Location }}</div>
             </div>
-          {% endunless %}
       {% endcase %}
     {% endfor %}
   </section>
