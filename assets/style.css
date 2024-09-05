@@ -316,7 +316,7 @@ select:disabled {
     font-size: var(--big);
     line-height:var(--lh);
     text-align: left;
-    display: none;
+    grid-column: span 6;
 }div#bag-total{
   display: flex;
   gap:10px;
