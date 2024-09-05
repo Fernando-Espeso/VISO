@@ -215,6 +215,9 @@ label {
 .title-about{
   line-height: 120%;
 }
+div#shopify-section-ab {
+  margin-top: 100px;
+}
 .content-inside p{
   font-size: clamp(var(--big), 1.5vw, 2rem);
   line-height: 120%;
