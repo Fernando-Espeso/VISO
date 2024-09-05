@@ -330,8 +330,8 @@ select:disabled {
   .intro {
     font-size: var(--big);
     line-height:var(--lh);
-    text-align: left;
-    grid-column: span 7;
+    text-align: center;
+    grid-column: span 12;
 }div#bag-total{
   display: flex;
   gap:10px;
