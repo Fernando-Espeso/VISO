@@ -543,7 +543,10 @@ video {
   font-size: var(--main);
   color: black;
 }
-
+.content-infos {
+  font-size: var(--med);
+    color: grey;
+}
 /* Link styles */
 a {
   color: inherit;
