@@ -215,7 +215,9 @@ label {
   grid-gap: 2px;
 }
 .title-about{
-  
+  font-size: clamp(var(--big), 1.5vw, 2rem);
+  text-align: center;
+  line-height: 120%;
 }
 .news-content .title-seccion.big{
   grid-column: span 3;
