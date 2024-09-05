@@ -3,7 +3,7 @@
   <div class="hero">
     {% section 'hero' %}
   </div>
-  <div class="products">
+  <div id="products">
   {% assign product_limit = 4 %}
   {% for product in collections.all.products limit:product_limit %}
       {% include 'product-body' %}
