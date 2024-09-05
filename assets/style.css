@@ -609,6 +609,7 @@ section#desplegable {
 div#shopify-section-aim{
   max-width:1200px;
   margin: 0 auto;
+
   }
 .sold-out {
   padding: 0px;
@@ -801,7 +802,9 @@ p.info-collection{
 button#checkout {
   grid-column: span 2;
 }
-
+.title-seccion.big{
+  padding: 0px;
+}
 
 .news-content .title-seccion.big {
   padding: 0;
