@@ -1,14 +1,12 @@
 <div class="main">
+  {% section 'aim' %}
   <div class="hero">
-    {% section 'aim' %}
     {% section 'hero' %}
   </div>
   {% assign product_limit = 4 %}
   {% for product in collections.all.products limit:product_limit %}
       {% include 'product-body' %}
   {% endfor %}
-  
- 
   {% section 'about' %}
 
 </div>
