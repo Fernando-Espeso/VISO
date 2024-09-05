@@ -208,7 +208,7 @@ label {
   height: fit-content;
   grid-column: span 12;
 }
-.about-about{
+.about-content{
   grid-template-columns: repeat(3, 11fr);
   grid-column: span 8;
   display: grid;
