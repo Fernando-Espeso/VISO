@@ -488,7 +488,7 @@ select:disabled {
     color: grey;;
   }
   .content-infos {
-    font-size: clamp(var(--big), 1.5vw, 2rem);
+    font-sizevar(--med);
     line-height: 120%;
 }
 
