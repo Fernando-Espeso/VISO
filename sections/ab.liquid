@@ -9,7 +9,7 @@
         <div class="section">
           <div class="title-infos">{{ block.settings.subtitle }}</div>
           <div class="image-infos">
-            <img alt="{{ block.settings.item.alt}}" src="{{ block.settings.item | img_url: 'master' }}" />
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.subtitle }}">
           </div>
           <div class="content-infos">{{ block.settings.title }}</div>
         </div>
