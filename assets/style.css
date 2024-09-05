@@ -217,7 +217,7 @@ label {
 .title-about{
   line-height: 120%;
 }
-.content-inside{
+.content-inside p{
   font-size: clamp(var(--big), 1.5vw, 2rem);
   text-align: center;
   line-height: 120%;
