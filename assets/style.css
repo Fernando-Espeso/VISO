@@ -611,10 +611,11 @@ footer {
     margin-top: auto;
 }
 .image-infos {
-  padding-top: 10px;
-  margin: 0 auto;
-  max-width: 500px;
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 500px;
 }
+
 section#stocklist {
   grid-column: span 4;
 }
