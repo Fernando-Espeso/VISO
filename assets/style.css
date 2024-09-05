@@ -222,6 +222,9 @@ div#shopify-section-ab {
   font-size: clamp(var(--big), 1.5vw, 2rem);
   line-height: 120%;
 }
+.last{
+  margin-bottom: 20px;
+}
 .news-content .title-seccion.big{
   grid-column: span 3;
   font-size: clamp(var(--big), 1.5vw, 2rem);

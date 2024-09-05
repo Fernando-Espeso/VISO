@@ -4,15 +4,14 @@
 
     <form id="cart-wrapper" action="/cart" method="post">
       <div class="content" id="content">
-        <div class="empty">Your Cart</div>
       <div class="total">
         <div>SUBTOTAL</div>
         <div>{{ cart.total_price | money }}</div>
         <div>SHIPPING</div>
-        <div>CALCULATED AT CHECKOUT</div>
+        <div class="last">CALCULATED AT CHECKOUT</div>
         <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
         <button id="checkout" type="submit" name="checkout">CHECKOUT</button>
-        
+
       </div>
   </div>
     <div class="cart-products">
