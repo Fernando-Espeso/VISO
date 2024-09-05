@@ -150,39 +150,41 @@ section#desplegable{
   }
 }
       @media (max-width: 600px) {
-        .main-information{
-        margin-top:0px;}
-        .thumbnail img{
-        margin-bottom:2px;}
-      .special .product {
-        grid-template-columns: repeat(1,1fr);
+              .main-information{
+              margin-top:0px;}
+              .thumbnail img{
+              margin-bottom:2px;}
+            .special .product {
+              grid-template-columns: repeat(1,1fr);
+            }
+            .special .row {
+              grid-column: span 1;
+          }
+            .news-content {
+              grid-template-columns: repeat(1,1fr);
+          }
+          .news-content .view {
+            grid-column: span 1;
+        }
+        .news-content .title-seccion.big {
+          grid-column: span 1;        
+          text-align: center;
       }
-      .special .row {
-        grid-column: span 1;
-    }
-      .news-content {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .news-content .view {
-      grid-column: span 1;
-  }
-  .news-content .title-seccion.big {
-    grid-column: span 1;
-    text-align: center;
-}
 
-.loader svg{
-  width:200px;
-  z-index: 10;
-  height: auto;
-  color: white;
-  align-self: center;
-  padding-bottom: 5px;
-}
-.hero{
-  width:100%;
-}
-
+      .loader svg{
+        width:200px;
+        z-index: 10;
+        height: auto;
+        color: white;
+        align-self: center;
+        padding-bottom: 5px;
+      }
+      .hero{
+        width:100%;
+      }.news-content .title-seccion.big {
+        padding: 0px;
+      }
+    }
 </style>
 <script>
 
