@@ -464,6 +464,9 @@ select:disabled {
     margin-top: 100px;
 
   }
+  .page-content{
+    margin-top: 100px;
+  }
 
   .double {
     grid-template-columns: repeat(2 ,1fr);
