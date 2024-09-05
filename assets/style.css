@@ -767,4 +767,7 @@ p.info-collection{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
+button#checkout {
+  grid-column: span 2;
+}
 }
