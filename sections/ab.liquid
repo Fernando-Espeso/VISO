@@ -1,17 +1,22 @@
 <section
-    data-section-id="info-page"
-    class="info-page"
-  >
-    {% for block in section.blocks %}
-      {% case block.type %}
-          {% when 'summary' %}
-            <div class="section">
-             <div class="title-infos">{{ block.settings.Name }}</div>
-              <div class="content-infos">{{ block.settings.Location }}</div>
-            </div>
-      {% endcase %}
-    {% endfor %}
-  </section>
+  data-section-id="about-page"
+  class="about-page"
+>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'summary' %}
+      {% unless block.settings.subtitle == blank and block.settings.image == blank and block.settings.title == blank %}
+        <div class="section">
+          <div class="title-infos">{{ block.settings.subtitle }}</div>
+          <div class="image-infos">
+            <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.subtitle }}">
+          </div>
+          <div class="content-infos">{{ block.settings.title }}</div>
+        </div>
+      {% endunless %}
+    {% endcase %}
+  {% endfor %}
+</section>
 
   
   {% schema %}
