@@ -215,6 +215,9 @@ label {
   grid-gap: 2px;
 }
 .title-about{
+  line-height: 120%;
+}
+.content-in{
   font-size: clamp(var(--big), 1.5vw, 2rem);
   text-align: center;
   line-height: 120%;
