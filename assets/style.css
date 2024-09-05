@@ -551,6 +551,7 @@ a {
   cursor: pointer;
 }
 
+
 /* Menu styles */
 .gallery {
   grid-column: 4/ span 6;
@@ -609,7 +610,6 @@ section#desplegable {
 div#shopify-section-aim{
   max-width:1300px;
   margin: 0 auto;
-
   }
 .sold-out {
   padding: 0px;
