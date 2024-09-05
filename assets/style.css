@@ -519,7 +519,10 @@ video {
   -ms-user-select: none;
   user-select: none;
 }
-
+.title-infos {
+  font-size: var(--main);
+  color: black;
+}
 /* Link styles */
 a {
   color: inherit;
