@@ -606,7 +606,10 @@ section#desplegable {
   grid-template-columns: repeat(12, 1fr);
   row-gap: 100px;
 }
-
+div#shopify-section-aim{
+  max-width:700px;
+  margin: 0 auto;
+  }
 .sold-out {
   padding: 0px;
 }
