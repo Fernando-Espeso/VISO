@@ -1,0 +1,46 @@
+<section
+    data-section-id="stocklist"
+    id="stocklist"
+    class="stocklist"
+  >
+    {% for block in section.blocks %}
+      {% case block.type %}
+          {% when 'summary' %}
+          {% unless block.settings.subtitle and block.settings.interior  == blank %}
+            <div class="section">
+              <div class="location">{{ block.settings.Location }}</div>
+              <div class="name">{{ block.settings.Name }}</div>
+            </div>
+          {% endunless %}
+      {% endcase %}
+    {% endfor %}
+  </section>
+  {% schema %}
+  {
+    "name": "Stockist",
+    "blocks": [
+      {
+        "type": "summary",
+        "name": "Stockist",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "Name",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "Location",
+            "label": "Content"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "information"
+    }
+  ]
+  }
+  {% endschema %}
+  
