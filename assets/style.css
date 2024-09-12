@@ -174,6 +174,7 @@ label[for="product-select"] {
   display: none;
 }
 .full-body {
+  margin-top: 100px;
   grid-gap:10px;
   min-height: 100%;
   grid-template-columns: repeat(2, 1fr);
@@ -256,13 +257,13 @@ div#shopify-section-ab {
 
 }
 div#content {
-  margin-top: 100px;
+
   background-color: #fffc;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   height: fit-content;
   order: 2;
-  
+
   position: sticky;
   top: calc(var(--nav) + 25px);
 }
