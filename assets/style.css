@@ -248,7 +248,7 @@ div#shopify-section-ab {
   height: fit-content;
   font-size: clamp(var(--big), 1.5vw, 2rem);
   border-radius: 0px;
-  background: #d3d3d3;
+  border-radius: 1px solid black;
   padding: 8px;
 }
 .product-description{
