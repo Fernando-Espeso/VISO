@@ -68,7 +68,7 @@ $(document).ready(function() {
 
 
   let ishide = false;
-  $('.shop').hover(function() {
+  $('.shop, .categories').hover(function() {
       $(".shop").toggleClass("active");
       ishide = !ishide;
 
