@@ -68,10 +68,10 @@ $(document).ready(function() {
 
 
   let ishide = false;
-  $('.shop').hover(function() {
-      $(".shop").addClass("active");
+  $('.shop').click(function() {
+      $(".shop").toggleClass("active");
       ishide = !ishide;
-  
+
       if (ishide) {
           setTimeout(function() {
               $('.categories').addClass("hid");
@@ -86,12 +86,6 @@ $(document).ready(function() {
           setTimeout(function() {
               $('.categories').removeClass("show");
           }, 100);
-      }
-  }, function() {
-      // Solo ocultar si el ratón no está sobre '.categories' o '.shop'
-      if (!$('.shop:hover, .categories:hover').length) {
-          $(".shop").removeClass("active");
-          $('.categories').removeClass("show").removeClass("hid");
       }
   });
 
