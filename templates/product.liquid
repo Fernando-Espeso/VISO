@@ -1,77 +1,77 @@
-<div id="content">
-  <div class="ab">
-    <div class="add_row">
-      <div class="row">
-              <div class="product-title">
-                {{ product.title}}
-              </div>
-              <div id="product-price"></div>
-                     {% if product.compare_at_price > product.price %}
-                     {% else %}
-                     {% endif %}       
-                <div class="product-price-wrap"> 
-                  {% if product.available %}
-                  {% if product.price_varies %}
-                  {% else %}
-                    {% if product.compare_at_price > product.price %}
-                    <span class="red">ON SALE</span>
-                    {% else %}
-                
-                    {% endif %}
-                  {% endif %}
-                  {% else %}
-                  {% endif %}
-                </div> 
-              </div>
-        
-                <div class="add_item">
-                      <!--Product Info-->
-                      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-                                {%- if product.has_only_default_variant -%}
-                                class="product-simple"
-                                {%- elsif variants > 0 -%}
-                                class="product-variants"
-                                {%- endif -%}>
+<div class="full-body">
+  <div id="content">
+    <div class="ab">
+      <div class="add_row">
+        <div class="row">
+                <div class="product-title">
+                  {{ product.title}}
+                </div>
+                <div id="product-price"></div>
+                      {% if product.compare_at_price > product.price %}
+                      {% else %}
+                      {% endif %}       
+                    <div class="product-price-wrap"> 
+                      {% if product.available %}
+                      {% if product.price_varies %}
+                      {% else %}
+                        {% if product.compare_at_price > product.price %}
+                        <span class="red">ON SALE</span>
+                        {% else %}
+                    
+                        {% endif %}
+                      {% endif %}
+                      {% else %}
+                      {% endif %}
+                    </div> 
+          </div>
+          <div class="add_item">
+                        <!--Product Info-->
+                        <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+                                  {%- if product.has_only_default_variant -%}
+                                  class="product-simple"
+                                  {%- elsif variants > 0 -%}
+                                  class="product-variants"
+                                  {%- endif -%}>
 
-                                <div id="bag-total" >
-                                    <!--Variations Dropdown-->
-                                  <select id="product-select" name="id">
-                                    {% for variant in product.variants %}
-                                    <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
-                                    {% endfor %}
-                                  </select>  
-                                  <!--Actions-->
-                                  {% if product.available %}
-                                  <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
-                                    ADD TO BAG
-                                  </button> 
-                                  {% else %}
-                                    <button  id="add-to-cart" {% unless product.selected_variant.available %}disabled{% endunless %}>
-                                  SOLD OUT
-                                  </button> 
-                                  {% endif %}
-                                  </div>
-                
-                      </form>
-
-                </div> 
+                                  <div id="bag-total" >
+                                      <!--Variations Dropdown-->
+                                    <select id="product-select" name="id">
+                                      {% for variant in product.variants %}
+                                      <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                                      {% endfor %}
+                                    </select>  
+                                    <!--Actions-->
+                                    {% if product.available %}
+                                    <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
+                                      ADD TO BAG
+                                    </button> 
+                                    {% else %}
+                                      <button  id="add-to-cart" {% unless product.selected_variant.available %}disabled{% endunless %}>
+                                    SOLD OUT
+                                    </button> 
+                                    {% endif %}
+                                    </div>
+                  
+                        </form>
+                  </div> 
       </div>         
     </div>
-  </div>
-  <div class="product-description">
-    {{ product.content}}
+    <div class="product-description">
+        {{ product.content}}
+    </div>
   </div>
   <div class="gallery_collection">
-  {% for media in product.media %}
-      <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
-  {% endfor %}
+      {% for media in product.media %}
+          <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
+      {% endfor %}
   </div>
-  {%- if product.metafields.custom.materiales != blank -%}
+</div>
+{%- if product.metafields.custom.materiales != blank -%}
     <div class="show-description description">
       {{ product.metafields.custom.materiales | metafield_tag }}
     </div>
-  {%- endif -%}
-</div>
+{%- endif -%}
+
 {{ 'option_selection.js' | shopify_asset_url | script_tag }}
 {% assign variants = 0 %}        
 {% for option in product.options %}

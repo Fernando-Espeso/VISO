@@ -173,6 +173,12 @@ select {
 label[for="product-select"] {
   display: none;
 }
+.full-body {
+  grid-gap:10px;
+  min-height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
 
 .hero .simple-text{
   margin-top: 2px;
@@ -250,13 +256,12 @@ div#shopify-section-ab {
 
 }
 div#content {
-  margin-top: 100px;
+  height: fit-content;
   background-color: #fffc;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  /* background-color: white; */
   position: sticky;
-  top: calc(var(--nav) + 25px);
+  top: var(--nav);
 }
 .news-content .view{
   grid-column: span 3;
@@ -565,9 +570,9 @@ a {
 }
 .gallery_collection {
   grid-gap: 2px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column: span 1;
 }
 
 #header a{
