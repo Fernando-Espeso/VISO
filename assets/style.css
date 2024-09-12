@@ -725,6 +725,14 @@ p.info-collection{
 }
 /* Mobile styles */
 @media (max-width: 600px) {
+
+  .full-body {
+    margin-top: 100px;
+    grid-gap:10px;
+    min-height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+  }
   .cart-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
