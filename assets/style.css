@@ -163,8 +163,9 @@ select {
   display: none;
 }
 .hero{
-  position: relative;
-  max-width: 650px;
+  position: absolute;
+  width: 100;
+  top: 0px;
   margin: 0 auto;
   height: 100%;
   grid-column: span 12;
@@ -594,7 +595,6 @@ section#desplegable {
 
 /* SHOP */
 .main {
-  margin-top: 100px;
   min-height: 100%;
   flex-grow: 1;
   display: grid;
