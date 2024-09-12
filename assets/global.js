@@ -66,27 +66,17 @@ function invertirTextoYContenido($elemento, mostrarTexto, ocultarTexto) {
 
 $(document).ready(function() {
 
+  let hideTimeout;
 
-  let ishide = false;
-  $('.shop').click(function() {
-      $(".shop").toggleClass("active");
-      ishide = !ishide;
-
-      if (ishide) {
-          setTimeout(function() {
-              $('.categories').addClass("hid");
-          }, 100);
-          setTimeout(function() {
-              $('.categories').addClass("show");
-          }, 500);
-      } else {
-          setTimeout(function() {
-              $('.categories').removeClass("hid");
-          }, 500);
-          setTimeout(function() {
-              $('.categories').removeClass("show");
-          }, 100);
-      }
+  $('.shop, .categories').on('mouseenter', function() {
+      clearTimeout(hideTimeout);  // Clear any scheduled hiding
+      $('.categories').addClass("show").removeClass("hid");
+  });
+  
+  $('.shop, .categories').on('mouseleave', function() {
+      hideTimeout = setTimeout(function() {
+          $('.categories').removeClass("show").addClass("hid");
+      }, 300);  // Adjust the delay as needed
   });
 
 
