@@ -705,6 +705,9 @@ p.info-collection{
     grid-template-columns: repeat(1, 1fr);
     display: grid;
   }
+  div#content{
+    order: 0;
+  }
 }
 /* Mobile card styles */
 @media (max-width: 812px) and (orientation: landscape) {
