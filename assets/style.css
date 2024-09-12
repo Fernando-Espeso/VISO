@@ -360,7 +360,6 @@ select:disabled {
   }
   .product-description {
     margin-top: 10px;
-    padding-right: 20%;
     font-size: clamp(var(--big), 1.5vw, 2rem)!important; 
 
 
