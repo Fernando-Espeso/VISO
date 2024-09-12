@@ -342,8 +342,12 @@ select:disabled {
     grid-column: span 3;
   }
   .intro {
+    color: white;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
     font-size: var(--big);
-    line-height:var(--lh);
+    line-height: var(--lh);
     text-align: center;
     grid-column: span 12;
 }div#bag-total{
