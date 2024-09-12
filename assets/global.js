@@ -66,19 +66,37 @@ function invertirTextoYContenido($elemento, mostrarTexto, ocultarTexto) {
 
 $(document).ready(function() {
 
-  let hideTimeout;
 
+  let ishide = false;
+  let hideTimeout;
+  
   $('.shop, .categories').on('mouseenter', function() {
       clearTimeout(hideTimeout);  // Clear any scheduled hiding
-      $('.categories').addClass("show").removeClass("hid");
+      if (!ishide) {
+          ishide = true;
+          setTimeout(function() {
+              $('.categories').addClass("hid");
+          }, 100);
+          setTimeout(function() {
+              $('.categories').addClass("show");
+          }, 500);
+      }
   });
   
   $('.shop, .categories').on('mouseleave', function() {
       hideTimeout = setTimeout(function() {
-          $('.categories').removeClass("show").addClass("hid");
+          if (ishide) {
+              ishide = false;
+              setTimeout(function() {
+                  $('.categories').removeClass("hid");
+              }, 500);
+              setTimeout(function() {
+                  $('.categories').removeClass("show");
+              }, 100);
+          }
       }, 300);  // Adjust the delay as needed
   });
-
+  
 
   $("#add-to-bag").click(function(){
     $(".cart-part").addClass("active");
