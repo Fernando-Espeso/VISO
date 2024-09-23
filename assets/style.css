@@ -597,7 +597,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
   font-smoothing: antialiased;
-  transition: opacity 1s ease;
   font-weight: 300;
 }
 
