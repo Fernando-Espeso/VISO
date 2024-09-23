@@ -270,7 +270,7 @@ div#content {
   top: calc(var(--nav) + 25px);
 }
 svg{
-  width: 120px;
+  width: 85px;
 }
 .news-content .view{
   grid-column: span 3;
