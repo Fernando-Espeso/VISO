@@ -3,10 +3,8 @@
     <div class="total">
       <div>SUBTOTAL</div>
       <div>{{ cart.total_price | money }}</div>
-      <div>SHIPPING</div>
-      <div>CALCULATED AT CHECKOUT</div>
       <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
-      <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
+      <button id="checkout" type="submit" name="checkout">CHECKOUT</button>
     </div>
 
     {% for item in cart.items %}
@@ -16,8 +14,8 @@
         </div>
         <div style="background-color:var(--darker);" class="row">
           <div class="main-information">
-            <div class="product-title">{{ item.product.title }}</div><br>
-            <div class="product-price">{{ item.price | money }}</div>
+            <div class="product-title">{{ item.product.title }}</div>
+            <div class="product-price">{{ item.price | money }}</div><br>
           </div>
         </div>
         <div class="double">
