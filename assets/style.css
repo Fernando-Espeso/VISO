@@ -2,7 +2,7 @@
 /* CSS Variables */
 :root {
   --main: 16px;
-  --med: 18px;
+  --med: 24px;
   --big: 28px;
   --lh:120%;
   --gap: 10px;
@@ -404,6 +404,15 @@ div#bag-total{
   a.logo-home {
     line-height: 0px;
 }
+.thumbnail:hover #block{
+  display: block;
+}
+.thumbnail:hover #hide{
+  display: none;
+}
+#block{
+  display: none;
+}
   .categories{
     column-count: 4;
     flex-basis: 100%;
@@ -638,7 +647,7 @@ div#shopify-section-aim{
 footer {
     display: flex;
     position: relative;
-    padding-top: 200px !important;
+    padding-top: 100px !important;
     display: block;
     align-items: end;
     padding: 5px;
