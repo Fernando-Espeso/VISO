@@ -441,7 +441,6 @@ div#bag-total{
     line-height:0px;
     opacity: 0;
     font-size: 0px; 
-    transition: 0.5s ease;
   }
   .categories.hid{
     padding-top: 10px;
@@ -449,7 +448,6 @@ div#bag-total{
     flex-basis: 100%;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem); 
-	transition: 0.5s ease;
   }
   .categories.show .search-input{
     font-weight: 300;
@@ -458,7 +456,6 @@ div#bag-total{
     height: fit-content;
     order: 2;
     color: #000;
-    transition: 0.5s ease;
   }
   .search-input{
     font-weight: 300;
