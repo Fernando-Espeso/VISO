@@ -262,7 +262,7 @@ div#content {
   order: 2;
 
   position: sticky;
-  top: calc(var(--nav) + 25px);
+  top: calc(var(--nav) + 0px);
 }
 svg{
   width: 85px;
