@@ -361,15 +361,18 @@ div#bag-total{
   gap:10px;
   margin-top: 20px;
 }
-  button#add-to-cart{;
+  button#add-to-cart{
     font-size: var(--main)!important;
     height: 100%;
     width: 200px;
     text-align: center;
     padding: 8px;
     background-color: black;
-    color: #fff;
-    
+    color: #fff; 
+  }
+  button#add-to-cart:hover{
+    background-color: #454545f3;
+    color: #fff; 
   }
   .product-description {
     margin-top: 10px;
@@ -387,8 +390,23 @@ div#bag-total{
     color: #fff;
     
   }
+  button#checkout {
+    font-size: var(--main)!important;
+    height: 100%;
+    width: 200px;
+    text-align: center;
+    padding: 8px;
+    background-color: #000000f3;
+    color: #fff;
+    
+  }
+  button#checkout:hover {
+    background-color: #454545f3;
+    color: #fff;
+    
+  }
   .image-container {
-    padding-top: 10px;
+    padding-top: 10px;rgba(19, 16, 16, 0.953)
     height: auto;
     display: flex;
     justify-content: center;
