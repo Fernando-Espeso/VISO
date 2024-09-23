@@ -221,7 +221,6 @@ label {
   line-height: 120%;
 }
 div#shopify-section-ab {
-  margin-top: 100px;
 }
 .content-inside p{
   font-size: clamp(var(--big), 1.5vw, 2rem);
@@ -539,7 +538,7 @@ span.quantity-button.minus, span.quantity-button.plus {
     font-size:var(--main)!important;
   }
 
-  
+
   .shopify-section-contact{
     display: grid;
     row-gap:10px;
@@ -547,7 +546,7 @@ span.quantity-button.minus, span.quantity-button.plus {
 
   }
   .page-content{
-    margin-top: 100px;
+    margin-top: 38px;
   }
 
   .double {
