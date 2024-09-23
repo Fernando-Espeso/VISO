@@ -9,7 +9,7 @@
 */
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/Matto_logo_black_775352c8-4f8a-4d94-82f9-10163a309835.png",
+    "favicon": "shopify://shop_images/Matto_logo_black_775352c8-4f8a-4d94-82f9-10163a309835.png",
     "sections": {
       "hero": {
         "type": "hero",
@@ -17,7 +17,7 @@
           "media_9Chkad": {
             "type": "media",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Viso_Project_Pillow_VTS_02_04-1024x1024.jpg"
+              "image": "shopify://shop_images/Viso_Project_Pillow_VTS_02_04-1024x1024.jpg"
             }
           }
         },
@@ -33,8 +33,8 @@
           "58575a22-e1ac-44bc-9c22-b31048ce56c2": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>PAY IN 3<\/p>",
-              "interior": "<p>PAY LATER IN 3 INTEREST-FREE INSTALLATIONS FREQUENTLY ASKED QUESTIONS<\/p><p> <\/p><p>KLARNA IS A SWEDISH PAYMENT SERVICE PROVIDER THAT TAKES END-TO-END RESPONSIBILITY FOR YOUR PAYMENT. KLARNA IS THE PROVIDER OF SMOOTH PAYMENTS TO MORE THAN 200,000 ONLINE STORES. OVER 85 MILLION CONSUMERS WORLDWIDE HAVE TRUSTED KLARNA TO SECURELY HANDLE THEIR PAYMENTS.<\/p><p> <\/p><p>HOW DOES PAY LATER IN 3 INTEREST-FREE INSTALMENTS WORK?<\/p><p> <\/p><p>PAY LATER IN 3 INTEREST-FREE INSTALLATIONS WILL ALLOW YOU TO SPREAD THE COST OF YOUR PURCHASE OVER 3 EQUAL PAYMENTS. THE PAYMENT FOR EACH INSTALLATION WILL AUTOMATICALLY BE COLLECTED FROM THE DEBIT OR CREDIT CARD YOU ENTERED AT CHECKOUT. YOUR FIRST INSTALLATION WILL BE COLLECTED WHEN YOUR ORDER IS CONFIRMED BY [MERCHANT] AND INSTALMENTS 2 AND 3 ARE SCHEDULED 30 AND 60 DAYS LATER, RESPECTIVELY. YOU CAN ALWAYS MONITOR YOUR PAYMENTS ’SCHEDULE IN THE KLARNA APP.<\/p><p> <\/p><p>AM I ELIGIBLE FOR PAY LATER IN 3 INTEREST-FREE INSTALMENTS?<\/p><p> <\/p><p>TO USE PAY LATER IN 3 INTEREST-FREE INSTALMENTS YOU MUST BE AT LEAST 18. WHILST THIS OPTION IS WIDELY PROMOTED, PAY LATER IN 3 INTEREST-FREE INSTALMENTS IS SUBJECT TO YOUR FINANCIAL CIRCUMSTANCES. WHEN CHOOSING PAY LATER IN 3 INTEREST-FREE INSTALMENTS, OUR ASSESSMENT WILL NOT AFFECT YOUR CREDIT RATING.<\/p><p> <\/p><p>HOW CAN I INCREASE MY CHANCES OF BEING ACCEPTED FOR PAY LATER IN 3 INTEREST-FREE INSTALMENTS?<\/p><p> <\/p><p>KLARNA IS UNIQUE AND OFFERS PAY LATER IN 3 INTEREST-FREE INSTALLATIONS BASED ON A NUMBER OF FACTORS SUCH AS THE ORDER VALUE, PREVIOUS ORDER HISTORY AND ITEM AVAILABILITY. IF YOU ARE 18 OR OVER, YOU CAN IMPROVE YOUR CHANCES OF BEING OFFERED PAY LATER IN 3 INTEREST-FREE INSTALMENTS BY ENSURING YOU PROVIDE YOUR FULL NAME AND ACCURATE ADDRESS DETAILS AND SHIPPING TO YOUR REGISTERED BILLING ADDRESS. ALL ORDERS ARE ASSESSED INDIVIDUALLY. JUST BECAUSE YOU HAVE BEEN ACCEPTED FOR A KLARNA PAYMENT METHOD BEFORE DOES NOT MEAN IT WILL BE OFFERED FOR EVERY ORDER AND IN TURN, AS IT IS DENIED DOES NOT MEAN IT WILL BE DENIED FOR ALL FUTURE ORDERS.<\/p><p> <\/p><p>WHAT DO I NEED TO PROVIDE WHEN I MAKE A PURCHASE?<\/p><p> <\/p><p>IF YOU WANT TO MAKE A PURCHASE WITH KLARNA USING PAY LATER IN 3 INTEREST-FREE INSTALMENTS, YOU'LL NEED TO PROVIDE YOUR MOBILE PHONE NUMBER, EMAIL ADDRESS, CURRENT BILLING ADDRESS AND A DEBIT OR CARD CARD. THE MOBILE NUMBER IS REQUIRED IN CASE WE NEED TO REACH YOU. ALL COMMUNICATIONS WILL BE SENT TO YOUR EMAIL ADDRESS. IT'S VERY IMPORTANT THAT YOU GIVE US THE CORRECT DETAILS, AS OTHERWISE YOU WILL NOT RECEIVE YOUR PAYMENT SCHEDULE AND ANY UPDATED ORDER INFORMATION.<\/p>"
+              "subtitle": "<p>PAY IN 3</p>",
+              "interior": "<p>PAY LATER IN 3 INTEREST-FREE INSTALLATIONS FREQUENTLY ASKED QUESTIONS</p><p> </p><p>KLARNA IS A SWEDISH PAYMENT SERVICE PROVIDER THAT TAKES END-TO-END RESPONSIBILITY FOR YOUR PAYMENT. KLARNA IS THE PROVIDER OF SMOOTH PAYMENTS TO MORE THAN 200,000 ONLINE STORES. OVER 85 MILLION CONSUMERS WORLDWIDE HAVE TRUSTED KLARNA TO SECURELY HANDLE THEIR PAYMENTS.</p><p> </p><p>HOW DOES PAY LATER IN 3 INTEREST-FREE INSTALMENTS WORK?</p><p> </p><p>PAY LATER IN 3 INTEREST-FREE INSTALLATIONS WILL ALLOW YOU TO SPREAD THE COST OF YOUR PURCHASE OVER 3 EQUAL PAYMENTS. THE PAYMENT FOR EACH INSTALLATION WILL AUTOMATICALLY BE COLLECTED FROM THE DEBIT OR CREDIT CARD YOU ENTERED AT CHECKOUT. YOUR FIRST INSTALLATION WILL BE COLLECTED WHEN YOUR ORDER IS CONFIRMED BY [MERCHANT] AND INSTALMENTS 2 AND 3 ARE SCHEDULED 30 AND 60 DAYS LATER, RESPECTIVELY. YOU CAN ALWAYS MONITOR YOUR PAYMENTS ’SCHEDULE IN THE KLARNA APP.</p><p> </p><p>AM I ELIGIBLE FOR PAY LATER IN 3 INTEREST-FREE INSTALMENTS?</p><p> </p><p>TO USE PAY LATER IN 3 INTEREST-FREE INSTALMENTS YOU MUST BE AT LEAST 18. WHILST THIS OPTION IS WIDELY PROMOTED, PAY LATER IN 3 INTEREST-FREE INSTALMENTS IS SUBJECT TO YOUR FINANCIAL CIRCUMSTANCES. WHEN CHOOSING PAY LATER IN 3 INTEREST-FREE INSTALMENTS, OUR ASSESSMENT WILL NOT AFFECT YOUR CREDIT RATING.</p><p> </p><p>HOW CAN I INCREASE MY CHANCES OF BEING ACCEPTED FOR PAY LATER IN 3 INTEREST-FREE INSTALMENTS?</p><p> </p><p>KLARNA IS UNIQUE AND OFFERS PAY LATER IN 3 INTEREST-FREE INSTALLATIONS BASED ON A NUMBER OF FACTORS SUCH AS THE ORDER VALUE, PREVIOUS ORDER HISTORY AND ITEM AVAILABILITY. IF YOU ARE 18 OR OVER, YOU CAN IMPROVE YOUR CHANCES OF BEING OFFERED PAY LATER IN 3 INTEREST-FREE INSTALMENTS BY ENSURING YOU PROVIDE YOUR FULL NAME AND ACCURATE ADDRESS DETAILS AND SHIPPING TO YOUR REGISTERED BILLING ADDRESS. ALL ORDERS ARE ASSESSED INDIVIDUALLY. JUST BECAUSE YOU HAVE BEEN ACCEPTED FOR A KLARNA PAYMENT METHOD BEFORE DOES NOT MEAN IT WILL BE OFFERED FOR EVERY ORDER AND IN TURN, AS IT IS DENIED DOES NOT MEAN IT WILL BE DENIED FOR ALL FUTURE ORDERS.</p><p> </p><p>WHAT DO I NEED TO PROVIDE WHEN I MAKE A PURCHASE?</p><p> </p><p>IF YOU WANT TO MAKE A PURCHASE WITH KLARNA USING PAY LATER IN 3 INTEREST-FREE INSTALMENTS, YOU'LL NEED TO PROVIDE YOUR MOBILE PHONE NUMBER, EMAIL ADDRESS, CURRENT BILLING ADDRESS AND A DEBIT OR CARD CARD. THE MOBILE NUMBER IS REQUIRED IN CASE WE NEED TO REACH YOU. ALL COMMUNICATIONS WILL BE SENT TO YOUR EMAIL ADDRESS. IT'S VERY IMPORTANT THAT YOU GIVE US THE CORRECT DETAILS, AS OTHERWISE YOU WILL NOT RECEIVE YOUR PAYMENT SCHEDULE AND ANY UPDATED ORDER INFORMATION.</p>"
             }
           }
         },
@@ -66,52 +66,36 @@
           "summary_mQx6KV": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p><a href=\"\/products\/one-product\" title=\"Quilt Blanket VTS 0101\">The Art of Quilting<\/a><\/p>",
-              "interior": "<p>We collaborated with the award-wining Thompson Street Studio to create an exclusive limited edition collection of hand-stitched quilts. Thompson Street Studio X Visø presents a modern take on an ancient craft of patchwork quilting. Each quilt is made out of pieced organic 100% linen and cotton remnant fabric.<\/p>",
-              "image": "shopify:\/\/shop_images\/VWB0101-wool-blanket-cream-02-960x960.jpg",
-              "title": "<p>Wool Blanket 0101<\/p>"
+              "subtitle": "<p><a href=\"/products/one-product\" title=\"Quilt Blanket VTS 0101\">The Art of Quilting</a></p>",
+              "interior": "<p>We collaborated with the award-wining Thompson Street Studio to create an exclusive limited edition collection of hand-stitched quilts. Thompson Street Studio X Visø presents a modern take on an ancient craft of patchwork quilting. Each quilt is made out of pieced organic 100% linen and cotton remnant fabric.</p>",
+              "image": "shopify://shop_images/VWB0101-wool-blanket-cream-02-960x960.jpg",
+              "title": "<p>Wool Blanket 0101</p>"
             }
           },
           "summary_cdKMwT": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>Our Tapestry Capsule<\/p>",
-              "interior": "<p>The technique used to create our throws is part of a family heritage of devoted artists, carried through generations keeping the European wall tapestry style in place. The outcome of this collaboration is an exceptional textile with high definition artwork that has history woven into every inch.<\/p>",
-              "image": "shopify:\/\/shop_images\/Viso_Project_Merino_Blanket_Pillow_3.jpg",
-              "title": "<p>Resort Chair 0102<\/p>"
+              "subtitle": "<p>Our Tapestry Capsule</p>",
+              "interior": "<p>The technique used to create our throws is part of a family heritage of devoted artists, carried through generations keeping the European wall tapestry style in place. The outcome of this collaboration is an exceptional textile with high definition artwork that has history woven into every inch.</p>",
+              "image": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_3.jpg",
+              "title": "<p>Resort Chair 0102</p>"
             }
           },
           "summary_axXepz": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>Our Porcelan<\/p>",
-              "interior": "<p>Our porcelain series place the emphasis on expert craftsmanship and high quality. Eclectic and distinct artifacts crafted by artisans in Europe in the most fine porcelain. Bold hues adorn the pieces, which are consciously produced in limited units, for the ultimate in exclusive luxury. Juxtaposition of textures or patterns create bold statement pieces, making it the perfect accent for home, office or an ideal gift.<\/p>",
-              "image": "shopify:\/\/shop_images\/Viso_Project_V171_Tuerca_Cup_Set_1.gif",
-              "title": "<p>Tuercas Porcelain Vase 0401<\/p>"
+              "subtitle": "<p>Our Porcelan</p>",
+              "interior": "<p>Our porcelain series place the emphasis on expert craftsmanship and high quality. Eclectic and distinct artifacts crafted by artisans in Europe in the most fine porcelain. Bold hues adorn the pieces, which are consciously produced in limited units, for the ultimate in exclusive luxury. Juxtaposition of textures or patterns create bold statement pieces, making it the perfect accent for home, office or an ideal gift.</p>",
+              "image": "shopify://shop_images/Viso_Project_V171_Tuerca_Cup_Set_1.gif",
+              "title": "<p>Tuercas Porcelain Vase 0401</p>"
             }
           },
           "summary_3YVYgd": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>Our Pillows<\/p>",
+              "subtitle": "<p>Our Pillows</p>",
               "interior": "Merging functionality and fine art, our series of pillows are hand-finished by meticulous craftsman who observe the heritage of weaving, either in pure cotton or fine wool eclectic patterns and color combinations makes each of them a dynamic addition to your sofa or armchair.",
-              "image": "shopify:\/\/shop_images\/364A1784-1024x1024.jpg",
-              "title": ""
-            }
-          },
-          "summary_87rQHN": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "",
-              "interior": "",
-              "title": ""
-            }
-          },
-          "summary_VhtBUL": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "",
-              "interior": "",
+              "image": "shopify://shop_images/364A1784-1024x1024.jpg",
               "title": ""
             }
           }
@@ -120,9 +104,7 @@
           "summary_mQx6KV",
           "summary_cdKMwT",
           "summary_axXepz",
-          "summary_3YVYgd",
-          "summary_87rQHN",
-          "summary_VhtBUL"
+          "summary_3YVYgd"
         ],
         "settings": {
         }
@@ -138,99 +120,99 @@
           "summary_h6fe97": {
             "type": "summary",
             "settings": {
-              "Name": "<p>The Together Project<\/p>",
-              "Location": "<p>Australia<\/p>"
+              "Name": "<p>The Together Project</p>",
+              "Location": "<p>Australia</p>"
             }
           },
           "summary_eaYyyz": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Object Trouve<\/p>",
-              "Location": "<p>Belgium<\/p>"
+              "Name": "<p>Object Trouve</p>",
+              "Location": "<p>Belgium</p>"
             }
           },
           "summary_YE9K9i": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Goodee<\/p>",
-              "Location": "<p>Canada<\/p>"
+              "Name": "<p>Goodee</p>",
+              "Location": "<p>Canada</p>"
             }
           },
           "summary_FPdUA4": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Ssense<\/p>",
+              "Name": "<p>Ssense</p>",
               "Location": ""
             }
           },
           "summary_NYyPtJ": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Just Luxe<\/p>",
+              "Name": "<p>Just Luxe</p>",
               "Location": ""
             }
           },
           "summary_QNxjJP": {
             "type": "summary",
             "settings": {
-              "Name": "<p>The Beast<\/p>",
-              "Location": "<p>China<\/p>"
+              "Name": "<p>The Beast</p>",
+              "Location": "<p>China</p>"
             }
           },
           "summary_PgwGTh": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Paustian<\/p>",
-              "Location": "<p>Denmark<\/p>"
+              "Name": "<p>Paustian</p>",
+              "Location": "<p>Denmark</p>"
             }
           },
           "summary_tMhpUP": {
             "type": "summary",
             "settings": {
-              "Name": "<p>A.Plus Store<\/p>",
+              "Name": "<p>A.Plus Store</p>",
               "Location": ""
             }
           },
           "summary_yy8gxa": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Rootine Life<\/p>",
+              "Name": "<p>Rootine Life</p>",
               "Location": ""
             }
           },
           "summary_qbDGYP": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Voo Store Berlin<\/p>",
-              "Location": "<p>Germany<\/p>"
+              "Name": "<p>Voo Store Berlin</p>",
+              "Location": "<p>Germany</p>"
             }
           },
           "summary_AJnNyd": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Corso Como Milan<\/p>",
+              "Name": "<p>Corso Como Milan</p>",
               "Location": ""
             }
           },
           "summary_d8RGNV": {
             "type": "summary",
             "settings": {
-              "Name": "<p>La Rinascente<\/p>",
+              "Name": "<p>La Rinascente</p>",
               "Location": ""
             }
           },
           "summary_ymyQY8": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Luisa Via Roma<\/p>",
-              "Location": "<p>Italy<\/p>"
+              "Name": "<p>Luisa Via Roma</p>",
+              "Location": "<p>Italy</p>"
             }
           },
           "summary_Cz6MiG": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Journal Standard Furniture<\/p>",
-              "Location": "<p>Japan<\/p>"
+              "Name": "<p>Journal Standard Furniture</p>",
+              "Location": "<p>Japan</p>"
             }
           }
         },
@@ -264,22 +246,22 @@
           "summary_BQhLxG": {
             "type": "summary",
             "settings": {
-              "Name": "<p>ORDERING<\/p>",
-              "Location": "<ul><li>Select your favorite products and click on the “Add to Cart” link on each product page. They will be added to your cart, shown in the top right corner of your screen (ex: “3 ITEMS”).<\/li><li>After you have chosen your products, click on the cart link, on the top right corner and validate all the products, unit prices, quantities and sub-totals (you can add or subtract quantities directly from the cart).<\/li><li>If you have a coupon, please enter it on the left box.<\/li><li>Click “Proceed to Checkout” where you will be asked to input your billing and shipping information for us to calculate shipping costs (remember that orders above 300€ have free shipping! Only in EU, USA and UK. OUTLET no included).<\/li><li>Choose your preferred payment method. We accept Paypal and Credit Card (VISA, AMEX, MasterCard).<\/li><li>If you choose Paypal you will be redirected to their site to finish payment; if you choose Credit Card, just enter the details on the form.<\/li><li>Click “Place Order” and we will take care of the rest!<\/li><\/ul><p>Also, our site is fully secured by “Let’s Encrypt Authority X3” and you can access additional information by clicking on the locker on the URL bar of your browser and\/or here: <a href=\"https:\/\/letsencrypt.org\/documents\/isrg-cps-v3.0\/\">https:\/\/letsencrypt.org\/documents\/isrg-cps-v3.0\/<\/a><\/p><h5>VISO SHIPPING<\/h5><p>You can get free shipping on purchases over 300 in countries of the European Union, UK, and USA. Products with a discount of 50% or more are not included.<br\/>We use UPS\/MRW\/FEDEX for all orders. You should get your order in 2-7 days within Europe.<br\/>Viso reserves the right to ship any order with maximum 2 day delay, especially during sales period or big launches, the volume of orders being very big at those times.<br\/>Please note that the days stated during checkout are Working days, week-ends and bank holidays do not count.<\/p>"
+              "Name": "<p>ORDERING</p>",
+              "Location": "<ul><li>Select your favorite products and click on the “Add to Cart” link on each product page. They will be added to your cart, shown in the top right corner of your screen (ex: “3 ITEMS”).</li><li>After you have chosen your products, click on the cart link, on the top right corner and validate all the products, unit prices, quantities and sub-totals (you can add or subtract quantities directly from the cart).</li><li>If you have a coupon, please enter it on the left box.</li><li>Click “Proceed to Checkout” where you will be asked to input your billing and shipping information for us to calculate shipping costs (remember that orders above 300€ have free shipping! Only in EU, USA and UK. OUTLET no included).</li><li>Choose your preferred payment method. We accept Paypal and Credit Card (VISA, AMEX, MasterCard).</li><li>If you choose Paypal you will be redirected to their site to finish payment; if you choose Credit Card, just enter the details on the form.</li><li>Click “Place Order” and we will take care of the rest!</li></ul><p>Also, our site is fully secured by “Let’s Encrypt Authority X3” and you can access additional information by clicking on the locker on the URL bar of your browser and/or here: <a href=\"https://letsencrypt.org/documents/isrg-cps-v3.0/\">https://letsencrypt.org/documents/isrg-cps-v3.0/</a></p><h5>VISO SHIPPING</h5><p>You can get free shipping on purchases over 300 in countries of the European Union, UK, and USA. Products with a discount of 50% or more are not included.<br/>We use UPS/MRW/FEDEX for all orders. You should get your order in 2-7 days within Europe.<br/>Viso reserves the right to ship any order with maximum 2 day delay, especially during sales period or big launches, the volume of orders being very big at those times.<br/>Please note that the days stated during checkout are Working days, week-ends and bank holidays do not count.</p>"
             }
           },
           "summary_aTgyKK": {
             "type": "summary",
             "settings": {
-              "Name": "<p>VISO SHIPPING<\/p>",
+              "Name": "<p>VISO SHIPPING</p>",
               "Location": ""
             }
           },
           "summary_CnPbJ6": {
             "type": "summary",
             "settings": {
-              "Name": "<p>CUSTOMS CHARGES INCLUDED.<\/p>",
-              "Location": "<p><strong>WE SHIP TO THE FOLLOWING COUNTRIES<\/strong><\/p><p>Andorra, Australia, Austria, Belgium, Canada, Czech Republic, Denmark, Finland, France, Germany, Greece, Hong Kong, Ireland, Israel, Italy, Japan, Lebanon, Luxembourg, Netherlands, New Zealand, Norway, Poland, Portugal, South Africa, South Korea, Spain, Sweden, Switzerland, Turkey, United Kingdom, United States.<br\/>For costum shipping please contact <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com<\/a><\/p><p><strong>PROBLEM WITH ORDER<\/strong><\/p><p>In case you notice anything wrong with your order you must contact us at <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com<\/a> with your name, order number and delivery address within 14 days starting from the delivery date to solve the issue, no complaint will be accepted after that.<\/p><p><strong>VISO RETURNS POLICY<\/strong><\/p><p>All of the products on this site are produced by Viso NY LLC and we can ensure you that all orders are checked before they are dispatched to ensure they are to the highest standard.<br\/>However, if you are unhappy with your goods we will happily issue a replacement or refund assuming they are returned within 14 days of receipt of your order, unworn, complete with all original tags, and in original and resalable condition.<\/p>"
+              "Name": "<p>CUSTOMS CHARGES INCLUDED.</p>",
+              "Location": "<p><strong>WE SHIP TO THE FOLLOWING COUNTRIES</strong></p><p>Andorra, Australia, Austria, Belgium, Canada, Czech Republic, Denmark, Finland, France, Germany, Greece, Hong Kong, Ireland, Israel, Italy, Japan, Lebanon, Luxembourg, Netherlands, New Zealand, Norway, Poland, Portugal, South Africa, South Korea, Spain, Sweden, Switzerland, Turkey, United Kingdom, United States.<br/>For costum shipping please contact <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com</a></p><p><strong>PROBLEM WITH ORDER</strong></p><p>In case you notice anything wrong with your order you must contact us at <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com</a> with your name, order number and delivery address within 14 days starting from the delivery date to solve the issue, no complaint will be accepted after that.</p><p><strong>VISO RETURNS POLICY</strong></p><p>All of the products on this site are produced by Viso NY LLC and we can ensure you that all orders are checked before they are dispatched to ensure they are to the highest standard.<br/>However, if you are unhappy with your goods we will happily issue a replacement or refund assuming they are returned within 14 days of receipt of your order, unworn, complete with all original tags, and in original and resalable condition.</p>"
             }
           }
         },
@@ -297,21 +279,21 @@
           "summary_KjBQwy": {
             "type": "summary",
             "settings": {
-              "Name": "<p>VISO PROJECT  EUROPE <\/p><p><\/p>",
-              "Location": "<p>SHOWROOM MADRID Calle Santa<\/p><p> Maria 17, Local Derecha <\/p><p>28014 Madrid, Spain<\/p>"
+              "Name": "<p>VISO PROJECT  EUROPE </p><p></p>",
+              "Location": "<p>SHOWROOM MADRID Calle Santa</p><p> Maria 17, Local Derecha </p><p>28014 Madrid, Spain</p>"
             }
           },
           "summary_QrRJdx": {
             "type": "summary",
             "settings": {
-              "Name": "<p>VISO PROJECT  US <\/p><p><\/p>",
-              "Location": "<p>SHOWROOM\/STORE NEW YORK<\/p><p>46 Pearl Street<\/p><p>Brooklyn, NY, 11201, USA<\/p>"
+              "Name": "<p>VISO PROJECT  US </p><p></p>",
+              "Location": "<p>SHOWROOM/STORE NEW YORK</p><p>46 Pearl Street</p><p>Brooklyn, NY, 11201, USA</p>"
             }
           },
           "summary_Mh8LQU": {
             "type": "summary",
             "settings": {
-              "Name": "<p>If you have any questions or wholesale enquiries please write to: <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com<\/a><\/p>",
+              "Name": "<p>If you have any questions or wholesale enquiries please write to: <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com</a></p>",
               "Location": ""
             }
           }
@@ -330,21 +312,21 @@
           "summary_4aUTTR": {
             "type": "summary",
             "settings": {
-              "Name": "<p>VISO RETURNS POLICY<\/p>",
-              "Location": "<p>All of the products on this site are produced by VISO NYC LLC and we can ensure you that all orders are checked before they are dispatched to ensure they are to the highest standard.<br\/>However, if you are unhappy with your goods we will happily issue a replacement or refund assuming they are returned within 14 days of receipt of your order, unworn, complete with all original tags, and in original and resalable condition.<\/p>"
+              "Name": "<p>VISO RETURNS POLICY</p>",
+              "Location": "<p>All of the products on this site are produced by VISO NYC LLC and we can ensure you that all orders are checked before they are dispatched to ensure they are to the highest standard.<br/>However, if you are unhappy with your goods we will happily issue a replacement or refund assuming they are returned within 14 days of receipt of your order, unworn, complete with all original tags, and in original and resalable condition.</p>"
             }
           },
           "summary_7EFDnx": {
             "type": "summary",
             "settings": {
-              "Name": "<p>STEPS TO RETURN YOUR ORDER<\/p>",
-              "Location": "<ul><li>Contact us at <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com<\/a> with your order number and explaining if you wish for a return and refund, and the reason.<\/li><li>You’ll receive an email to ship the products to our warehouse location.<\/li><li>Ensure your return is well packaged, and meets all the conditions outlined at the bottom of this page.<\/li><li>Return’s cost are at the customer’s charge<\/li><\/ul>"
+              "Name": "<p>STEPS TO RETURN YOUR ORDER</p>",
+              "Location": "<ul><li>Contact us at <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com</a> with your order number and explaining if you wish for a return and refund, and the reason.</li><li>You’ll receive an email to ship the products to our warehouse location.</li><li>Ensure your return is well packaged, and meets all the conditions outlined at the bottom of this page.</li><li>Return’s cost are at the customer’s charge</li></ul>"
             }
           },
           "summary_FggmDJ": {
             "type": "summary",
             "settings": {
-              "Name": "<p>INTERNATIONAL RETURNS<\/p>",
+              "Name": "<p>INTERNATIONAL RETURNS</p>",
               "Location": ""
             }
           }
@@ -380,9 +362,9 @@
           "summary_fDBXYj": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>VISO PROJECT<\/p>",
-              "image": "shopify:\/\/shop_images\/Viso_Project_New_York_Dumbo_Store_2-720x960.jpg",
-              "title": "<p>comes to life through deep roots inspired by the worlds of art and design, creating distinct objects and apparel crafted by expert artisans and manufacturers around the world.<\/p><p>Every single item created by VISO is developed with the upmost attention to detail. Craftsmanship becomes the sole purpose in creating a sustainable and limited production of long-lasting quality goods for generations to come.<\/p>"
+              "subtitle": "<p>VISO PROJECT</p>",
+              "image": "shopify://shop_images/Viso_Project_New_York_Dumbo_Store_2-720x960.jpg",
+              "title": "<p>comes to life through deep roots inspired by the worlds of art and design, creating distinct objects and apparel crafted by expert artisans and manufacturers around the world.</p><p>Every single item created by VISO is developed with the upmost attention to detail. Craftsmanship becomes the sole purpose in creating a sustainable and limited production of long-lasting quality goods for generations to come.</p>"
             }
           }
         },
