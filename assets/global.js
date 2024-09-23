@@ -65,8 +65,6 @@ function invertirTextoYContenido($elemento, mostrarTexto, ocultarTexto) {
 
 
 $(document).ready(function() {
-
-
   let ishide = false;
   let hideTimeout;
   
@@ -94,7 +92,7 @@ $(document).ready(function() {
                   $('.categories').removeClass("show");
               }, 100);
           }
-      }, 100);  // Adjust the delay as needed
+      }, 500);  // Adjust the delay as needed
   });
   
 
