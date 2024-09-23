@@ -8,8 +8,11 @@
             <div class="view">{{ block.settings.subtitle }}</div>
             <div class="title-seccion big">{{ block.settings.interior }}</div>
             {% if block.settings.image != blank %}
-              <img src="{{ block.settings.image | img_url: 'master' }}" alt="Image">
+            <div class="image-full">
+              <img class="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="Image" data-src="{{ block.settings.image | img_url: 'master' }}">
+            </div>  
             {% endif %}
+
             <div class="caption">{{ block.settings.title }}</div>
           </div>
 
