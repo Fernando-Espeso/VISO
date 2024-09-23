@@ -482,7 +482,6 @@ div#bag-total{
     height: fit-content;
     order: 2;
     color: #000;
-    transition: 0.5s ease;
   }
   .item-quantity {
     justify-content: space-between;
