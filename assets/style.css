@@ -539,6 +539,7 @@ span.quantity-button.minus, span.quantity-button.plus {
     font-size:var(--main)!important;
   }
 
+  
   .shopify-section-contact{
     display: grid;
     row-gap:10px;
