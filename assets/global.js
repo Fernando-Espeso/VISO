@@ -65,37 +65,32 @@ function invertirTextoYContenido($elemento, mostrarTexto, ocultarTexto) {
 
 
 $(document).ready(function() {
-
-
   let ishide = false;
   let hideTimeout;
-  let animationLock = false;
   
   $('.shop, .categories').on('mouseenter', function() {
-      if (animationLock) return;  // Prevent hover if animation is locked
-  
       clearTimeout(hideTimeout);  // Clear any scheduled hiding
-      if (!$('.categories').hasClass("show")) {
+      if (!ishide) {
+          ishide = true;
           $('.categories').removeClass("hid");  // Reset any hide classes immediately
           setTimeout(function() {
               $('.categories').addClass("show");
-          }, 100);  // Show the categories
+          }, 100);  // Show the categories quickly
       }
   });
   
   $('.shop, .categories').on('mouseleave', function() {
       clearTimeout(hideTimeout);  // Clear any scheduled hide timeout
-  
-      animationLock = true;  // Lock hover events during the animation
       hideTimeout = setTimeout(function() {
-          $('.categories').removeClass("show");
-          setTimeout(function() {
-              $('.categories').addClass("hid");
-              animationLock = false;  // Unlock after animation finishes
-          }, 500);  // Ensure this matches your animation timing
-      }, 100);  // Adjust the delay as needed for smooth animation
+          if (ishide) {
+              ishide = false;
+              $('.categories').removeClass("show");
+              setTimeout(function() {
+                  $('.categories').addClass("hid");
+              }, 100);  // Add hide after show is removed
+          }
+      }, 100);  // Adjust delay as needed for smooth animation
   });
-  
   
 
   $("#add-to-bag").click(function(){
