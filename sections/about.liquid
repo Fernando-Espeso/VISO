@@ -10,7 +10,7 @@
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | img_url: 'master' }}" alt="Image">
             {% endif %}
-            <div class="title-seccion big">{{ block.settings.title }}</div>
+            <div class="caption">{{ block.settings.title }}</div>
           </div>
 
         {% endunless %}

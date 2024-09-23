@@ -463,6 +463,9 @@ div#bag-total{
     transition: 0s ease;
     color: #000;
   }
+  .caption {
+    grid-column: span 3;
+}
   .shop.pr{
     pointer-events: none;
   }
