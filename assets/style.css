@@ -271,6 +271,7 @@ div#content {
 }
 svg{
   width: 85px;
+  height: auto;
 }
 .news-content .view{
   grid-column: span 3;
