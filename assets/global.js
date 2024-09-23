@@ -65,8 +65,12 @@ function invertirTextoYContenido($elemento, mostrarTexto, ocultarTexto) {
 
 
 $(document).ready(function() {
+
+
   let ishide = false;
   let hideTimeout;
+  let hideTimeout;
+  let ishide = false;
   
   $('.shop, .categories').on('mouseenter', function() {
       clearTimeout(hideTimeout);  // Clear any scheduled hiding
