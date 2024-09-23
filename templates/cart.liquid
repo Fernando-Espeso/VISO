@@ -24,17 +24,13 @@
             </div>
           </div>
             <div class="double">
-                  <div class="item-quantity">
-                    <span data-field="updates" class="quantity-button minus"><span>–</span></span>
-                    <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
-                    <span class="quantity-wrap"></span>
-                    <span data-field="updates" class="quantity-button plus">
-                      <span class="addmore">+</span>
-                      {% if cart.items.available %}
-                      {% else %}
-                      {% endif %}
-                    </span>
-                  </div>
+              <div class="item-quantity">
+                <span data-field="updates" class="quantity-button minus" data-index="{{ forloop.index }}"><span>–</span></span>
+                <input type="number" step="1" max="9" value="{{ item.quantity }}" name="updates[{{ forloop.index0 }}]" class="quantity-field align-center">
+                <span data-field="updates" class="quantity-button plus" data-index="{{ forloop.index }}">
+                  <span class="addmore">+</span>
+                </span>
+            </div>
                   <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
             </div>
             <div 
