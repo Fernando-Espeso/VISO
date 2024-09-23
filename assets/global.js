@@ -79,7 +79,7 @@ $(document).ready(function() {
           }, 100);
           setTimeout(function() {
               $('.categories').addClass("show");
-          }, 500);
+          }, 300);
       }
   });
   
@@ -89,7 +89,7 @@ $(document).ready(function() {
               ishide = false;
               setTimeout(function() {
                   $('.categories').removeClass("hid");
-              }, 500);
+              }, 300);
               setTimeout(function() {
                   $('.categories').removeClass("show");
               }, 100);
