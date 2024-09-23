@@ -718,12 +718,12 @@ p.info-collection{
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem); 
 }
-.cart-products{
+form#cart-wrapper{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap:10px;
 }
-.cart-products .item{
+form#cart-wrapper .item{
   grid-column: 3/span 1;
 }
 /* About styles */
