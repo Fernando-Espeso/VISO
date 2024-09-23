@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     document.documentElement.style.setProperty('--h', h + 'px');
 
-    b = document.getElementById("nav").offsetHeight;
+    b = document.getElementById("header").offsetHeight;
     document.documentElement.style.setProperty('--nav', b + 'px');
 });
 
@@ -48,7 +48,7 @@ var w = window.innerWidth,
 h = window.innerHeight;
 document.documentElement.style.setProperty('--h', h + 'px');
 
-b = document.getElementById("nav").offsetHeight;
+b = document.getElementById("header").offsetHeight;
 document.documentElement.style.setProperty('--nav', b + 'px');
 
 }
