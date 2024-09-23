@@ -86,11 +86,14 @@ $(document).ready(function() {
           if (ishide) {
               ishide = false;
               setTimeout(function() {
-                  $('.categories').removeClass("hid");
-              }, 500);
+                $('.categories').removeClass("show");
+                $('.shop').addClass("pr");
+            }, 100);
               setTimeout(function() {
-                  $('.categories').removeClass("show");
-              }, 100);
+                  $('.categories').removeClass("hid");
+        
+              }, 500);
+          $('.shop').removeClass("pr");
           }
       }, 500);  // Adjust the delay as needed
   });

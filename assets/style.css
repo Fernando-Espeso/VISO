@@ -463,6 +463,9 @@ div#bag-total{
     transition: 0s ease;
     color: #000;
   }
+  .shop.pr{
+    pointer-events: none;
+  }
   .search-input{
     transition-delay: 0.5s;
     font-weight: 300;
