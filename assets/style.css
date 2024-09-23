@@ -458,11 +458,12 @@ div#bag-total{
     font-size: clamp(var(--big), 1.5vw, 2rem)!important; 
     height: fit-content;
     order: 2;
-    transition: 0.5s ease;
+    display: block;
+    transition: 0s ease;
     color: #000;
   }
   .search-input{
-    transition: 0.5s ease;
+    transition-delay: 0.5s;
     font-weight: 300;
     line-height:0px!important;
     font-size:0px!important;
