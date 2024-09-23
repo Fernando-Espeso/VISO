@@ -720,7 +720,10 @@ p.info-collection{
 }
 .cart-products{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+.cart-products .item{
+  grid-column: 3/span 1;
 }
 /* About styles */
 @media (max-width: 1200px) {
