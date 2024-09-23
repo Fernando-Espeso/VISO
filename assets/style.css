@@ -451,7 +451,7 @@ div#bag-total{
     font-size: clamp(var(--big), 1.5vw, 2rem); 
 	  transition: 0.5s ease;
   }
-  .categories input{
+  /* .categories input{
     padding-top: 0px;
     column-count: 4;
     flex-basis: 100%;
@@ -466,7 +466,7 @@ div#bag-total{
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem); 
 	  transition: 0s ease;
-  }
+  } */
   .categories.show .search-input{
     font-weight: 300;
     line-height:var(--lh);
