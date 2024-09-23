@@ -407,7 +407,7 @@ div#bag-total{
 .thumbnail:hover #block{
   display: block;
 }
-.thumbnail:hover #hide{
+.thumbnail:hover #none{
   display: none;
 }
 #block{
