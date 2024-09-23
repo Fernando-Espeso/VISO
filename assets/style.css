@@ -461,6 +461,7 @@ div#bag-total{
   }
   .caption {
     grid-column: span 3;
+    margin-top: 10px;
 }
 .image-full{
   height: 100vh;
