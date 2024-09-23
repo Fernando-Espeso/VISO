@@ -503,7 +503,10 @@ div#bag-total{
     grid-column: span 2;
   }
   .total{
-    grid-template-columns: repeat(2 ,1fr);
+    top: var(--nav);
+    position: sticky;
+    height: fit-content;
+    grid-template-columns: repeat(2, 1fr);
     display: grid;
     column-gap: 2px;
     grid-column: span 2;
