@@ -91,8 +91,10 @@ $(document).ready(function() {
             }, 100);
               setTimeout(function() {
                   $('.categories').removeClass("hid");
-                  $('.shop').removeClass("pr");
               }, 500);
+              setTimeout(function() {
+                $('.shop').removeClass("pr");
+            }, 700);
 
           }
       }, 500);  // Adjust the delay as needed
