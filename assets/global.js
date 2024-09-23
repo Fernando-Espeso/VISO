@@ -69,33 +69,33 @@ $(document).ready(function() {
 
   let ishide = false;
   let hideTimeout;
+  let animationLock = false;
   
   $('.shop, .categories').on('mouseenter', function() {
+      if (animationLock) return;  // Prevent hover if animation is locked
+  
       clearTimeout(hideTimeout);  // Clear any scheduled hiding
-      if (!ishide) {
-          ishide = true;
-          setTimeout(function() {
-              $('.categories').addClass("hid");
-          }, 100);
+      if (!$('.categories').hasClass("show")) {
+          $('.categories').removeClass("hid");  // Reset any hide classes immediately
           setTimeout(function() {
               $('.categories').addClass("show");
-          }, 500);
+          }, 100);  // Show the categories
       }
   });
   
   $('.shop, .categories').on('mouseleave', function() {
+      clearTimeout(hideTimeout);  // Clear any scheduled hide timeout
+  
+      animationLock = true;  // Lock hover events during the animation
       hideTimeout = setTimeout(function() {
-          if (ishide) {
-              ishide = false;
-              setTimeout(function() {
-                  $('.categories').removeClass("hid");
-              }, 500);
-              setTimeout(function() {
-                  $('.categories').removeClass("show");
-              }, 100);
-          }
-      }, 100);  // Adjust the delay as needed
+          $('.categories').removeClass("show");
+          setTimeout(function() {
+              $('.categories').addClass("hid");
+              animationLock = false;  // Unlock after animation finishes
+          }, 500);  // Ensure this matches your animation timing
+      }, 100);  // Adjust the delay as needed for smooth animation
   });
+  
   
 
   $("#add-to-bag").click(function(){
