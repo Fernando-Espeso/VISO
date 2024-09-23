@@ -636,12 +636,19 @@ div#shopify-section-aim{
 }
 /* Footer styles */
 footer {
+    display: flex;
+    position: relative;
     padding-top: 200px !important;
     display: block;
     align-items: end;
     padding: 5px;
     padding-bottom: 10px !important;
     margin-top: auto;
+}
+.cred{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 .image-infos {
     padding-top: 10px;
