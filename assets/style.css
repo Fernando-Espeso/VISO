@@ -532,6 +532,7 @@ span.quantity-button.minus, span.quantity-button.plus {
   input{
     font-weight: 300;
     width: 100%;
+    outline: none;
     overflow: visible;
     color:black;
     font-family:var(--body);
