@@ -510,7 +510,7 @@ div#bag-total{
   }
   .product-title{
     line-height: var(--lh);
-    font-size: clamp(var(--big), 1.5vw, 2rem);
+    font-size: clamp(var(--med), 1.5vw, 2rem);
   }
   .product-title a{
     color: grey;;
@@ -634,6 +634,7 @@ section#desplegable {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   row-gap: 100px;
+  grid-gap:10px;
 }
 div#shopify-section-aim{
   max-width:1300px;
