@@ -94,7 +94,7 @@ $(document).ready(function() {
                   $('.categories').removeClass("show");
               }, 100);
           }
-      }, 0);  // Adjust the delay as needed
+      }, 100);  // Adjust the delay as needed
   });
   
 
