@@ -95,7 +95,7 @@ fernandoepeso.info
             {% for link in linklists.main-menu.links %}
               <div id="cat" class="cat {% if link.active %} active {% endif %}" ><a class="{{ link.title }}" href="{{ link.url }}">{{ link.title }}</a></div>
               {% endfor %} 
-              <div class="search">
+              <div  id="cat"  class="cat search">
                 <a>
                   <form autocomplete="off" action="{{ routes.search_url }}" style="display:flex;">
                    <input type="hidden" name="type" value="product">
