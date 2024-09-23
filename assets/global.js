@@ -69,31 +69,32 @@ $(document).ready(function() {
 
   let ishide = false;
   let hideTimeout;
-  let hideTimeout;
-  let ishide = false;
   
   $('.shop, .categories').on('mouseenter', function() {
       clearTimeout(hideTimeout);  // Clear any scheduled hiding
       if (!ishide) {
           ishide = true;
-          $('.categories').removeClass("hid");  // Reset any hide classes immediately
+          setTimeout(function() {
+              $('.categories').addClass("hid");
+          }, 100);
           setTimeout(function() {
               $('.categories').addClass("show");
-          }, 100);  // Show the categories quickly
+          }, 500);
       }
   });
   
   $('.shop, .categories').on('mouseleave', function() {
-      clearTimeout(hideTimeout);  // Clear any scheduled hide timeout
       hideTimeout = setTimeout(function() {
           if (ishide) {
               ishide = false;
-              $('.categories').removeClass("show");
               setTimeout(function() {
-                  $('.categories').addClass("hid");
-              }, 100);  // Add hide after show is removed
+                  $('.categories').removeClass("hid");
+              }, 500);
+              setTimeout(function() {
+                  $('.categories').removeClass("show");
+              }, 100);
           }
-      }, 100);  // Adjust delay as needed for smooth animation
+      }, 100);  // Adjust the delay as needed
   });
   
 
