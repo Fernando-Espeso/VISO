@@ -464,6 +464,7 @@ div#bag-total{
 }
 .image-full{
   height: 100vh;
+  grid-column: span 3;
   overflow: hidden;
 }
 .image-full img{
