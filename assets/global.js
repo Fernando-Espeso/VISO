@@ -91,9 +91,9 @@ $(document).ready(function() {
             }, 100);
               setTimeout(function() {
                   $('.categories').removeClass("hid");
-        
+                  $('.shop').removeClass("pr");
               }, 500);
-          $('.shop').removeClass("pr");
+
           }
       }, 500);  // Adjust the delay as needed
   });
