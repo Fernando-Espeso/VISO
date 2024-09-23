@@ -1,9 +1,7 @@
 
   {% if cart.item_count > 0 %}
-
-
     <form id="cart-wrapper" action="/cart" method="post">
-      <div class="content" id="content">
+
       <div class="total">
         <div>SUBTOTAL</div>
         <div>{{ cart.total_price | money }}</div>
@@ -11,9 +9,8 @@
         <div class="last">CALCULATED AT CHECKOUT</div>
         <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
         <button id="checkout" type="submit" name="checkout">CHECKOUT</button>
-
       </div>
-  </div>
+
     <div class="cart-products">
       {% for item in cart.items %}
         <div class="item">
