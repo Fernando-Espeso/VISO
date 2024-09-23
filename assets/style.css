@@ -445,7 +445,20 @@ div#bag-total{
     order: 2;
     color: #000;
   }
+  .item-quantity {
+    align-items: center;
+    grid-gap: 10px;
+    display: flex;
+}
 
+span.quantity-button.minus {
+  background-color: lightgrey;
+  padding: 5px;
+}
+span.quantity-button.plus {
+  background-color: lightgrey;
+  padding: 5px;
+}
   .categories.show{
     opacity: 1;
     transition: 0.5s ease;
