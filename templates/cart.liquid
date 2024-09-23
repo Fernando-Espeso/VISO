@@ -1,71 +1,69 @@
-
-  {% if cart.item_count > 0 %}
-    <form id="cart-wrapper" action="/cart" method="post">
-
-      <div class="total">
-        <div>SUBTOTAL</div>
-        <div>{{ cart.total_price | money }}</div>
-        <div>SHIPPING</div>
-        <div class="last">CALCULATED AT CHECKOUT</div>
-        <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
-        <button id="checkout" type="submit" name="checkout">CHECKOUT</button>
-      </div>
-
-    <div class="cart-products">
-      {% for item in cart.items %}
-        <div class="item">
-          <div class="thumb">
-            <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
-          </div>
-          <div style="background-color:var(--darker);" class="row">
-            <div class="main-information">
-              <div class="product-title">{{ item.product.title }}</div>
-              <div class="product-price">{{ item.price | money }}</div>
-            </div>
-          </div>
-            <div class="double">
-              <div class="item-quantity">
-                <span data-field="updates" class="quantity-button minus" data-index="{{ forloop.index }}"><span>–</span></span>
-                <input type="number" step="1" max="9" value="{{ item.quantity }}" name="updates[{{ forloop.index0 }}]" class="quantity-field align-center">
-                <span data-field="updates" class="quantity-button plus" data-index="{{ forloop.index }}">
-                  <span class="addmore">+</span>
-                </span>
-            </div>
-                  <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
-            </div>
-            <div 
-              class="double {% if item.has_only_default_variant %}
-                        product-simple
-                      {% elsif item.variants.size > 1 %}
-                        product-variants
-                      {% endif %}"
-                    >
-              
-              <!-- Product Size Title -->
-              <div class="siz">OPTIONS</div>
-          
-              <!-- Loop through product options -->
-              <div class="siz">
-                  {% for option_title in item.product.options %}
-                      {{ item.variant.options[forloop.index0] }}
-                      {% unless forloop.last %}
-               
-                      {% endunless %}
-                  {% endfor %}
-              </div>
-          </div>
-            <div class="double">
-              <div class="siz">SUBTOTAL</div>
-              <div class="siz">{{ item.line_price | money }}</div>
-            </div>    
-
-        </div>
-      {% endfor %}
+{% if cart.item_count > 0 %}
+  <form id="cart-wrapper" action="/cart" method="post">
+    <div class="total">
+      <div>SUBTOTAL</div>
+      <div>{{ cart.total_price | money }}</div>
+      <div>SHIPPING</div>
+      <div>CALCULATED AT CHECKOUT</div>
+      <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
+      <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
     </div>
+    {% for item in cart.items %}
+      <div class="item">
+        <div class="thumb">
+          <img class="lazy" src="{{ item | img_url: 'thumb' }}" data-src="{{ item | img_url: 'master' }}" alt="{{ item.title | escape }}" />
+        </div>
+        <div style="background-color:var(--darker);" class="row">
+          <div class="main-information">
+            <div class="product-title">{{ item.product.title }}</div><br>
+            <div class="product-price">{{ item.price | money }}</div>
+          </div>
+        </div>
+        <div class="double">
+          <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
+          <div class="item-quantity">
+            <span data-field="updates" class="quantity-button minus"><span>–</span></span>
+            <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+            <span class="quantity-wrap"></span>
+            <span data-field="updates" class="quantity-button plus">
+              <span class="addmore">+</span>
+              {% if cart.items.available %}
+              {% else %}
+              {% endif %}
+            </span>
+          </div>
+        </div>
+        {% unless item.product.options contains 'Title' %}
+          <!--Variations-->
+          <div class="double">
+            <div class="siz">SIZE</div>
+            <div class="siz">
+              {%- for option_title in item.product.options -%}
+                {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}<br> {% endunless %}
+              {%- endfor -%}
+            </div>
+          </div>
+          <div class="double">
+            <div class="siz">SUBTOTAL</div>
+            <div class="siz">{{ item.line_price | money }}</div>
+          </div>
+        {% endunless %}
+
+      </div>
+      <div class="payment">
+      <li><span></span> PAYMENT</li>
+      <li><span></span> KLARNA</li>
+      <li><span></span> PAYPAL</li>
+      <li><span></span> TRANSFERWISE</li>
+      <li><span></span> STRIBE</li>
+      <li><span></span> APPLE PAY</li>
+      </div>
+    {% endfor %}
+
   </form>
 {% else %}
   <!--Empty Bag-->
-  <div class="empty">Your Cart is currently empty</div>
+  <div class="menu-title cartie">YOUR CART IS CURRENTLY EMPTY</div>
 {% endif %}
 
 <style>
@@ -78,16 +76,4 @@
     margin-top: 20px;
     grid-column: 9/span 4;
 }
-.product-price {
-  margin-bottom:10px!important;
-}
-.double{
-  line-height:120%;
-  }
-  .empty{
-    margin-top:100px;
-    font-size:var(--big);
-    line-height:120%;
-  }
-
 </style>
