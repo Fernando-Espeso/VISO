@@ -466,11 +466,11 @@ div#bag-total{
   .caption {
     grid-column: span 3;
 }
-.full-image{
+.image-full{
   height: 100vh;
   overflow: hidden;
 }
-.full-image img{
+.image-full img{
   grid-column: 1/span 3;
   height: 100%;
   object-fit: cover;
