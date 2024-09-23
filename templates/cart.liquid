@@ -8,7 +8,7 @@
       <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
       <button id="checkout" type="submit" name="checkout">PROCEED TO CHECKOUT</button>
     </div>
-    <div class="cart-products">
+
     {% for item in cart.items %}
       <div class="item">
         <div class="thumb">
@@ -49,10 +49,9 @@
             <div class="siz">{{ item.line_price | money }}</div>
           </div>
         {% endunless %}
-
       </div>
     {% endfor %}
-  </div>
+
   </form>
 {% else %}
   <!--Empty Bag-->
