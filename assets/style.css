@@ -995,6 +995,11 @@ form#cart-wrapper .item img{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
+section.about-page {
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr)!important;
+}
 button#checkout {
   grid-column: span 2;
 }
