@@ -103,13 +103,25 @@
               "title": "",
               "width_class": "full-width"
             }
+          },
+          "gallery_DnYxJr": {
+            "type": "gallery",
+            "settings": {
+              "subtitle": "",
+              "interior": "",
+              "image_1": "shopify://shop_images/Viso_Project_Quilt_Blanket_VTS-01_Lifestyle_Cadaques_2_f3319537-be84-4397-a0f3-3313700b7a0b.jpg",
+              "image_2": "shopify://shop_images/Viso_Project_Porcelain_Zodiac_Plate_V124_Lifestyle_Cadaques_2.jpg",
+              "title": "<p>TAPPESTRY PILLOW 058</p>",
+              "width_class": "full-width"
+            }
           }
         },
         "block_order": [
           "summary_cdKMwT",
           "gallery_yhh3fr",
           "summary_axXepz",
-          "summary_3YVYgd"
+          "summary_3YVYgd",
+          "gallery_DnYxJr"
         ],
         "settings": {
         }
