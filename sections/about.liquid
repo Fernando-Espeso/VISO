@@ -1,27 +1,41 @@
 <section data-section-id="desplegable" id="desplegable" class="desplegable">
   {% for block in section.blocks %}
     {% case block.type %}
- 
-        {% when 'summary' %}
+      
+      {% when 'summary' %}
         {% unless block.settings.subtitle and block.settings.interior == blank %}
-          <div class="news-content">
+          <div class="news-content {{ block.settings.width_class }}">
             <div class="view">{{ block.settings.subtitle }}</div>
             <div class="title-seccion big">{{ block.settings.interior }}</div>
             {% if block.settings.image != blank %}
-            <div class="image-full">
-              <img class="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="Image" data-src="{{ block.settings.image | img_url: 'master' }}">
-            </div>  
+              <div class="image-full">
+                <img class="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="Image" data-src="{{ block.settings.image | img_url: 'master' }}">
+              </div>
             {% endif %}
-
             <div class="caption">{{ block.settings.title }}</div>
           </div>
-
         {% endunless %}
-  
 
+      {% when 'gallery' %}
+        <div class="gallery-content {{ block.settings.width_class }}">
+          <div class="gallery-images">
+            {% if block.settings.image_1 != blank %}
+              <div class="image-left">
+                <img class="lazy" src="{{ block.settings.image_1 | img_url: 'master' }}" alt="Image 1" data-src="{{ block.settings.image_1 | img_url: 'master' }}">
+              </div>
+            {% endif %}
+            {% if block.settings.image_2 != blank %}
+              <div class="image-right">
+                <img class="lazy" src="{{ block.settings.image_2 | img_url: 'master' }}" alt="Image 2" data-src="{{ block.settings.image_2 | img_url: 'master' }}">
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      
     {% endcase %}
   {% endfor %}
 </section>
+
 {% schema %}
 {
   "name": "Sections",
@@ -49,6 +63,52 @@
           "type": "richtext",
           "id": "title",
           "label": "Product Title"
+        },
+        {
+          "type": "select",
+          "id": "width_class",
+          "label": "Width",
+          "options": [
+            {
+              "value": "full-width",
+              "label": "Full Width"
+            },
+            {
+              "value": "mid-width",
+              "label": "Mid Width"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "name": "Gallery",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        },
+        {
+          "type": "select",
+          "id": "width_class",
+          "label": "Width",
+          "options": [
+            {
+              "value": "full-width",
+              "label": "Full Width"
+            },
+            {
+              "value": "mid-width",
+              "label": "Mid Width"
+            }
+          ]
         }
       ]
     }
@@ -60,3 +120,4 @@
   ]
 }
 {% endschema %}
+

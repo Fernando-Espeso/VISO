@@ -265,7 +265,7 @@ div#content {
   top: calc(var(--nav) + 0px);
 }
 svg{
-  width: 85px;
+  width: 75px;
   height: auto;
 }
 .news-content .view{
@@ -328,7 +328,7 @@ select:disabled {
     display: none;
   }
  
-  
+
   #nav{
     align-items: center;
     text-transform: uppercase;
