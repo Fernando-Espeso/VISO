@@ -942,6 +942,9 @@ button#checkout {
 .title-seccion.big{
   padding: 0px;
 }
+div#block-media_X7hnjE {
+  height: calc(var(--h) - var(--nav));
+}
 .caption{
   grid-column: span 1;
 }
