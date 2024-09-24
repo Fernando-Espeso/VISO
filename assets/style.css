@@ -508,6 +508,15 @@ span.quantity-button.minus, span.quantity-button.plus {
   text-align: center;
   border: 0.5px solid black;
   background-color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+span.quantity-button.minus, span.quantity-button.plus {
+  width: 100%;
+  text-align: center;
+  border: 0.5px solid black;
+  background-color: var(--grey);
+  cursor: pointer;
   padding: 5px;
 }
   .categories.show{
