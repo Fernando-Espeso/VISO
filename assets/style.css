@@ -267,6 +267,9 @@ div#content {
 .gallery-content.full-width {
   grid-column: span 4;
 }
+.gallery-content.mid-width {
+  grid-column: span 4;
+}
 .gallery-images {
   grid-gap: 20px;
   grid-column: span 4;
