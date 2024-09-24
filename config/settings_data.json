@@ -96,8 +96,11 @@
           "gallery_yhh3fr": {
             "type": "gallery",
             "settings": {
+              "subtitle": "",
+              "interior": "",
               "image_1": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_1.jpg",
               "image_2": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_3.jpg",
+              "title": "<p>title</p>",
               "width_class": "full-width"
             }
           }
