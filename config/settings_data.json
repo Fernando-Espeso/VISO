@@ -69,7 +69,8 @@
               "subtitle": "<p>Our Tapestry Capsule</p>",
               "interior": "<p>The technique used to create our throws is part of a family heritage of devoted artists, carried through generations keeping the European wall tapestry style in place. The outcome of this collaboration is an exceptional textile with high definition artwork that has history woven into every inch.</p>",
               "image": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_3.jpg",
-              "title": "<p>Resort Chair 0102</p>"
+              "title": "<p>Resort Chair 0102</p>",
+              "width_class": "full-width"
             }
           },
           "summary_axXepz": {
@@ -78,7 +79,8 @@
               "subtitle": "<p>Our Porcelan</p>",
               "interior": "<p>Our porcelain series place the emphasis on expert craftsmanship and high quality. Eclectic and distinct artifacts crafted by artisans in Europe in the most fine porcelain. Bold hues adorn the pieces, which are consciously produced in limited units, for the ultimate in exclusive luxury. Juxtaposition of textures or patterns create bold statement pieces, making it the perfect accent for home, office or an ideal gift.</p>",
               "image": "shopify://shop_images/Viso_Project_mohair_Pillow_porcelain_vase_01.jpg",
-              "title": "<p>Tuercas Porcelain Vase 0401</p>"
+              "title": "<p>Tuercas Porcelain Vase 0401</p>",
+              "width_class": "full-width"
             }
           },
           "summary_3YVYgd": {
@@ -87,14 +89,24 @@
               "subtitle": "<p>Our Pillows</p>",
               "interior": "Merging functionality and fine art, our series of pillows are hand-finished by meticulous craftsman who observe the heritage of weaving, either in pure cotton or fine wool eclectic patterns and color combinations makes each of them a dynamic addition to your sofa or armchair.",
               "image": "shopify://shop_images/364A1784-1024x1024.jpg",
-              "title": ""
+              "title": "",
+              "width_class": "full-width"
+            }
+          },
+          "gallery_yhh3fr": {
+            "type": "gallery",
+            "settings": {
+              "image_1": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_1.jpg",
+              "image_2": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_3.jpg",
+              "width_class": "full-width"
             }
           }
         },
         "block_order": [
           "summary_cdKMwT",
           "summary_axXepz",
-          "summary_3YVYgd"
+          "summary_3YVYgd",
+          "gallery_yhh3fr"
         ],
         "settings": {
         }
