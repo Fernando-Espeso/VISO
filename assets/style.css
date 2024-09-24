@@ -506,7 +506,8 @@ div#bag-total{
 span.quantity-button.minus, span.quantity-button.plus {
   width: 100%;
   text-align: center;
-  background-color: #d3d3d3;
+  border: 0.5px solid black;
+  background-color: white;
   padding: 5px;
 }
   .categories.show{
