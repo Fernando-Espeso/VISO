@@ -391,19 +391,11 @@
               "image": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_1.jpg",
               "title": "<p>VISO will create collaborative capsule collections of singular, limited edition items that will include a wide range of home accessories, textiles, ceramics and novelty objects as well many others.</p><p>For VISO, lifestyle is everything. Products will be globally available at our online and physical Dumbo store as well as at key retailers around the world.</p>"
             }
-          },
-          "summary_yD3XWd": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "",
-              "title": "<p>VISO PROJECT 46 Pearl Street, Brooklyn, NY 11201 USA.<br/>For general enquiries or wholesale please contact<a href=\"mailto:dumbo@visoproject.com\">dumbo@visoproject.com</a></p>"
-            }
           }
         },
         "block_order": [
           "summary_fDBXYj",
-          "summary_ffcKVJ",
-          "summary_yD3XWd"
+          "summary_ffcKVJ"
         ],
         "settings": {
         }
