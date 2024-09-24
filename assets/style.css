@@ -916,6 +916,9 @@ form#cart-wrapper .item {
   }
   form#cart-wrapper .item {
     grid-column: span 5!important;
+    width: 100% !important;
+    min-width: auto;
+    grid-column: span 5 !important;
 }
 .double {
   margin-bottom: 5px!important;
