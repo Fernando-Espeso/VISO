@@ -30,7 +30,6 @@
               {% endif %}
             </span>
           </div>
-          <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
         </div>
         {% unless item.product.options contains 'Title' %}
           <!--Variations-->
@@ -47,6 +46,8 @@
             <div class="siz">{{ item.line_price | money }}</div>
           </div>
         {% endunless %}
+        <div class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0">REMOVE</a></div>
+
       </div>
     {% endfor %}
 
