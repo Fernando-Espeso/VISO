@@ -610,7 +610,7 @@ span.quantity-button.minus, span.quantity-button.plus {
     font-size: clamp(var(--med), 1.5vw, 2rem);
   }
   .product-title a{
-    color: grey;;
+    color: black;
   }
   .content-infos {
     font-size: clamp(var(--big), 1.5vw, 2rem);
