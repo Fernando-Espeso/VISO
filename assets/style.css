@@ -575,6 +575,7 @@ span.quantity-button.minus, span.quantity-button.plus {
     grid-template-columns: repeat(2, 1fr);
     display: grid;
     column-gap: 2px;
+    row-gap:10px;
     grid-column: span 2;
   }
   .remove{
@@ -909,13 +910,12 @@ form#cart-wrapper .item img{
     width: 50%;
 }
   .total {
-    row-gap: 10px;
     top: var(--nav);
     position: sticky;
     height: fit-content;
     grid-template-columns: repeat(2, 1fr);
     display: grid;
-    row-gap:10px;
+
     column-gap: 2px;
     grid-column: span 5;
 }
