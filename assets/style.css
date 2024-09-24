@@ -577,6 +577,7 @@ span.quantity-button.minus, span.quantity-button.plus {
     grid-column: span 2;
   }
   .remove{
+    grid-column: span 2;
     text-align: center;
     width: 100%;
     padding: 5px;
