@@ -73,6 +73,17 @@
               "width_class": "full-width"
             }
           },
+          "gallery_yhh3fr": {
+            "type": "gallery",
+            "settings": {
+              "subtitle": "",
+              "interior": "",
+              "image_1": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_1.jpg",
+              "image_2": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_3.jpg",
+              "title": "<p>MERINO BLANKET 0205</p>",
+              "width_class": "full-width"
+            }
+          },
           "summary_axXepz": {
             "type": "summary",
             "settings": {
@@ -92,24 +103,13 @@
               "title": "",
               "width_class": "full-width"
             }
-          },
-          "gallery_yhh3fr": {
-            "type": "gallery",
-            "settings": {
-              "subtitle": "",
-              "interior": "",
-              "image_1": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_1.jpg",
-              "image_2": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_3.jpg",
-              "title": "<p>title</p>",
-              "width_class": "full-width"
-            }
           }
         },
         "block_order": [
           "summary_cdKMwT",
+          "gallery_yhh3fr",
           "summary_axXepz",
-          "summary_3YVYgd",
-          "gallery_yhh3fr"
+          "summary_3YVYgd"
         ],
         "settings": {
         }
