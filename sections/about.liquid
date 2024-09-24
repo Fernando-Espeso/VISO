@@ -17,7 +17,7 @@
         {% endunless %}
 
       {% when 'gallery' %}
-        <div class="gallery-content {{ block.settings.width_class }}">
+        <div class="news-content {{ block.settings.width_class }}">
           <div class="gallery-images">
             {% if block.settings.image_1 != blank %}
               <div class="image-left">
@@ -30,6 +30,7 @@
               </div>
             {% endif %}
           </div>
+          <div class="caption">{{ block.settings.title }}</div>
         </div>
       
     {% endcase %}
