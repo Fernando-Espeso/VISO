@@ -14,15 +14,15 @@
       "hero": {
         "type": "hero",
         "blocks": {
-          "media_9Chkad": {
+          "media_X7hnjE": {
             "type": "media",
             "settings": {
-              "image": "shopify://shop_images/Viso_Project_Pillow_VTS_02_04-1024x1024.jpg"
+              "image": "shopify://shop_images/Viso_Project_Beach_Umbrella_01-1.jpg"
             }
           }
         },
         "block_order": [
-          "media_9Chkad"
+          "media_X7hnjE"
         ],
         "settings": {
         }
@@ -63,15 +63,6 @@
       "about": {
         "type": "about",
         "blocks": {
-          "summary_mQx6KV": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "<p><a href=\"/products/one-product\" title=\"Quilt Blanket VTS 0101\">The Art of Quilting</a></p>",
-              "interior": "<p>We collaborated with the award-wining Thompson Street Studio to create an exclusive limited edition collection of hand-stitched quilts. Thompson Street Studio X Visø presents a modern take on an ancient craft of patchwork quilting. Each quilt is made out of pieced organic 100% linen and cotton remnant fabric.</p>",
-              "image": "shopify://shop_images/VWB0101-wool-blanket-cream-02-960x960.jpg",
-              "title": "<p>Wool Blanket 0101</p>"
-            }
-          },
           "summary_cdKMwT": {
             "type": "summary",
             "settings": {
@@ -86,7 +77,7 @@
             "settings": {
               "subtitle": "<p>Our Porcelan</p>",
               "interior": "<p>Our porcelain series place the emphasis on expert craftsmanship and high quality. Eclectic and distinct artifacts crafted by artisans in Europe in the most fine porcelain. Bold hues adorn the pieces, which are consciously produced in limited units, for the ultimate in exclusive luxury. Juxtaposition of textures or patterns create bold statement pieces, making it the perfect accent for home, office or an ideal gift.</p>",
-              "image": "shopify://shop_images/Viso_Project_V171_Tuerca_Cup_Set_1.gif",
+              "image": "shopify://shop_images/Viso_Project_mohair_Pillow_porcelain_vase_01.jpg",
               "title": "<p>Tuercas Porcelain Vase 0401</p>"
             }
           },
@@ -101,7 +92,6 @@
           }
         },
         "block_order": [
-          "summary_mQx6KV",
           "summary_cdKMwT",
           "summary_axXepz",
           "summary_3YVYgd"
