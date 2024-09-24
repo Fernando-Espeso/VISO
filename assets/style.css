@@ -1007,7 +1007,9 @@ div#block-media_X7hnjE {
   grid-column: span 1;
   overflow: hidden;
 }
-
+.item-quantity {
+  margin-top: 10px;
+}
 form#cart-wrapper .item {
     grid-column: 4 / span 2;
 }
