@@ -938,6 +938,9 @@ button#checkout {
 .title-seccion.big{
   padding: 0px;
 }
+.caption{
+  grid-column: span 1;
+}
 .image-full{
   height: 100vh;
   grid-column: span 1;
