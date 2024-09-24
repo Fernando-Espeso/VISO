@@ -887,7 +887,7 @@ form#cart-wrapper .item{
   
 }
 /* Small mobile styles */
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   .item-quantity {
     grid-column: span 2;
     justify-content: space-between;
