@@ -935,6 +935,9 @@ form#cart-wrapper .item{
 button#checkout {
   grid-column: span 2;
 }
+.hero{
+  order: -1;
+}
 .title-seccion.big{
   padding: 0px;
 }
@@ -948,5 +951,17 @@ button#checkout {
 }
 .news-content .title-seccion.big {
   padding: 0;
+}
+.intro {
+  display: flex;
+  height: auto;
+  color: black;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  font-size: var(--big);
+  line-height: var(--lh);
+  text-align: center;
+  grid-column: span 12;
 }
 }
