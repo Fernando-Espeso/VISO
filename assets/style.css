@@ -511,7 +511,7 @@ span.quantity-button.minus, span.quantity-button.plus {
   cursor: pointer;
   padding: 5px;
 }
-span.quantity-button.minus, span.quantity-button.plus:hover {
+span.quantity-button.minus:hover, span.quantity-button.plus:hover {
   width: 100%;
   text-align: center;
   border: 0.5px solid black;
