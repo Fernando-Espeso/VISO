@@ -74,8 +74,10 @@ $(document).ready(function() {
           ishide = true;
           setTimeout(function() {
               $('.categories').addClass("hid");
+   
           }, 100);
           setTimeout(function() {
+            $('.shop').removeClass("pr");
               $('.categories').addClass("show");
           }, 500);
       }
@@ -94,7 +96,7 @@ $(document).ready(function() {
               }, 500);
               setTimeout(function() {
                 $('.shop').removeClass("pr");
-            }, 700);
+            }, 1000);
 
           }
       }, 500);  // Adjust the delay as needed
