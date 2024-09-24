@@ -937,7 +937,7 @@ button#checkout {
 }
 .hero{
   order: -1;
-  height: auto;
+  min-height: auto;
 }
 .title-seccion.big{
   padding: 0px;
