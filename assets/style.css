@@ -264,6 +264,15 @@ div#content {
   position: sticky;
   top: calc(var(--nav) + 0px);
 }
+.gallery-content.full-width {
+  grid-column: span 4;
+}
+.gallery-images {
+  grid-gap: 20px;
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 svg{
   width: 75px;
   height: auto;
