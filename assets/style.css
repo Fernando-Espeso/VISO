@@ -925,7 +925,11 @@ button#checkout {
 .title-seccion.big{
   padding: 0px;
 }
-
+.image-full{
+  height: 100vh;
+  grid-column: span 1;
+  overflow: hidden;
+}
 .news-content .title-seccion.big {
   padding: 0;
 }
