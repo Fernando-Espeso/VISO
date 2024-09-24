@@ -576,6 +576,11 @@ span.quantity-button.minus, span.quantity-button.plus {
     column-gap: 2px;
     grid-column: span 2;
   }
+  .remove{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+  }
   .product-title{
     margin-top: 10px;
     line-height: var(--lh);
