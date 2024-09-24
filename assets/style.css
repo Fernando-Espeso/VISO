@@ -953,6 +953,10 @@ div#block-media_X7hnjE {
   grid-column: span 1;
   overflow: hidden;
 }
+svg {
+  width: 50px;
+  height: auto;
+}
 .news-content .title-seccion.big {
   padding: 0;
 }
