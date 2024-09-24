@@ -413,7 +413,7 @@ div#bag-total{
     
   }
   .image-container {
-    padding-top: 10px;rgba(19, 16, 16, 0.953)
+    padding-top: 10px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -997,7 +997,7 @@ div#block-media_X7hnjE {
 }
 
 form#cart-wrapper .item {
-  grid-column: 4 / span 2;
+    grid-column: 4 / span 2;
 }
 .news-content .title-seccion.big {
   padding: 0;
