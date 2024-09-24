@@ -909,6 +909,7 @@ form#cart-wrapper .item img{
     width: 50%;
 }
   .total {
+    row-gap: 10px;
     top: var(--nav);
     position: sticky;
     height: fit-content;
