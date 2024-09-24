@@ -889,7 +889,19 @@ form#cart-wrapper .item{
     width: 50px!important;
     height: auto;
   }
-  
+  .total {
+    top: var(--nav);
+    position: sticky;
+    height: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    row-gap:10px;
+    column-gap: 2px;
+    grid-column: span 5;
+}
+  button#checkout {
+    width: 100%;
+}
   section#stocklist .section {
     display: block;
     grid-gap: 5px;
