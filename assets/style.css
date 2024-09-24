@@ -800,7 +800,10 @@ form#cart-wrapper{
 form#cart-wrapper .item{
   grid-column: 3/span 1;
 }
-/* About styles */
+
+@media only screen and (max-width:3920px) and (min-width:1540px){
+}
+/* Mobile landscape styles */
 @media (max-width: 1200px) {
   .full-body {
     margin-top: 100px;
@@ -812,14 +815,6 @@ form#cart-wrapper .item{
   div#content{
     order: 0;
   }
-}
-/* Mobile card styles */
-@media (max-width: 812px) and (orientation: landscape) {
-}
-@media only screen and (max-width:3920px) and (min-width:1540px){
-}
-/* Mobile landscape styles */
-@media (max-width: 1200px) {
   .product {
     grid-column: span 6;
   }
@@ -885,9 +880,6 @@ form#cart-wrapper .item{
     grid-template-columns: repeat(1, 1fr);
 }
   
-}
-/* Small mobile styles */
-@media (max-width: 600px) {
   .item-quantity {
     grid-column: span 2;
     justify-content: space-between;
