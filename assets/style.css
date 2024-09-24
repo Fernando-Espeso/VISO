@@ -882,6 +882,13 @@ form#cart-wrapper .item{
 }
 /* Small mobile styles */
 @media (max-width: 420px) {
+  .item-quantity {
+    grid-column: span 2;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 10px;
+    display: flex;
+}
   section#stocklist .sec {
     display: none;
   }
@@ -893,10 +900,10 @@ form#cart-wrapper .item{
     grid-column: span 5!important;
 }
 .double {
-  margin-bottom: 5px;
+  margin-bottom: 5px!important;
   grid-template-columns: repeat(2, 1fr);
   display: grid;
-  column-gap: 5px;
+  column-gap: 5px!important;
   grid-column: span 2;
 }
 form#cart-wrapper .item img{
