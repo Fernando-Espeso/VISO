@@ -996,7 +996,9 @@ div#block-media_X7hnjE {
   overflow: hidden;
 }
 
-
+form#cart-wrapper .item {
+  grid-column: 4 / span 2;
+}
 .news-content .title-seccion.big {
   padding: 0;
 }
