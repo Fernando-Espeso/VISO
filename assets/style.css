@@ -1030,7 +1030,13 @@ div#block-media_X7hnjE {
 }
 .image-full img{
   object-fit: contain;
-  
+
+}
+.gallery-images {
+  grid-gap: 20px;
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 .item-quantity {
   margin-top: 10px!important;
