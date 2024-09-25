@@ -969,7 +969,6 @@ form#cart-wrapper .item img{
     width: 100%;
 }
   section#stocklist .section {
-    display: block;
     grid-gap: 5px;
 }
 
