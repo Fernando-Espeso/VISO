@@ -208,7 +208,6 @@ label {
   grid-column: span 3;
 }
 .view{
-  text-align: center;
   height: fit-content;
   grid-column: span 12;
 }
