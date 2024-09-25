@@ -275,10 +275,6 @@ div#content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-svg{
-  width: 75px;
-  height: auto;
-}
 .news-content .view{
   grid-column: span 3;
   font-size: clamp(var(--big), 1.5vw, 2rem);
