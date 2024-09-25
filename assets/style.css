@@ -227,6 +227,12 @@ div#shopify-section-ab {
 .last{
   margin-bottom: 20px;
 }
+.menu-title.cartie {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .news-content .title-seccion.big{
   grid-column: span 3;
   font-size: clamp(var(--big), 1.5vw, 2rem);
