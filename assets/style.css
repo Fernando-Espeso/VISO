@@ -1029,7 +1029,7 @@ div#block-media_X7hnjE {
   overflow: hidden;
 }
 .image-full img{
-  object-fit: none;
+  object-fit: contain;
 }
 .item-quantity {
   margin-top: 10px!important;
