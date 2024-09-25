@@ -175,7 +175,7 @@ label[for="product-select"] {
   display: none;
 }
 .full-body {
-  margin-top: 100px;
+  margin-top: 60px;
   grid-gap:10px;
   min-height: 100%;
   grid-template-columns: repeat(2, 1fr);
@@ -235,7 +235,7 @@ div#shopify-section-ab {
   line-height: 120%;
   color: grey;
 
-  padding: 10px 100px;
+  padding: 10px 60px;
 
 }
 .selector-wrapper {
@@ -572,7 +572,7 @@ span.quantity-button.minus, span.quantity-button.plus {
   .shopify-section-contact{
     display: grid;
     row-gap:10px;
-    margin-top: 100px;
+    margin-top: 60px;
 
   }
   .page-content{
@@ -804,7 +804,7 @@ section#stocklist .sec {
   grid-column: span 12;
 }
 .section-title.big {
-  margin-top: 100px;
+  margin-top: 60px;
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem); 
 }
@@ -832,7 +832,7 @@ form#cart-wrapper .item {
 /* Mobile landscape styles */
 @media (max-width: 1200px) {
   .full-body {
-    margin-top: 100px;
+    margin-top: 60px;
     grid-gap:10px;
     min-height: 100%;
     grid-template-columns: repeat(1, 1fr);
@@ -865,7 +865,9 @@ form#cart-wrapper .item {
   body{
     padding:0px 10px;
   }
-
+  .list-cat {
+    column-count: 2;
+}
   .cart-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -981,7 +983,7 @@ form#cart-wrapper .item img{
   }
 
   section#desplegable {
-    margin-top:100px;
+    margin-top: 60px;
     row-gap: 20px;
     grid-column: span 12;
     display: grid;
