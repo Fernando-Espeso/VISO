@@ -786,6 +786,7 @@ svg {
   height: auto;
 }
 
+
 .stocklist {
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem);
