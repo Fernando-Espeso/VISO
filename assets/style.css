@@ -747,6 +747,12 @@ footer {
     padding-bottom: 10px !important;
     margin-top: auto;
 }
+svg {
+  width: 50px;
+  height: auto;
+}
+
+
 .cred{
   position: absolute;
   right: 0px;
@@ -781,12 +787,6 @@ section#stocklist .sec {
   grid-template-columns: repeat(4, 1fr);
   font-size: clamp(var(--main), 0.75vw, 1rem);
 }
-svg {
-  
-  width: 50px;
-  height: auto;
-}
-
 
 .stocklist {
   line-height:var(--lh);
