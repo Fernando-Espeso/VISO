@@ -603,8 +603,6 @@ span.quantity-button.minus, span.quantity-button.plus {
   .remove{
     grid-column: span 2;
     width: 100%;
-    margin-top: 10px;
-    padding: 5px;
   }
   .product-title{
     margin-top: 10px;
@@ -1063,6 +1061,9 @@ form#cart-wrapper .item {
   line-height: var(--lh);
   text-align: center;
   grid-column: span 12;
+}
+.search {
+  margin-top: 10px;
 }
 #nav{
   margin-top: 10px;
