@@ -883,6 +883,9 @@ div#content {
   top: calc(var(--nav) + 0px);
   grid-column: span 1;
 }
+.selector-wrapper {
+  width: 100%;
+}
   .news-content img {
     margin-top: 20px;
     grid-column: span 1;
