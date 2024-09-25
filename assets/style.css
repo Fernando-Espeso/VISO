@@ -894,8 +894,8 @@ form#cart-wrapper .item {
   }
   :root {
     --main: 12px;
-    --med: 18px;
-    --big: 24px;
+    --med: 19px;
+    --big: 19px;
     --lh:120%;
     --gap: 10px;
     --grey: #f1f2f2;
@@ -965,15 +965,7 @@ form#cart-wrapper .item img{
     font-size: clamp(var(--med), 1.5vw, 2rem) !important;
   }
 
-  :root {
-    --main: 12px;
-    --med: 18px;
-    --big: 24px;
-    --lh:120%;
-    --gap: 10px;
-    --grey: #f1f2f2;
-    --body: 'helvetica';
-  }
+
   .hero{
     overflow: hidden;
     min-height: 100vh;
