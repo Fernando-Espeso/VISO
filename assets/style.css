@@ -1049,7 +1049,10 @@ form#cart-wrapper .item {
 #header{
   display: block;
 }
-
+svg{
+  width: 75px;
+  height: auto;
+}
 .intro {
   display: flex;
   height: auto;
