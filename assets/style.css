@@ -1060,4 +1060,8 @@ form#cart-wrapper .item {
   text-align: center;
   grid-column: span 12;
 }
+#nav{
+  font-size: var(--med);
+  display: block;
+}
 }
