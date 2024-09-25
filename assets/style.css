@@ -230,7 +230,7 @@ div#shopify-section-ab {
 .news-content .title-seccion.big{
   grid-column: span 3;
   font-size: clamp(var(--big), 1.5vw, 2rem);
-  text-align: center;
+
   line-height: 120%;
   color: grey;
 
