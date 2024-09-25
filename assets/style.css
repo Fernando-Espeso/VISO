@@ -551,7 +551,6 @@ span.quantity-button.minus, span.quantity-button.plus {
 }
 
   .title-seccion.big {
-    text-align: center;
     grid-column: span 4;
 }
   input{
