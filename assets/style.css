@@ -1024,9 +1024,12 @@ div#block-media_X7hnjE {
   grid-column: span 1;
 }
 .image-full{
-  height: 100vh;
+  height: auto;
   grid-column: span 1;
   overflow: hidden;
+}
+.image-full img{
+  object-fit: none;
 }
 .item-quantity {
   margin-top: 10px!important;
