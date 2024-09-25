@@ -781,7 +781,10 @@ section#stocklist .sec {
   grid-template-columns: repeat(4, 1fr);
   font-size: clamp(var(--main), 0.75vw, 1rem);
 }
-
+svg {
+  width: 50px!important;
+  height: auto;
+}
 
 .stocklist {
   line-height:var(--lh);
@@ -931,10 +934,7 @@ div#content {
   section#stocklist .sec {
     display: none;
   }
-  svg {
-    width: 50px!important;
-    height: auto;
-  }
+
   form#cart-wrapper .item {
     grid-column: span 5!important;
     width: 100% !important;
