@@ -884,7 +884,7 @@ div#content {
   grid-column: span 1;
 }
 .selector-wrapper {
-  width: 100%;
+  width: 50%;
 }
   .news-content img {
     margin-top: 20px;
@@ -972,12 +972,7 @@ form#cart-wrapper .item img{
     display: block;
     grid-gap: 5px;
 }
-  .gallery_collection {
-    grid-gap: 2px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column: span 12;
-  }
+
   .product-description {
     margin-top: 10px;
     padding-right: 0%;
