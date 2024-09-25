@@ -1064,6 +1064,7 @@ form#cart-wrapper .item {
   grid-column: span 12;
 }
 #nav{
+  margin-top: 10px;
   font-size: var(--med);
   display: block;
   line-height: 120%;
