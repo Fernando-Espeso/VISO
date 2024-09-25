@@ -862,6 +862,9 @@ form#cart-wrapper .item {
 /* Mobile styles */
 @media (max-width: 600px) {
 
+  body{
+    padding:0px 10px;
+  }
 
   .cart-products {
     display: grid;
