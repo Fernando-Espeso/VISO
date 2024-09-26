@@ -773,6 +773,9 @@ section.about-page {
 section#stocklist {
   grid-column: span 4;
 }
+.home{
+  display: none;
+}
 .stocklist {
   grid-column: span 6;
 }
@@ -977,7 +980,7 @@ form#cart-wrapper .item img{
 }
 a.logo-home.movil{
   text-align: center;
-  
+
   display: block!important;
 }
   .product-description {
@@ -1057,6 +1060,9 @@ form#cart-wrapper .item {
 }
 .news-content .title-seccion.big {
   padding: 0;
+}
+.home{
+  display: block;
 }
 #header{
   display: block;
