@@ -805,6 +805,9 @@ section#stocklist .sec {
   font-size: clamp(var(--big), 1.5vw, 2rem);
   grid-column: span 12;
 }
+.movil{
+  display: none;
+}
 .section-title.big {
   margin-top: 60px;
   line-height:var(--lh);
@@ -971,7 +974,9 @@ form#cart-wrapper .item img{
   section#stocklist .section {
     grid-gap: 5px;
 }
-
+.movil{
+  display: none;
+}
   .product-description {
     margin-top: 10px;
     padding-right: 0%;
