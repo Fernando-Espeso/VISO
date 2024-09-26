@@ -104,7 +104,7 @@ function initDesktopHover() {
 }
 
 function initMobileClick() {
-  $('.shop').on('click', function() {
+  $('a.logo-home.movil').on('click', function() {
     clearTimeout(hideTimeout);  // Clear any scheduled hiding
     if (!ishide) {
       ishide = true;
