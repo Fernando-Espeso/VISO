@@ -805,7 +805,7 @@ section#stocklist .sec {
   font-size: clamp(var(--big), 1.5vw, 2rem);
   grid-column: span 12;
 }
-.movil{
+.logo-home.movil{
   display: none;
 }
 .section-title.big {
@@ -974,7 +974,7 @@ form#cart-wrapper .item img{
   section#stocklist .section {
     grid-gap: 5px;
 }
-.movil{
+.logo-home.movil{
   display: none;
 }
   .product-description {
