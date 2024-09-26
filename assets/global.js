@@ -107,6 +107,10 @@ $(document).ready(function() {
   $("#add-to-bag").click(function(){
     $(".cart-part").addClass("active");
   });
+
+  $("a.logo-home.movil").click(function(){
+    $("#nav").toggle();
+  });
  // Función para gestionar el comportamiento de los botones
  function gestionarBotones() {
 
