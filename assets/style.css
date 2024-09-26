@@ -433,6 +433,7 @@ div#bag-total{
   a.logo-home {
     line-height: 0px;
 }
+
 .thumbnail:hover #block{
   display: block;
 }
@@ -1044,6 +1045,9 @@ div#block-media_X7hnjE {
 }
 .item-quantity {
   margin-top: 10px!important;
+}
+a.logo-home.desk{
+  display: none;
 }
 form#cart-wrapper .item {
     grid-column: 4 / span 2;
