@@ -1,0 +1,54 @@
+<section
+    data-section-id="about-page"
+    class="about-page">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'summary' %}
+        {% unless block.settings.subtitle == blank and block.settings.image == blank and block.settings.title == blank %}
+          <div class="section">
+            <div class="title-about">{{ block.settings.subtitle }}</div>
+            <div class="content-inside">{{ block.settings.title }}</div>
+            <div class="image-infos">
+              <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.subtitle }}">
+            </div>
+          </div>
+        {% endunless %}
+      {% endcase %}
+    {% endfor %}
+  </section>
+  
+    
+    {% schema %}
+    {
+      "name": "Store",
+      "blocks": [
+        {
+          "type": "summary",
+          "name": "Content",
+          "settings": [
+            {
+              "type": "richtext",
+              "id": "subtitle",
+              "label": "Title"
+            },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "richtext",
+              "id": "title",
+              "label": "Description"
+            }
+          ]
+          }
+      ],
+      "presets": [
+        {
+          "name": "Store"
+        }
+      ]
+    }
+    {% endschema %}
+    
