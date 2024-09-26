@@ -109,7 +109,7 @@ $(document).ready(function() {
   });
 
   $("a.logo-home.movil").click(function(){
-    $("#nav").toggle();
+    $("#nav").toggleClass("active");
   });
  // Función para gestionar el comportamiento de los botones
  function gestionarBotones() {

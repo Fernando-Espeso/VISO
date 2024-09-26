@@ -1086,10 +1086,21 @@ svg{
 .search {
   margin-top: 10px;
 }
-#nav{
+#nav {
+  height: 0px;
   font-size: 0px;
-  opacity: 0px;
-  margin-top: 0px;
+  opacity: 0;
+  margin-top: 0;
   line-height: 0px;
+  grid-gap: 0px;
+}
+
+#nav.active {
+  height: auto;
+  font-size: clamp(var(--big), 1.5vw, 2rem)!important;
+  opacity: 1;
+  margin-top: 10px;
+  line-height: 120%;
+  grid-gap: 0px;
 }
 }
