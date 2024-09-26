@@ -1087,7 +1087,7 @@ svg{
   margin-top: 10px;
 }
 #nav{
-  display: none;
+  display: none!important;
   margin-top: 10px;
   font-size: var(--med);
   line-height: 120%;
