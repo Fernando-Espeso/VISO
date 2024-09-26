@@ -124,6 +124,31 @@ function initMobileClick() {
       }, 500);
     }
   });
+
+  $("a.logo-home.movil").click(function(){
+    $("#nav").toggleClass("active");
+    clearTimeout(hideTimeout);  // Clear any scheduled hiding
+    if (!ishide) {
+      ishide = true;
+      setTimeout(function() {
+        $('#nav').addClass("hid");
+      }, 100);
+      setTimeout(function() {
+        $('#nav').addClass("show");
+      }, 500);
+    } else {
+      ishide = false;
+      setTimeout(function() {
+        $('#nav').removeClass("show");
+      }, 100);
+      setTimeout(function() {
+        $('#nav').removeClass("hid");
+      }, 500);
+    }
+  });
+
+
+
 }
 
 function checkDevice() {
@@ -145,9 +170,7 @@ function checkDevice() {
     $(".cart-part").addClass("active");
   });
 
-  $("a.logo-home.movil").click(function(){
-    $("#nav").toggleClass("active");
-  });
+
  // Función para gestionar el comportamiento de los botones
  function gestionarBotones() {
 

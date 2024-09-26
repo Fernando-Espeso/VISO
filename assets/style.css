@@ -907,6 +907,7 @@ div#content {
     grid-template-columns: repeat(1, 1fr);
 }
   .categories {
+    text-align: left;
     column-count: 1;
   }
   .categories.hid {
@@ -1094,6 +1095,7 @@ svg{
   line-height: 0px;
   grid-gap: 0px;
   transition: 0.5s ease;
+  text-align: center;
 }
 
 
