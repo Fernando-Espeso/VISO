@@ -976,6 +976,7 @@ form#cart-wrapper .item img{
     grid-gap: 5px;
 }
 a.logo-home.movil{
+  text-align: center;
   display: block!important;
 }
   .product-description {
@@ -1048,7 +1049,7 @@ div#block-media_X7hnjE {
 }
 a.logo-home.desk{
   display: none!important;
-  
+
 }
 form#cart-wrapper .item {
     grid-column: 4 / span 2;
