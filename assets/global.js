@@ -105,8 +105,24 @@ function initDesktopHover() {
 
 function initMobileClick() {
   $('.shop').on('click', function() {
-    $('.categories').toggleClass("show");
-    $(this).toggleClass("pr");
+    clearTimeout(hideTimeout);  // Clear any scheduled hiding
+    if (!ishide) {
+      ishide = true;
+      setTimeout(function() {
+        $('.categories').addClass("hid");
+      }, 100);
+      setTimeout(function() {
+        $('.categories').addClass("show");
+      }, 500);
+    } else {
+      ishide = false;
+      setTimeout(function() {
+        $('.categories').removeClass("show");
+      }, 100);
+      setTimeout(function() {
+        $('.categories').removeClass("hid");
+      }, 500);
+    }
   });
 }
 
