@@ -806,7 +806,7 @@ section#stocklist .sec {
   grid-column: span 12;
 }
 a.logo-home.movil{
-  display: none;
+  display: none!important;
 }
 .section-title.big {
   margin-top: 60px;
@@ -975,7 +975,7 @@ form#cart-wrapper .item img{
     grid-gap: 5px;
 }
 a.logo-home.movil{
-  display: none;
+  display: block!important;
 }
   .product-description {
     margin-top: 10px;
