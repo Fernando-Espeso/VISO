@@ -1096,6 +1096,7 @@ svg{
 }
 
 #nav.active {
+  display: block;
   height: auto;
   font-size: clamp(var(--big), 1.5vw, 2rem)!important;
   opacity: 1;
