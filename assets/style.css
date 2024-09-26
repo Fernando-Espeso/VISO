@@ -1087,9 +1087,9 @@ svg{
   margin-top: 10px;
 }
 #nav{
-  display: none!important;
-  margin-top: 10px;
-  font-size: var(--med);
-  line-height: 120%;
+  font-size: 0px;
+  opacity: 0px;
+  margin-top: 0px;
+  line-height: 0px;
 }
 }
