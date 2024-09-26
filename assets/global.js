@@ -67,42 +67,63 @@ function invertirTextoYContenido($elemento, mostrarTexto, ocultarTexto) {
 
 $(document).ready(function() {
   let ishide = false;
-  let hideTimeout;
-  
-  $('.shop, .categories').on('mouseenter', function() {
-      clearTimeout(hideTimeout);  // Clear any scheduled hiding
-      if (!ishide) {
-          ishide = true;
-          setTimeout(function() {
-              $('.categories').addClass("hid");
-   
-          }, 100);
-          setTimeout(function() {
-            $('.shop').removeClass("pr");
-              $('.categories').addClass("show");
-          }, 500);
-      }
-  });
-  
-  $('.shop, .categories').on('mouseleave', function() {
-      hideTimeout = setTimeout(function() {
-          if (ishide) {
-              ishide = false;
-              setTimeout(function() {
-                $('.categories').removeClass("show");
-                $('.shop').addClass("pr");
-            }, 100);
-              setTimeout(function() {
-                  $('.categories').removeClass("hid");
-              }, 500);
-              setTimeout(function() {
-                $('.shop').removeClass("pr");
-            }, 1000);
+let hideTimeout;
 
-          }
-      }, 500);  // Adjust the delay as needed
+function initDesktopHover() {
+  $('.shop, .categories').on('mouseenter', function() {
+    clearTimeout(hideTimeout);  // Clear any scheduled hiding
+    if (!ishide) {
+      ishide = true;
+      setTimeout(function() {
+        $('.categories').addClass("hid");
+      }, 100);
+      setTimeout(function() {
+        $('.shop').removeClass("pr");
+        $('.categories').addClass("show");
+      }, 500);
+    }
   });
-  
+
+  $('.shop, .categories').on('mouseleave', function() {
+    hideTimeout = setTimeout(function() {
+      if (ishide) {
+        ishide = false;
+        setTimeout(function() {
+          $('.categories').removeClass("show");
+          $('.shop').addClass("pr");
+        }, 100);
+        setTimeout(function() {
+          $('.categories').removeClass("hid");
+        }, 500);
+        setTimeout(function() {
+          $('.shop').removeClass("pr");
+        }, 1000);
+      }
+    }, 500);  // Adjust the delay as needed
+  });
+}
+
+function initMobileClick() {
+  $('.shop').on('click', function() {
+    $('.categories').toggleClass("show");
+    $(this).toggleClass("pr");
+  });
+}
+
+function checkDevice() {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    // Desktop: hover behavior
+    initDesktopHover();
+  } else {
+    // Mobile: click behavior
+    initMobileClick();
+  }
+}
+
+  checkDevice();
+  $(window).resize(checkDevice);
+
+
 
   $("#add-to-bag").click(function(){
     $(".cart-part").addClass("active");
