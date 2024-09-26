@@ -1093,9 +1093,12 @@ svg{
   margin-top: 0;
   line-height: 0px;
   grid-gap: 0px;
+  transition: 0.5s ease;
 }
 
+
 #nav.active {
+  transition: 0.5s ease;
   display: block;
   height: auto;
   font-size: clamp(var(--big), 1.5vw, 2rem)!important;
