@@ -343,7 +343,7 @@ select:disabled {
   #nav{
     align-items: center;
     text-transform: uppercase;
-    display: flex!important;
+    display: flex;
     flex-wrap: wrap; 
     grid-gap: 15px;
     row-gap: 0px;
