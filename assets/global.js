@@ -17,6 +17,7 @@ if ("IntersectionObserver" in window) {
   });
   }
 });
+
 document.addEventListener('DOMContentLoaded', function() {
 var enlaces = document.querySelectorAll('.nav ul li a');
 
