@@ -87,10 +87,18 @@
 //PRODUCT FUNCTIONS
 var selectCallback = function(variant, selector){
   if(variant){
-    if(variant.available){
-      jQuery('#add-to-cart').prop('disabled', false).text('ADD TO BAG');
-    }else{
-      jQuery('#add-to-cart').prop('disabled', true).text('SOLD OUT');
+    if (variant.available) {
+      jQuery('#add-to-cart')
+        .prop('disabled', false)
+        .text('ADD TO BAG')
+        .removeClass('out-of-stock')
+        .addClass('in-stock');
+    } else {
+      jQuery('#add-to-cart')
+        .prop('disabled', true)
+        .text('OUT OF STOCK')
+        .removeClass('in-stock')
+        .addClass('out-of-stock');
     }
     if( variant.compare_at_price > variant.price ) {
       {% if variant.price < variant.compare_at_price %} {{ variant.compare_at_price | money }}{% endif %}
