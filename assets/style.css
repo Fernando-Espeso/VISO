@@ -303,6 +303,7 @@ select {
   display: block;
   cursor: pointer;
   font-weight: 300;
+  font-size: clamp(var(--main), 0.75vw, 1rem);
 }
 
 select {
