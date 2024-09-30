@@ -914,6 +914,9 @@ button#add-to-cart {
   background-color: #000;
   color: #fff;
 }
+.product-added {
+  width: 100%;
+}
   body{
     padding:0px 10px;
   }
