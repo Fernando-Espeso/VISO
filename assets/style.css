@@ -365,6 +365,14 @@ select:disabled {
     text-align: center;
     grid-column: span 12;
 }
+.product-added{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5px;
+}
 div#bag-total{
   display: flex;
   gap:10px;
