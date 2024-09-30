@@ -253,6 +253,7 @@ div#shopify-section-ab {
 .product-description{
   font-size: clamp(var(--big), 1.5vw, 2rem);
   line-height: 120%;
+  margin-bottom: 10px;
 
 }
 div#content {
