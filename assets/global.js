@@ -119,21 +119,17 @@ function initMobileClick() {
     if (!ishide) {
       ishide = true;
       setTimeout(function() {
-        $('.categories').addClass("hid");
         $('#nav').addClass("hid");
       }, 100);
       setTimeout(function() {
-        $('.categories').addClass("show");
         $('#nav').addClass("show");
       }, 500);
     } else {
       ishide = false;
       setTimeout(function() {
-        $('.categories').removeClass("show");
         $('#nav').removeClass("show");
       }, 100);
       setTimeout(function() {
-        $('.categories').removeClass("hid");
         $('#nav').removeClass("hid");
       }, 500);
     }
