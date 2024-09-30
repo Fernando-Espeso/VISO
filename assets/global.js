@@ -135,7 +135,7 @@ function initMobileClick() {
       setTimeout(function() {
    
         $('#nav').removeClass("hid");
-      }, 500);
+      }, 700);
     }
   });
 }
