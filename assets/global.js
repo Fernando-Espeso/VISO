@@ -164,10 +164,9 @@ function checkDevice() {
 
 
 
-  $("#add-to-bag").click(function(){
-    $(".cart-part").addClass("active");
+  $("button#add-to-cart.in-stock").click(function(){
     $(".product-added").addClass("active");
-    
+
     setTimeout(function() {
       $(".product-added").removeClass("active");
   }, 2000); // 2000 milisegundos = 2 segundos
