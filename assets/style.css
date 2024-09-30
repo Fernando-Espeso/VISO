@@ -133,7 +133,7 @@ div#product-price , .product-price-wrap, .product-price{
 input,
 button,
 select {
-  font-size: clamp(var(--big), 1.5vw, 2rem)!important;
+  font-size: clamp(var(--main), 0.75vw, 1rem);
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -153,7 +153,6 @@ select {
   -ms-user-select: none;
   user-select: none;
   font-family: var(--body);
-  font-size:var(--main)!important;
 }
 .product-simple #product-select{
   display: none;
@@ -372,7 +371,7 @@ div#bag-total{
   margin-top: 20px;
 }
   button#add-to-cart{
-    font-size: var(--main)!important;
+    font-size: clamp(var(--main), 0.75vw, 1rem)!important;
     height: 100%;
     width: 200px;
     text-align: center;
@@ -391,7 +390,7 @@ div#bag-total{
 
   }
   button#checkout {
-    font-size: var(--main)!important;
+    font-size: clamp(var(--main), 0.75vw, 1rem)!important;
     height: 100%;
     width: 200px;
     text-align: center;
@@ -401,7 +400,7 @@ div#bag-total{
     
   }
   button#checkout {
-    font-size: var(--main)!important;
+    font-size: clamp(var(--main), 0.75vw, 1rem)!important;
     height: 100%;
     width: 200px;
     text-align: center;
@@ -568,7 +567,7 @@ span.quantity-button.minus, span.quantity-button.plus {
     overflow: visible;
     color:black;
     font-family:var(--body);
-    font-size:var(--main)!important;
+    font-size: clamp(var(--main), 0.75vw, 1rem)!important;
   }
 
 
