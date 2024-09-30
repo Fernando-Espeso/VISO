@@ -1146,6 +1146,7 @@ svg{
   margin-top: 0;
   line-height: 0px;
   grid-gap: 0px;
+  opacity: 0;
   transition: 0.5s ease;
   text-align: center;
 }
@@ -1165,4 +1166,13 @@ svg{
   transition: 0.5s ease;
   opacity: 1;
 }
+.categories{
+  pointer-events: auto;
+  column-count: 4;
+  flex-basis: 100%;
+  line-height:120%;
+  opacity: 1;
+  font-size: clamp(var(--big), 1.5vw, 2rem)!important;
+}
+
 }
