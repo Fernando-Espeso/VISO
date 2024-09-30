@@ -1132,7 +1132,8 @@ svg{
   color: black;
   width: 100%;
   z-index: 1;
-  position: relative;
+  top: 100px;
+  position: absolute;
   font-size: clamp(var(--big), 1.5vw, 2rem)!important;
   line-height: var(--lh);
   text-align: center;
