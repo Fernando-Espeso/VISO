@@ -1155,14 +1155,17 @@ svg{
   display: none;
 }
 
-#nav.active {
+#nav.hid {
   transition: 0.5s ease;
   display: block;
   height: auto;
   font-size: clamp(var(--big), 1.5vw, 2rem)!important;
-  opacity: 1;
   margin-top: 10px;
   line-height: 120%;
   grid-gap: 0px;
+}
+#nav.show {
+  transition: 0.5s ease;
+  opacity: 1;
 }
 }
