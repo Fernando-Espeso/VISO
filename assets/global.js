@@ -66,6 +66,15 @@ function invertirTextoYContenido($elemento, mostrarTexto, ocultarTexto) {
 
 
 $(document).ready(function() {
+
+  $("button#add-to-cart").click(function(){
+    $(".product-added").addClass("active");
+
+    setTimeout(function() {
+      $(".product-added").removeClass("active");
+  }, 2000); // 2000 milisegundos = 2 segundos
+  });
+
   let ishide = false;
 let hideTimeout;
 
@@ -164,13 +173,7 @@ function checkDevice() {
 
 
 
-  $("button#add-to-cart.in-stock").click(function(){
-    $(".product-added").addClass("active");
 
-    setTimeout(function() {
-      $(".product-added").removeClass("active");
-  }, 2000); // 2000 milisegundos = 2 segundos
-  });
 
 
  // Función para gestionar el comportamiento de los botones
