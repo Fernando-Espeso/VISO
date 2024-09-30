@@ -410,7 +410,7 @@ div#bag-total{
   button#checkout {
     font-size: clamp(var(--main), 0.75vw, 1rem)!important;
     height: 100%;
-    width: 200px;
+    width: 100%;
     text-align: center;
     padding: 8px;
     background-color: #0000004d;
