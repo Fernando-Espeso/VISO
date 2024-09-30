@@ -14,7 +14,7 @@
   background-color: black;
 }
 .show-description.description{
-  font-size: var(--med);
+  font-size: clamp(var(--main), 0.75vw, 1rem);
   line-height: 120%;
 
 }
@@ -254,7 +254,7 @@ div#shopify-section-ab {
   font-size: clamp(var(--main), 1.5vw, 2rem);
   line-height: 120%;
   margin-bottom: 10px;
-  font-size: clamp(var(--main), 0.75vw, 1rem);
+
 }
 div#content {
 
