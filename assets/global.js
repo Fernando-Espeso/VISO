@@ -112,6 +112,7 @@ function initDesktopHover() {
   });
 }
 
+
 function initMobileClick() {
   $('a.logo-home.movil').on('click', function() {
     $("#nav").toggleClass("active");
