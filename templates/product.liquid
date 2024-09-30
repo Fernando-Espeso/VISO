@@ -66,7 +66,6 @@
   {%- endif -%}
   </div>
   <div class="gallery_collection">
-    <div class="product-added">PRODUCT ADDED TO CART</div>
       {% for media in product.media %}
           <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
       {% endfor %}

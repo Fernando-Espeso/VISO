@@ -366,11 +366,7 @@ select:disabled {
     grid-column: span 12;
 }
 .product-added{
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: rgb(128, 241, 109);
   padding: 5px;
 }
 div#bag-total{
