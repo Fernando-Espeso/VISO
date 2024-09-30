@@ -396,7 +396,7 @@ div#bag-total{
     color: #fff; 
   }
 
-  
+
   button#add-to-cart:hover{
     background-color: #454545f3;
     color: #fff; 
@@ -464,6 +464,7 @@ div#bag-total{
   display: none;
 }
   .categories{
+    pointer-events: none;
     column-count: 4;
     flex-basis: 100%;
     line-height:0px;
@@ -551,6 +552,7 @@ span.quantity-button.minus, span.quantity-button.plus {
   .categories.show{
     opacity: 1;
     transition: 0.5s ease;
+    pointer-events: auto;
   }
   .cat.active {
     color: grey;
