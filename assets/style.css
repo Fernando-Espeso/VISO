@@ -1160,7 +1160,6 @@ svg{
   display: block;
   height: auto;
   font-size: clamp(var(--big), 1.5vw, 2rem)!important;
-  margin-top: 10px;
   line-height: 120%;
   grid-gap: 0px;
 }
