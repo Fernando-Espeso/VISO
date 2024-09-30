@@ -114,7 +114,7 @@ function initDesktopHover() {
 
 function initMobileClick() {
   $('a.logo-home.movil').on('click', function() {
-
+    $("#nav").toggleClass("active");
     clearTimeout(hideTimeout);  // Clear any scheduled hiding
     if (!ishide) {
       ishide = true;
