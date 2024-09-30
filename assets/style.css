@@ -251,10 +251,10 @@ div#shopify-section-ab {
   padding: 8px;
 }
 .product-description{
-  font-size: clamp(var(--big), 1.5vw, 2rem);
+  font-size: clamp(var(--main), 1.5vw, 2rem);
   line-height: 120%;
   margin-bottom: 10px;
-
+  font-size: clamp(var(--main), 0.75vw, 1rem);
 }
 div#content {
 
@@ -663,7 +663,7 @@ video {
   user-select: none;
 }
 .title-infos {
-  font-size: var(--main);
+  font-size: clamp(var(--main), 0.75vw, 1rem);
   color: black;
 }
 
