@@ -114,23 +114,27 @@ function initDesktopHover() {
 
 function initMobileClick() {
   $('a.logo-home.movil').on('click', function() {
-    $("#nav").toggleClass("active");
+
     clearTimeout(hideTimeout);  // Clear any scheduled hiding
     if (!ishide) {
       ishide = true;
       setTimeout(function() {
-        $('#nav').addClass("hid");
+        $('.categories').addClass("hid");
+  
       }, 100);
       setTimeout(function() {
-        $('#nav').addClass("show");
+        $('.categories').addClass("show");
+     
       }, 500);
     } else {
       ishide = false;
       setTimeout(function() {
-        $('#nav').removeClass("show");
+        $('.categories').removeClass("show");
+   
       }, 100);
       setTimeout(function() {
-        $('#nav').removeClass("hid");
+        $('.categories').removeClass("hid");
+
       }, 500);
     }
   });
