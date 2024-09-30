@@ -147,8 +147,6 @@ function initMobileClick() {
     }
   });
 
-
-
 }
 
 function checkDevice() {
@@ -168,6 +166,11 @@ function checkDevice() {
 
   $("#add-to-bag").click(function(){
     $(".cart-part").addClass("active");
+    $(".product-added").addClass("active");
+    
+    setTimeout(function() {
+      $(".product-added").removeClass("active");
+  }, 2000); // 2000 milisegundos = 2 segundos
   });
 
 

@@ -366,13 +366,17 @@ select:disabled {
     grid-column: span 12;
 }
 .product-added{
+  display: none;
   margin: 0px 0px;
   width: fit-content;
-  background-color: #80f16d;
+  background-color: #1900ff;
   padding: 8px;
+  color: white;
+}
+.product-added.active{
+  display: block;
 }
 .product-added a{
-  color:white;
   text-decoration: none;
 }
 div#bag-total{
