@@ -731,15 +731,11 @@ section#desplegable {
   grid-gap:10px;
 }
 button#add-to-cart.in-stock {
-  background-color: white;
-  color: black;
   opacity: 1;
   pointer-events: auto;
   /* border: 1px solid black; */
 }
 button#add-to-cart.out-of-stock {
-  background-color: white;
-  color: black;
   opacity: 0.5;
   pointer-events: none;
   /* border: 1px solid black; */
