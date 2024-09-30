@@ -366,7 +366,7 @@ select:disabled {
     grid-column: span 12;
 }
 .product-added{
-  margin: 10px 0px;
+  margin: 0px 0px;
   width: fit-content;
   background-color: #80f16d;
   padding: 8px;
