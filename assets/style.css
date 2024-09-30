@@ -864,13 +864,10 @@ p.info-collection{
   margin-bottom: 10px;
 }
 form#cart-wrapper{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap:10px;
+  margin: 0 auto;
+  max-width: 500px;
 }
 form#cart-wrapper .item {
-  min-width: 400px;
-  max-width: 400px;
   grid-column: 5 / span 1;
   margin: 0 auto;
 }
