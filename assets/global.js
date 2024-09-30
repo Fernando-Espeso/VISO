@@ -114,48 +114,30 @@ function initDesktopHover() {
 
 function initMobileClick() {
   $('a.logo-home.movil').on('click', function() {
-    clearTimeout(hideTimeout);  // Clear any scheduled hiding
-    if (!ishide) {
-      ishide = true;
-      setTimeout(function() {
-        $('.categories').addClass("hid");
-      }, 100);
-      setTimeout(function() {
-        $('.categories').addClass("show");
-      }, 500);
-    } else {
-      ishide = false;
-      setTimeout(function() {
-        $('.categories').removeClass("show");
-      }, 100);
-      setTimeout(function() {
-        $('.categories').removeClass("hid");
-      }, 500);
-    }
-  });
-
-  $("a.logo-home.movil").click(function(){
     $("#nav").toggleClass("active");
     clearTimeout(hideTimeout);  // Clear any scheduled hiding
     if (!ishide) {
       ishide = true;
       setTimeout(function() {
+        $('.categories').addClass("hid");
         $('#nav').addClass("hid");
       }, 100);
       setTimeout(function() {
+        $('.categories').addClass("show");
         $('#nav').addClass("show");
       }, 500);
     } else {
       ishide = false;
       setTimeout(function() {
+        $('.categories').removeClass("show");
         $('#nav').removeClass("show");
       }, 100);
       setTimeout(function() {
+        $('.categories').removeClass("hid");
         $('#nav').removeClass("hid");
       }, 500);
     }
   });
-
 }
 
 function checkDevice() {
