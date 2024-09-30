@@ -1156,6 +1156,7 @@ svg{
 }
 
 #nav.hid {
+  margin-top: 10px;
   transition: 0.5s ease;
   display: block;
   height: auto;
