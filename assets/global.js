@@ -112,7 +112,6 @@ function initDesktopHover() {
   });
 }
 
-
 function initMobileClick() {
   $('a.logo-home.movil').on('click', function() {
     $("#nav").toggleClass("active");
@@ -121,17 +120,17 @@ function initMobileClick() {
       ishide = true;
       setTimeout(function() {
         $('.categories').addClass("hid");
-  
+        $('#nav').addClass("hid");
       }, 100);
       setTimeout(function() {
         $('.categories').addClass("show");
-     
+        $('#nav').addClass("show");
       }, 500);
     } else {
       ishide = false;
       setTimeout(function() {
         $('.categories').removeClass("show");
-   
+        $('#nav').removeClass("show");
       }, 100);
       setTimeout(function() {
         $('.categories').removeClass("hid");
