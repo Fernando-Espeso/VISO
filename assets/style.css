@@ -1142,6 +1142,7 @@ svg{
   margin-top: 10px;
 }
 #nav {
+  display: block;
   font-size: 0px;
   margin-top: 0;
   line-height: 0px;
