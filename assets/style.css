@@ -368,6 +368,7 @@ select:disabled {
 .product-added{
   background-color: rgb(128, 241, 109);
   padding: 8px;
+  width: fit-content;
 }
 div#bag-total{
   display: flex;
