@@ -906,6 +906,15 @@ form#cart-wrapper .item {
   .selector-wrapper {
     width: 100%;
 }
+button#add-to-cart {
+  font-size: clamp(var(--main), .75vw, 1rem) !important;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  background-color: #000;
+  color: #fff;
+}
   body{
     padding:0px 10px;
   }
@@ -927,6 +936,7 @@ div#content {
   top: calc(var(--nav) + 0px);
   grid-column: span 1;
 }
+
   .news-content img {
     margin-top: 20px;
     grid-column: span 1;
