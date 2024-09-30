@@ -372,7 +372,7 @@ select:disabled {
   padding: 8px;
 }
 .product-added a{
-  color: #16480d;
+  color:white;
 }
 div#bag-total{
   display: flex;
