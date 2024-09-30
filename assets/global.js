@@ -72,7 +72,7 @@ $(document).ready(function() {
 
     setTimeout(function() {
       $(".product-added").removeClass("active");
-  }, 2000); // 2000 milisegundos = 2 segundos
+  }, 6000); // 2000 milisegundos = 2 segundos
   });
 
   let ishide = false;

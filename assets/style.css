@@ -366,7 +366,8 @@ select:disabled {
     grid-column: span 12;
 }
 .product-added{
-  display: none;
+opacity: 0;
+pointer-events: none;
   margin: 0px 0px;
   width: fit-content;
   background-color: #1900ff;
@@ -374,7 +375,8 @@ select:disabled {
   color: white;
 }
 .product-added.active{
-  display: block;
+opacity: 1;
+pointer-events: auto;
 }
 .product-added a{
   text-decoration: none;
