@@ -897,10 +897,9 @@ form#cart-wrapper .item {
 /* Mobile styles */
 @media (max-width: 600px) {
   div#bag-total{
-    column-count: 2;
-    column-gap: 10px;
-    display: block;
-    gap:10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     margin-top: 20px;
   }
   .selector-wrapper {
