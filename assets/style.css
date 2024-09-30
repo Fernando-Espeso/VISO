@@ -425,6 +425,7 @@ div#bag-total{
     padding: 8px;
     background-color: #000000f3;
     color: #fff;
+    grid-column: span 2;
     
   }
   button#checkout:hover {
@@ -618,7 +619,7 @@ span.quantity-button.minus, span.quantity-button.plus {
     background-color: rgba(2555, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     row-gap:10px;
-    grid-column: span 2;
+    grid-column: 5 / span 1;
   }
   .remove{
     grid-column: span 2;
@@ -870,6 +871,9 @@ form#cart-wrapper{
 }
 form#cart-wrapper .item {
   min-width: 400px;
+  max-width: 400px;
+  grid-column: 5 / span 1;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width:3920px) and (min-width:1540px){
