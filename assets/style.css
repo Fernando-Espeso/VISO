@@ -236,7 +236,7 @@ div#shopify-section-ab {
 .title-about p{
   font-size: clamp(var(--main), 1.5vw, 2rem)!important;
   line-height: 120%;
-  margin-bottom: 10px;
+  margin-bottom: 5x;
 }
 .last{
   margin-bottom: 20px;
