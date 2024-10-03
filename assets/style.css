@@ -367,8 +367,14 @@ select:disabled {
 }
 .closer{
   position: absolute;
-  top:0px;
-  right: 0px;
+  top:15px;
+  right: 15px;
+}
+.cookies a{
+  color:grey;
+}
+.free-shippping a{
+  color:grey;
 }
 .free-shippping{
   z-index: 100;
