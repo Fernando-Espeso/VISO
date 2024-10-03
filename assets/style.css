@@ -10,7 +10,7 @@
   --body: 'helvetica';
 }
 ::selection{
-  color:white;
+  color:grey;
 }
 .show-description.description{
   font-size: clamp(var(--main), 0.75vw, 1rem);
