@@ -5,7 +5,7 @@
       {% when 'summary' %}
         {% unless block.settings.subtitle and block.settings.interior == blank %}
           <div class="news-content {{ block.settings.width_class }}">
-            <div class="view">{{ block.settings.subtitle }}</div>
+            <h1 class="view">{{ block.settings.subtitle }}</h1>
             <div class="title-seccion big">{{ block.settings.interior }}</div>
             {% if block.settings.image != blank %}
               <div class="image-full">
