@@ -1153,6 +1153,7 @@ button#checkout {
 .hero{
   order: -1;
   min-height: auto;
+  height: auto;
 }
 .title-seccion.big{
   padding: 0px;
