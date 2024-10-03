@@ -365,6 +365,9 @@ select:disabled {
   padding: 15px;
   width: 100vw;
 }
+p{
+  margin-bottom: 10px;
+}
 .closer{
   cursor: pointer;
   position: absolute;
