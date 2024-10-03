@@ -233,7 +233,7 @@ div#shopify-section-ab {
   font-size: clamp(var(--big), 1.5vw, 2rem);
   line-height: 120%;
 }
-h1{
+h1.view{
   font-weight: 400;
   font-size: clamp(var(--big), 1.5vw, 2rem);
   line-height: 120%;
