@@ -79,7 +79,7 @@ fernandoepeso.info
           </svg>
         </a>
         <div class="home {% if request.path == '/' %} active{% endif %}"><a href="/index">HOME</a></div>
-        <div class="shop {% if template contains 'collection' %} active {% endif %}"><a>SHOP</a></div>
+        <div class="shop {% if template contains 'collection' %} active {% endif %}"><a  href="/collections/all">SHOP</a></div>
         <div class="artist{% if request.path == '/pages/stockist' %} active{% endif %}"><a href="/pages/stockist">STOCKLIST</a></div>
         <div class="information{% if request.path == '/pages/about' %} active{% endif %}"><a href="/pages/about">ABOUT</a></div>
         <div class="store{% if request.path == '/pages/store' %} active{% endif %}"><a href="/pages/store">STORE</a></div>
