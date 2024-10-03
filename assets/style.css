@@ -385,7 +385,7 @@ opacity: 0;
 pointer-events: none;
   margin: 0px 0px;
   width: fit-content;
-  background-color: #1900ff;
+  background-color: #333;
   padding: 8px;
   color: white;
 }
@@ -428,7 +428,7 @@ div#bag-total{
     width: 100%;
     text-align: center;
     padding: 8px;
-    background-color: #0000004d;
+    background-color:#333;
     color: #fff;
     
   }
@@ -437,7 +437,7 @@ div#bag-total{
     height: 100%;
     text-align: center;
     padding: 8px;
-    background-color: #000000f3;
+    background-color:#333;
     color: #fff;
     grid-column: span 2;
     
