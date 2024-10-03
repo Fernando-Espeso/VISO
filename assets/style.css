@@ -357,6 +357,7 @@ select:disabled {
   }
  
 .cookies{
+  z-index: 100;
   background-color: white;
   position: fixed;
   bottom: 0px;
@@ -370,6 +371,7 @@ select:disabled {
   right: 10px;
 }
 .free-shippping{
+  z-index: 100;
   width: 400px;
   position: fixed;
   top: 50%;
