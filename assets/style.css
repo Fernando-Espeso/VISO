@@ -657,6 +657,7 @@ span.quantity-button.minus, span.quantity-button.plus {
     grid-column: span 2;
   }
   .total{
+    padding-top: 20px;
     top: var(--nav);
     position: sticky;
     height: fit-content;
