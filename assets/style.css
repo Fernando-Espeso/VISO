@@ -1205,12 +1205,13 @@ svg{
 .intro {
   display: flex;
   height: auto;
-  color: black;
+  color: #000;
   width: 100%;
+  order: -1;
   z-index: 1;
-  top: 100px;
-  position: absolute;
-  font-size: clamp(var(--big), 1.5vw, 2rem)!important;
+  top: 0px;
+  position: relative;
+  font-size: clamp(var(--big), 1.5vw, 2rem) !important;
   line-height: var(--lh);
   text-align: center;
   grid-column: span 12;
