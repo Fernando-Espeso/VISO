@@ -861,7 +861,7 @@ section.about-page {
   grid-template-columns: repeat(2, 1fr);
 }
 .image-infos {
-    padding-top: 10px;
+    padding-top: 0px;
     margin: 0 auto;
 }
 
