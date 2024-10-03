@@ -1169,7 +1169,7 @@ div#block-media_X7hnjE {
 
 }
 .gallery-images {
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-column: span 4;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
