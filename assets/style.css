@@ -1265,8 +1265,8 @@ justify-content: auto;
 }
 .cookies{
   padding: 10px;
+  left: 10px;
   width: calc(100vw - 20px);
-
 }
 
 
