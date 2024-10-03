@@ -1011,7 +1011,7 @@ div#content {
 }
 
   .news-content img {
-    margin-top: 20px;
+    margin-top: 10px;
     grid-column: span 1;
 }
   .product {
