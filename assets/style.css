@@ -233,6 +233,9 @@ div#shopify-section-ab {
   font-size: clamp(var(--big), 1.5vw, 2rem);
   line-height: 120%;
 }
+.once{
+  display: none;
+}
 h1{
   font-weight: 100!important;
   font-size: clamp(var(--big), 1.5vw, 2rem)!important;
