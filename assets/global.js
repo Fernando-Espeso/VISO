@@ -79,8 +79,8 @@ $(document).ready(function() {
     $(".cookies").hide();
   });
 
-  $(".free-shipping .closer").click(function(){
-    $(".free-shipping").hide();
+  $(".free-shippping .closer").click(function(){
+    $(".free-shippping").hide();
   });
 
   let ishide = false;
