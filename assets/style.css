@@ -954,6 +954,16 @@ form#cart-wrapper .item {
 }
 /* Mobile styles */
 @media (max-width: 600px) {
+  .free-shippping{
+    z-index: 100;
+    max-width: calc(100vw - 30px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px;
+  }
   div#bag-total{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
