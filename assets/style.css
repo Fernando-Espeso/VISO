@@ -30,6 +30,7 @@ a:hover{
 }
 .about-page .section {
   display: grid;
+  height: fit-content;
 }
 
 .about-page .section:last-child .content-inside{
