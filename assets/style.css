@@ -1214,6 +1214,10 @@ svg{
 .image-right{
   display: none;
 }
+.categories{
+  display: grid;
+  row-gap: 10px;;
+}
 .cart-part {
   align-items: center;
   justify-content: center;
