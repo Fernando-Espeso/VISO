@@ -977,8 +977,9 @@ form#cart-wrapper .item {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 10px 0px;
+    padding: 10px 10px;
   }
+  
   div#bag-total{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1258,7 +1259,7 @@ justify-content: auto;
 }
 .free-shippping .closer{
   top:10px;
-  right:0px;
+  right:10px;
 }
 .cookies{
   padding: 10px;
