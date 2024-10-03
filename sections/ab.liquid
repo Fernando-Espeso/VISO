@@ -2,7 +2,6 @@
   data-section-id="about-page"
   class="about-page"
 >
-
   {% for block in section.blocks %}
     {% case block.type %}
       {% when 'summary' %}
@@ -21,8 +20,7 @@
               <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.subtitle }}">
             </div>
           {% endif %}
-          </div>
-        </div>
+       </div>
       {% endunless %}
     {% endcase %}
   {% endfor %}
