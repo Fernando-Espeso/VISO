@@ -957,7 +957,7 @@ form#cart-wrapper .item {
 @media (max-width: 600px) {
   .free-shippping{
     z-index: 100;
-    max-width: calc(100vw - 30px);
+    width: calc(100vw - 20px);
     position: fixed;
     min-width: auto;
     top: 50%;
