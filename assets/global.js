@@ -75,13 +75,15 @@ $(document).ready(function() {
   }, 6000); // 2000 milisegundos = 2 segundos
   });
 
+  $(".free-shippping .closer").click(function(){
+    $(".free-shippping").hide();
+  });
+
   $(".cookies .closer").click(function(){
     $(".cookies").hide();
   });
 
-  $(".free-shippping .closer").click(function(){
-    $(".free-shippping").hide();
-  });
+
 
   let ishide = false;
 let hideTimeout;
@@ -102,12 +104,13 @@ function initDesktopHover() {
   });
 
   $('.shop, .categories').on('mouseleave', function() {
+    $('.shop').addClass("pr");
     hideTimeout = setTimeout(function() {
       if (ishide) {
         ishide = false;
         setTimeout(function() {
           $('.categories').removeClass("show");
-          $('.shop').addClass("pr");
+
         }, 100);
         setTimeout(function() {
           $('.categories').removeClass("hid");
