@@ -407,7 +407,7 @@ div#bag-total{
     width: 200px;
     text-align: center;
     padding: 8px;
-    background-color: black;
+    background-color: #333;
     color: #fff; 
   }
 
