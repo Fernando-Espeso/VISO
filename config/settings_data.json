@@ -50,7 +50,7 @@
           "text_QfKWFq": {
             "type": "text",
             "settings": {
-              "text": "VISO PROJECT comes to life through deep roots inspired by the worlds of art and design, creating distinct objects and apparel crafted by expert artisans and manufacturers around the world."
+              "text": "40% DISSCOUNT"
             }
           }
         },
@@ -63,13 +63,14 @@
       "about": {
         "type": "about",
         "blocks": {
-          "summary_cdKMwT": {
-            "type": "summary",
+          "gallery_DnYxJr": {
+            "type": "gallery",
             "settings": {
-              "subtitle": "<p>Our Tapestry Capsule</p>",
-              "interior": "<p>The technique used to create our throws is part of a family heritage of devoted artists, carried through generations keeping the European wall tapestry style in place. The outcome of this collaboration is an exceptional textile with high definition artwork that has history woven into every inch.</p>",
-              "image": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_3.jpg",
-              "title": "<p>Resort Chair 0102</p>",
+              "subtitle": "",
+              "interior": "",
+              "image_1": "shopify://shop_images/Viso_Project_Quilt_Blanket_VTS-01_Lifestyle_Cadaques_2_f3319537-be84-4397-a0f3-3313700b7a0b.jpg",
+              "image_2": "shopify://shop_images/Viso_Project_Porcelain_Zodiac_Plate_V124_Lifestyle_Cadaques_2.jpg",
+              "title": "<p>TAPPESTRY PILLOW 058</p>",
               "width_class": "mid-width"
             }
           },
@@ -94,6 +95,16 @@
               "width_class": "full-width"
             }
           },
+          "summary_cdKMwT": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>Our Tapestry Capsule</p>",
+              "interior": "<p>The technique used to create our throws is part of a family heritage of devoted artists, carried through generations keeping the European wall tapestry style in place. The outcome of this collaboration is an exceptional textile with high definition artwork that has history woven into every inch.</p>",
+              "image": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_3.jpg",
+              "title": "<p>Resort Chair 0102</p>",
+              "width_class": "mid-width"
+            }
+          },
           "summary_3YVYgd": {
             "type": "summary",
             "settings": {
@@ -103,25 +114,14 @@
               "title": "",
               "width_class": "full-width"
             }
-          },
-          "gallery_DnYxJr": {
-            "type": "gallery",
-            "settings": {
-              "subtitle": "",
-              "interior": "",
-              "image_1": "shopify://shop_images/Viso_Project_Quilt_Blanket_VTS-01_Lifestyle_Cadaques_2_f3319537-be84-4397-a0f3-3313700b7a0b.jpg",
-              "image_2": "shopify://shop_images/Viso_Project_Porcelain_Zodiac_Plate_V124_Lifestyle_Cadaques_2.jpg",
-              "title": "<p>TAPPESTRY PILLOW 058</p>",
-              "width_class": "mid-width"
-            }
           }
         },
         "block_order": [
-          "summary_cdKMwT",
+          "gallery_DnYxJr",
           "gallery_yhh3fr",
           "summary_axXepz",
-          "summary_3YVYgd",
-          "gallery_DnYxJr"
+          "summary_cdKMwT",
+          "summary_3YVYgd"
         ],
         "settings": {
         }
@@ -297,7 +297,7 @@
             "type": "summary",
             "settings": {
               "Name": "<p>VISO PROJECT  EUROPE </p><p></p>",
-              "Location": "<p>SHOWROOM MADRID Calle Santa</p><p> Maria 17, Local Derecha </p><p>28014 Madrid, Spain</p>"
+              "Location": "<p>SHOWROOM MADRID </p><p>Calle Santa Maria 17, Local Derecha </p><p>28014 Madrid, Spain</p>"
             }
           },
           "summary_QrRJdx": {
@@ -344,7 +344,7 @@
             "type": "summary",
             "settings": {
               "Name": "<p>INTERNATIONAL RETURNS</p>",
-              "Location": ""
+              "Location": "<ul><li>Contact us at <a href=\"mailto:viso@visoproject.com\">viso@visoproject.com</a> with your order number and explaining if you wish for a return and refund, and the reason.</li><li>You’ll receive an email to ship the products to our warehouse location.</li><li>Ensure your return is well packaged, and meets all the conditions outlined at the bottom of this page.</li><li>Return’s cost are at the customer’s charge</li></ul>"
             }
           }
         },
@@ -376,14 +376,6 @@
       "ab": {
         "type": "ab",
         "blocks": {
-          "summary_fDBXYj": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "<p>ABOUT</p>",
-              "image": "shopify://shop_images/Viso_Project_New_York_Dumbo_Store_2-720x960.jpg",
-              "title": "<p>VISO PROJECT comes to life through deep roots inspired by the worlds of art and design, creating distinct objects and apparel crafted by expert artisans and manufacturers around the world.</p><p>Every single item created by VISO is developed with the upmost attention to detail. Craftsmanship becomes the sole purpose in creating a sustainable and limited production of long-lasting quality goods for generations to come.</p>"
-            }
-          },
           "summary_ffcKVJ": {
             "type": "summary",
             "settings": {
@@ -391,11 +383,19 @@
               "image": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_1.jpg",
               "title": "<p>VISO will create collaborative capsule collections of singular, limited edition items that will include a wide range of home accessories, textiles, ceramics and novelty objects as well many others.</p><p>For VISO, lifestyle is everything. Products will be globally available at our online and physical Dumbo store as well as at key retailers around the world.</p>"
             }
+          },
+          "summary_fDBXYj": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>ABOUT</p>",
+              "image": "shopify://shop_images/Viso_Project_New_York_Dumbo_Store_2-720x960.jpg",
+              "title": "<p>VISO PROJECT comes to life through deep roots inspired by the worlds of art and design, creating distinct objects and apparel crafted by expert artisans and manufacturers around the world.</p><p>Every single item created by VISO is developed with the upmost attention to detail. Craftsmanship becomes the sole purpose in creating a sustainable and limited production of long-lasting quality goods for generations to come.</p>"
+            }
           }
         },
         "block_order": [
-          "summary_fDBXYj",
-          "summary_ffcKVJ"
+          "summary_ffcKVJ",
+          "summary_fDBXYj"
         ],
         "settings": {
         }
@@ -406,7 +406,7 @@
           "summary_aKAKGw": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>STORE US</p>",
+              "subtitle": "",
               "image": "shopify://shop_images/VIB0102_Viso_Project_New_York_Wool_Intreciatto_Blanket_Green_Arles_2-1024x1024.jpg",
               "title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis molestie magna, at congue nunc. Nulla bibendum condimentum enim sed mattis. Fusce posuere turpis nunc, eu porta quam tincidunt sit amet. Cras quis commodo dolor. Nullam elit ligula, volutpat id volutpat tincidunt, ullamcorper nec dui. Nullam fringilla imperdiet elit ut vulputate. Quisque mollis in erat vel eleifend.</p>"
             }
