@@ -366,6 +366,7 @@ select:disabled {
   width: 100vw;
 }
 .closer{
+  cursor: pointer;
   position: absolute;
   top:15px;
   right: 15px;

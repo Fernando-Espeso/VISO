@@ -75,6 +75,14 @@ $(document).ready(function() {
   }, 6000); // 2000 milisegundos = 2 segundos
   });
 
+  $(".cookies .closer").click(function(){
+    $(".cookies").hide();
+  });
+
+  $(".free-shipping .closer").click(function(){
+    $(".free-shipping").hide();
+  });
+
   let ishide = false;
 let hideTimeout;
 
