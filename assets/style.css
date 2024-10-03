@@ -964,7 +964,7 @@ form#cart-wrapper .item {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 15px;
+    padding: 15px 0px;
   }
   div#bag-total{
     display: grid;
