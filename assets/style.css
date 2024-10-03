@@ -28,6 +28,15 @@ a:hover{
   background: transparent;
   display: none!important;
 }
+.about-page .section {
+  display: grid;
+}
+
+.about-page .section:last-child .content-inside{
+  order: 2;
+}
+
+
 /* Fonts */
 @font-face {
   font-family: 'helvetica';
