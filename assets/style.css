@@ -382,7 +382,7 @@ p{
 }
 .free-shippping{
   z-index: 100;
-  width: 600px;
+  max-width: 600px;
   position: fixed;
   top: 50%;
   left: 50%;
