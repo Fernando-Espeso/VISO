@@ -385,16 +385,15 @@ opacity: 0;
 pointer-events: none;
   margin: 0px 0px;
   width: fit-content;
-  background-color: #333;
+  background-color:grey;
   padding: 8px;
-  color: white;
 }
 .product-added.active{
 opacity: 1;
 pointer-events: auto;
 }
 .product-added a{
-  text-decoration: none;
+  text-decoration: underline;
 }
 div#bag-total{
   display: flex;
