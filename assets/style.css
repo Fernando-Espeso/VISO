@@ -959,6 +959,7 @@ form#cart-wrapper .item {
     z-index: 100;
     max-width: calc(100vw - 30px);
     position: fixed;
+    min-width: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
