@@ -75,7 +75,7 @@ $(document).ready(function() {
   }, 6000); // 2000 milisegundos = 2 segundos
   });
 
-  $(".cookies .closer").click(function(){
+  $(".closer").click(function(){
     $(".cookies").hide();
   });
 

@@ -7,13 +7,9 @@
       {% when 'summary' %}
       {% unless block.settings.subtitle == blank and block.settings.image == blank and block.settings.title == blank %}
         <div class="section">
-
-          
           {% if block.settings.title %}
             <div class="content-inside">
-              {% if block.settings.subtitle %}
-                <div class="title-about">{{ block.settings.subtitle }}</div>
-              {% endif %}
+              <div class="title-about">{{ block.settings.subtitle }}</div>
               {{ block.settings.title }}</div>
           {% endif %}
           
