@@ -365,7 +365,7 @@ select:disabled {
   padding: 15px;
   width: 100vw;
 }
-p{
+.page-content p{
   margin-bottom: 10px;
 }
 .closer{
