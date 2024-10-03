@@ -371,7 +371,7 @@ select:disabled {
   bottom: 15px;
   left: 15px;
   border: 1px solid;
-  padding: 40px 15px;
+  padding: 20px 15px;
   width: calc(100vw - 30px);
 }
 .page-content p{
@@ -381,7 +381,7 @@ select:disabled {
 
 
 
-  
+
   cursor: pointer;
   position: absolute;
   top:15px;
@@ -397,6 +397,7 @@ select:disabled {
 width: 60%;
 }
 .free-shippping{
+  border: 1px solid;
   z-index: 100;
   min-width: 600px;
   max-width: 600px;
