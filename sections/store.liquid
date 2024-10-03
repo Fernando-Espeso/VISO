@@ -6,11 +6,19 @@
         {% when 'summary' %}
         {% unless block.settings.subtitle == blank and block.settings.image == blank and block.settings.title == blank %}
           <div class="section">
-            <div class="title-about">{{ block.settings.subtitle }}</div>
-            <div class="content-inside">{{ block.settings.title }}</div>
-            <div class="image-infos">
-              <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.subtitle }}">
-            </div>
+            {% if block.settings.title %}
+              <div class="content-inside">
+                {% if block.settings.subtitle %}
+                  <div class="title-about">{{ block.settings.subtitle }}</div>
+                {% endif %}
+                {{ block.settings.title }}</div>
+            {% endif %}
+            
+            {% if block.settings.image %}
+              <div class="image-infos">
+                <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.subtitle }}">
+              </div>
+            {% endif %}
           </div>
         {% endunless %}
       {% endcase %}
