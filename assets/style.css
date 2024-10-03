@@ -380,6 +380,9 @@ select:disabled {
 .free-shippping a{
   color:grey;
 }
+.free-shippping p{
+width: 80%;
+}
 .free-shippping{
   z-index: 100;
   min-width: 600px;
