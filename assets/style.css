@@ -367,8 +367,8 @@ select:disabled {
 }
 .closer{
   position: absolute;
-  top:15px;
-  right: 15px;
+  top:0px;
+  right: 0px;
 }
 .free-shippping{
   z-index: 100;
