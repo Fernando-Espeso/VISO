@@ -967,7 +967,7 @@ form#cart-wrapper .item {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 15px 0px;
+    padding: 10px 0px;
   }
   div#bag-total{
     display: grid;
@@ -1245,7 +1245,7 @@ justify-content: auto;
   right: 10px;
 }
 .free-shippping .closer{
-  top:0px;
+  top:10px;
   right:0px;
 }
 .cookies{
