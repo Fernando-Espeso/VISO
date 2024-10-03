@@ -368,10 +368,11 @@ select:disabled {
   z-index: 100;
   background-color: white;
   position: fixed;
-  bottom: 0px;
+  bottom: 15px;
   left: 0px;
-  padding: 15px;
-  width: 100vw;
+  border: 10px solid;
+  padding: 40px 15px;
+  width: calc(100vw - 30px);
 }
 .page-content p{
   margin-bottom: 10px;
