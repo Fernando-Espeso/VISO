@@ -731,7 +731,7 @@ section#desplegable {
   min-height: 100%;
   flex-grow: 1;
   display: grid;
-  row-gap: 100px;
+  row-gap: 10px;
   grid-template-columns: repeat(12, 1fr);
 }
 .related {
@@ -777,7 +777,7 @@ div#shopify-section-aim{
 footer {
     display: flex;
     position: relative;
-    padding-top: 100px !important;
+    padding-top: 40px !important;
     display: block;
     align-items: end;
     padding-bottom: 10px !important;
