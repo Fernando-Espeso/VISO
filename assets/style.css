@@ -378,11 +378,7 @@ select:disabled {
   margin-bottom: 10px;
 }
 .closer{
-
-
-
-
-  cursor: pointer;
+    cursor: pointer;
   position: absolute;
   top:15px;
   right: 15px;
