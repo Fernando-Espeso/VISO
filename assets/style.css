@@ -356,7 +356,20 @@ select:disabled {
     display: none;
   }
  
+.cookies{
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+  width: 100vw;
+}
+.close{
+  position: absolute;
+  top:10px;
+  right: 10px;
 
+}
   #nav{
     align-items: center;
     text-transform: uppercase;
