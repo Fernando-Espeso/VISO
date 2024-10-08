@@ -1,28 +1,4 @@
-{%- capture sizes -%}
-  {%- for option in product.options -%}
-    {%- assign size = option | downcase -%}
-    {%- if size contains 'size' -%}
-      {%- assign index = forloop.index0 -%}
-      {%- for variant in product.variants -%}
-        \{{- variant.options[index] | strip | handle | downcase | escape -}}
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endcapture -%}
-{%- assign sizes = sizes | split: '\' | uniq | sort -%}
 
-{%- capture colors -%}
-  {%- for option in product.options -%}
-    {%- assign color = option | downcase -%}
-    {%- if color contains 'colo' -%}
-      {%- assign index = forloop.index0 -%}
-      {%- for variant in product.variants -%}
-        \{{- variant.options[index] | strip | handle | downcase | escape -}}
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endcapture -%}
-{%- assign colors = colors | split: '\' | uniq | sort -%}
 
 <!-- Product -->
 <div class="product
