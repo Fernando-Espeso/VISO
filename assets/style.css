@@ -1257,6 +1257,19 @@ justify-content: auto;
   line-height: 120%;
   grid-gap: 0px;
 }
+.intro {
+  font-size: 30px;
+  margin-top: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  height: var(--h);
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  grid-column: span 12;
+}
 #nav.show {
   transition: 0.5s ease;
   opacity: 1;
