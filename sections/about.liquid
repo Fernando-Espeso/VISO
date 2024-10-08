@@ -36,8 +36,7 @@
       {% when 'featured-products' %}
         <div id="products" style="grid-column:span 6">
           <h1 class="view">Featured Products</h1>
-      
-              {% for product in collections['frontpage'].products limit: 6 %}
+              {% for product in collections['featured'].products limit: 6 %}
                 <div class="product">
                       <a href="{{ product.url }}" class="tuhumbnail">
                           <div class="featured-product__image">
