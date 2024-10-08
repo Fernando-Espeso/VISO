@@ -441,7 +441,6 @@ height: fit-content;
     text-align: center;
     grid-column: span 12;
 }
-}
 .product-added{
 opacity: 0;
 pointer-events: none;
