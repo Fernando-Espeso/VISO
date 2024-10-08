@@ -76,13 +76,7 @@
 </div>
 
 
-{{ 'option_selection.js' | shopify_asset_url | script_tag }}
-{% assign variants = 0 %}        
-{% for option in product.options %}
-{% if product.options.first != 'Title' %}
-{% assign variants = variants | plus: 1 %}
-{% endif %}
-{% endfor %}
+
 
 
 {% include 'related' %}
@@ -121,20 +115,7 @@ var selectCallback = function(variant, selector){
   }
 };
 
-  // Replace default variant selector
-  jQuery(function($) {
-    new Shopify.OptionSelectors('product-select', {
-      product: {{ product | json }},
-      onVariantSelected: selectCallback
-    });
-    {% assign count = -1 %}
-    {% for option in product.options %}
-      {% if product.options.first != 'Title' %}
-        {% assign count = count | plus: 1 %}
-        $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
-      {% endif %}
-    {% endfor %}
-  });
+
 
 
 function ShowSecond() {
