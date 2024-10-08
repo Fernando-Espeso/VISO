@@ -34,11 +34,11 @@
         </div>
 
       {% when 'featured-products' %}
-        <div id="products">
+        <div id="products" style="grid-column:span 6">
           <h1 class="product">Featured Products</h1>
-          <div class="grid">
+      
               {% for product in collections['frontpage'].products limit: 6 %}
-                  <div class="grid__item">
+                <div class="product">
                       <a href="{{ product.url }}" class="tuhumbnail">
                           <div class="featured-product__image">
                               <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
@@ -48,9 +48,9 @@
                               <h1 class="product-title">{{ product.title }}</h1>
                               <p class="product-price">{{ product.price | money }}</p>
                           </div>
-                  </div>
+                        </div>
               {% endfor %}
-          </div>
+        
         </div>
 
     {% endcase %}
