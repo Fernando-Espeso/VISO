@@ -1129,7 +1129,6 @@ a.logo-home.movil{
 
 
   .hero{
-    overflow: hidden;
     min-height: 100vh;
     height: var(--h);
     position: relative;
