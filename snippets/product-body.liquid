@@ -104,7 +104,7 @@
       <div class="product-sizes">
         {% for option in product.options_with_values %}
           {%- for value in option.values -%}
-            {% unless option.name == "Color" %}
+   
               {%- liquid
                 assign optionNumber = 'option' | append: option.position
                 assign optionVariant = false
@@ -116,7 +116,7 @@
                 endfor
               -%}
               <div class="product-size-value {% if optionVariant.available == false %} unavailable {% endif %}">{{ value }}</div>
-            {% endunless %}
+         
           {%- endfor -%}
         {% endfor %}
       </div>
