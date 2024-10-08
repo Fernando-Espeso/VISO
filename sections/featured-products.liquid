@@ -1,34 +1,19 @@
-<div class="title-aim">
-  {% for block in section.blocks %}
-    <div id="block-{{ block.id }}">
-      {% unless block.settings.text == blank %}
-        <div class="content">{{ block.settings.text | newline_to_br }}</div>
-      {% endunless %}
-    </div>
-  {% endfor %}
-</div>
-
-
 {% schema %}
 {
-  "name": "Intro",
-  "blocks": [
+  "name": "Featured Products",
+  "settings": [
     {
-      "type": "text",
-      "name": "Intro",
-      "settings": [
-        {
-          "type": "textarea",
-          "id": "text",
-          "label": "Content",
-          "default": "Enter your text here..."
-        }
-      ]
+      "type": "number",
+      "id": "product_limit",
+      "label": "Number of products",
+      "default": 4,
+      "min": 1,
+      "max": 10
     }
   ],
   "presets": [
     {
-      "name": "aim"
+      "name": "Featured Products"
     }
   ]
 }
