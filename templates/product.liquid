@@ -23,7 +23,7 @@
                       {% else %}
                       {% endif %}
                     </div> 
-          </div>
+                </div>
           <div class="add_item">
                         <!--Product Info-->
                         <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
@@ -32,12 +32,11 @@
                                   {%- elsif variants > 0 -%}
                                   class="product-variants"
                                   {%- endif -%}>
-
                                   <div id="bag-total" >
                                       <!--Variations Dropdown-->
                                     <select id="product-select" name="id">
                                       {% for variant in product.variants %}
-                                      <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                                        <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
                                       {% endfor %}
                                     </select>  
                                     <!--Actions-->
@@ -51,9 +50,7 @@
                                     </button> 
                                     {% endif %}
                                     <div class="product-added"> ADDED TO <a href="/cart">CART</a></div>
-
                                     </div>
-
                         </form>
                   </div> 
       </div>         
@@ -65,10 +62,9 @@
       <div class="show-description description">
         {{ product.metafields.custom.materiales | metafield_tag }}
       </div>
-  {%- endif -%}
+    {%- endif -%}
   </div>
   <div class="gallery_collection">
-
       {% for media in product.media %}
           <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
       {% endfor %}
@@ -118,8 +114,6 @@ var selectCallback = function(variant, selector){
     {% endif %}
   }
 };
-
-
 
 function ShowSecond() {
   var added = document.getElementById("added");
