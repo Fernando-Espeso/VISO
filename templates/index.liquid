@@ -13,7 +13,6 @@
   <div class="hero">
     {% section 'hero' %}
   </div>
-  {% section 'featured-products' %}
 
   <div id="products">
   {% assign product_limit = 4 %}
@@ -21,6 +20,8 @@
       {% include 'product-body' %}
   {% endfor %}
 </div>
+{% section 'featured-products' %}
+
   {% section 'about' %}
 
 </div>
