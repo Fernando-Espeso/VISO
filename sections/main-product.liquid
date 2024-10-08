@@ -27,11 +27,7 @@
           <div class="add_item">
                         <!--Product Info-->
                         <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-                          {%- if product.has_only_default_variant -%}
-                          class="product-simple"
-                          {%- elsif product.variants.size > 1 -%}
-                          class="product-variants"
-                          {%- endif -%} >
+                          class="{% if product.has_only_default_variant %}product-simple{% else %}product-variants{% endif %}">
                     
                         <div id="bag">
                             <div class="product-title">
@@ -51,11 +47,15 @@
                     
                             <div class="variations double">
                                 {% if product.variants.size > 1 %}
-                                    <select id="product-select" name="id">
-                                        {% for variant in product.variants %}
-                                            <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
-                                        {% endfor %}
-                                    </select>
+                                    <div class="selector-wrapper">
+                                        <label for="product-select">SIZE</label>
+                                        <select id="product-select" name="id">
+                                            <option value="" disabled selected>Choose your size</option>
+                                            {% for variant in product.variants %}
+                                                <option value="{{ variant.id }}">{{ variant.option1 }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
                                 {% else %}
                                     <input type="hidden" name="id" value="{{ product.variants.first.id }}">
                                 {% endif %}
@@ -68,6 +68,7 @@
                             </div>
                         </div>
                     </form>
+                    
                   </div> 
       </div>         
     </div>
