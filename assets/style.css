@@ -13,7 +13,7 @@
   color:grey;
 }
 h4{
-  font-weight: 200;
+  font-weight:0;
 }
 .show-description.description{
   font-size: clamp(var(--main), 0.75vw, 1rem);
