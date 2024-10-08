@@ -422,14 +422,13 @@ width: 300px;
     grid-column: span 3;
   }
   .intro {
-    display: flex;
-    height: 100vh;
-    color: white;
+    margin-top: 20px;
+    line-height: 50px;
+    height: var(--h);
+    color: #fff;
     width: 100%;
     z-index: 1;
     position: absolute;
-    font-size: clamp(var(--big), 1.5vw, 2rem)!important;
-    line-height: var(--lh);
     text-align: center;
     grid-column: span 12;
 }
