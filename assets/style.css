@@ -499,6 +499,9 @@ div#bag-total{
     color: #fff;
     
   }
+  .content-infos p{
+    margin-bottom: 0px;
+  }
   .image-container {
     padding-top: 10px;
     height: auto;
@@ -1257,6 +1260,7 @@ justify-content: auto;
   line-height: 120%;
   grid-gap: 0px;
 }
+
 #nav.show {
   transition: 0.5s ease;
   opacity: 1;
