@@ -101,7 +101,24 @@
           <div class="sold-out">SOLD OUT</div>
         {% endif %}
       </form>
-
+      <div class="product-sizes">
+        {% for option in product.options_with_values %}
+          {%- for value in option.values -%}
+              {%- liquid
+                assign optionNumber = 'option' | append: option.position
+                assign optionVariant = false
+                for variant in product.variants
+                  if variant[optionNumber] == value
+                    assign optionVariant = variant
+                    break
+                  endif
+                endfor
+              -%}
+              <div class="product-size-value {% if optionVariant.available == false %} unavailable {% endif %}">{{ value }}</div>
+         
+          {%- endfor -%}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
