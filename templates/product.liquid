@@ -35,11 +35,11 @@
 
                                   <div id="bag-total" >
                                       <!--Variations Dropdown-->
-                                      <select>
-                                        {% for variant in product.variants %}
-                                          <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
-                                        {% endfor %}
-                                      </select> 
+                                    <select id="product-select" name="id">
+                                      {% for variant in product.variants %}
+                                      <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                                      {% endfor %}
+                                    </select>  
                                     <!--Actions-->
                                     {% if product.available %}
                                     <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
