@@ -29,36 +29,45 @@
                         <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
                           {%- if product.has_only_default_variant -%}
                           class="product-simple"
-                          {%- elsif variants > 1 -%}
+                          {%- elsif product.variants.size > 1 -%}
                           class="product-variants"
                           {%- endif -%} >
-                          <div id="bag">
+                    
+                        <div id="bag">
                             <div class="product-title">
-                              <a>{{ product.title }}</a>
-                              <div class="product-price" id="product-price"></div>
+                                <a>{{ product.title }}</a>
+                                <div class="product-price" id="product-price">
+                                    {{ product.price | money }}
+                                </div>
                             </div>
-                          
-                                      {% if product.compare_at_price > product.price %}
-                                          <span class="sale">On Sale</span>
-                                      {% else %}
-                                      {% endif %}
-                              {% if product.available %}
-                                        {% else %}
-                            <div class="sold-out">Sold Out</div>
-                                        {% endif %}
+                    
+                            {% if product.compare_at_price > product.price %}
+                                <span class="sale">On Sale</span>
+                            {% endif %}
+                    
+                            {% unless product.available %}
+                                <div class="sold-out">Sold Out</div>
+                            {% endunless %}
+                    
                             <div class="variations double">
-                                        <select id="product-select" name="id">
-                                          {% for variant in product.variants %}
-                                          <option value="{{ variant.id }}"></option>
-                                          {% endfor %}
-                                        </select>
-                                        {% if product.available %}
-                                            <button id="add-to-bag" {% unless product.available %}disabled{% endunless %} type="submit" name="add">Add to cart</button>
-                                        {% else %}
-                                        {% endif %}
-                              </div>          
-                          </div>
-                        </form>
+                                {% if product.variants.size > 1 %}
+                                    <select id="product-select" name="id">
+                                        {% for variant in product.variants %}
+                                            <option value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money }}</option>
+                                        {% endfor %}
+                                    </select>
+                                {% else %}
+                                    <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+                                {% endif %}
+                                
+                                {% if product.available %}
+                                    <button id="add-to-bag" type="submit" name="add">Add to cart</button>
+                                {% else %}
+                                    <button disabled>Sold Out</button>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </form>
                   </div> 
       </div>         
     </div>
