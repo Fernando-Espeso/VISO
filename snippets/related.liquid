@@ -1,33 +1,14 @@
 <div id="related">
   <div class="section-title big">RELATED PRODUCTS</div>
-  <div class="related">
-      {%- assign current_product_id = product.id -%}
-      {%- assign collections_to_exclude = 'all' | split: ',' -%}
-      {%- assign current_collection = null -%}
-
-      {%- for collection in product.collections -%}
-          {%- unless collections_to_exclude contains collection.handle -%}
-              {%- assign current_collection = collection -%}
-              {%- break -%}
-          {%- endunless -%}
-      {%- endfor -%}
-
-
-      {%- if current_collection -%}
-          <!-- Filter related products -->
-          {%- assign related_products = current_collection.products | where: "available", true -%}
-          {%- assign related_products = related_products | reject: "id", current_product_id -%}
-
-          <!-- Check if filtered related products exist -->
-          {%- if related_products.size > 0 -%}
-              {%- for product in related_products limit: 4 -%}
-                  {% include 'product-body' with product %}
-              {%- endfor -%}
-          {%- else -%}
-              <p>No related products available.</p>
-          {%- endif -%}
-      {%- else -%}
-          <p>No related products available.</p>
-      {%- endif -%}
-  </div>
+  <div id="related">
+    <div class="related-title" style="font-size:20px">RELATED PRODUCTS</div>
+             <div class="main">
+                  {%- assign current_product = product.id -%}
+                    {%- for product in collections.all.products -%}    
+                      {%- if product.id != current_product and product.available -%}
+                            {% include 'product-body' %}
+                       {%- endif -%}  
+                     {%- endfor -%} 
+             </div>
+</div>
 </div>
