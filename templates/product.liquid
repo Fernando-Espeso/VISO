@@ -76,7 +76,12 @@
 </div>
 
 
-
+{% assign variants = 0 %}        
+{% for option in product.options %}
+{% if product.options.first != 'Title' %}
+{% assign variants = variants | plus: 1 %}
+{% endif %}
+{% endfor %}
 
 
 {% include 'related' %}
