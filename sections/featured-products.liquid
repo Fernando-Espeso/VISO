@@ -1,18 +1,4 @@
-{% schema %}
-{
-  "name": "Featured Products",
-  "settings": [
-    {
-      "type": "number",
-      "id": "product_limit",
-      "label": "Number of products",
-      "default": 4,
-      "min": 1,
-      "max": 10
-    }
-  ]
-}
-{% endschema %}
+
 <div class="featured-products">
   <h2>Featured Products</h2>
   <div class="product-grid">
@@ -46,3 +32,18 @@
     font-weight: bold;
   }
 </style>
+{% schema %}
+{
+  "name": "Featured Products",
+  "settings": [
+    {
+      "type": "number",
+      "id": "product_limit",
+      "label": "Number of products",
+      "default": 4,
+      "min": 1,
+      "max": 10
+    }
+  ]
+}
+{% endschema %}
