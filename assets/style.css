@@ -260,7 +260,7 @@ h1{
   font-size: clamp(var(--big), 1.5vw, 2rem);
   line-height: 120%;
   color: grey;
-  padding: 5px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
 
 }
 .selector-wrapper {
