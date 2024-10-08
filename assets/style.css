@@ -175,7 +175,7 @@ select {
   display: none;
 }
 .hero{
-  height: 100vh;
+  height: auto;
   position: relative;
   width: 100;
   top: 0;
