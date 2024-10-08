@@ -1,103 +1,76 @@
-<div class="main-product" data-section-id="{{ section.id }}" data-product-section>
-  <!--GALLERY-->
-  <div class="buy-block">
-
-    <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-      {%- if product.has_only_default_variant -%}
-      class="product-simple"
-      {%- elsif product.variants.size > 1 -%}
-      class="product-variants"
-      {%- endif -%}>
-  
-      <div id="bag-total">
-        <div class="title">
-          <!-- Product Title -->
-          <div>{{ product.title }}</div>
-          <div class="product-added">PRODUCT ADDED TO <a href="/cart">CART</a></div>
-          <!-- Product Price -->
-          <div id="product-price">
-            {% if product.compare_at_price > product.price %}
-              <span class="sale-price">{{ product.price | money }}</span>
-              <span class="compare-at-price">{{ product.compare_at_price | money }}</span>
-            {% else %}
-              <span class="regular-price">{{ product.price | money }}</span>
-            {% endif %}
+<div class="full-body">
+  <div id="content">
+    <div class="ab">
+      <div class="add_row">
+        <div class="row">
+                <div class="product-title">
+                  {{ product.title}}
+                </div>
+                <div id="product-price"></div>
+                      {% if product.compare_at_price > product.price %}
+                      {% else %}
+                      {% endif %}       
+                    <div class="product-price-wrap"> 
+                      {% if product.available %}
+                      {% if product.price_varies %}
+                      {% else %}
+                        {% if product.compare_at_price > product.price %}
+                        <span class="red">ON SALE</span>
+                        {% else %}
+                    
+                        {% endif %}
+                      {% endif %}
+                      {% else %}
+                      {% endif %}
+                    </div> 
           </div>
-  
-          <!-- Sale/Availability Message -->
-          {% if product.available %}
-          {% else %}
-            <div class="sale">SOLD OUT</div>
-          {% endif %}
-        </div>
-  
-        <div class="variations">
-          <!-- Dynamic Variant Selectors -->
-          {% if product.variants.size > 1 %}
-            {% for option_index in (0..product.options.size) %}
-              <div class="option-selector">
-                <label for="option-{{ option_index }}">{{ product.options[option_index] }}:</label>
-                <select id="option-{{ option_index }}" name="option{{ option_index }}">
-                  {% assign option_values = '' %}
-                  {% for variant in product.variants %}
-                    {% assign option_value = variant.options[option_index] %}
-                    <!-- Ensure no duplicates in dropdown -->
-                    {% unless option_values contains option_value %}
-                      <option value="{{ option_value }}">{{ option_value }}</option>
-                      {% assign option_values = option_values | append: option_value | append: ',' %}
-                    {% endunless %}
-                  {% endfor %}
-                </select>
-              </div>
-            {% endfor %}
-          {% else %}
-            <!-- If only one variant, hide variant selection -->
-            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-          {% endif %}
-          
-     
-        </div>
-        
-        <div class="in">
-          <!-- Show/Hide Information Section -->
-          
-          <!-- Product Information -->
-          <div class="project_info">
-            <span>{{ product.content }}</span>
-          </div> 
-        </div>
-      </div>
-    <div>
+          <div class="add_item">
+                        <!--Product Info-->
+                        <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+                                  {%- if product.has_only_default_variant -%}
+                                  class="product-simple"
+                                  {%- elsif variants > 0 -%}
+                                  class="product-variants"
+                                  {%- endif -%}>
 
-     <!--Actions-->
-     {% if product.available %}
-     <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
-       ADD TO BAG
-      </button> 
-     {% else %}
-     <button  id="add-to-cart" {% unless product.selected_variant.available %}disabled{% endunless %}>
-   SOLD OUT
-      </button> 
-     {% endif %}
-   {% if product.available %}<div id="added" class="hider" >PRODUCT ADDED TO BAG</div>{% endif %}
-   {% unless product.available %}{% endunless %}
+                                  <div id="bag-total" >
+                                      <!--Variations Dropdown-->
+                                    <select id="product-select" name="id">
+                                      {% for variant in product.variants %}
+                                      <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                                      {% endfor %}
+                                    </select>  
+                                    <!--Actions-->
+                                    {% if product.available %}
+                                    <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
+                                      ADD TO BAG
+                                    </button> 
+                                    {% else %}
+                                      <button  id="add-to-cart" {% unless product.selected_variant.available %}disabled{% endunless %}>
+                                    SOLD OUT
+                                    </button> 
+                                    {% endif %}
+                                    <div class="product-added"> ADDED TO <a href="/cart">CART</a></div>
+
+                                    </div>
+
+                        </form>
+                  </div> 
+      </div>         
+    </div>
+    <div class="product-description">
+        {{ product.content}}
+    </div>
+    {%- if product.metafields.custom.materiales != blank -%}
+      <div class="show-description description">
+        {{ product.metafields.custom.materiales | metafield_tag }}
       </div>
-    </form>
-     
- </div>
-  <div class="product_gallery">
-    {% for media in product.media %}
-    {% case media.media_type %}
-    {% when 'video' %}
-    {{ media | video_tag:loop: true, autoplay: true, muted:true}}
-    {% endcase %}
-    {% case media.media_type %}
-    {% when 'image' %}
-    <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
-    {% endcase %}
-    {% endfor %}
+  {%- endif -%}
   </div>
+  <div class="gallery_collection">
 
-  {%- if product.metafields.custom.material != blank -%}<div class="show-description description">{{ product.metafields.custom.material }}</div>{%- endif -%}
-
+      {% for media in product.media %}
+          <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
+      {% endfor %}
+  </div>
 </div>
