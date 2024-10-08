@@ -424,6 +424,7 @@ width: 300px;
   .intro {
     margin-top: 20px;
     line-height: 50px;
+    margin-bottom: 10px;
     height: var(--h);
     color: #fff;
     width: 100%;
