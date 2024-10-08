@@ -394,13 +394,13 @@ select:disabled {
   color:grey;
 }
 .free-shippping p{
-width: 60%;
+width: 70%;
 }
 .free-shippping{
   border: 1px solid;
   z-index: 100;
-  min-width: 700px;
-  max-width: 700px;
+  min-width: 600px;
+  max-width: 600px;
   position: fixed;
   top: 50%;
   left: 50%;
