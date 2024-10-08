@@ -14,7 +14,7 @@
 }
 h4{
   font-weight:100;
-  
+
 }
 .show-description.description{
   font-size: clamp(var(--main), 0.75vw, 1rem);
@@ -427,16 +427,22 @@ width: 300px;
     grid-column: span 3;
   }
   .intro {
-    margin-top: 20px;
+height: fit-content;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    /* margin-top: 20px; */
     line-height: 50px;
-    margin-bottom: 10px;
-    height: var(--h);
+    /* margin-bottom: 10px; */
+    /* height: var(--h); */
     color: #fff;
     width: 100%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     position: absolute;
     text-align: center;
     grid-column: span 12;
+}
 }
 .product-added{
 opacity: 0;
