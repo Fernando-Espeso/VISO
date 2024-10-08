@@ -1,7 +1,7 @@
 <section data-section-id="desplegable" id="desplegable" class="desplegable">
   {% for block in section.blocks %}
     {% case block.type %}
-      
+
       {% when 'summary' %}
         {% unless block.settings.subtitle and block.settings.interior == blank %}
           <div class="news-content {{ block.settings.width_class }}">
@@ -9,7 +9,7 @@
             <div class="title-seccion big">{{ block.settings.interior }}</div>
             {% if block.settings.image != blank %}
               <div class="image-full">
-                <img class="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="Image" data-src="{{ block.settings.image | img_url: 'master' }}">
+                <img class="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}" data-src="{{ block.settings.image | img_url: 'master' }}">
               </div>
             {% endif %}
             <div class="caption">{{ block.settings.title }}</div>
@@ -32,7 +32,7 @@
           </div>
           <div class="caption">{{ block.settings.title }}</div>
         </div>
-      
+
     {% endcase %}
   {% endfor %}
 </section>
@@ -136,4 +136,3 @@
   ]
 }
 {% endschema %}
-
