@@ -26,32 +26,34 @@
           </div>
           <div class="add_item">
                         <!--Product Info-->
-                        <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data">
-                          <div id="bag-total">
-                            <!--Option Names (like Size)-->
-                            {% for option in product.options_with_values %}
-                              <label for="product-select-{{ option.name }}">{{ option.name }}</label>
-                              <select id="product-select-{{ option.name }}" name="id">
-                                {% for variant in product.variants %}
-                                  {% if variant.available %}
-                                    <option value="{{ variant.id }}">{{ variant.option1 }}</option>
-                                  {% else %}
-                                    <option value="{{ variant.id }}" disabled>{{ variant.option1 }} (Out of stock)</option>
-                                  {% endif %}
-                                {% endfor %}
-                              </select>
-                            {% endfor %}
-                            
-                            <!--Actions-->
-                            {% if product.available %}
-                              <button id="add-to-cart" onclick="ShowSecond()" type="submit" name="add">
-                                ADD TO BAG
-                              </button> 
-                            {% else %}
-                              <button id="add-to-cart" disabled>SOLD OUT</button> 
-                            {% endif %}
-                            <div class="product-added"> ADDED TO <a href="/cart">CART</a></div>
-                          </div>
+                        <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+                                  {%- if product.has_only_default_variant -%}
+                                  class="product-simple"
+                                  {%- elsif variants > 0 -%}
+                                  class="product-variants"
+                                  {%- endif -%}>
+
+                                  <div id="bag-total" >
+                                      <!--Variations Dropdown-->
+                                    <select id="product-select" name="id">
+                                      {% for variant in product.variants %}
+                                      <option value="{{ variant.id }}">{{ variant.title | upcase }}</option>
+                                      {% endfor %}
+                                    </select>  
+                                    <!--Actions-->
+                                    {% if product.available %}
+                                    <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
+                                      ADD TO BAG
+                                    </button> 
+                                    {% else %}
+                                      <button  id="add-to-cart" {% unless product.selected_variant.available %}disabled{% endunless %}>
+                                    SOLD OUT
+                                    </button> 
+                                    {% endif %}
+                                    <div class="product-added"> ADDED TO <a href="/cart">CART</a></div>
+
+                                    </div>
+
                         </form>
                   </div> 
       </div>         
