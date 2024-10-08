@@ -85,6 +85,11 @@
               "width_class": "full-width"
             }
           },
+          "featured_products_Dp7Wzi": {
+            "type": "featured-products",
+            "settings": {
+            }
+          },
           "summary_axXepz": {
             "type": "summary",
             "settings": {
@@ -119,6 +124,7 @@
         "block_order": [
           "gallery_DnYxJr",
           "gallery_yhh3fr",
+          "featured_products_Dp7Wzi",
           "summary_axXepz",
           "summary_cdKMwT",
           "summary_3YVYgd"
@@ -415,6 +421,11 @@
         "block_order": [
           "summary_aKAKGw"
         ],
+        "settings": {
+        }
+      },
+      "featured": {
+        "type": "featured",
         "settings": {
         }
       }
