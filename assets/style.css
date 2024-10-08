@@ -12,6 +12,9 @@
 ::selection{
   color:grey;
 }
+h4{
+  font-weight: normal;
+}
 .show-description.description{
   font-size: clamp(var(--main), 0.75vw, 1rem);
   line-height: 120%;
