@@ -171,7 +171,6 @@ select {
   display: none;
 }
 .hero{
-  overflow: hidden;
   max-height: 100vh;
   position: relative;
   width: 100;
