@@ -33,6 +33,26 @@
           <div class="caption">{{ block.settings.title }}</div>
         </div>
 
+      {% when 'featured-products' %}
+        <div class="featured-products">
+          <h2 class="section-title">Featured Products</h2>
+          <div class="grid">
+            {% for product in collections['frontpage'].products limit: 6 %}
+              <div class="grid__item">
+                <a href="{{ product.url }}" class="featured-product">
+                  <div class="featured-product__image">
+                    <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+                  </div>
+                  <div class="featured-product__info">
+                    <h3 class="featured-product__title">{{ product.title }}</h3>
+                    <p class="featured-product__price">{{ product.price | money }}</p>
+                  </div>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
     {% endcase %}
   {% endfor %}
 </section>
@@ -127,6 +147,11 @@
           ]
         }
       ]
+    },
+    {
+      "type": "featured-products",
+      "name": "Featured Products",
+      "settings": []
     }
   ],
   "presets": [
