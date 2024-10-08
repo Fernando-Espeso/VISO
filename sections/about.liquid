@@ -39,9 +39,8 @@
               {% for product in collections['featured'].products limit: 6 %}
                 <div class="product">
                       <a href="{{ product.url }}" class="tuhumbnail">
-                          <div class="featured-product__image">
-                              <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
-                          </div>
+                        <img id="none" class="lazy" src="{{ product.featured_image [0] | product_img_url: 'thumb' }}" data-src="{{ product.featured_image [0] | product_img_url: 'master' }}" alt="{{ product.title }}" />
+                        <img id="block" class="lazy" src="{{product.featured_image[1] | product_img_url: 'thumb' }}" data-src="{{ product.featured_image[1] | product_img_url: 'master' }}" alt="{{ product.title }}" />                        
                         </a>   
                           <div class="featured-product__info">
                               <h1 class="product-title">{{ product.title }}</h1>
