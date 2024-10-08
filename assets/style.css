@@ -399,8 +399,8 @@ width: 60%;
 .free-shippping{
   border: 1px solid;
   z-index: 100;
-  min-width: 600px;
-  max-width: 600px;
+  min-width: 700px;
+  max-width: 700px;
   position: fixed;
   top: 50%;
   left: 50%;
