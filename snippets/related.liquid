@@ -1,1 +1,14 @@
-
+<div id="related">
+  <div class="section-title big">RELATED PRODUCTS</div>
+  <div id="related">
+    <div class="related-title" style="font-size:20px">RELATED PRODUCTS</div>
+             <div class="main">
+                  {%- assign current_product = product.id -%}
+                    {%- for product in collections.all.products -%}    
+                      {%- if product.id != current_product and product.available -%}
+                            {% include 'product-body' %}
+                       {%- endif -%}  
+                     {%- endfor -%} 
+             </div>
+</div>
+</div>
