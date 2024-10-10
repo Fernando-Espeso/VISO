@@ -1292,5 +1292,7 @@ iv#shopify-section-hero img {
   height: auto;
   object-fit: auto;
 }
-
+.free-shippping p {
+  width: 230px;
+}
 }
