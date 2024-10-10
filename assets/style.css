@@ -1284,7 +1284,7 @@ justify-content: auto;
   left: 10px;
   width: calc(100vw - 20px);
 }
-iv#shopify-section-hero img {
+div#shopify-section-hero img {
   left: 0;
   top: 0;
   position: relative;
