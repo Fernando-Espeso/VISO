@@ -282,6 +282,12 @@ h1{
   margin-bottom: 10px;
 
 }
+.hero-section.movil{
+  display: none;
+}
+.hero-section.deskt{
+  display: block;
+}
 div#content {
 
   background-color: white;
@@ -1276,6 +1282,12 @@ justify-content: auto;
 .free-shippping .closer{
   top:10px;
   right:10px;
+}
+.hero-section.movil{
+  display: block;
+}
+.hero-section.deskt{
+  display: none;
 }
 .cookies{
   padding: 10px;
