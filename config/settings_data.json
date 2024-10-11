@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "favicon": "shopify://shop_images/Matto_logo_black_775352c8-4f8a-4d94-82f9-10163a309835.png",
@@ -426,6 +426,22 @@
       },
       "featured": {
         "type": "featured",
+        "settings": {
+        }
+      },
+      "hero-movil": {
+        "type": "hero-movil",
+        "blocks": {
+          "media_c66YAc": {
+            "type": "media",
+            "settings": {
+              "image": "shopify://shop_images/viso-t-shirt-v31-2-1024x1024.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "media_c66YAc"
+        ],
         "settings": {
         }
       }
