@@ -284,9 +284,7 @@ h1{
 }
 div#content {
 
-  background-color: #fffc;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  background-color: white;
   height: fit-content;
   order: 2;
 
@@ -1061,7 +1059,7 @@ div#content {
     column-count: 1;
   }
   .gallery_collection {
-    grid-gap: 2px;
+    grid-gap: 20px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column: span 1;
