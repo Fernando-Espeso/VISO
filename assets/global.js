@@ -124,17 +124,15 @@ function initDesktopHover() {
 }
 
 function initMobileClick() {
-  $('.menu-open').on('click', function() {
-    $("#nav").toggleClass("active");
+  $('.open-menu').on('click', function() {
     
-    // Cambiar el texto de MENU a CLOSE y viceversa
     if ($(this).text() === "MENU") {
       $(this).text("CLOSE");
     } else {
       $(this).text("MENU");
     }
-    
-    clearTimeout(hideTimeout);  // Limpiar cualquier ocultamiento programado
+    $("#nav").toggleClass("active");
+    clearTimeout(hideTimeout);  // Clear any scheduled hiding
     if (!ishide) {
       ishide = true;
       setTimeout(function() {
@@ -158,7 +156,6 @@ function initMobileClick() {
     }
   });
 }
-
 
 function checkDevice() {
   if (window.matchMedia("(min-width: 768px)").matches) {
