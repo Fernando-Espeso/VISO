@@ -19,8 +19,10 @@
       {% endcase %}
     {% endfor %}
     <img id="none" class="lazy" src="{{ product.images[0] | product_img_url: 'thumb' }}" data-src="{{ product.images[0] | product_img_url: 'master' }}" alt="{{ product.title }}" />
-    <img id="block" class="lazy" src="{{ product.images[1] | product_img_url: 'thumb' }}" data-src="{{ product.images[1] | product_img_url: 'master' }}" alt="{{ product.title }}" />
-
+    <img id="block" class="lazy" 
+      src="{{ product.metafields.custom.cover | img_url: 'thumb' }}" 
+      data-src="{{ product.metafields.custom.cover | img_url: 'master' }}" 
+      alt="{{ product.title }}" />
   </a>
   <div class="product-price-wrap">
     {% if product.available %}
