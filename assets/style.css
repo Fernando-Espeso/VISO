@@ -368,6 +368,7 @@ select:disabled {
     padding: 10px 0px;
   }
   .menu-open{
+    font-size: var(--big);
     display: none;
     position: fixed;
     left: 10px;
