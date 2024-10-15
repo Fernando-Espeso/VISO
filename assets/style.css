@@ -368,7 +368,7 @@ select:disabled {
     padding: 10px 0px;
   }
   .menu-open{
-    display: block;
+    display: none;
     position: fixed;
     left: 10px;
     top: 10px;
@@ -953,7 +953,7 @@ form#cart-wrapper{
   max-width: 500px;
 }
 .menu-open{
-  display: none;
+  display: block;
 }
 form#cart-wrapper .item {
   grid-column: 5 / span 1;
@@ -1248,7 +1248,7 @@ svg{
 .search {
 }
 .menu-open{
-  display: none;
+  display: block;
 }
 #nav {
   display: block;
