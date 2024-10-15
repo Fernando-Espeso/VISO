@@ -953,9 +953,6 @@ form#cart-wrapper{
   margin: 0 auto;
   max-width: 500px;
 }
-.menu-open{
-  display: block;
-}
 form#cart-wrapper .item {
   grid-column: 5 / span 1;
   margin: 0 auto;
