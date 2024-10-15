@@ -831,6 +831,9 @@ section#desplegable {
 .name {
   grid-column: span 3;
 }
+.cart-part.fix {
+  display: none;
+}
 #products {
   flex-grow: 1;
   display: grid;
@@ -1266,7 +1269,7 @@ svg{
 }
 .cart-part {
   position: fixed;
-  top: 10px;
+  top: 14px;
   right: 10px;
   opacity: 1!imporant;
   align-items: center;
