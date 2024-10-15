@@ -1273,8 +1273,15 @@ svg{
   justify-content: center;
   text-align: center;
   display: flex;
-justify-content: auto;
+  justify-content: auto;
+  display: none;
 }
+
+.cart-part.fixie {
+  display: block!important;
+}
+
+
 
 #nav.hid {
   margin-top: 10px;
