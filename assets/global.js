@@ -138,23 +138,17 @@ function initMobileClick() {
     if (!ishide) {
       ishide = true;
       setTimeout(function() {
-        $('.categories').addClass("hid");
-        $('#nav').addClass("hid");
-      }, 100);
+        $('.categories').show();
+      }, 0);
       setTimeout(function() {
-        $('.categories').addClass("show");
-        $('#nav').addClass("show");
-      }, 500);
+      }, 0);
     } else {
       ishide = false;
       setTimeout(function() {
-        $('.categories').removeClass("show");
-        $('#nav').removeClass("show");
-      }, 100);
+        $('.categories').hide();
+      }, 0);
       setTimeout(function() {
-        $('.categories').removeClass("hid");
-        $('#nav').removeClass("hid");
-      }, 500);
+      }, 0);
     }
   });
 }
