@@ -979,6 +979,8 @@ form#cart-wrapper .item {
     grid-column: span 6;
   }
   .categories {
+    display: none;
+    opacity: 1;
     column-count: 2;
 }
   .categories.hid {
