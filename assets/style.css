@@ -981,6 +981,8 @@ form#cart-wrapper .item {
   .categories {
     display: none;
     opacity: 1;
+    font-size: auto;
+    line-height: auto;
     column-count: 2;
 }
   .categories.hid {
