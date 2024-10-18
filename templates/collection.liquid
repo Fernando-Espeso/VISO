@@ -1,9 +1,4 @@
 <div class="section-title big">
-  {% if collection.all_products_count >= 10 %}
-  <div class="section">
-    {{ collection.all_products_count }}
-  </div>
-{% endif %}
   {{ collection.title }}
 </div>
 <p class="info-collection">{{ collection.description | strip_html }}</p>
