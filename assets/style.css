@@ -596,7 +596,7 @@ div#bag-total{
   .shop.pr{
     pointer-events: none;
   }
-  .search-input input{
+  input.search-input {
     line-height:0px;
     font-size: 0px; 
     transition-delay: 0.5s;
