@@ -1291,6 +1291,7 @@ body.block{
   font-size: var(--big);
   line-height: 120%;
   column-count: 1;
+  pointer-events: auto;
 }
 .image-right{
   display: none;
