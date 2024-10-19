@@ -1291,6 +1291,12 @@ body.block{
 .image-right{
   display: none;
 }
+.footer.fix{
+  position: fixed;
+  bottom: 10px;
+  z-index: 100;
+
+}
 .categories{
   margin-top: 10px;
 }
