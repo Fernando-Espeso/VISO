@@ -126,29 +126,13 @@ function initDesktopHover() {
 function initMobileClick() {
   $('.menu-open').on('click', function() {
     $("#nav").toggleClass("active");
+    $('.categories').toggle();
     
     // Cambiar el texto de MENU a CLOSE y viceversa
     if ($(this).text() === "MENU") {
       $(this).text("CLOSE");
     } else {
       $(this).text("MENU");
-    }
-    
-    clearTimeout(hideTimeout);  // Limpiar cualquier ocultamiento programado
-    if (!ishide) {
-      ishide = true;
-      setTimeout(function() {
-        $('.categories').show();
-      }, 0);
-      setTimeout(function() {
-      }, 0);
-    } else {
-      ishide = false;
-      setTimeout(function() {
-        $('.categories').hide();
-      }, 0);
-      setTimeout(function() {
-      }, 0);
     }
   });
 }
