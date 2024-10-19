@@ -555,6 +555,8 @@ div#bag-total{
     line-height:0px;
     opacity: 0;
     font-size: 0px; 
+
+    
     transition: 0.5s ease;
   }
   .categories.hid{
