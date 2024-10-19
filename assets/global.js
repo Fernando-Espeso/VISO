@@ -85,14 +85,11 @@ $(document).ready(function() {
 
 
 
-  let ishide = false;
-let hideTimeout;
+
 
 function initDesktopHover() {
   $('.shop, .categories').on('mouseenter', function() {
     $(".categries").addClass("num");
-
-
   });
 
   $('.shop, .categories').on('mouseleave', function() {
