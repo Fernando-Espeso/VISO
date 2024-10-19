@@ -1371,6 +1371,19 @@ div#shopify-section-hero img {
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem)!important; 
 }
+footer.fix {
+  padding: 10px;
+  left: 0px;
+  width: 100%;
+  position: fixed;
+  bottom: 10px;
+  z-index: 1000;
+}
+.cred {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
 .free-shippping p {
   width: 230px;
 }
