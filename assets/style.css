@@ -556,7 +556,7 @@ div#bag-total{
     opacity: 0;
     font-size: 0px; 
 
-    
+
     transition: 0.5s ease;
   }
   .categories.hid{
@@ -597,6 +597,8 @@ div#bag-total{
     pointer-events: none;
   }
   .search-input{
+    line-height:0px;
+    font-size: 0px; 
     transition-delay: 0.5s;
     font-weight: 300;
     height: fit-content;
