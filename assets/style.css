@@ -1236,8 +1236,9 @@ form#cart-wrapper .item {
   display: block;
 }
 svg{
-  width: 60px;
+  width: 66px;
   height: auto;
+  
 }
 .intro {
   mix-blend-mode: difference;
