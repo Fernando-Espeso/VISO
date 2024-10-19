@@ -597,8 +597,8 @@ div#bag-total{
     pointer-events: none;
   }
   input.search-input {
-    line-height:0px;
-    font-size: 0px; 
+    line-height:0px!important;
+    font-size: 0px!important;; 
     transition-delay: 0.5s;
     font-weight: 300;
     height: fit-content;
