@@ -4,7 +4,7 @@
   --main: 16px;
   --med: 22px;
   --big: 22px;
-  --lh:120%;
+  --lh:110%;
   --gap: 10px;
   --grey: #f1f2f2;
   --body: 'helvetica';
@@ -1238,7 +1238,7 @@ form#cart-wrapper .item {
 svg{
   width: 66px;
   height: auto;
-  
+
 }
 .intro {
   mix-blend-mode: difference;
