@@ -90,36 +90,15 @@ let hideTimeout;
 
 function initDesktopHover() {
   $('.shop, .categories').on('mouseenter', function() {
-    clearTimeout(hideTimeout);  // Clear any scheduled hiding
-    if (!ishide) {
-      ishide = true;
-      setTimeout(function() {
-        $('.categories').addClass("hid");
-      }, 100);
-      setTimeout(function() {
-        $('.shop').removeClass("pr");
-        $('.categories').addClass("show");
-      }, 500);
-    }
+    $(".categries").addClass("num");
+
+
   });
 
   $('.shop, .categories').on('mouseleave', function() {
-    $('.shop').addClass("pr");
-    hideTimeout = setTimeout(function() {
-      if (ishide) {
-        ishide = false;
-        setTimeout(function() {
-          $('.categories').removeClass("show");
+    $(".categries").removeClass("num");
 
-        }, 100);
-        setTimeout(function() {
-          $('.categories').removeClass("hid");
-        }, 500);
-        setTimeout(function() {
-          $('.shop').removeClass("pr");
-        }, 1400);
-      }
-    }, 500);  // Adjust the delay as needed
+
   });
 }
 
