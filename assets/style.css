@@ -549,26 +549,22 @@ div#bag-total{
   display: none;
 }
   .categories{
-    padding-top: 10px;
     pointer-events: none;
     column-count: 4;
-    display: none;;
     flex-basis: 100%;
-    line-height:var(--lh);
-    font-size: clamp(var(--big), 1.5vw, 2rem); 
     transition: 0.5s ease;
-  }
-  .categories.num{
-    display: block;
   }
   .categories.hid{
     padding-top: 10px;
     column-count: 4;
     flex-basis: 100%;
+    line-height:var(--lh);
+    font-size: clamp(var(--big), 1.5vw, 2rem); 
 	  transition: 0.5s ease;
   }
 
   .categories.show .search-input{
+    transition-delay: 0.5s;
     font-weight: 300;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem)!important; 

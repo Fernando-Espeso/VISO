@@ -85,16 +85,41 @@ $(document).ready(function() {
 
 
 
-
+  let ishide = false;
+let hideTimeout;
 
 function initDesktopHover() {
-
   $('.shop, .categories').on('mouseenter', function() {
-    $(".categories").addClass("num");
+    clearTimeout(hideTimeout);  // Clear any scheduled hiding
+    if (!ishide) {
+      ishide = true;
+      setTimeout(function() {
+        $('.categories').addClass("hid");
+      }, 100);
+      setTimeout(function() {
+        $('.shop').removeClass("pr");
+        $('.categories').addClass("show");
+      }, 500);
+    }
   });
 
   $('.shop, .categories').on('mouseleave', function() {
-    $(".categories").removeClass("num");
+    $('.shop').addClass("pr");
+    hideTimeout = setTimeout(function() {
+      if (ishide) {
+        ishide = false;
+        setTimeout(function() {
+          $('.categories').removeClass("show");
+
+        }, 100);
+        setTimeout(function() {
+          $('.categories').removeClass("hid");
+        }, 500);
+        setTimeout(function() {
+          $('.shop').removeClass("pr");
+        }, 1400);
+      }
+    }, 500);  // Adjust the delay as needed
   });
 }
 
