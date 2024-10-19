@@ -90,7 +90,17 @@ let hideTimeout;
 
 function initDesktopHover() {
   $('.shop, .categories').on('mouseenter', function() {
-    $("#nav").toggleClass("active");
+    clearTimeout(hideTimeout);  // Clear any scheduled hiding
+    if (!ishide) {
+      ishide = true;
+      setTimeout(function() {
+        $('.categories').addClass("hid");
+      }, 100);
+      setTimeout(function() {
+        $('.shop').removeClass("pr");
+        $('.categories').addClass("show");
+      }, 500);
+    }
   });
 
   $('.shop, .categories').on('mouseleave', function() {
