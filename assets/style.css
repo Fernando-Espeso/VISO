@@ -1282,7 +1282,7 @@ svg{
   opacity: 1;
   font-size: var(--big);
   line-height: 120%;
-  column-count: 2;
+  column-count: 1;
 }
 .image-right{
   display: none;
