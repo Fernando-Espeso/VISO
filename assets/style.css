@@ -552,14 +552,15 @@ div#bag-total{
     pointer-events: none;
     column-count: 4;
     flex-basis: 100%;
+    line-height:var(--lh);
+    font-size: clamp(var(--big), 1.5vw, 2rem); 
     transition: 0.5s ease;
   }
   .categories.hid{
     padding-top: 10px;
     column-count: 4;
     flex-basis: 100%;
-    line-height:var(--lh);
-    font-size: clamp(var(--big), 1.5vw, 2rem); 
+
 	  transition: 0.5s ease;
   }
 
