@@ -1013,6 +1013,14 @@ form#cart-wrapper .item {
     background-color: white;
     padding: 10px 10px;
   }
+
+  .categories {
+    display: block;
+    opacity: 1;
+    font-size: auto;
+    line-height: auto;
+    column-count: 2;
+}
   
   div#bag-total{
     display: grid;
