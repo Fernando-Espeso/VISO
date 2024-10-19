@@ -1275,6 +1275,10 @@ svg{
   font-size: var(--big);
   line-height: 120%;
   opacity: 1;
+  height: var(--h);
+}
+body.block{
+  overflow: hidden;
 }
 .categories {
   display: block;

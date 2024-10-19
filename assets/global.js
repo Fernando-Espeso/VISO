@@ -126,6 +126,7 @@ function initDesktopHover() {
 function initMobileClick() {
   $('.menu-open').on('click', function() {
     $("#nav").toggleClass("active");
+    $("#body").toggleClass("block");
     
     // Cambiar el texto de MENU a CLOSE y viceversa
     if ($(this).text() === "MENU") {
