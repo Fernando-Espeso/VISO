@@ -597,8 +597,6 @@ div#bag-total{
   .search-input{
     transition-delay: 0.5s;
     font-weight: 300;
-    line-height:0px!important;
-    font-size:0px!important;
     height: fit-content;
     order: 2;
     color: #000;
