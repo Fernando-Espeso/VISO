@@ -978,6 +978,9 @@ form#cart-wrapper .item {
   .product {
     grid-column: span 6;
   }
+  .nav{
+    opacity: 1;
+  }
   .categories {
     display: none;
     opacity: 1;
@@ -1256,14 +1259,20 @@ svg{
   display: block;
 }
 #nav {
-  display: block;
-  font-size: 0px;
-  margin-top: 0;
-  line-height: 0px;
+  display: none;
+  font-size: var(--big);
+  line-height: 120%;
+  opacity: 1;
   grid-gap: 0px;
-  opacity: 0;
-  transition: 0.5s ease;
+  margin-top: 10px;
+  transition: 0 ease;
   text-align: left;
+}
+#nav.active{
+  display: block;
+  font-size: var(--big);
+  line-height: 120%;
+  opacity: 1;
 }
 .image-right{
   display: none;
