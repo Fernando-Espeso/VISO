@@ -1291,7 +1291,7 @@ body.block{
 .image-right{
   display: none;
 }
-.footer.fix{
+footer.fix{
   position: fixed;
   bottom: 10px;
   z-index: 100;
