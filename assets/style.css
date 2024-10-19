@@ -1376,7 +1376,7 @@ footer.fix {
   left: 0px;
   width: 100%;
   position: fixed;
-  bottom: 10px;
+  bottom: 0px;
   z-index: 1000;
 }
 .cred {
