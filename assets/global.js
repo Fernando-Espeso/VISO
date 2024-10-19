@@ -88,14 +88,13 @@ $(document).ready(function() {
 
 
 function initDesktopHover() {
+
   $('.shop, .categories').on('mouseenter', function() {
-    $(".categries").addClass("num");
+    $(".categories").addClass("num");
   });
 
   $('.shop, .categories').on('mouseleave', function() {
-    $(".categries").removeClass("num");
-
-
+    $(".categories").removeClass("num");
   });
 }
 
