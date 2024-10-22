@@ -376,7 +376,7 @@ select:disabled {
   }
  
 .cookies{
-  z-index: 1000;
+  z-index: 10000;
   background-color: white;
   position: fixed;
   bottom: 15px;
