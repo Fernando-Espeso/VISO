@@ -374,7 +374,7 @@ select:disabled {
     left: 10px;
     top: 14px;
   }
-  
+
  
 .cookies{
   z-index: 10000;
@@ -796,7 +796,7 @@ a {
   margin-top: 20px;
 }
 .gallery_collection {
-  grid-gap: 2px;
+  grid-gap: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-column: span 1;
@@ -1352,6 +1352,7 @@ footer.fix{
 .hero-section.movil{
   display: block;
 }
+
 .hero-section.deskt{
   display: none;
 }
