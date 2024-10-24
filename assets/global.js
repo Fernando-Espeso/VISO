@@ -95,11 +95,11 @@ function initDesktopHover() {
       ishide = true;
       setTimeout(function() {
         $('.categories').addClass("hid");
-      }, 100);
+      }, 0);
       setTimeout(function() {
         $('.shop').removeClass("pr");
         $('.categories').addClass("show");
-      }, 200);
+      }, 0);
     }
   });
 
@@ -111,15 +111,15 @@ function initDesktopHover() {
         setTimeout(function() {
           $('.categories').removeClass("show");
 
-        }, 100);
+        }, 0);
         setTimeout(function() {
           $('.categories').removeClass("hid");
-        }, 200);
+        }, 0);
         setTimeout(function() {
           $('.shop').removeClass("pr");
         }, 1400);
       }
-    }, 200);  // Adjust the delay as needed
+    }, 0);  // Adjust the delay as needed
   });
 }
 
