@@ -117,7 +117,7 @@ function initDesktopHover() {
         }, 200);
         setTimeout(function() {
           $('.shop').removeClass("pr");
-        }, 500);
+        }, 20);
       }
     }, 200);  // Adjust the delay as needed
   });
