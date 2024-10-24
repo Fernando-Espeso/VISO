@@ -632,8 +632,8 @@ span.quantity-button.minus, span.quantity-button.plus {
   padding: 5px;
 } */
   .categories.show{
+    display: block;
     opacity: 1;
-    transition: 0.5s ease;
     pointer-events: auto;
   }
   .cat.active {
