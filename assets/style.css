@@ -16,6 +16,9 @@ h4{
   font-weight:100;
 
 }
+label#email_address_label_0 {
+  font-weight: auto!important;
+}
 .free-shippping p {
   line-height: 18px !important;
   width: 100%!important;
