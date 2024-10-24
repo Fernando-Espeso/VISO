@@ -639,6 +639,7 @@ span.quantity-button.minus, span.quantity-button.plus {
 }
 
 h2.ctct-form-header {
+  font-weight:200!important;
     font-size: clamp(var(--main), .75vw, 1rem)!important;
     line-height: var(--lh)!important;;
   padding: 0px !important;
