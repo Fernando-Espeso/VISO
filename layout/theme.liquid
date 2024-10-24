@@ -46,7 +46,7 @@ fernandoepeso.info
   {{ content_for_header }}
 </head>
 <div class="ctct-inline-form" data-form-id="49e2990f-04a0-4ed2-aadd-9889d0d8a773"></div>
-
+<script src="https://static.ctctcdn.com/js/forms-sdk.js"></script>
 <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}
              {%- if template.suffix.size > 0 -%}
              template-{{ template.suffix }}(&nbsp;
@@ -54,6 +54,7 @@ fernandoepeso.info
              {%- if template == 'cart' and cart.item_count == 0 -%}
              template-cart-empty
              {%- endif -%}">
+              
     <header id="header">
       <div class="menu-open">MENU</div>
       <div class="cart-part fix {% if template == 'cart' %} active {% endif %}">
