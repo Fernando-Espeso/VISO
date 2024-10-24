@@ -99,7 +99,7 @@ function initDesktopHover() {
       setTimeout(function() {
         $('.shop').removeClass("pr");
         $('.categories').addClass("show");
-      }, 500);
+      }, 200);
     }
   });
 
@@ -114,7 +114,7 @@ function initDesktopHover() {
         }, 100);
         setTimeout(function() {
           $('.categories').removeClass("hid");
-        }, 500);
+        }, 200);
         setTimeout(function() {
           $('.shop').removeClass("pr");
         }, 1400);
