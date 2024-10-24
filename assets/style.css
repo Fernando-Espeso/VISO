@@ -512,6 +512,9 @@ div#bag-total{
     color: #fff;
     
   }
+  p.ctct-form-text {
+    font: inherit !important;
+}
   div.ctct-form-embed div.ctct-form-defaults h2.ctct-form-header {
     font: inherit !important;
 }
