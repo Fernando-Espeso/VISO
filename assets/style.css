@@ -799,7 +799,7 @@ a {
 
   grid-gap: 20px;
   display: grid;
-  
+
   grid-template-columns: repeat(1, 1fr);
   grid-column: span 1;
 }
@@ -1331,7 +1331,7 @@ footer.fix{
 
 #nav.hid {
   margin-top: 10px;
-  transition: 0.5s ease;
+  transition: 0.2s ease;
   display: block;
   height: auto;
   font-size: clamp(var(--big), 1.5vw, 2rem)!important;
@@ -1340,7 +1340,7 @@ footer.fix{
 }
 
 #nav.show {
-  transition: 0.5s ease;
+  transition: 0.2s ease;
   opacity: 1;
 }
 .closer{
