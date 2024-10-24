@@ -638,7 +638,7 @@ span.quantity-button.minus, span.quantity-button.plus {
   font-weight: 100!important;
 }
 div#ctct_recaptcha_0 {
-  display: none;
+  display: none!important;
 }
 h2.ctct-form-header {
   font-weight:200!important;
