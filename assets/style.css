@@ -558,7 +558,7 @@ div#bag-total{
     font-size: 0px; 
 
 
-    transition: 0.5s ease;
+    transition: 0.2s ease;
   }
   .categories.hid{
     padding-top: 10px;
@@ -566,11 +566,11 @@ div#bag-total{
     flex-basis: 100%;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem); 
-	  transition: 0.5s ease;
+	  transition: 0.2s ease;
   }
 
   .categories.show .search-input{
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
     font-weight: 300;
     line-height:var(--lh);
     font-size: clamp(var(--big), 1.5vw, 2rem)!important; 
@@ -1331,7 +1331,7 @@ footer.fix{
 
 #nav.hid {
   margin-top: 10px;
-  transition: 0s ease;
+  transition: 0.2s ease;
   display: block;
   height: auto;
   font-size: clamp(var(--big), 1.5vw, 2rem)!important;
@@ -1340,7 +1340,7 @@ footer.fix{
 }
 
 #nav.show {
-  transition: 0s ease;
+  transition: 0.2s ease;
   opacity: 1;
 }
 .closer{
