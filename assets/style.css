@@ -640,6 +640,7 @@ span.quantity-button.minus, span.quantity-button.plus {
 p.ctct-form-footer {
   display: none;
 }
+
 div#ctct_recaptcha_0 {
   display: none!important;
 }
