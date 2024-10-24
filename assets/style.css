@@ -631,6 +631,19 @@ span.quantity-button.minus, span.quantity-button.plus {
   cursor: pointer;
   padding: 5px;
 } */
+
+ctct-form-wrapper .ctct-submit {
+  background-color: transparent;
+  width: auto;
+  padding: 0 0 10px;
+  border: none;
+  display: inline-block;
+  font-size: var(--body);
+  outline: 0;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  border-bottom: 1px solid;
+}
   .categories.show{
     display: block;
     opacity: 1;
