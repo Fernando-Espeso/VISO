@@ -637,7 +637,9 @@ span.quantity-button.minus, span.quantity-button.plus {
   padding: 0px !important;
   font-weight: 100!important;
 }
-
+div#ctct_recaptcha_0 {
+  display: none;
+}
 h2.ctct-form-header {
   font-weight:200!important;
     font-size: clamp(var(--main), .75vw, 1rem)!important;
