@@ -166,7 +166,212 @@
       "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Frais de port</a> calculés lors du paiement.",
       "update": "Mise à jour",
       "checkout": "Vérifier",
-      "empty": "Votre panier est actuellement vide."
+      "empty": "Votre panier est actuellement vide.",
+      "cookies_required": "Activer les cookies pour utiliser le panier",
+      "edit": "Modifier",
+      "cancel": "Annuler",
+      "continue_shopping": "Continuer les achats"
+    },
+    "label": {
+      "product": "Produit",
+      "price": "Prix",
+      "quantity": "Quantité"
+    }
+  },
+  "customer": {
+    "recover_password": {
+      "subtext": "Nous vous enverrons un e-mail pour réinitialiser votre mot de passe.",
+      "success": "Nous vous avons envoyé un e-mail avec un lien pour mettre à jour votre mot de passe.",
+      "title": "Réinitialiser votre mot de passe",
+      "email": "E-mail",
+      "submit": "Soumettre",
+      "cancel": "Annuler"
+    },
+    "reset_password": {
+      "title": "Réinitialiser le mot de passe du compte",
+      "subtext": "Entrez un nouveau mot de passe pour {{ email }}",
+      "password": "Mot de passe",
+      "password_confirm": "Confirmez le mot de passe",
+      "submit": "Réinitialiser le mot de passe"
+    },
+    "register": {
+      "title": "Créer un compte",
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "submit": "Créer"
+    },
+    "account": {
+      "title": "Mon compte",
+      "details": "Détails du compte",
+      "view_addresses": "Voir les adresses",
+      "return": "Retour aux détails du compte"
+    },
+    "activate_account": {
+      "title": "Activer le compte",
+      "subtext": "Créez votre mot de passe pour activer votre compte.",
+      "password": "Mot de passe",
+      "password_confirm": "Confirmez le mot de passe",
+      "submit": "Activer le compte",
+      "cancel": "Refuser l'invitation"
+    },
+    "addresses": {
+      "title": "Vos adresses",
+      "default": "Défaut",
+      "add_new": "Ajouter une nouvelle adresse",
+      "edit_address": "Modifier l'adresse",
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "company": "Entreprise",
+      "address1": "Adresse1",
+      "address2": "Adresse2",
+      "city": "Ville",
+      "country": "Pays",
+      "zip": "Code postal",
+      "phone": "Téléphone",
+      "set_default": "Définir comme adresse par défaut",
+      "add": "Ajouter une adresse",
+      "update": "Mettre à jour l'adresse",
+      "cancel": "Annuler",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "delete_confirm": "Etes-vous sûr de vouloir supprimer cette adresse ?"
+    },
+    "login": {
+      "title": "Se connecter",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "forgot_password": "Mot de passe oublié ?",
+      "sign_in": "Se connecter",
+      "guest_title": "Continuer en tant qu'invité",
+      "guest_continue": "Continuer"
+    },
+    "orders": {
+      "title": "Historique des commandes",
+      "order_number": "Commande",
+      "payment_status": "Statut de paiement",
+      "fulfillment_status": "État d'exécution",
+      "none": "Vous n'avez pas encore passé de commande."
+    },
+    "order": {
+      "title": "Commandez {{ name }}",
+      "date": "Publié le {{ date }}",
+      "cancelled": "Commande annulée le {{ date }}",
+      "cancelled_reason": "Raison : {{ reason }}",
+      "billing_address": "adresse de facturation",
+      "payment_status": "Statut de paiement",
+      "shipping_address": "adresse de livraison",
+      "fulfillment_status": "État d'exécution",
+      "discount": "Rabais",
+      "shipping": "Expédition",
+      "tax": "Impôt",
+      "product": "Produit",
+      "sku": "UGS",
+      "price": "Prix",
+      "quantity": "Quantité",
+      "fulfilled_at": "Accompli le {{ date }}",
+      "subtotal": "Total",
+      "track_shipment": "Suivi de l'expédition"
+    }
+  },
+  "homepage": {
+    "onboarding": {
+      "product_title": "Le nom de votre produit",
+      "product_description": "Cette zone est utilisée pour décrire les détails de votre produit. Expliquez aux clients l'apparence, la sensation et le style de votre produit. Ajoutez des détails sur la couleur, les matériaux utilisés, la taille et le lieu de fabrication.",
+      "collection_title": "Le nom de votre collection",
+      "blog_title": "Le titre de votre message",
+      "blog_excerpt": "Votre boutique n'a pas encore publié d'articles de blog. Un blog peut être utilisé pour parler des lancements de nouveaux produits, des astuces ou d'autres actualités que vous souhaitez partager avec vos clients. Vous pouvez consulter le blog de commerce électronique de Shopify pour trouver de l'inspiration et des conseils pour votre propre boutique et votre blog.",
+      "blog_author": "Nom de l'auteur",
+      "no_content": "Cette section ne contient actuellement aucun contenu. Ajoutez du contenu à cette section en utilisant la barre latérale."
+    }
+  },
+  "layout": {
+    "navigation": {
+      "search": "Recherche",
+      "expand": "développer",
+      "collapse": "effondrement"
+    },
+    "cart": {
+      "title": "Panier",
+      "items_count": {
+        "one": "article",
+        "other": "articles"
+      }
+    },
+    "customer": {
+      "account": "Compte",
+      "log_out": "Se déconnecter",
+      "log_in": "Se connecter",
+      "create_account": "Créer un compte"
+    }
+  },
+  "products": {
+    "product": {
+      "regular_price": "Prix régulier",
+      "sold_out": "Épuisé",
+      "unavailable": "Indisponible",
+      "on_sale": "Vente",
+      "sale_price": "Prix de vente",
+      "quantity": "Quantité",
+      "add_to_cart": "Ajouter au panier",
+      "back_to_collection": "Retour à {{ title }}",
+      "vendor": "Fournisseur",
+      "quantity_minimum_message": "La quantité doit être de 1 ou plus",
+      "include_taxes": "Taxe incluse.",
+      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Frais de port</a> calculés lors du paiement."
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title_html": "Voici votre carte cadeau {{ value }} pour {{ shop }} !",
+      "subtext": "Votre carte cadeau",
+      "gift_card_code": "Code de la carte cadeau",
+      "disabled": "Désactivé",
+      "expired": "Expiré le {{ expiry }}",
+      "active": "Expire le {{ expiry }}",
+      "redeem_html": "Utilisez ce code lors du paiement pour échanger votre carte-cadeau {{ value }}",
+      "shop_link": "Commencer à magasiner",
+      "print": "Imprimez cette carte cadeau",
+      "remaining_html": "{{ balance }} gauche",
+      "add_to_apple_wallet": "Ajouter à Apple Wallet",
+      "qr_image_alt": "Code QR — scannez pour utiliser la carte-cadeau"
+    }
+  },
+  "collections": {
+    "general": {
+      "view_all": "Tout voir",
+      "view_all_label": "Voir tous les produits de la collection {{ collection_name }}",
+      "no_matches": "Désolé, il n'y a aucun produit dans cette collection",
+      "items_with_count": {
+        "one": "{{ count }} produit",
+        "other": "{{ count }} produits"
+      }
+    },
+    "sorting": {
+      "title": "Trier par",
+      "featured": "En vedette",
+      "best_selling": "Meilleures ventes",
+      "az": "Par ordre alphabétique, AZ",
+      "za": "Par ordre alphabétique, ZA",
+      "price_ascending": "Prix, du plus bas au plus élevé",
+      "price_descending": "Prix, du plus élevé au plus bas",
+      "date_descending": "Date, du nouveau à l'ancien",
+      "date_ascending": "Date, de l'ancien au nouveau"
+    },
+    "filters": {
+      "title_tags": "Filtrer par",
+      "all_tags": "Tous les produits"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Numéro de téléphone",
+      "submit": "Envoyer",
+      "post_success": "Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.",
+      "error_heading": "Veuillez ajuster les éléments suivants :"
     }
   }
 }
