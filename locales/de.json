@@ -292,7 +292,82 @@
     },
     "reset_password": {
       "title": "Kontokennwort zurücksetzen",
-      "subtext": "Geben Sie ein neues Passwort für {{ email }} ein"
+      "subtext": "Geben Sie ein neues Passwort für {{ email }} ein",
+      "password": "Passwort",
+      "password_confirm": "Passwort bestätigen",
+      "submit": "Passwort zurücksetzen"
+    },
+    "register": {
+      "title": "Benutzerkonto erstellen",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "submit": "Erstellen"
+    }
+  },
+  "homepage": {
+    "onboarding": {
+      "product_title": "Der Name Ihres Produkts",
+      "product_description": "In diesem Bereich können Sie die Details Ihres Produkts beschreiben. Informieren Sie Ihre Kunden über das Aussehen, die Haptik und den Stil Ihres Produkts. Fügen Sie Details zu Farbe, verwendeten Materialien, Größe und Herstellungsort hinzu.",
+      "collection_title": "Der Name Ihrer Sammlung",
+      "blog_title": "Der Titel Ihres Beitrags",
+      "blog_excerpt": "Ihr Shop hat noch keine Blogbeiträge veröffentlicht. In einem Blog können Sie über neue Produkteinführungen, Tipps oder andere Neuigkeiten berichten, die Sie mit Ihren Kunden teilen möchten. Sie können sich den E-Commerce-Blog von Shopify ansehen, um Inspiration und Ratschläge für Ihren eigenen Shop und Blog zu erhalten.",
+      "blog_author": "Name des Autors",
+      "no_content": "Dieser Abschnitt enthält derzeit keinen Inhalt. Über die Seitenleiste können Sie diesem Abschnitt Inhalt hinzufügen."
+    }
+  },
+  "layout": {
+    "navigation": {
+      "search": "Suchen",
+      "expand": "expandieren",
+      "collapse": "Zusammenbruch",
+      "menu": "Speisekarte"
+    },
+    "cart": {
+      "title": "Warenkorb",
+      "items_count": {
+        "one": "Artikel",
+        "other": "Artikel"
+      }
+    },
+    "customer": {
+      "account": "Konto",
+      "log_out": "Aus Konto abmelden",
+      "log_in": "Einloggen",
+      "create_account": "Benutzerkonto erstellen"
+    }
+  },
+  "products": {
+    "product": {
+      "regular_price": "Normaler Preis",
+      "sold_out": "Ausverkauft",
+      "unavailable": "Nicht verfügbar",
+      "on_sale": "Verkauf",
+      "sale_price": "Verkaufspreis",
+      "quantity": "Menge",
+      "add_to_cart": "In den Warenkorb legen",
+      "back_to_collection": "Zurück zu {{ title }}",
+      "vendor": "Verkäufer",
+      "quantity_minimum_message": "Die Menge muss 1 oder mehr betragen",
+      "include_taxes": "inkl. MwSt.",
+      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Versand</a> wird an der Kasse berechnet."
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title_html": "Hier ist Ihre {{ value }} Geschenkkarte für {{ shop }} !",
+      "subtext": "Ihre Geschenkkarte",
+      "gift_card_code": "Geschenkkartencode",
+      "disabled": "Deaktiviert",
+      "expired": "Abgelaufen am {{ expiry }}",
+      "active": "Läuft ab am {{ expiry }}",
+      "redeem_html": "Verwenden Sie diesen Code an der Kasse, um Ihre {{ value }} Geschenkkarte einzulösen",
+      "shop_link": "Jetzt einkaufen",
+      "print": "Drucken Sie diese Geschenkkarte aus",
+      "remaining_html": "{{ balance }} übrig",
+      "add_to_apple_wallet": "Zu Apple Wallet hinzufügen",
+      "qr_image_alt": "QR-Code – scannen, um Geschenkkarte einzulösen"
     }
   }
 }
