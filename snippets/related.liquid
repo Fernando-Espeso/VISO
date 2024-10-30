@@ -4,7 +4,10 @@
     <div class="main">
       {%- assign current_product = product.id -%}
       {%- assign counter = 0 -%} 
-      {%- for product in collections.all.products -%}
+      {%- assign total_products = collections.all.products.size -%}
+      {%- assign random_offset = 'now' | date: '%N' | modulo: total_products -%} <!-- Randomize offset -->
+  
+      {%- for product in collections.all.products offset: random_offset -%}
         {%- if product.id != current_product and product.available -%}
           {% include 'product-body' %}
           {%- assign counter = counter | plus: 1 -%}
