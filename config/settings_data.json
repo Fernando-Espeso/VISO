@@ -50,7 +50,7 @@
           "text_QfKWFq": {
             "type": "text",
             "settings": {
-              "text": "40% DISSCOUNT"
+              "text": ""
             }
           }
         },
@@ -68,7 +68,6 @@
             "settings": {
               "subtitle": "",
               "interior": "",
-              "image_1": "shopify://shop_images/Viso_Project_Quilt_Blanket_VTS-01_Lifestyle_Cadaques_2_f3319537-be84-4397-a0f3-3313700b7a0b.jpg",
               "image_2": "shopify://shop_images/Viso_Project_Porcelain_Zodiac_Plate_V124_Lifestyle_Cadaques_2.jpg",
               "title": "<p>TAPPESTRY PILLOW 058</p>",
               "width_class": "mid-width"
@@ -115,7 +114,6 @@
             "settings": {
               "subtitle": "<p>Our Pillows</p>",
               "interior": "Merging functionality and fine art, our series of pillows are hand-finished by meticulous craftsman who observe the heritage of weaving, either in pure cotton or fine wool eclectic patterns and color combinations makes each of them a dynamic addition to your sofa or armchair.",
-              "image": "shopify://shop_images/364A1784-1024x1024.jpg",
               "title": "",
               "width_class": "full-width"
             }
