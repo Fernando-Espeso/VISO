@@ -89,15 +89,6 @@
             "settings": {
             }
           },
-          "summary_PRaDzF": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "<p>CERAMICS</p>",
-              "interior": "VISO ceramics are a tribute to form and function. Our collection includes hand-painted sets to singular pieces that effortlessly slot into everyday settings. Elevate your interiors and spaces with our meticulously crafted pieces.",
-              "title": "",
-              "width_class": "mid-width"
-            }
-          },
           "gallery_BpNrcM": {
             "type": "gallery",
             "settings": {
@@ -118,15 +109,24 @@
               "title": "<p><a href=\"/products/cotton-blanket-0201\" title=\"COTTON BLANKET 0201\">COTTON BLANKET 0201</a> / <a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">MERINO PILLOW 0101</a></p>",
               "width_class": "full-width"
             }
+          },
+          "gallery_EYrKqE": {
+            "type": "gallery",
+            "settings": {
+              "subtitle": "",
+              "interior": "",
+              "title": "",
+              "width_class": "full-width"
+            }
           }
         },
         "block_order": [
           "gallery_DnYxJr",
           "summary_H38TgQ",
           "featured_products_Dp7Wzi",
-          "summary_PRaDzF",
           "gallery_BpNrcM",
-          "summary_GKrDgU"
+          "summary_GKrDgU",
+          "gallery_EYrKqE"
         ],
         "settings": {
         }
