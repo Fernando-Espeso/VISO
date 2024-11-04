@@ -74,6 +74,16 @@
               "width_class": "mid-width"
             }
           },
+          "summary_H38TgQ": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>BLANKETS AND THROWS</p>",
+              "interior": "VISO blankets are a testament to meticulous craft. Skilled artisans bring our blankets to life from the finest fabrications. They are woven from extra fine cashmere, Australian Merino, and Alpaca wool from Peru to ultra-soft mohair and Egyptian cotton through varying techniques and finishes. Each blanket is a unique collectible design rooted in an artisanal weaving tradition.",
+              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Merino_Pillow_Mohair_Blanket_3.jpg",
+              "title": "",
+              "width_class": "full-width"
+            }
+          },
           "gallery_yhh3fr": {
             "type": "gallery",
             "settings": {
@@ -122,6 +132,7 @@
         },
         "block_order": [
           "gallery_DnYxJr",
+          "summary_H38TgQ",
           "gallery_yhh3fr",
           "featured_products_Dp7Wzi",
           "summary_axXepz",
