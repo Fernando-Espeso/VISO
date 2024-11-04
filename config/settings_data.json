@@ -97,13 +97,25 @@
               "title": "",
               "width_class": "full-width"
             }
+          },
+          "gallery_BpNrcM": {
+            "type": "gallery",
+            "settings": {
+              "subtitle": "",
+              "interior": "VISO ceramics are a tribute to form and function. Our collection includes hand-painted sets to singular pieces that effortlessly slot into everyday settings. Elevate your interiors and spaces with our meticulously crafted pieces.",
+              "image_1": "shopify://shop_images/Viso_Lyfestyle_Milan_Ceramic_Mug_Cup_Tray_4.jpg",
+              "image_2": "shopify://shop_images/Viso_Lyfestyle_Milan_Merino_Blanket_4.jpg",
+              "title": "",
+              "width_class": "full-width"
+            }
           }
         },
         "block_order": [
           "gallery_DnYxJr",
           "summary_H38TgQ",
           "featured_products_Dp7Wzi",
-          "summary_PRaDzF"
+          "summary_PRaDzF",
+          "gallery_BpNrcM"
         ],
         "settings": {
         }
