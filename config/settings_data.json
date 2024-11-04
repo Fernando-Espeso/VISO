@@ -120,6 +120,16 @@
               "title": "<p><a href=\"/products/porcelain-kamo-sutra-tray-0202\" title=\"PORCELAIN TRAY 0202\">PORCELAIN TRAY 0202</a> / <a href=\"/products/tuercas-porcelain-cup-set-0401-copy\" title=\"TUERCAS PORCELAIN VASE 0401\">PORCELAIN TUERCAS VASE 0401</a> / <a href=\"/products/test-product\" title=\"TUERCAS PORCELAIN CUP SET 0401\">PORCELAIN TUERCAS CUPS 0401</a></p>",
               "width_class": "full-width"
             }
+          },
+          "summary_mgzUHK": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>TABLE</p>",
+              "interior": "",
+              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Mohair_Blanket_Tablecloth_Napkin_2.jpg",
+              "title": "<p><a href=\"/products/trattoria-tablecloth-0201\" title=\"TRATTORIA TABLECLOTH 0201\">TRATTORIA TABLECLOTH 0201</a></p>",
+              "width_class": "full-width"
+            }
           }
         },
         "block_order": [
@@ -128,7 +138,8 @@
           "featured_products_Dp7Wzi",
           "gallery_BpNrcM",
           "summary_GKrDgU",
-          "gallery_EYrKqE"
+          "gallery_EYrKqE",
+          "summary_mgzUHK"
         ],
         "settings": {
         }
