@@ -76,6 +76,8 @@
               "image_1": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_13.jpg",
               "image_2": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_14.jpg",
               "title": "<p><a href=\"/products/mohair-blanket-0902\" title=\"MOHAIR BLANKET 0902\">MOHAIR BLANKET 0902</a> / <a href=\"/products/mohair-blanket-305\" title=\"MOHAIR BLANKET 0305\">MOHAIR BLANKET 0305</a></p>",
+              "link-1": "",
+              "link-2": "",
               "width_class": "mid-width"
             }
           },
@@ -97,6 +99,8 @@
               "image_1": "shopify://shop_images/Viso_Lyfestyle_Milan_Ceramic_Mug_Cup_Tray_4.jpg",
               "image_2": "shopify://shop_images/Viso_Lyfestyle_Milan_Merino_Blanket_4.jpg",
               "title": "<p><a href=\"/collections/ceramics\" title=\"CERAMICS\">CERAMICS</a></p>",
+              "link-1": "shopify://collections/ceramics",
+              "link-2": "shopify://collections/ceramics",
               "width_class": "full-width"
             }
           },
@@ -118,6 +122,8 @@
               "image_1": "shopify://shop_images/Viso_Lifestyle_Josephine_Porcelain_Tray_2.jpg",
               "image_2": "shopify://shop_images/Viso_Project_Tuercas_Porcelain_Vase_V170_Cups_V171_Lifestyle_Cadaques_3.jpg",
               "title": "<p><a href=\"/products/porcelain-kamo-sutra-tray-0202\" title=\"PORCELAIN TRAY 0202\">PORCELAIN TRAY 0202</a> / <a href=\"/products/tuercas-porcelain-cup-set-0401-copy\" title=\"TUERCAS PORCELAIN VASE 0401\">PORCELAIN TUERCAS VASE 0401</a> / <a href=\"/products/test-product\" title=\"TUERCAS PORCELAIN CUP SET 0401\">PORCELAIN TUERCAS CUPS 0401</a></p>",
+              "link-1": "",
+              "link-2": "",
               "width_class": "full-width"
             }
           },
