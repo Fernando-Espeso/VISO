@@ -22,18 +22,19 @@
           <div class="title-seccion big">{{ block.settings.interior }}</div>
           <div class="gallery-images">
             {% if block.settings.image_1 != blank %}
-              <a class="image-left">
+              <a href="{{ block.settings.link_1 }}" target="_blank" class="image-left">
                 <img class="lazy" src="{{ block.settings.image_1 | img_url: 'master' }}" alt="Image 1" data-src="{{ block.settings.image_1 | img_url: 'master' }}">
               </a>
             {% endif %}
             {% if block.settings.image_2 != blank %}
-              <a class="image-right">
+              <a href="{{ block.settings.link_2 }}" target="_blank" class="image-right">
                 <img class="lazy" src="{{ block.settings.image_2 | img_url: 'master' }}" alt="Image 2" data-src="{{ block.settings.image_2 | img_url: 'master' }}">
               </a>
             {% endif %}
           </div>
           <div class="caption">{{ block.settings.title }}</div>
         </div>
+        
 
         {% when 'featured-products' %}
           <div id="products" style="grid-column:span 6">
