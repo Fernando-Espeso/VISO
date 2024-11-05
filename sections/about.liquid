@@ -22,14 +22,14 @@
           <div class="title-seccion big">{{ block.settings.interior }}</div>
           <div class="gallery-images">
             {% if block.settings.image_1 != blank %}
-              <div class="image-left">
+              <a class="image-left">
                 <img class="lazy" src="{{ block.settings.image_1 | img_url: 'master' }}" alt="Image 1" data-src="{{ block.settings.image_1 | img_url: 'master' }}">
-              </div>
+              </a>
             {% endif %}
             {% if block.settings.image_2 != blank %}
-              <div class="image-right">
+              <a class="image-right">
                 <img class="lazy" src="{{ block.settings.image_2 | img_url: 'master' }}" alt="Image 2" data-src="{{ block.settings.image_2 | img_url: 'master' }}">
-              </div>
+              </a>
             {% endif %}
           </div>
           <div class="caption">{{ block.settings.title }}</div>
