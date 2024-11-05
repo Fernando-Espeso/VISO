@@ -18,6 +18,8 @@
 
       {% when 'gallery' %}
         <div class="gallery-content {{ block.settings.width_class }}">
+          <h1 class="view">{{ block.settings.subtitle }}</h1>
+          <div class="title-seccion big">{{ block.settings.interior }}</div>
           <div class="gallery-images">
             {% if block.settings.image_1 != blank %}
               <div class="image-left">
