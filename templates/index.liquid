@@ -217,5 +217,18 @@ section#desplegable{
     }
 </style>
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cookiesDiv = document.querySelector(".cookies");
+    const freeShippingDiv = document.querySelector(".free-shipping");
+
+    if (!localStorage.getItem("cookiesDisplayed")) {
+        cookiesDiv.style.display = "block";
+        freeShippingDiv.style.display = "block";
+        localStorage.setItem("cookiesDisplayed", "true");
+    } else {
+        cookiesDiv.style.display = "none";
+        freeShippingDiv.style.display = "none";
+    }
+});
 
 </script>
