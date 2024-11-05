@@ -9,7 +9,7 @@
             <div class="title-seccion big">{{ block.settings.interior }}</div>
             {% if block.settings.image != blank %}
               <div class="image-full">
-                <img class="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}" data-src="{{ block.settings.image | img_url: 'master' }}">
+                <img  src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}" >
               </div>
             {% endif %}
             <h4 class="caption">{{ block.settings.title }}</h4>
