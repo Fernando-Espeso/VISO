@@ -63,6 +63,11 @@
       "about": {
         "type": "about",
         "blocks": {
+          "featured_products_Dp7Wzi": {
+            "type": "featured-products",
+            "settings": {
+            }
+          },
           "gallery_DnYxJr": {
             "type": "gallery",
             "settings": {
@@ -82,11 +87,6 @@
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Merino_Pillow_Mohair_Blanket_3.jpg",
               "title": "<p><a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">MERINO PILLOW 0101</a>  <a href=\"/products/mohair-blanket-1001\" title=\"MOHAIR BLANKET 1001\">MOHAIR BLANKET 1001</a></p>",
               "width_class": "full-width"
-            }
-          },
-          "featured_products_Dp7Wzi": {
-            "type": "featured-products",
-            "settings": {
             }
           },
           "gallery_BpNrcM": {
@@ -133,9 +133,9 @@
           }
         },
         "block_order": [
+          "featured_products_Dp7Wzi",
           "gallery_DnYxJr",
           "summary_H38TgQ",
-          "featured_products_Dp7Wzi",
           "gallery_BpNrcM",
           "summary_GKrDgU",
           "gallery_EYrKqE",
