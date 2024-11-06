@@ -182,20 +182,8 @@ function checkDevice() {
 
 $(document).ready(function() {
 
-  window.addEventListener("DOMContentLoaded", function () {
-    // Verificar si el usuario ya ha visitado
-    const hasVisited = localStorage.getItem("hasVisited");
-  
-    if (hasVisited) {
-      // Ocultar los divs si el usuario ya ha visitado la página
-      document.getElementById("free-shipping").style.display = "none";
-      document.getElementById("cookies").style.display = "none";
-    } else {
-      // Mostrar los divs en la primera visita y guardar el estado en localStorage
-      localStorage.setItem("hasVisited", "true");
-    }
-  });
 
+  
   let images = $('.image-container img');
   let imageCount = images.length;
   let imageIndex = 0;
