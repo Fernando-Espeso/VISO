@@ -75,9 +75,9 @@
               "interior": "",
               "image_1": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_13.jpg",
               "image_2": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_14.jpg",
-              "title": "<p><a href=\"/products/mohair-blanket-0902\" title=\"MOHAIR BLANKET 0902\">MOHAIR BLANKET 0902</a> / <a href=\"/products/mohair-blanket-305\" title=\"MOHAIR BLANKET 0305\">MOHAIR BLANKET 0305</a></p>",
-              "link-1": "",
-              "link-2": "",
+              "title": "<p><a href=\"/products/mohair-blanket-0902\" title=\"MOHAIR BLANKET 0902\">Mohair Blanket 0902</a> / <a href=\"/products/mohair-blanket-305\" title=\"MOHAIR BLANKET 0305\">Mohair Blanket 0305</a></p>",
+              "link-1": "shopify://products/mohair-blanket-0902",
+              "link-2": "shopify://products/mohair-blanket-305",
               "width_class": "mid-width"
             }
           },
@@ -86,8 +86,8 @@
             "settings": {
               "subtitle": "<p>BLANKETS AND THROWS</p>",
               "interior": "VISO blankets are a testament to meticulous craft. Skilled artisans bring our blankets to life from the finest fabrications. They are woven from extra fine cashmere, Australian Merino, and Alpaca wool from Peru to ultra-soft mohair and Egyptian cotton through varying techniques and finishes. Each blanket is a unique collectible design rooted in an artisanal weaving tradition.",
-              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Wool_Blanket_1.jpg",
-              "title": "<p><a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">MERINO PILLOW 0101</a>  <a href=\"/products/mohair-blanket-1001\" title=\"MOHAIR BLANKET 1001\">MOHAIR BLANKET 1001</a></p>",
+              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Merino_Pillow_Mohair_Blanket_3.jpg",
+              "title": "<p><a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">Merino Pillow 0101</a>  / <a href=\"/products/mohair-blanket-1001\" title=\"MOHAIR BLANKET 1001\">Mohair Blanket 1001</a></p>",
               "width_class": "full-width"
             }
           },
@@ -98,9 +98,19 @@
               "interior": "VISO ceramics are a tribute to form and function. Our collection includes hand-painted sets to singular pieces that effortlessly slot into everyday settings. Elevate your interiors and spaces with our meticulously crafted pieces.",
               "image_1": "shopify://shop_images/Viso_Lyfestyle_Milan_Ceramic_Mug_Cup_Tray_4.jpg",
               "image_2": "shopify://shop_images/Viso_Lyfestyle_Milan_Merino_Blanket_4.jpg",
-              "title": "<p><a href=\"/collections/ceramics\" title=\"CERAMICS\">CERAMICS</a></p>",
+              "title": "<p><a href=\"/collections/ceramics\" title=\"CERAMICS\">Ceramics</a></p>",
               "link-1": "shopify://collections/ceramics",
               "link-2": "shopify://collections/ceramics",
+              "width_class": "full-width"
+            }
+          },
+          "summary_kaJkfV": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>PILLOWS</p>",
+              "interior": "Our hand-finished pillows are a tribute to the artistry of craftsmanship. Each piece, created from pure cotton or fine wool, offers a distinct expression through intricate intrecciato weaves, 3-layer Jacquard patterns, or hand-stitched quilt details. Every collectible VISO pillow offers your interiors a unique, playful touch, elevating with intricate craftsmanship and design.",
+              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Cotton_Blanket_Merino_Pillow_3.jpg",
+              "title": "<p><a href=\"/products/cotton-blanket-0201\" title=\"COTTON BLANKET 0201\">Cotton Blanket 0201</a> / <a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">Merino Pillow 0101</a></p>",
               "width_class": "full-width"
             }
           },
@@ -121,9 +131,9 @@
               "interior": "Our porcelain series showcases European artisanship at its finest. VISO porcelain objects, produced in limited numbers for exclusivity, bring collectible designs to the home or office and as unique gifts.",
               "image_1": "shopify://shop_images/Viso_Lifestyle_Josephine_Porcelain_Tray_2.jpg",
               "image_2": "shopify://shop_images/Viso_Project_Tuercas_Porcelain_Vase_V170_Cups_V171_Lifestyle_Cadaques_3.jpg",
-              "title": "<p><a href=\"/products/porcelain-kamo-sutra-tray-0202\" title=\"PORCELAIN TRAY 0202\">PORCELAIN TRAY 0202</a> / <a href=\"/products/tuercas-porcelain-cup-set-0401-copy\" title=\"TUERCAS PORCELAIN VASE 0401\">PORCELAIN TUERCAS VASE 0401</a> / <a href=\"/products/test-product\" title=\"TUERCAS PORCELAIN CUP SET 0401\">PORCELAIN TUERCAS CUPS 0401</a></p>",
-              "link-1": "",
-              "link-2": "",
+              "title": "<p><a href=\"/products/porcelain-kamo-sutra-tray-0202\" title=\"PORCELAIN TRAY 0202\">Porcelain Tray 0202</a> / <a href=\"/products/tuercas-porcelain-cup-set-0401-copy\" title=\"TUERCAS PORCELAIN VASE 0401\">Porcelain Tuercas Vase 0401</a> / <a href=\"/products/test-product\" title=\"TUERCAS PORCELAIN CUP SET 0401\">Porcelain Tuercas Cups 0401</a></p>",
+              "link-1": "shopify://products/porcelain-kamo-sutra-tray-0202",
+              "link-2": "shopify://collections/porcelan",
               "width_class": "full-width"
             }
           },
@@ -133,7 +143,7 @@
               "subtitle": "<p>TABLE</p>",
               "interior": "Introducing the VISO tableware collection, a tribute to classic trattoria dining. Each piece enhances indoor and outdoor settings, bringing warmth and artistic sensibility to your table. Made in Portugal.",
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Mohair_Blanket_Tablecloth_Napkin_2.jpg",
-              "title": "<p><a href=\"/products/trattoria-tablecloth-0201\" title=\"TRATTORIA TABLECLOTH 0201\">TRATTORIA TABLECLOTH 0201</a></p>",
+              "title": "<p><a href=\"/products/trattoria-tablecloth-0201\" title=\"TRATTORIA TABLECLOTH 0201\">Trattoria Tablecloth 0201</a></p>",
               "width_class": "full-width"
             }
           }
@@ -143,6 +153,7 @@
           "gallery_DnYxJr",
           "summary_H38TgQ",
           "gallery_BpNrcM",
+          "summary_kaJkfV",
           "summary_GKrDgU",
           "gallery_EYrKqE",
           "summary_mgzUHK"
