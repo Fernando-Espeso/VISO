@@ -218,19 +218,15 @@ section#desplegable{
 </style>
 <script>
   $(document).ready(function () {
-    // Verificar si el usuario ya ha visitado
-    const hasVisited = localStorage.getItem("hasVisited");
+    const lastVisit = localStorage.getItem("lastVisit");
+    const oneDay = 24 * 60 * 60 * 1000;
+    const now = new Date().getTime();
   
-    if (hasVisited) {
-      
-      // Ocultar los divs si el usuario ya ha visitado la página
-      $(".free-shippping").hide();
-      $(".cookies").hide();
+    if (lastVisit && now - lastVisit < oneDay) {
+      $("#free-shipping").hide();
+      $("#cookies").hide();
     } else {
-      // Mostrar los divs en la primera visita y guardar el estado en localStorage
-      localStorage.setItem("hasVisited", "true");
+      localStorage.setItem("lastVisit", now);
     }
   });
-  
-  
 </script>
