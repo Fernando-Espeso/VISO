@@ -63,11 +63,6 @@
       "about": {
         "type": "about",
         "blocks": {
-          "featured_products_Dp7Wzi": {
-            "type": "featured-products",
-            "settings": {
-            }
-          },
           "gallery_DnYxJr": {
             "type": "gallery",
             "settings": {
@@ -79,6 +74,11 @@
               "link-1": "shopify://products/mohair-blanket-0902",
               "link-2": "shopify://products/mohair-blanket-305",
               "width_class": "mid-width"
+            }
+          },
+          "featured_products_Dp7Wzi": {
+            "type": "featured-products",
+            "settings": {
             }
           },
           "summary_H38TgQ": {
@@ -149,8 +149,8 @@
           }
         },
         "block_order": [
-          "featured_products_Dp7Wzi",
           "gallery_DnYxJr",
+          "featured_products_Dp7Wzi",
           "summary_H38TgQ",
           "gallery_BpNrcM",
           "summary_kaJkfV",
