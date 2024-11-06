@@ -217,18 +217,18 @@ section#desplegable{
     }
 </style>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const cookiesDiv = document.querySelector(".cookies");
-    const freeShippingDiv = document.querySelector(".free-shipping");
-
-    if (!localStorage.getItem("cookiesDisplayed")) {
-        cookiesDiv.style.display = "block";
-        freeShippingDiv.style.display = "block";
-        localStorage.setItem("cookiesDisplayed", "true");
+  window.addEventListener("DOMContentLoaded", function () {
+    // Verificar si el usuario ya ha visitado
+    const hasVisited = localStorage.getItem("hasVisited");
+  
+    if (hasVisited) {
+      // Ocultar los divs si el usuario ya ha visitado la página
+      document.getElementById("free-shipping").style.display = "none";
+      document.getElementById("cookies").style.display = "none";
     } else {
-        cookiesDiv.style.display = "none";
-        freeShippingDiv.style.display = "none";
+      // Mostrar los divs en la primera visita y guardar el estado en localStorage
+      localStorage.setItem("hasVisited", "true");
     }
-});
-
+  });
+  
 </script>
