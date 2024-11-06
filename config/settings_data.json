@@ -405,21 +405,29 @@
             "settings": {
               "subtitle": "",
               "image": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_1.jpg",
-              "title": "<p>VISO will create collaborative capsule collections of singular, limited edition items that will include a wide range of home accessories, textiles, ceramics and novelty objects as well many others.</p><p>For VISO, lifestyle is everything. Products will be globally available at our online and physical Dumbo store as well as at key retailers around the world.</p>"
+              "title": "<p>VISO PROJECT brings together collectible design and homeware rooted in global craftsmanship. With headquarters in Madrid and New York, our lifestyle brand creates refined, form-based pieces that add sophistication to everyday spaces. Each piece is a testament to our dedication to artisanal skill and timeless design, whether it’s luxurious handmade blankets, finely crafted porcelain, or collaborative limited-edition works.</p>"
             }
           },
           "summary_fDBXYj": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>ABOUT</p>",
+              "subtitle": "",
               "image": "shopify://shop_images/Viso_Project_New_York_Dumbo_Store_2-720x960.jpg",
-              "title": "<p>VISO PROJECT comes to life through deep roots inspired by the worlds of art and design, creating distinct objects and apparel crafted by expert artisans and manufacturers around the world.</p><p>Every single item created by VISO is developed with the upmost attention to detail. Craftsmanship becomes the sole purpose in creating a sustainable and limited production of long-lasting quality goods for generations to come.</p>"
+              "title": "<p>VISO emphasizes sustainability, producing in small, intentional batches to ensure the utmost quality and exclusivity. By merging form and function, we create items that transcend trends, offering lasting value through thoughtful production. With a highly curated edit that spans textiles, ceramics, and collaborative interior pieces, VISO is committed to preserving traditional techniques while innovating for the modern home. Each meticulously crafted object is distributed directly through our online store and select retail partners.</p>"
+            }
+          },
+          "summary_UBPbp7": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "",
+              "title": "<p>Following a 15-year publishing, editing, and consulting career, David Vivirido and Francesco Sourigues launched VISO PROJECT in 2017. A detour into design from fashion, the former editors introduce a new perspective on home decor and goods. Their approach is rooted in nuanced ideas of play woven into patterns, textures, and finishes.</p>"
             }
           }
         },
         "block_order": [
           "summary_ffcKVJ",
-          "summary_fDBXYj"
+          "summary_fDBXYj",
+          "summary_UBPbp7"
         ],
         "settings": {
         }
