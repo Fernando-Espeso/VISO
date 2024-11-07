@@ -79,6 +79,7 @@
               "subtitle": "<p>BLANKETS AND THROWS</p>",
               "interior": "VISO blankets are a testament to meticulous craft. Skilled artisans bring our blankets to life from the finest fabrications. They are woven from extra fine cashmere, Australian Merino, and Alpaca wool from Peru to ultra-soft mohair and Egyptian cotton through varying techniques and finishes. Each blanket is a unique collectible design rooted in an artisanal weaving tradition.",
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Merino_Pillow_Mohair_Blanket_3.jpg",
+              "link-1": "shopify://collections/frontpage",
               "title": "<p><a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">Merino Pillow 0101</a>  / <a href=\"/products/mohair-blanket-1001\" title=\"MOHAIR BLANKET 1001\">Mohair Blanket 1001</a></p>",
               "width_class": "full-width"
             }
@@ -106,6 +107,7 @@
               "subtitle": "<p>PILLOWS</p>",
               "interior": "Our hand-finished pillows are a tribute to the artistry of craftsmanship. Each piece, created from pure cotton or fine wool, offers a distinct expression through intricate intrecciato weaves, 3-layer Jacquard patterns, or hand-stitched quilt details. Every collectible VISO pillow offers your interiors a unique, playful touch, elevating with intricate craftsmanship and design.",
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Cotton_Blanket_Merino_Pillow_3.jpg",
+              "link-1": "",
               "title": "<p><a href=\"/products/cotton-blanket-0201\" title=\"COTTON BLANKET 0201\">Cotton Blanket 0201</a> / <a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">Merino Pillow 0101</a></p>",
               "width_class": "full-width"
             }
@@ -116,6 +118,7 @@
               "subtitle": "<p>PILLOWS</p>",
               "interior": "",
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Cotton_Blanket_Merino_Pillow_3.jpg",
+              "link-1": "",
               "title": "<p><a href=\"/products/cotton-blanket-0201\" title=\"COTTON BLANKET 0201\">COTTON BLANKET 0201</a> / <a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">MERINO PILLOW 0101</a></p>",
               "width_class": "full-width"
             }
@@ -139,6 +142,7 @@
               "subtitle": "<p>TABLE</p>",
               "interior": "Introducing the VISO tableware collection, a tribute to classic trattoria dining. Each piece enhances indoor and outdoor settings, bringing warmth and artistic sensibility to your table.",
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Mohair_Blanket_Tablecloth_Napkin_2.jpg",
+              "link-1": "",
               "title": "<p><a href=\"/products/trattoria-tablecloth-0201\" title=\"TRATTORIA TABLECLOTH 0201\">Trattoria Tablecloth 0201</a></p>",
               "width_class": "full-width"
             }
