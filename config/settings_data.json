@@ -636,9 +636,9 @@
           "summary_aKAKGw": {
             "type": "summary",
             "settings": {
-              "subtitle": "<p>STORE</p>",
+              "subtitle": "",
               "image": "shopify://shop_images/Viso_Store_1.jpg",
-              "title": "<p><em>Located in the vibrant Brooklyn neighbourhood of Dumbo, our versatile gallery space functions as a shop, open daily from 11am to 6pm (by appointment on Mondays and Tuesdays), as well as a showroom and event space. For more information contact us at </em><a href=\"mailto:Dumbo@visoproject.com\"><em>Dumbo@visoproject.com</em></a></p>"
+              "title": "<p>Located in the vibrant Brooklyn neighbourhood of Dumbo, our versatile gallery space functions as a shop, open daily from 11am to 6pm (by appointment on Mondays and Tuesdays), as well as a showroom and event space. For more information contact us at <a href=\"mailto:Dumbo@visoproject.com\"><span style=\"text-decoration:underline\">Dumbo@visoproject.com</span></a></p>"
             }
           },
           "summary_RqUi73": {
@@ -646,7 +646,7 @@
             "settings": {
               "subtitle": "",
               "image": "shopify://shop_images/Viso_Store_2.jpg",
-              "title": "<p><em>Viso Dumbo46 Pearl StreetBrooklyn 11201New York</em></p>"
+              "title": "<p>Viso Dumbo46 Pearl Street Brooklyn 11201 New York</p>"
             }
           }
         },
