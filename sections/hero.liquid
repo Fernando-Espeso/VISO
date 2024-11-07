@@ -8,6 +8,10 @@
     {% case block.type %}
       {% when 'media' %}
         <div id="block-{{ block.id }}" class="hero__image">
+          {% unless block.settings.link-hero == blank %}
+            <a href="{{ block.settings.link-hero }}" class="hero__image-link">
+          {% endunless %}
+          
           {% unless block.settings.image == blank %}
             {{
               block.settings.image
@@ -15,7 +19,12 @@
               | image_tag: loading: 'lazy', alt: block.settings.image.alt, class: ''
             }}
           {% endunless %}
+        
+          {% unless block.settings.link-hero == blank %}
+            </a>
+          {% endunless %}
         </div>
+        
 
         {% unless block.settings.heading == blank and block.settings.button_label == blank %}
           <div class="bar">
