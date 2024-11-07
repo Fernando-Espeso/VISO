@@ -38,7 +38,11 @@
             </div>
           </div>
         {% endunless %}
+
+
+      {% unless block.settings.hero-text == blank %}
         <div class="caption">{{ block.settings.hero-text }}</div>
+      {% endunless %}
 
     {% endcase %}
   {% endfor %}
