@@ -22,8 +22,13 @@
 
       {% when 'gallery' %}
         <div class="gallery-content {{ block.settings.width_class }}">
-          <h1 class="view">{{ block.settings.subtitle }}</h1>
-          <div class="title-seccion big">{{ block.settings.interior }}</div>
+          {% unless block.settings.subtitle == blank %}
+            <h1 class="view">{{ block.settings.subtitle }}</h1>
+          {% endunless %}
+          
+          {% unless block.settings.interior == blank %}
+            <div class="title-seccion big">{{ block.settings.interior }}</div>
+          {% endunless %}
           <div class="gallery-images">
             {% if block.settings.image_1 != blank %}
               <a href="{{ block.settings.link_1 }}" class="image-left">
