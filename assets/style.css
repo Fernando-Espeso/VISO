@@ -759,8 +759,8 @@ h2.ctct-form-header {
     line-height: var(--lh);
     font-size: clamp(var(--main), 0.75vw, 1rem);
   }
-  h1.product-title{
-    font-size: clamp(var(--main), 0.75vw, 1rem);
+  h1.product-title {
+    font-size: clamp(var(--main), 0.75vw, 1rem)!important;
   }
   .product-title a{
     color: black;
