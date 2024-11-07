@@ -1420,10 +1420,7 @@ div#shopify-section-hero img {
   line-height:var(--lh);
   font-size: clamp(var(--big), 1.5vw, 2rem)!important; 
 }
-.section#desplegable{
-  margin-top: 0px;
-  padding-top: 0px;
-}
+
 footer.fix {
   padding: 10px;
   left: 0px;
