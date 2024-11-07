@@ -24,8 +24,7 @@
         "block_order": [
           "media_X7hnjE"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "klarna": {
         "type": "klarna",
@@ -41,8 +40,7 @@
         "block_order": [
           "58575a22-e1ac-44bc-9c22-b31048ce56c2"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "aim": {
         "type": "aim",
@@ -57,8 +55,7 @@
         "block_order": [
           "text_QfKWFq"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "about": {
         "type": "about",
@@ -70,7 +67,7 @@
               "interior": "",
               "image_1": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_13.jpg",
               "image_2": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_14.jpg",
-              "title": "<p><a href=\"/products/mohair-blanket-0902\" title=\"MOHAIR BLANKET 0902\">Mohair Blanket 0902</a> / <a href=\"/products/mohair-blanket-305\" title=\"MOHAIR BLANKET 0305\">Mohair Blanket 0305</a></p>",
+              "title": "<p><a href=\"/products/mohair-blanket-0902\" title=\"MOHAIR BLANKET 0902\">Mohair Blanket 0902 Viso X SGV</a> / <a href=\"/products/mohair-blanket-305\" title=\"MOHAIR BLANKET 0305\">Mohair Blanket 0305 Viso X SGV</a></p>",
               "link-1": "shopify://products/mohair-blanket-0902",
               "link-2": "shopify://products/mohair-blanket-305",
               "width_class": "mid-width"
@@ -88,8 +85,7 @@
           },
           "featured_products_Dp7Wzi": {
             "type": "featured-products",
-            "settings": {
-            }
+            "settings": {}
           },
           "gallery_BpNrcM": {
             "type": "gallery",
@@ -158,13 +154,11 @@
           "gallery_EYrKqE",
           "summary_mgzUHK"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "home-flick": {
         "type": "home-flick",
-        "settings": {
-        }
+        "settings": {}
       },
       "stocklist": {
         "type": "stocklist",
@@ -484,13 +478,11 @@
           "summary_iRBjpV",
           "summary_nz8Jme"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "main-product": {
         "type": "main-product",
-        "settings": {
-        }
+        "settings": {}
       },
       "info": {
         "type": "info",
@@ -522,8 +514,7 @@
           "summary_aTgyKK",
           "summary_CnPbJ6"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "contact": {
         "type": "contact",
@@ -555,8 +546,7 @@
           "summary_QrRJdx",
           "summary_Mh8LQU"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "returns": {
         "type": "returns",
@@ -588,8 +578,7 @@
           "summary_7EFDnx",
           "summary_FggmDJ"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "terms": {
         "type": "terms",
@@ -605,8 +594,7 @@
         "block_order": [
           "summary_7iaE6i"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "ab": {
         "type": "ab",
@@ -640,8 +628,7 @@
           "summary_fDBXYj",
           "summary_UBPbp7"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "store": {
         "type": "store",
@@ -667,13 +654,11 @@
           "summary_aKAKGw",
           "summary_RqUi73"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "featured": {
         "type": "featured",
-        "settings": {
-        }
+        "settings": {}
       },
       "hero-movil": {
         "type": "hero-movil",
@@ -688,12 +673,9 @@
         "block_order": [
           "media_c66YAc"
         ],
-        "settings": {
-        }
+        "settings": {}
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   }
 }
