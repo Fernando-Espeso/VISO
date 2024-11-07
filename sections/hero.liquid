@@ -1,4 +1,5 @@
-<section
+<a
+  href="href="{{ block.settings.link-hero }}
   data-section-id="{{ section.id }}"
   id="section-{{ section.id }}"
   class="hero-section deskt"
@@ -36,7 +37,9 @@
           {% endunless %}
     {% endcase %}
   {% endfor %}
-</section>
+</a>
+<div class="caption">{{ block.settings.title }}</div>
+
 {% schema %}
 {
   "name": "Hero",
@@ -51,6 +54,16 @@
           "id": "image",
           "label": "Image",
           "info": "Used as poster image when video is provided"
+        },
+        {
+          "type": "richtext",
+          "id": "caption",
+          "label": "caption Title"
+        },
+        {
+          "type": "url",
+          "id": "link-hero",
+          "label": "link-hero"
         }
       ]
     }
