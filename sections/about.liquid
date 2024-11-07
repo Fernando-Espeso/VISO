@@ -7,11 +7,10 @@
           <div class="news-content {{ block.settings.width_class }}">
             <h1 class="view">{{ block.settings.subtitle }}</h1>
             <div class="title-seccion big">{{ block.settings.interior }}</div>
-            {% if block.settings.image != blank %}
               <a  href="{{ block.settings.link-1 }}" class="image-full">
                 <img  src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}" >
-              </a>
-            {% endif %}
+              </a><br>
+
             <h4 class="caption">{{ block.settings.title }}</h4>
           </div>
         {% endunless %}
