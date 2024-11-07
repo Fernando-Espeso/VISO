@@ -18,7 +18,7 @@
             "type": "media",
             "settings": {
               "image": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_12.jpg",
-              "title": "<p>PRUEBA DE TEXTO</p>",
+              "hero-text": "<p>TEXTO DE PRUEBA</p>",
               "link-hero": "shopify://collections/frontpage"
             }
           }
