@@ -4,6 +4,7 @@
   class="hero-section deskt"
 >
   {% for block in section.blocks %}
+    
     {% case block.type %}
       {% when 'media' %}
         <div id="block-{{ block.id }}" class="hero__image">
@@ -15,7 +16,6 @@
             }}
           {% endunless %}
         </div>
-        <div class="caption">{{ block.settings.hero-text }}</div>
 
         {% unless block.settings.heading == blank and block.settings.button_label == blank %}
           <div class="bar">
@@ -39,6 +39,7 @@
           </div>
         {% endunless %}
     {% endcase %}
+    <div class="caption">{{ block.settings.hero-text }}</div>
   {% endfor %}
 </section>
 {% schema %}
