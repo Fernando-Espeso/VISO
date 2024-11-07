@@ -5,8 +5,13 @@
       {% when 'summary' %}
         {% unless block.settings.subtitle and block.settings.interior == blank %}
           <div class="news-content {{ block.settings.width_class }}">
-            <h1 class="view">{{ block.settings.subtitle }}</h1>
-            <div class="title-seccion big">{{ block.settings.interior }}</div>
+            {% unless block.settings.subtitle == blank %}
+              <h1 class="view">{{ block.settings.subtitle }}</h1>
+            {% endunless %}
+            
+            {% unless block.settings.interior == blank %}
+              <div class="title-seccion big">{{ block.settings.interior }}</div>
+            {% endunless %}
               <a  href="{{ block.settings.link-1 }}" class="image-full">
                 <img  src="{{ block.settings.image | img_url: 'master' }}">
               </a>
