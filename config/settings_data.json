@@ -689,7 +689,8 @@
   "platform_customizations": {
     "custom_css": [
       ".gallery-images {grid-gap: 15px !important;}",
-      "section.about-page,section.store-page {grid-gap: 15px;}"
+      "section.about-page,section.store-page {grid-gap: 15px;}",
+      "section#desplegable {margin-top: 40px;}"
     ]
   }
 }
