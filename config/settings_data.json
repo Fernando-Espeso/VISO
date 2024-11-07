@@ -200,15 +200,22 @@
           "summary_NYyPtJ": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Just Luxe</p>",
+              "Name": "<p>Simons</p>",
               "Location": ""
             }
           },
           "summary_QNxjJP": {
             "type": "summary",
             "settings": {
-              "Name": "<p>The Beast</p>",
+              "Name": "<p>Just Luxe</p>",
               "Location": "<p>China</p>"
+            }
+          },
+          "summary_tNNTWc": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>The Beast</p>",
+              "Location": ""
             }
           },
           "summary_PgwGTh": {
@@ -222,49 +229,217 @@
             "type": "summary",
             "settings": {
               "Name": "<p>A.Plus Store</p>",
-              "Location": ""
+              "Location": "<p>Germany</p>"
             }
           },
-          "summary_yy8gxa": {
+          "summary_QEYiQL": {
             "type": "summary",
             "settings": {
               "Name": "<p>Rootine Life</p>",
               "Location": ""
             }
           },
-          "summary_qbDGYP": {
+          "summary_xmQJwH": {
             "type": "summary",
             "settings": {
               "Name": "<p>Voo Store Berlin</p>",
-              "Location": "<p>Germany</p>"
-            }
-          },
-          "summary_AJnNyd": {
-            "type": "summary",
-            "settings": {
-              "Name": "<p>Corso Como Milan</p>",
               "Location": ""
             }
           },
-          "summary_d8RGNV": {
+          "summary_9tQr9C": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Corso Como Milan</p>",
+              "Location": "<p>Italy</p>"
+            }
+          },
+          "summary_FUiqXb": {
             "type": "summary",
             "settings": {
               "Name": "<p>La Rinascente</p>",
               "Location": ""
             }
           },
-          "summary_ymyQY8": {
+          "summary_jfiCKi": {
             "type": "summary",
             "settings": {
               "Name": "<p>Luisa Via Roma</p>",
-              "Location": "<p>Italy</p>"
+              "Location": ""
             }
           },
-          "summary_Cz6MiG": {
+          "summary_6WBnPY": {
             "type": "summary",
             "settings": {
               "Name": "<p>Journal Standard Furniture</p>",
               "Location": "<p>Japan</p>"
+            }
+          },
+          "summary_zeGEfj": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Kollekt</p>",
+              "Location": "<p>South Korea</p>"
+            }
+          },
+          "summary_j9hFKa": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Artilleriet</p>",
+              "Location": "<p>Sweden</p>"
+            }
+          },
+          "summary_FPCALz": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Kunsthaus</p>",
+              "Location": "<p>Switzerland</p>"
+            }
+          },
+          "summary_kkW9gJ": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Bombinate</p>",
+              "Location": "<p>UK</p>"
+            }
+          },
+          "summary_NwXpJg": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>END</p>",
+              "Location": ""
+            }
+          },
+          "summary_rD4eex": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Maison Fleuner</p>",
+              "Location": ""
+            }
+          },
+          "summary_JDFGRm": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Matches Fashion</p>",
+              "Location": ""
+            }
+          },
+          "summary_kPB9aE": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Monologue</p>",
+              "Location": ""
+            }
+          },
+          "summary_JGctmD": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Selfridges</p>",
+              "Location": ""
+            }
+          },
+          "summary_Xe9x9A": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>The Conran Shop</p>",
+              "Location": ""
+            }
+          },
+          "summary_EUbqep": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>1stdibs</p>",
+              "Location": "<p>USA</p>"
+            }
+          },
+          "summary_6jXVjK": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>County Ltd.</p>",
+              "Location": ""
+            }
+          },
+          "summary_ND9PeL": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Dyphor New York</p>",
+              "Location": ""
+            }
+          },
+          "summary_QJ3Dwk": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>FIVESTORY</p>",
+              "Location": ""
+            }
+          },
+          "summary_XgXCRR": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Love House</p>",
+              "Location": ""
+            }
+          },
+          "summary_Gm6APh": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Millbrook Home</p>",
+              "Location": ""
+            }
+          },
+          "summary_4a4kaM": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Moda Operandi</p>",
+              "Location": ""
+            }
+          },
+          "summary_GcybtV": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Neiman Marcus</p>",
+              "Location": ""
+            }
+          },
+          "summary_kHFi67": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Perigold</p>",
+              "Location": ""
+            }
+          },
+          "summary_rifPX4": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Saks Fifth Avenue</p>",
+              "Location": ""
+            }
+          },
+          "summary_QJGU7H": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Sight Unseen</p>",
+              "Location": ""
+            }
+          },
+          "summary_whQha9": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Teller L.A.</p>",
+              "Location": ""
+            }
+          },
+          "summary_iRBjpV": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>The Optimist LA</p>",
+              "Location": ""
+            }
+          },
+          "summary_nz8Jme": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>The Webster</p>",
+              "Location": ""
             }
           }
         },
@@ -275,14 +450,39 @@
           "summary_FPdUA4",
           "summary_NYyPtJ",
           "summary_QNxjJP",
+          "summary_tNNTWc",
           "summary_PgwGTh",
           "summary_tMhpUP",
-          "summary_yy8gxa",
-          "summary_qbDGYP",
-          "summary_AJnNyd",
-          "summary_d8RGNV",
-          "summary_ymyQY8",
-          "summary_Cz6MiG"
+          "summary_QEYiQL",
+          "summary_xmQJwH",
+          "summary_9tQr9C",
+          "summary_FUiqXb",
+          "summary_jfiCKi",
+          "summary_6WBnPY",
+          "summary_zeGEfj",
+          "summary_j9hFKa",
+          "summary_FPCALz",
+          "summary_kkW9gJ",
+          "summary_NwXpJg",
+          "summary_rD4eex",
+          "summary_JDFGRm",
+          "summary_kPB9aE",
+          "summary_JGctmD",
+          "summary_Xe9x9A",
+          "summary_EUbqep",
+          "summary_6jXVjK",
+          "summary_ND9PeL",
+          "summary_QJ3Dwk",
+          "summary_XgXCRR",
+          "summary_Gm6APh",
+          "summary_4a4kaM",
+          "summary_GcybtV",
+          "summary_kHFi67",
+          "summary_rifPX4",
+          "summary_QJGU7H",
+          "summary_whQha9",
+          "summary_iRBjpV",
+          "summary_nz8Jme"
         ],
         "settings": {
         }
