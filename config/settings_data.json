@@ -680,7 +680,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".gallery-images {grid-gap: 5px !important;}"
+      ".gallery-images {grid-gap: 0px !important;}"
     ]
   }
 }
