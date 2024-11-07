@@ -1,5 +1,4 @@
-<a
-  href="href="{{ block.settings.link-hero }}
+<section
   data-section-id="{{ section.id }}"
   id="section-{{ section.id }}"
   class="hero-section deskt"
@@ -37,9 +36,7 @@
           {% endunless %}
     {% endcase %}
   {% endfor %}
-</a>
-<div class="caption">{{ block.settings.title }}</div>
-
+</section>
 {% schema %}
 {
   "name": "Hero",
