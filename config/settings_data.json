@@ -24,8 +24,7 @@
         "block_order": [
           "media_X7hnjE"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "klarna": {
         "type": "klarna",
@@ -41,8 +40,7 @@
         "block_order": [
           "58575a22-e1ac-44bc-9c22-b31048ce56c2"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "aim": {
         "type": "aim",
@@ -50,24 +48,18 @@
           "text_QfKWFq": {
             "type": "text",
             "settings": {
-              "text": ""
+              "text": "Viso Project X\nStudio Giancarlo Valle"
             }
           }
         },
         "block_order": [
           "text_QfKWFq"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "about": {
         "type": "about",
         "blocks": {
-          "featured_products_Dp7Wzi": {
-            "type": "featured-products",
-            "settings": {
-            }
-          },
           "gallery_DnYxJr": {
             "type": "gallery",
             "settings": {
@@ -75,9 +67,9 @@
               "interior": "",
               "image_1": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_13.jpg",
               "image_2": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_14.jpg",
-              "title": "<p><a href=\"/products/mohair-blanket-0902\" title=\"MOHAIR BLANKET 0902\">MOHAIR BLANKET 0902</a> / <a href=\"/products/mohair-blanket-305\" title=\"MOHAIR BLANKET 0305\">MOHAIR BLANKET 0305</a></p>",
-              "link-1": "",
-              "link-2": "",
+              "title": "<p><a href=\"/products/mohair-blanket-0902\" title=\"MOHAIR BLANKET 0902\">Viso X SGV Mohair Blanket 0902</a> / <a href=\"/products/mohair-blanket-305\" title=\"MOHAIR BLANKET 0305\">Viso X SGV Mohair Blanket 0305</a></p>",
+              "link-1": "shopify://products/mohair-blanket-0902",
+              "link-2": "shopify://products/mohair-blanket-305",
               "width_class": "mid-width"
             }
           },
@@ -86,10 +78,14 @@
             "settings": {
               "subtitle": "<p>BLANKETS AND THROWS</p>",
               "interior": "VISO blankets are a testament to meticulous craft. Skilled artisans bring our blankets to life from the finest fabrications. They are woven from extra fine cashmere, Australian Merino, and Alpaca wool from Peru to ultra-soft mohair and Egyptian cotton through varying techniques and finishes. Each blanket is a unique collectible design rooted in an artisanal weaving tradition.",
-              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Wool_Blanket_1.jpg",
-              "title": "<p><a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">MERINO PILLOW 0101</a>  <a href=\"/products/mohair-blanket-1001\" title=\"MOHAIR BLANKET 1001\">MOHAIR BLANKET 1001</a></p>",
+              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Merino_Pillow_Mohair_Blanket_3.jpg",
+              "title": "<p><a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">Merino Pillow 0101</a>  / <a href=\"/products/mohair-blanket-1001\" title=\"MOHAIR BLANKET 1001\">Mohair Blanket 1001</a></p>",
               "width_class": "full-width"
             }
+          },
+          "featured_products_Dp7Wzi": {
+            "type": "featured-products",
+            "settings": {}
           },
           "gallery_BpNrcM": {
             "type": "gallery",
@@ -98,9 +94,19 @@
               "interior": "VISO ceramics are a tribute to form and function. Our collection includes hand-painted sets to singular pieces that effortlessly slot into everyday settings. Elevate your interiors and spaces with our meticulously crafted pieces.",
               "image_1": "shopify://shop_images/Viso_Lyfestyle_Milan_Ceramic_Mug_Cup_Tray_4.jpg",
               "image_2": "shopify://shop_images/Viso_Lyfestyle_Milan_Merino_Blanket_4.jpg",
-              "title": "<p><a href=\"/collections/ceramics\" title=\"CERAMICS\">CERAMICS</a></p>",
+              "title": "<p><a href=\"/collections/ceramics\" title=\"CERAMICS\">Viso Ceramics Capsule</a></p>",
               "link-1": "shopify://collections/ceramics",
               "link-2": "shopify://collections/ceramics",
+              "width_class": "full-width"
+            }
+          },
+          "summary_kaJkfV": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>PILLOWS</p>",
+              "interior": "Our hand-finished pillows are a tribute to the artistry of craftsmanship. Each piece, created from pure cotton or fine wool, offers a distinct expression through intricate intrecciato weaves, 3-layer Jacquard patterns, or hand-stitched quilt details. Every collectible VISO pillow offers your interiors a unique, playful touch, elevating with intricate craftsmanship and design.",
+              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Cotton_Blanket_Merino_Pillow_3.jpg",
+              "title": "<p><a href=\"/products/cotton-blanket-0201\" title=\"COTTON BLANKET 0201\">Cotton Blanket 0201</a> / <a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">Merino Pillow 0101</a></p>",
               "width_class": "full-width"
             }
           },
@@ -121,9 +127,9 @@
               "interior": "Our porcelain series showcases European artisanship at its finest. VISO porcelain objects, produced in limited numbers for exclusivity, bring collectible designs to the home or office and as unique gifts.",
               "image_1": "shopify://shop_images/Viso_Lifestyle_Josephine_Porcelain_Tray_2.jpg",
               "image_2": "shopify://shop_images/Viso_Project_Tuercas_Porcelain_Vase_V170_Cups_V171_Lifestyle_Cadaques_3.jpg",
-              "title": "<p><a href=\"/products/porcelain-kamo-sutra-tray-0202\" title=\"PORCELAIN TRAY 0202\">PORCELAIN TRAY 0202</a> / <a href=\"/products/tuercas-porcelain-cup-set-0401-copy\" title=\"TUERCAS PORCELAIN VASE 0401\">PORCELAIN TUERCAS VASE 0401</a> / <a href=\"/products/test-product\" title=\"TUERCAS PORCELAIN CUP SET 0401\">PORCELAIN TUERCAS CUPS 0401</a></p>",
-              "link-1": "",
-              "link-2": "",
+              "title": "<p><a href=\"/products/porcelain-kamo-sutra-tray-0202\" title=\"PORCELAIN TRAY 0202\">Porcelain Tray 0202</a> / <a href=\"/products/tuercas-porcelain-cup-set-0401-copy\" title=\"TUERCAS PORCELAIN VASE 0401\">Porcelain Tuercas Vase 0401</a> / <a href=\"/products/test-product\" title=\"TUERCAS PORCELAIN CUP SET 0401\">Porcelain Tuercas Cups 0401</a></p>",
+              "link-1": "shopify://products/porcelain-kamo-sutra-tray-0202",
+              "link-2": "shopify://collections/porcelan",
               "width_class": "full-width"
             }
           },
@@ -131,29 +137,28 @@
             "type": "summary",
             "settings": {
               "subtitle": "<p>TABLE</p>",
-              "interior": "Introducing the VISO tableware collection, a tribute to classic trattoria dining. Each piece enhances indoor and outdoor settings, bringing warmth and artistic sensibility to your table. Made in Portugal.",
+              "interior": "Introducing the VISO tableware collection, a tribute to classic trattoria dining. Each piece enhances indoor and outdoor settings, bringing warmth and artistic sensibility to your table.",
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Mohair_Blanket_Tablecloth_Napkin_2.jpg",
-              "title": "<p><a href=\"/products/trattoria-tablecloth-0201\" title=\"TRATTORIA TABLECLOTH 0201\">TRATTORIA TABLECLOTH 0201</a></p>",
+              "title": "<p><a href=\"/products/trattoria-tablecloth-0201\" title=\"TRATTORIA TABLECLOTH 0201\">Trattoria Tablecloth 0201</a></p>",
               "width_class": "full-width"
             }
           }
         },
         "block_order": [
-          "featured_products_Dp7Wzi",
           "gallery_DnYxJr",
           "summary_H38TgQ",
+          "featured_products_Dp7Wzi",
           "gallery_BpNrcM",
+          "summary_kaJkfV",
           "summary_GKrDgU",
           "gallery_EYrKqE",
           "summary_mgzUHK"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "home-flick": {
         "type": "home-flick",
-        "settings": {
-        }
+        "settings": {}
       },
       "stocklist": {
         "type": "stocklist",
@@ -189,15 +194,22 @@
           "summary_NYyPtJ": {
             "type": "summary",
             "settings": {
-              "Name": "<p>Just Luxe</p>",
+              "Name": "<p>Simons</p>",
               "Location": ""
             }
           },
           "summary_QNxjJP": {
             "type": "summary",
             "settings": {
-              "Name": "<p>The Beast</p>",
+              "Name": "<p>Just Luxe</p>",
               "Location": "<p>China</p>"
+            }
+          },
+          "summary_tNNTWc": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>The Beast</p>",
+              "Location": ""
             }
           },
           "summary_PgwGTh": {
@@ -211,49 +223,217 @@
             "type": "summary",
             "settings": {
               "Name": "<p>A.Plus Store</p>",
-              "Location": ""
+              "Location": "<p>Germany</p>"
             }
           },
-          "summary_yy8gxa": {
+          "summary_QEYiQL": {
             "type": "summary",
             "settings": {
               "Name": "<p>Rootine Life</p>",
               "Location": ""
             }
           },
-          "summary_qbDGYP": {
+          "summary_xmQJwH": {
             "type": "summary",
             "settings": {
               "Name": "<p>Voo Store Berlin</p>",
-              "Location": "<p>Germany</p>"
-            }
-          },
-          "summary_AJnNyd": {
-            "type": "summary",
-            "settings": {
-              "Name": "<p>Corso Como Milan</p>",
               "Location": ""
             }
           },
-          "summary_d8RGNV": {
+          "summary_9tQr9C": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Corso Como Milan</p>",
+              "Location": "<p>Italy</p>"
+            }
+          },
+          "summary_FUiqXb": {
             "type": "summary",
             "settings": {
               "Name": "<p>La Rinascente</p>",
               "Location": ""
             }
           },
-          "summary_ymyQY8": {
+          "summary_jfiCKi": {
             "type": "summary",
             "settings": {
               "Name": "<p>Luisa Via Roma</p>",
-              "Location": "<p>Italy</p>"
+              "Location": ""
             }
           },
-          "summary_Cz6MiG": {
+          "summary_6WBnPY": {
             "type": "summary",
             "settings": {
               "Name": "<p>Journal Standard Furniture</p>",
               "Location": "<p>Japan</p>"
+            }
+          },
+          "summary_zeGEfj": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Kollekt</p>",
+              "Location": "<p>South Korea</p>"
+            }
+          },
+          "summary_j9hFKa": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Artilleriet</p>",
+              "Location": "<p>Sweden</p>"
+            }
+          },
+          "summary_FPCALz": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Kunsthaus</p>",
+              "Location": "<p>Switzerland</p>"
+            }
+          },
+          "summary_kkW9gJ": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Bombinate</p>",
+              "Location": "<p>UK</p>"
+            }
+          },
+          "summary_NwXpJg": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>END</p>",
+              "Location": ""
+            }
+          },
+          "summary_rD4eex": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Maison Fleuner</p>",
+              "Location": ""
+            }
+          },
+          "summary_JDFGRm": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Matches Fashion</p>",
+              "Location": ""
+            }
+          },
+          "summary_kPB9aE": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Monologue</p>",
+              "Location": ""
+            }
+          },
+          "summary_JGctmD": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Selfridges</p>",
+              "Location": ""
+            }
+          },
+          "summary_Xe9x9A": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>The Conran Shop</p>",
+              "Location": ""
+            }
+          },
+          "summary_EUbqep": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>1stdibs</p>",
+              "Location": "<p>USA</p>"
+            }
+          },
+          "summary_6jXVjK": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>County Ltd.</p>",
+              "Location": ""
+            }
+          },
+          "summary_ND9PeL": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Dyphor New York</p>",
+              "Location": ""
+            }
+          },
+          "summary_QJ3Dwk": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>FIVESTORY</p>",
+              "Location": ""
+            }
+          },
+          "summary_XgXCRR": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Love House</p>",
+              "Location": ""
+            }
+          },
+          "summary_Gm6APh": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Millbrook Home</p>",
+              "Location": ""
+            }
+          },
+          "summary_4a4kaM": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Moda Operandi</p>",
+              "Location": ""
+            }
+          },
+          "summary_GcybtV": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Neiman Marcus</p>",
+              "Location": ""
+            }
+          },
+          "summary_kHFi67": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Perigold</p>",
+              "Location": ""
+            }
+          },
+          "summary_rifPX4": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Saks Fifth Avenue</p>",
+              "Location": ""
+            }
+          },
+          "summary_QJGU7H": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Sight Unseen</p>",
+              "Location": ""
+            }
+          },
+          "summary_whQha9": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>Teller L.A.</p>",
+              "Location": ""
+            }
+          },
+          "summary_iRBjpV": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>The Optimist LA</p>",
+              "Location": ""
+            }
+          },
+          "summary_nz8Jme": {
+            "type": "summary",
+            "settings": {
+              "Name": "<p>The Webster</p>",
+              "Location": ""
             }
           }
         },
@@ -264,22 +444,45 @@
           "summary_FPdUA4",
           "summary_NYyPtJ",
           "summary_QNxjJP",
+          "summary_tNNTWc",
           "summary_PgwGTh",
           "summary_tMhpUP",
-          "summary_yy8gxa",
-          "summary_qbDGYP",
-          "summary_AJnNyd",
-          "summary_d8RGNV",
-          "summary_ymyQY8",
-          "summary_Cz6MiG"
+          "summary_QEYiQL",
+          "summary_xmQJwH",
+          "summary_9tQr9C",
+          "summary_FUiqXb",
+          "summary_jfiCKi",
+          "summary_6WBnPY",
+          "summary_zeGEfj",
+          "summary_j9hFKa",
+          "summary_FPCALz",
+          "summary_kkW9gJ",
+          "summary_NwXpJg",
+          "summary_rD4eex",
+          "summary_JDFGRm",
+          "summary_kPB9aE",
+          "summary_JGctmD",
+          "summary_Xe9x9A",
+          "summary_EUbqep",
+          "summary_6jXVjK",
+          "summary_ND9PeL",
+          "summary_QJ3Dwk",
+          "summary_XgXCRR",
+          "summary_Gm6APh",
+          "summary_4a4kaM",
+          "summary_GcybtV",
+          "summary_kHFi67",
+          "summary_rifPX4",
+          "summary_QJGU7H",
+          "summary_whQha9",
+          "summary_iRBjpV",
+          "summary_nz8Jme"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "main-product": {
         "type": "main-product",
-        "settings": {
-        }
+        "settings": {}
       },
       "info": {
         "type": "info",
@@ -311,8 +514,7 @@
           "summary_aTgyKK",
           "summary_CnPbJ6"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "contact": {
         "type": "contact",
@@ -344,8 +546,7 @@
           "summary_QrRJdx",
           "summary_Mh8LQU"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "returns": {
         "type": "returns",
@@ -377,8 +578,7 @@
           "summary_7EFDnx",
           "summary_FggmDJ"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "terms": {
         "type": "terms",
@@ -387,15 +587,14 @@
             "type": "summary",
             "settings": {
               "Name": "<p>ORDERING</p>",
-              "Location": "<p>Select your favorite products and click on the “Add to Cart” link on each product page. They will be added to your cart, shown in the top right corner of your screen (ex: “3 ITEMS”).</p><p></p><p>After you have chosen your products, click on the cart link, on the top right corner and validate all the products, unit prices, quantities and sub-totals (you can add or subtract quantities directly from the cart).</p><p></p><p>f you have a coupon, please enter it on the left box.</p><p>Click “Proceed to Checkout” where you will be asked to input your billing and shipping information for us to calculate shipping costs (remember that orders above 300€ have free shipping! Only in EU, USA and UK. OUTLET no included).</p><ul><li>Choose your preferred payment method. We accept Paypal and Credit Card (VISA, AMEX, MasterCard).</li><li>If you choose Paypal you will be redirected to their site to finish payment; if you choose Credit Card, just enter the details on the form.</li><li>Click “Place Order” and we will take care of the rest!</li></ul><p>Also, our site is fully secured by “Let’s Encrypt Authority X3” and you can access additional information by clicking on the locker on the URL bar of your browser and/or here: <a href=\"https://letsencrypt.org/documents/isrg-cps-v3.0/\">https://letsencrypt.org/documents/isrg-cps-v3.0/</a></p>"
+              "Location": "<p>Select your favorite products and click on the “Add to Cart” link on each product page. They will be added to your cart, shown in the top right corner of your screen (ex: “3 ITEMS”).</p><p></p><p>After you have chosen your products, click on the cart link, on the top right corner and validate all the products, unit prices, quantities and sub-totals (you can add or subtract quantities directly from the cart).</p><p></p><p>f you have a coupon, please enter it on the left box.</p><p>Click “Proceed to Checkout” where you will be asked to input your billing and shipping information for us to calculate shipping costs (remember that orders above 300€ have free shipping! Only in EU, USA and UK. OUTLET no included).</p><ul><li>Choose your preferred payment method. We accept Paypal and Credit Card (VISA, AMEX, MasterCard).</li><li>If you choose Paypal you will be redirected to their site to finish payment; if you choose Credit Card, just enter the details on the form.</li><li>Click “Place Order” and we will take care of the rest!</li></ul>"
             }
           }
         },
         "block_order": [
           "summary_7iaE6i"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "ab": {
         "type": "ab",
@@ -404,7 +603,7 @@
             "type": "summary",
             "settings": {
               "subtitle": "",
-              "image": "shopify://shop_images/Viso_Project_Merino_Blanket_Pillow_1.jpg",
+              "image": "shopify://shop_images/Viso_Project_1.jpg",
               "title": "<p>VISO PROJECT brings together collectible design and homeware rooted in global craftsmanship. With headquarters in Madrid and New York, our lifestyle brand creates refined, form-based pieces that add sophistication to everyday spaces. Each piece is a testament to our dedication to artisanal skill and timeless design, whether it’s luxurious handmade blankets, finely crafted porcelain, or collaborative limited-edition works.</p>"
             }
           },
@@ -412,7 +611,7 @@
             "type": "summary",
             "settings": {
               "subtitle": "",
-              "image": "shopify://shop_images/Viso_Project_New_York_Dumbo_Store_2-720x960.jpg",
+              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Ceramic_Vase_3.jpg",
               "title": "<p>VISO emphasizes sustainability, producing in small, intentional batches to ensure the utmost quality and exclusivity. By merging form and function, we create items that transcend trends, offering lasting value through thoughtful production. With a highly curated edit that spans textiles, ceramics, and collaborative interior pieces, VISO is committed to preserving traditional techniques while innovating for the modern home. Each meticulously crafted object is distributed directly through our online store and select retail partners.</p><p>Following a 15-year publishing, editing, and consulting career, David Vivirido and Francesco Sourigues launched VISO PROJECT in 2017. A detour into design from fashion, the former editors introduce a new perspective on home decor and goods. Their approach is rooted in nuanced ideas of play woven into patterns, textures, and finishes.</p>"
             }
           },
@@ -429,8 +628,7 @@
           "summary_fDBXYj",
           "summary_UBPbp7"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "store": {
         "type": "store",
@@ -439,21 +637,28 @@
             "type": "summary",
             "settings": {
               "subtitle": "",
-              "image": "shopify://shop_images/VIB0102_Viso_Project_New_York_Wool_Intreciatto_Blanket_Green_Arles_2-1024x1024.jpg",
-              "title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis molestie magna, at congue nunc. Nulla bibendum condimentum enim sed mattis. Fusce posuere turpis nunc, eu porta quam tincidunt sit amet. Cras quis commodo dolor. Nullam elit ligula, volutpat id volutpat tincidunt, ullamcorper nec dui. Nullam fringilla imperdiet elit ut vulputate. Quisque mollis in erat vel eleifend.</p>"
+              "image": "shopify://shop_images/Viso_Store_1.jpg",
+              "title": "<p>Located in the vibrant Brooklyn neighbourhood of Dumbo, our versatile gallery space functions as a shop, open daily from 11am to 6pm (by appointment on Mondays and Tuesdays), as well as a showroom and event space. For more information contact us at <a href=\"mailto:Dumbo@visoproject.com\"><span style=\"text-decoration:underline\">dumbo@visoproject.com</span></a></p>"
+            }
+          },
+          "summary_RqUi73": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "",
+              "image": "shopify://shop_images/Viso_Store_2.jpg",
+              "title": "<p>Viso Dumbo 46 Pearl Street Brooklyn 11201 New York</p>"
             }
           }
         },
         "block_order": [
-          "summary_aKAKGw"
+          "summary_aKAKGw",
+          "summary_RqUi73"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "featured": {
         "type": "featured",
-        "settings": {
-        }
+        "settings": {}
       },
       "hero-movil": {
         "type": "hero-movil",
@@ -468,12 +673,15 @@
         "block_order": [
           "media_c66YAc"
         ],
-        "settings": {
-        }
+        "settings": {}
       }
     },
-    "content_for_index": [
-
+    "content_for_index": []
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".gallery-images {grid-gap: 15px !important;}",
+      "section.about-page,section.store-page {grid-gap: 15px;}"
     ]
   }
 }
