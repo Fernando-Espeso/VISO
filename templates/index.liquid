@@ -1,9 +1,9 @@
 <div class="main">
-<div class="cookies">
+<div class="cookies" id="cookies">
  <p>WE USE COOKIES, <a href="/pages/terms-conditions">READ MORE</a></p>
   <div class="closer">ACCEPT</div>
 </div>
-<div class="free-shippping">
+<div class="free-shippping" id="free-shippping">
   <p>FREE SHIPPING ABOVE 300€ ORDERS (EU, USA & UK)<br>
   <a href="collections/all">SHOP NOW</a></p>
   <div class="closer">CLOSE</div>
@@ -217,16 +217,28 @@ margin:0px;}
     }
 </style>
 <script>
-  $(document).ready(function () {
-    const lastVisit = localStorage.getItem("lastVisit");
-    const oneDay = 24 * 60 * 60 * 1000;
-    const now = new Date().getTime();
+  document.addEventListener("DOMContentLoaded", function () {
+    // Seleccionar los divs de cookies y free-shipping
+    const cookiesDiv = document.getElementById("cookies");
+    const freeShippingDiv = document.getElementById("free-shipping");
   
-    if (lastVisit && now - lastVisit < oneDay) {
-      $("#free-shipping").hide();
-      $("#cookies").hide();
+    // Verificar si ya se mostraron en esta sesión
+    if (!sessionStorage.getItem("cookiesShown")) {
+        // Mostrar y marcar como mostrado
+        cookiesDiv.style.display = "block";
+        sessionStorage.setItem("cookiesShown", "true");
     } else {
-      localStorage.setItem("lastVisit", now);
+        // Ocultar si ya se mostró
+        cookiesDiv.style.display = "none";
     }
-  });
+  
+    if (!sessionStorage.getItem("freeShippingShown")) {
+        // Mostrar y marcar como mostrado
+        freeShippingDiv.style.display = "block";
+        sessionStorage.setItem("freeShippingShown", "true");
+    } else {
+        // Ocultar si ya se mostró
+        freeShippingDiv.style.display = "none";
+    }
+  });  
 </script>

@@ -206,30 +206,5 @@ $(document).ready(function() {
   images.eq(imageIndex).fadeIn(transitionDuration, function() {
     setTimeout(showNextImage, displayDuration);
   });
-  document.addEventListener("DOMContentLoaded", function () {
-    // Seleccionar los divs de cookies y free-shipping
-    const cookiesDiv = document.getElementById("cookies");
-    const freeShippingDiv = document.getElementById("free-shipping");
-  
-    // Verificar si ya se mostraron en esta sesión
-    if (!sessionStorage.getItem("cookiesShown")) {
-        // Mostrar y marcar como mostrado
-        cookiesDiv.style.display = "block";
-        sessionStorage.setItem("cookiesShown", "true");
-    } else {
-        // Ocultar si ya se mostró
-        cookiesDiv.style.display = "none";
-    }
-  
-    if (!sessionStorage.getItem("freeShippingShown")) {
-        // Mostrar y marcar como mostrado
-        freeShippingDiv.style.display = "block";
-        sessionStorage.setItem("freeShippingShown", "true");
-    } else {
-        // Ocultar si ya se mostró
-        freeShippingDiv.style.display = "none";
-    }
-  });
 });
-
 
