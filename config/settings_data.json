@@ -17,8 +17,8 @@
           "media_X7hnjE": {
             "type": "media",
             "settings": {
-              "image": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_12.jpg",
-              "hero-text": "<p>TEXTO DE PRUEBA</p>",
+              "image": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_15.jpg",
+              "hero-text": "<p>Viso X SGV Mohair Blanket 0307</p>",
               "link-hero": "shopify://collections/frontpage"
             }
           }
@@ -689,7 +689,8 @@
   "platform_customizations": {
     "custom_css": [
       ".gallery-images {grid-gap: 15px !important;}",
-      "section.about-page,section.store-page {grid-gap: 15px;}"
+      "section.about-page,section.store-page {grid-gap: 15px;}",
+      "section#desplegable {margin-top: 40px;}"
     ]
   }
 }
