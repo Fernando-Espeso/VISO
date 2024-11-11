@@ -1022,7 +1022,7 @@ form#cart-wrapper .item {
     display: grid;
   }
   div#content{
-    order: 0;
+    order: 1;
   }
   .product {
     grid-column: span 6;
