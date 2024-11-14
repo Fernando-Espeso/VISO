@@ -584,10 +584,7 @@
           "summary_7EFDnx",
           "summary_FggmDJ"
         ],
-        "custom_css": [
-          ".shopify-policy__container {max-width: fit-content; margin: 0px; margin-top: 38px;}",
-          ".shopify-policy__title {display: none;}"
-        ],
+        "custom_css": [],
         "settings": {}
       },
       "terms": {
@@ -695,7 +692,9 @@
     "custom_css": [
       ".gallery-images {grid-gap: 15px !important;}",
       "section.about-page,section.store-page {grid-gap: 15px;}",
-      "section#desplegable {margin-top: 40px;}"
+      "section#desplegable {margin-top: 40px;}",
+      ".shopify-policy__container {max-width: fit-content; margin: 0px; margin-top: 38px;}",
+      ".shopify-policy__title {display: none;}"
     ]
   }
 }
