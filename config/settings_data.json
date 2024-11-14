@@ -693,7 +693,7 @@
       ".gallery-images {grid-gap: 15px !important;}",
       "section.about-page,section.store-page {grid-gap: 15px;}",
       "section#desplegable {margin-top: 40px;}",
-      ".shopify-policy__container {max-width: fit-content; margin: 0px; margin-top: 38px; font-size:22px;}",
+      ".shopify-policy__container {max-width: fit-content; margin: 0px; margin-top: 38px; font-size:22px; line-height: 17px;}",
       ".shopify-policy__title {display: none;}"
     ]
   }
