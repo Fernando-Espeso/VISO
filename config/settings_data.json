@@ -584,6 +584,10 @@
           "summary_7EFDnx",
           "summary_FggmDJ"
         ],
+        "custom_css": [
+          ".shopify-policy__container {max-width: fit-content; margin: 0px; margin-top: 38px;}",
+          ".shopify-policy__title {display: none;}"
+        ],
         "settings": {}
       },
       "terms": {
@@ -600,6 +604,7 @@
         "block_order": [
           "summary_7iaE6i"
         ],
+        "custom_css": [],
         "settings": {}
       },
       "ab": {
@@ -690,10 +695,7 @@
     "custom_css": [
       ".gallery-images {grid-gap: 15px !important;}",
       "section.about-page,section.store-page {grid-gap: 15px;}",
-      "section#desplegable {margin-top: 40px;}",
-      ".shopify-policy__container {max-width: fit-content; margin: 0px;}",
-      ".shopify-policy__title {display: none;}",
-      ".shopify-policy__container{margin-top:38px;}"
+      "section#desplegable {margin-top: 40px;}"
     ]
   }
 }
