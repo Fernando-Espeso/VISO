@@ -1021,9 +1021,16 @@ form#cart-wrapper .item {
     grid-template-columns: repeat(1, 1fr);
     display: grid;
   }
-  div#content{
-    order: 1;
-  }
+div#content {
+  background-color: #fffc;
+  -webkit-backdrop-filter:none;
+  backdrop-filter: none;
+  height: fit-content;
+  order: 0;
+  position: relative;
+  top: 0px;
+  grid-column: span 1;
+}
   .product {
     grid-column: span 6;
   }
