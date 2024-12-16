@@ -18,7 +18,7 @@
             "type": "media",
             "settings": {
               "image": "shopify://shop_images/VisoStore-1.jpg",
-              "hero-text": "<p>Holiday Sale</p><p>Enjoy a 30% off on selected items</p>",
+              "hero-text": "",
               "link-hero": "shopify://collections/frontpage"
             }
           }
@@ -50,7 +50,7 @@
           "text_QfKWFq": {
             "type": "text",
             "settings": {
-              "text": "Viso Project X\nStudio Giancarlo Valle"
+              "text": "HOLIDAY SALE\nEnjoy a 30% off on selected items"
             }
           }
         },
