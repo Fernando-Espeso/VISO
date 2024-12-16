@@ -50,7 +50,7 @@
           "text_QfKWFq": {
             "type": "text",
             "settings": {
-              "text": "HOLIDAY SALE\nEnjoy a 30% off on selected items"
+              "text": "HOLIDAY SALE\nEnjoy a 30% OFF on selected items"
             }
           }
         },
@@ -62,6 +62,17 @@
       "about": {
         "type": "about",
         "blocks": {
+          "summary_H38TgQ": {
+            "type": "summary",
+            "settings": {
+              "subtitle": "<p>BLANKETS AND THROWS</p>",
+              "interior": "VISO blankets are a testament to meticulous craft. Skilled artisans bring our blankets to life from the finest fabrications. They are woven from extra fine cashmere, Australian Merino, and Alpaca wool from Peru to ultra-soft mohair and Egyptian cotton through varying techniques and finishes. Each blanket is a unique collectible design rooted in an artisanal weaving tradition.",
+              "image": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_15.jpg",
+              "link-1": "shopify://products/mohair-blanket-0307",
+              "title": "<p><a href=\"/products/mohair-blanket-0307\" title=\"Mohair Blanket 0307\">Viso X SGV Mohair Blanket 0307</a></p>",
+              "width_class": "full-width"
+            }
+          },
           "gallery_DnYxJr": {
             "type": "gallery",
             "settings": {
@@ -73,17 +84,6 @@
               "link-1": "shopify://products/mohair-blanket-0902",
               "link-2": "shopify://products/mohair-blanket-0305",
               "width_class": "mid-width"
-            }
-          },
-          "summary_H38TgQ": {
-            "type": "summary",
-            "settings": {
-              "subtitle": "<p>BLANKETS AND THROWS</p>",
-              "interior": "VISO blankets are a testament to meticulous craft. Skilled artisans bring our blankets to life from the finest fabrications. They are woven from extra fine cashmere, Australian Merino, and Alpaca wool from Peru to ultra-soft mohair and Egyptian cotton through varying techniques and finishes. Each blanket is a unique collectible design rooted in an artisanal weaving tradition.",
-              "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Merino_Pillow_Mohair_Blanket_3.jpg",
-              "link-1": "shopify://collections/frontpage",
-              "title": "<p><a href=\"/products/merino-pillow-0103-copy\" title=\"MERINO PILLOW 0101\">Merino Pillow 0101</a>  / <a href=\"/products/mohair-blanket-1001\" title=\"MOHAIR BLANKET 1001\">Mohair Blanket 1001</a></p>",
-              "width_class": "full-width"
             }
           },
           "featured_products_Dp7Wzi": {
@@ -151,8 +151,8 @@
           }
         },
         "block_order": [
-          "gallery_DnYxJr",
           "summary_H38TgQ",
+          "gallery_DnYxJr",
           "featured_products_Dp7Wzi",
           "gallery_BpNrcM",
           "summary_kaJkfV",
@@ -674,7 +674,7 @@
           "media_c66YAc": {
             "type": "media",
             "settings": {
-              "image": "shopify://shop_images/Viso_Lifestyle_SGV24_Mohair_Blanket_15.jpg",
+              "image": "shopify://shop_images/VisoStore-1.jpg",
               "hero-text": "<p>Viso X SGV Mohair Blanket 0307</p>",
               "link-hero": "shopify://collections/frontpage"
             }
