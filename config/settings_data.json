@@ -19,7 +19,7 @@
             "settings": {
               "image": "shopify://shop_images/VisoStore-1.jpg",
               "hero-text": "",
-              "link-hero": "shopify://collections/frontpage"
+              "link-hero": "shopify://collections/sale"
             }
           }
         },
@@ -676,7 +676,7 @@
             "settings": {
               "image": "shopify://shop_images/VisoStore-1.jpg",
               "hero-text": "<p>Viso X SGV Mohair Blanket 0307</p>",
-              "link-hero": "shopify://collections/frontpage"
+              "link-hero": "shopify://collections/sale"
             }
           }
         },
