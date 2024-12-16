@@ -18,7 +18,7 @@
             "type": "media",
             "settings": {
               "image": "shopify://shop_images/VisoStore-1.jpg",
-              "hero-text": "",
+              "hero-text": "<p><a href=\"/collections/sale\" title=\"SALE\">Holiday Sale</a></p>",
               "link-hero": "shopify://collections/sale"
             }
           }
@@ -675,7 +675,7 @@
             "type": "media",
             "settings": {
               "image": "shopify://shop_images/VisoStore-1.jpg",
-              "hero-text": "<p>Viso X SGV Mohair Blanket 0307</p>",
+              "hero-text": "<p><a href=\"/collections/sale\" title=\"SALE\">Holiday Sale</a></p>",
               "link-hero": "shopify://collections/sale"
             }
           }
