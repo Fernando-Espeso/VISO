@@ -695,7 +695,7 @@
       "section#desplegable {margin-top: 40px;}",
       ".shopify-policy__container {max-width: fit-content; margin: 0px; margin-top: 38px;}",
       ".shopify-policy__title {display: none;}",
-      "#cat .SALES{color: red;}"
+      "#cat .SALE {color: red;}"
     ]
   }
 }
