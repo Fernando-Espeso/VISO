@@ -18,8 +18,8 @@
             "type": "media",
             "settings": {
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Mohair_Blanket_11.jpg",
-              "hero-text": "<p><a href=\"/collections/sale\" title=\"SALE\">Holiday Sale</a></p>",
-              "link-hero": "shopify://collections/sale"
+              "hero-text": "",
+              "link-hero": "shopify://products/mohair-blanket-0402"
             }
           }
         },
@@ -683,8 +683,8 @@
             "type": "media",
             "settings": {
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Mohair_Blanket_11.jpg",
-              "hero-text": "<p><a href=\"/collections/sale\" title=\"SALE\">Holiday Sale</a></p>",
-              "link-hero": "shopify://collections/sale"
+              "hero-text": "",
+              "link-hero": "shopify://products/mohair-blanket-0402"
             }
           }
         },
