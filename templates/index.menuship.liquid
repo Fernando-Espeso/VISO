@@ -1,0 +1,241 @@
+<div class="main">
+<div class="free-shippping" id="free-shipping">
+  <p>FREE SHIPPING ABOVE 300€ ORDERS (EU, USA & UK)<br>
+  <a href="collections/all">SHOP NOW</a></p>
+  <div class="closer">CLOSE</div>
+  <div class="ctct-inline-form" data-form-id="49e2990f-04a0-4ed2-aadd-9889d0d8a773"></div>
+
+</div>
+
+
+
+  <div class="hero">
+    <div class="intro">{% section 'aim' %}</div>
+    {% section 'hero' %}
+    {% section 'hero-movil' %}
+  </div>
+{% section 'about' %}
+
+
+</div>
+<style>
+.loader{
+  position:fixed;
+  top:0%;
+  left:0%;
+  width:100vw;
+  height:100vh;
+  z-index:100;
+}
+.blokie{
+  justify-content: center;
+  display:flex;
+  grid-gap:10px;
+  grid-gap:10px;
+  width:100%;
+  height:23%!important;
+  overflow:hidden;
+  height:fit-content;
+}
+.loader svg.up{
+}
+#products{
+grid-column:span 12}
+.special {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+.special .product{
+  align-items:center;
+  grid-column:span 1;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:2px;
+}
+.special .row {
+  height:fit-content;
+  order: -1;
+  text-align:center!important;
+  grid-column: span 2;
+}
+.special .product-title {
+  text-transform: uppercase;
+  font-size: var(--big);
+  line-height: calc(var(--big) + 5px);
+  text-transform: uppercase;
+}
+.product-price-wrap{
+display: none!important;}
+.news-content {
+  align-items: center;
+  grid-template-columns: repeat(3, 11fr);
+  grid-column: span 4;
+  display: grid;
+  grid-gap: 2px;
+}
+.view{
+  height: fit-content;
+  grid-column: span 12;
+  padding: 0px;
+}
+.title-aim {
+  font-size: 50px;
+}
+.title-seccion.big{
+  grid-column: span 3;
+  font-size: clamp(var(--big), 1.5vw, 2rem);
+  line-height: 120%;
+  color: gray;
+  padding: 0 0 10px;
+}
+
+section#desplegable {
+  margin-top:0px;
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+div#shopify-section-about {
+  grid-column: span 12;
+}
+.blokie{
+  z-index:2000;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display:flex;
+}
+
+.loader svg{
+  position:relative;
+  z-index: 10;
+  width: auto;
+  height: 157px;
+  color: white;
+  align-self: center;
+  padding-bottom: 5px;
+}
+
+.loader div#block-media_9Chkad {
+  width: 100%;
+  height: auto;
+}
+.element-change {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.color {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+}
+.color.image{
+height: auto;}
+
+
+
+  .collection a{
+    margin-top:2px;
+    
+  }
+  form#product-actions {
+    display: none;
+}
+  .collection a img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+.section-title{
+margin:0px;}
+
+@keyframes slideIn {
+  0% {
+    width:100vw;
+    opacity: 1;
+  }
+  100% {
+    width:0vw;
+    opacity: 1;
+  }
+}
+      @media (max-width: 600px) {
+        section#desplegable{
+          margin-top: 0px!important;
+          padding-top: 0px!important;
+        }
+              .main-information{
+              margin-top:0px;}
+              .thumbnail img{
+              margin-bottom:2px;}
+            .special .product {
+              grid-template-columns: repeat(1,1fr);
+            }
+            .special .row {
+              grid-column: span 1;
+          }
+            .news-content {
+              grid-template-columns: repeat(1,1fr);
+          }
+          .news-content .view {
+            grid-column: span 1;
+        }
+        .news-content .title-seccion.big {
+          grid-column: span 1;        
+
+      }
+      .cookies .closer {
+        top: 10px;
+        right: 15px;
+    }
+      .loader svg{
+        width:200px;
+        z-index: 10;
+        height: auto;
+        color: white;
+        align-self: center;
+        padding-bottom: 5px;
+      }
+      .hero{
+        width:100%;
+      }.news-content .title-seccion.big {
+        padding: 0px;
+      }
+      .title-aim {
+        font-size: 30px;
+      }
+      
+    }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Seleccionar los divs de cookies y free-shipping
+    const cookiesDiv = document.getElementById("cookies");
+    const freeShippingDiv = document.getElementById("free-shipping");
+  
+    // Verificar si ya se mostraron en esta sesión
+    if (!sessionStorage.getItem("cookiesShown")) {
+        // Mostrar y marcar como mostrado
+        cookiesDiv.style.display = "block";
+        sessionStorage.setItem("cookiesShown", "true");
+    } else {
+        // Ocultar si ya se mostró
+        cookiesDiv.style.display = "none";
+    }
+  
+    if (!sessionStorage.getItem("freeShippingShown")) {
+        // Mostrar y marcar como mostrado
+        freeShippingDiv.style.display = "block";
+        sessionStorage.setItem("freeShippingShown", "true");
+    } else {
+        // Ocultar si ya se mostró
+        freeShippingDiv.style.display = "none";
+    }
+  });  
+</script>
