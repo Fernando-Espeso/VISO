@@ -703,7 +703,8 @@
       "section#desplegable {margin-top: 40px;}",
       ".shopify-policy__container {max-width: fit-content; margin: 0px; margin-top: 38px;}",
       ".shopify-policy__title {display: none;}",
-      "#cat .SALE {color: red;}"
+      "#cat .SALE {color: red;}",
+      "#shopify-pc__banner__body-title{text-transform: uppercase; font-weight: 500;}"
     ]
   }
 }
