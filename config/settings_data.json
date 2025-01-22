@@ -683,7 +683,7 @@
             "type": "media",
             "settings": {
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Mohair_Blanket_11.jpg",
-              "hero-text": "",
+              "hero-text": "<p><a href=\"/products/mohair-blanket-0402\" title=\"Mohair Blanket 0402\">Mohair Blanket 0402</a></p>",
               "link-hero": "shopify://products/mohair-blanket-0402"
             }
           }
