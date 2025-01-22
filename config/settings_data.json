@@ -18,7 +18,7 @@
             "type": "media",
             "settings": {
               "image": "shopify://shop_images/Viso_Lifestyle_Josephine_Mohair_Blanket_11.jpg",
-              "hero-text": "",
+              "hero-text": "<p><a href=\"/products/mohair-blanket-0402\" title=\"Mohair Blanket 0402\">Mohair Blanket 0402</a></p>",
               "link-hero": "shopify://products/mohair-blanket-0402"
             }
           }
@@ -705,7 +705,7 @@
       ".shopify-policy__title {display: none;}",
       "#cat .SALE {color: red;}",
       "#shopify-pc__banner__body-title {text-transform: uppercase; font-weight: 300; font-size: 16px;}",
-      ".shopify-pc__banner__dialog {box-shadow:none;}"
+      ".shopify-pc__banner__dialog {box-shadow: none;}"
     ]
   }
 }
