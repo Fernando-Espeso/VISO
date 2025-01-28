@@ -8,11 +8,11 @@
     {%- assign prioritized_products = '' -%}
     {%- assign other_products = '' -%}
 
-    <!-- Obtener productos de las colecciones a las que pertenece el producto actual -->
+    <!-- Obtener productos de las colecciones del producto actual -->
     {%- for collection in product.collections -%}
         {%- assign collection_products = collection.products | where: "available", true -%}
 
-        <!-- Filtrar el producto actual y agrupar los productos por etiquetas -->
+        <!-- Filtrar el producto actual y agregar los productos -->
         {%- for p in collection_products -%}
             {%- if p.id != current_product_id -%} <!-- Excluir el producto actual -->
                 {%- assign shared_tags = p.tags | intersection: current_tags -%}
@@ -25,16 +25,16 @@
         {%- endfor -%}
     {%- endfor -%}
 
-    <!-- Combinar productos priorizados con los demás -->
+    <!-- Combinar productos priorizados con otros -->
     {%- assign prioritized_products = prioritized_products | split: ',' | uniq -%}
     {%- assign other_products = other_products | split: ',' | uniq -%}
     {%- assign final_products = prioritized_products | concat: other_products -%}
 
-    <!-- Mostrar solo 4 productos -->
+    <!-- Mostrar solo los primeros 4 productos -->
     {%- assign count = 0 -%}
-    {%- for product_id in final_products -%}
+    {%- for product_id in final_products limit: 4 -%}
         {%- assign related = all_products[product_id] -%}
-        {%- if related and count < 4 -%}
+        {%- if related %}
             {% include 'product-body' with related %}
             {%- assign count = count | plus: 1 -%}
         {%- endif -%}
