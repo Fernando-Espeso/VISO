@@ -1,66 +1,40 @@
+
+
 <div id="related">
   <div class="section-title big">RELATED PRODUCTS</div>
-  <div class="main">
-    {%- assign current_product_id = product.id -%}
-    {%- assign current_tags = product.tags -%}
-    {%- assign collections_to_exclude = 'all' | split: ',' -%}
-    {%- assign current_collection = null -%}
+  <div id="related">
+    <div class="main">
+      {%- assign current_product_id = product.id -%}
+      {%- assign collections_to_exclude = 'all' | split: ',' -%}
+      {%- assign current_collection = null -%}
 
-    <!-- Buscar la colección actual -->
-    {%- for collection in product.collections -%}
-        {%- unless collections_to_exclude contains collection.handle -%}
-            {%- assign current_collection = collection -%}
-            {%- break -%}
-        {%- endunless -%}
-    {%- endfor -%}
+      <!-- Loop through collections to find a specific one -->
+      {%- for collection in product.collections -%}
+          {%- unless collections_to_exclude contains collection.handle -%}
+              {%- assign current_collection = collection -%}
+              {%- break -%}
+          {%- endunless -%}
+      {%- endfor -%}
 
-    {%- if current_collection -%}
-        <!-- Obtener productos disponibles en la colección -->
-        {%- assign related_products = current_collection.products | where: "available", true -%}
-        {%- assign related_products = related_products | reject: "id", current_product_id -%}
+      <!-- Debugging Outputs -->
 
-        <!-- Separar productos con etiquetas en común -->
-        {%- assign prioritized_products = '' -%}
-        {%- assign other_products = '' -%}
 
-        {%- for related in related_products -%}
-            {%- assign shared_tags = related.tags | intersection: current_tags -%}
-            {%- if shared_tags.size > 0 -%}
-                {%- assign prioritized_products = prioritized_products | append: related.id | append: ',' -%}
-            {%- else -%}
-                {%- assign other_products = other_products | append: related.id | append: ',' -%}
-            {%- endif -%}
-        {%- endfor -%}
+      {%- if current_collection -%}
+          <!-- Filter related products -->
+          {%- assign related_products = current_collection.products | where: "available", true -%}
+          {%- assign related_products = related_products | reject: "id", current_product_id -%}
 
-        <!-- Convertir listas en arrays únicos -->
-        {%- assign prioritized_products = prioritized_products | split: ',' | uniq -%}
-        {%- assign other_products = other_products | split: ',' | uniq -%}
-        {%- assign final_products = prioritized_products | concat: other_products -%}
-
-        <!-- Mostrar hasta 4 productos -->
-        {%- assign count = 0 -%}
-        {%- for related_id in final_products -%}
-            {%- assign related = all_products[related_id] -%}
-            {%- if count < 4 -%}
-                {% include 'product-body' with related %}
-                {%- assign count = count | plus: 1 -%}
-            {%- endif -%}
-        {%- endfor -%}
-
-        {%- if count == 0 -%}
-            <p>No related products available.</p>
-        {%- endif -%}
-    {%- else -%}
-        <p>No related products available.</p>
-    {%- endif -%}
+          <!-- Check if filtered related products exist -->
+          {%- if related_products.size > 0 -%}
+              {%- for product in related_products limit: 4 -%}
+                  {% include 'product-body' with product %}
+              {%- endfor -%}
+          {%- else -%}
+              <p>No related products available.</p>
+          {%- endif -%}
+      {%- else -%}
+          <p>No related products available.</p>
+      {%- endif -%}
+      </div>
   </div>
 </div>
-
-<style>
-  .section-title.big {
-    margin-bottom: 10px;
-    margin-top: 60px;
-    line-height: var(--lh);
-    font-size: clamp(var(--big), 1.5vw, 2rem);
-  }
-</style>
