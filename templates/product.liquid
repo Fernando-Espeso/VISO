@@ -148,3 +148,64 @@
     font-size: clamp(var(--big), 1.5vw, 2rem)!important;
   }
 </style>
+
+{% assign related_products = '' %}
+{% assign max_related = 4 %}
+{% assign current_product = product %}
+
+<!-- Buscar productos en las mismas colecciones -->
+{% for collection in product.collections %}
+  {% for related in collection.products %}
+    {% unless related.id == current_product.id %}
+      {% assign related_products = related_products | append: related.id | append: ',' %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+<!-- Convertir la lista en un array y eliminar duplicados -->
+{% assign related_products = related_products | split: ',' | uniq %}
+
+<!-- Filtrar por etiquetas en común -->
+{% assign prioritized_products = '' %}
+{% for related_id in related_products %}
+  {% assign related = all_products[related_id] %}
+  {% assign shared_tags = related.tags | intersection: current_product.tags %}
+  {% if shared_tags.size > 0 %}
+    {% assign prioritized_products = prioritized_products | append: related.id | append: ',' %}
+  {% endif %}
+{% endfor %}
+
+<!-- Usar productos priorizados si hay suficientes, si no, usar todos -->
+{% assign final_products = prioritized_products | split: ',' | uniq %}
+{% if final_products.size < max_related %}
+  {% assign final_products = related_products %}
+{% endif %}
+
+<!-- Mostrar los productos relacionados -->
+<div class="related-products">
+  <h2>Related Products</h2>
+  <div class="related-grid">
+    {% assign count = 0 %}
+    {% for related_id in final_products %}
+      {% assign related = all_products[related_id] %}
+      {% if count < max_related %}
+        <div class="related-item">
+          <a href="{{ related.url }}">
+            <img src="{{ related.featured_image | img_url: 'medium' }}" alt="{{ related.title }}">
+            <p>{{ related.title }}</p>
+            <span>{{ related.price | money }}</span>
+          </a>
+        </div>
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Estilos CSS (Opcional) -->
+<style>
+  .related-products { margin-top: 40px; }
+  .related-grid { display: flex; gap: 15px; flex-wrap: wrap; }
+  .related-item { flex: 1 1 calc(25% - 15px); text-align: center; }
+  .related-item img { max-width: 100%; border-radius: 5px; }
+</style>
