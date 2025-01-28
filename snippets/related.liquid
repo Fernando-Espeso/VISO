@@ -3,56 +3,44 @@
   <div class="main">
     {%- assign current_product_id = product.id -%}
     {%- assign current_tags = product.tags -%}
-    {%- assign collections_to_exclude = 'all' | split: ',' -%}
-    {%- assign current_collection = null -%}
 
-    <!-- Encontrar la primera colección del producto -->
+    {%- assign related_products = '' -%}
+    {%- assign prioritized_products = '' -%}
+    {%- assign other_products = '' -%}
+
+    <!-- Obtener productos relacionados de las mismas colecciones -->
     {%- for collection in product.collections -%}
-        {%- unless collections_to_exclude contains collection.handle -%}
-            {%- assign current_collection = collection -%}
-            {%- break -%}
-        {%- endunless -%}
+        {%- assign collection_products = collection.products | where: "available", true -%}
+        
+        <!-- Filtrar el producto actual y agregar los productos de esta colección -->
+        {%- for p in collection_products -%}
+            {%- if p.id != current_product_id -%} <!-- Excluir el producto actual -->
+                {%- assign shared_tags = p.tags | intersection: current_tags -%}
+                {%- if shared_tags.size > 0 -%}
+                    {%- assign prioritized_products = prioritized_products | append: p.id | append: ',' -%}
+                {%- else -%}
+                    {%- assign other_products = other_products | append: p.id | append: ',' -%}
+                {%- endif -%}
+            {%- endif -%}
+        {%- endfor -%}
     {%- endfor -%}
 
-    {%- if current_collection -%}
-        <!-- Obtener los productos de la colección y filtrarlos -->
-        {%- assign related_products = current_collection.products | where: "available", true -%}
+    <!-- Combinar productos priorizados con los demás -->
+    {%- assign prioritized_products = prioritized_products | split: ',' | uniq -%}
+    {%- assign other_products = other_products | split: ',' | uniq -%}
+    {%- assign final_products = prioritized_products | concat: other_products -%}
 
-        <!-- Rechazar el producto actual (asegurándonos de que no se repita) -->
-        {%- assign related_products = related_products | reject: "id", current_product_id -%}
-
-        <!-- Crear arrays para priorizar productos con etiquetas en común -->
-        {%- assign prioritized_products = '' -%}
-        {%- assign other_products = '' -%}
-
-        {%- for related in related_products -%}
-            {%- assign shared_tags = related.tags | intersection: current_tags -%}
-            {%- if shared_tags.size > 0 -%}
-                {%- assign prioritized_products = prioritized_products | append: related.id | append: ',' -%}
-            {%- else -%}
-                {%- assign other_products = other_products | append: related.id | append: ',' -%}
-            {%- endif -%}
-        {%- endfor -%}
-
-        <!-- Combinar productos priorizados con los demás -->
-        {%- assign prioritized_products = prioritized_products | split: ',' | uniq -%}
-        {%- assign other_products = other_products | split: ',' | uniq -%}
-        {%- assign final_products = prioritized_products | concat: other_products -%}
-
-        <!-- Limitar el número de productos relacionados a 4 -->
-        {%- assign count = 0 -%}
-        {%- for related_id in final_products -%}
-            {%- assign related = all_products[related_id] -%}
-            {%- if related.id != current_product_id and count < 4 -%}
-                {% include 'product-body' with related %}
-                {%- assign count = count | plus: 1 -%}
-            {%- endif -%}
-        {%- endfor -%}
-
-        {%- if count == 0 -%}
-            <p>No related products available.</p>
+    <!-- Mostrar solo 4 productos -->
+    {%- assign count = 0 -%}
+    {%- for product_id in final_products -%}
+        {%- assign related = all_products[product_id] -%}
+        {%- if related and count < 4 -%}
+            {% include 'product-body' with related %}
+            {%- assign count = count | plus: 1 -%}
         {%- endif -%}
-    {%- else -%}
+    {%- endfor -%}
+
+    {%- if count == 0 -%}
         <p>No related products available.</p>
     {%- endif -%}
   </div>
