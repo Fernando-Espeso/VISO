@@ -17,7 +17,7 @@
     {%- if current_collection -%}
         <!-- Obtener los productos de la colección y filtrarlos -->
         {%- assign related_products = current_collection.products | where: "available", true -%}
-        
+
         <!-- Rechazar el producto actual (asegurándonos de que no se repita) -->
         {%- assign related_products = related_products | reject: "id", current_product_id -%}
 
