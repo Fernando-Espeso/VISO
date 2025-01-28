@@ -8,11 +8,11 @@
     {%- assign prioritized_products = '' -%}
     {%- assign other_products = '' -%}
 
-    <!-- Obtener productos relacionados de las mismas colecciones -->
+    <!-- Obtener productos de las colecciones a las que pertenece el producto actual -->
     {%- for collection in product.collections -%}
         {%- assign collection_products = collection.products | where: "available", true -%}
-        
-        <!-- Filtrar el producto actual y agregar los productos de esta colección -->
+
+        <!-- Filtrar el producto actual y agrupar los productos por etiquetas -->
         {%- for p in collection_products -%}
             {%- if p.id != current_product_id -%} <!-- Excluir el producto actual -->
                 {%- assign shared_tags = p.tags | intersection: current_tags -%}
