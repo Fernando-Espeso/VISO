@@ -104,7 +104,17 @@
 {% endschema %}
 
 <style>
-  .hero-video {
+.hero__image {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Mantiene la altura fija y evita cambios inesperados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita que el video sobresalga */
+}
+
+.hero-video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -112,11 +122,44 @@
   height: 100%;
   object-fit: cover; /* Ajusta el video sin distorsionarlo */
   transform: translate(-50%, -50%);
+  z-index: -1; /* Mantiene el video en el fondo */
 }
-.hero__image {
-  position: relative;
+
+.hero__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
-  height: 100vh; /* Ajusta el alto al 100% del viewport */
-  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2; /* Imagen de respaldo detrás del video */
+}
+
+.caption {
+  position: absolute;
+  bottom: 10%; /* Ajusta la posición para evitar superposición */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Mejora la visibilidad del texto */
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 2; /* Asegura que el caption esté por encima del video */
+}
+
+.bar {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Asegura que el siguiente contenido no desaparezca */
+.hero-section {
+  position: relative;
+  z-index: 1;
 }
 </style>
