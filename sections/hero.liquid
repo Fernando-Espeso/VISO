@@ -104,27 +104,19 @@
 {% endschema %}
 
 <style>
+  .hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video sin distorsionarlo */
+  transform: translate(-50%, -50%);
+}
 .hero__image {
   position: relative;
   width: 100%;
-  max-width: 100%; /* Asegura que no se extienda más allá del contenedor */
-  height: auto; /* Ajusta la altura automáticamente según la imagen */
-  overflow: hidden; /* Evita que el video se salga del contenedor */
-}
-
-.hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Hace que el video ocupe el espacio de la imagen sin desbordarse */
-  z-index: -1; /* Envía el video al fondo para que no cubra otros elementos */
-}
-
-.hero__image img {
-  display: block;
-  width: 100%;
-  height: auto;
+  height: 100vh; /* Ajusta el alto al 100% del viewport */
+  overflow: hidden;
 }
 </style>
