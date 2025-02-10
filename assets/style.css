@@ -1424,7 +1424,7 @@ div#shopify-section-hero img {
   height: fit-content;
   order: 2;
   color: #000;
-  line-height:var(--lh);
+  line-height:var(--lh)!important;
   font-size: clamp(var(--big), 1.5vw, 2rem)!important; 
 }
 
@@ -1449,9 +1449,9 @@ input#email_address_0 {
   box-shadow: none !important;
 }
 
-input.search-input {
-    line-height:20px !important;
-   font-size:18px !important;
+.search-input {
+  line-height:var(--lh)!important;
+  font-size: clamp(var(--big), 1.5vw, 2rem)!important; 
     transition-delay: .5s;
     font-weight: 300;
     height: fit-content;
