@@ -43,7 +43,7 @@
                                     <!--Actions-->
                                     {% if product.available %}
                                     <button   {% if product.available %} onclick="ShowSecond()" {% endif %}  id="add-to-cart" {% unless product.available %}disabled{% endunless %} type="submit" name="add">
-                                      ADD TO BAG
+                                      ADD TO CART
                                     </button> 
                                     {% else %}
                                       <button  id="add-to-cart" {% unless product.selected_variant.available %}disabled{% endunless %}>
