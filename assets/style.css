@@ -1449,6 +1449,14 @@ input#email_address_0 {
   box-shadow: none !important;
 }
 
+input.search-input {
+    line-height:auto !important;
+   font-size:auto !important;
+    transition-delay: .5s;
+    font-weight: 300;
+    height: fit-content;
+    order: 2;
+    color: #000;
 }
 .shop, .artist, .information, .store, .cart-part{
   margin-top: 3px;
