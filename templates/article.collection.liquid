@@ -13,7 +13,7 @@
           {% assign gallery = article.metafields.custom.gallery.value %}
           {% if gallery %}
              {% for gallery in gallery %}
-                  <img class="lazy" src="{{ gallery | image_url: 'thumb' }}"  data-src="{{ gallery | image_url:: 'master' }}">
+                  <img class="lazy" src="{{ gallery | image_url: 'thumb' }}"  data-src="{{ gallery | image_url: nil }}">
                {% endfor %}
           {% endif %}
       </div>
@@ -25,3 +25,13 @@
     </div>
 {% endunless %}
 <!-- <div class="bottom">DATE, {{ article.published_at | date: "%b %d %Y" }}</div> -->
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ gallery | image_url:: 'master' }}"
+  to: "{{ gallery | image_url: nil }}"
+  position: 915..945
+{% endcomment %}

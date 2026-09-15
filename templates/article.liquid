@@ -34,7 +34,7 @@
                   {% assign gallery = article.metafields.custom.gallery.value %}
                   {% if gallery %}
                      {% for gallery in gallery %}
-                          <img class="lazy" src="{{ gallery | image_url: 'thumb' }}"  data-src="{{ gallery | image_url:: 'master' }}">
+                          <img class="lazy" src="{{ gallery | image_url: 'thumb' }}"  data-src="{{ gallery | image_url: nil }}">
                        {% endfor %}
                   {% endif %}
               </div>
@@ -397,3 +397,13 @@
 }
   }
 </style>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ gallery | image_url:: 'master' }}"
+  to: "{{ gallery | image_url: nil }}"
+  position: 1609..1639
+{% endcomment %}
